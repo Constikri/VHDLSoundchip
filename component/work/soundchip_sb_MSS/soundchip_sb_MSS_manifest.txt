@@ -1,0 +1,26 @@
+Microsemi Corporation - Microsemi Libero Software Release v2021.1 (Version 2021.1.0.17)
+
+Date      :  Wed Aug 18 14:23:34 2021
+Project   :  C:\Users\Constantin\Documents\hshl_soundchip\hshl_soundchip
+Component :  soundchip_sb_MSS
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/Constantin/Documents/hshl_soundchip/hshl_soundchip/component/work/soundchip_sb_MSS/soundchip_sb_MSS.vhd
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    C:/Users/Constantin/Documents/hshl_soundchip/hshl_soundchip/component/work/soundchip_sb_MSS/soundchip_sb_MSS_syn.vhd
+
+HDL source files for Mentor Precision Synthesis tool:
+    C:/Users/Constantin/Documents/hshl_soundchip/hshl_soundchip/component/work/soundchip_sb_MSS/soundchip_sb_MSS_pre.vhd
+
+Stimulus files for all Simulation tools:
+    C:/Users/Constantin/Documents/hshl_soundchip/hshl_soundchip/component/work/soundchip_sb_MSS/CM3_compile_bfm.tcl
+    C:/Users/Constantin/Documents/hshl_soundchip/hshl_soundchip/component/work/soundchip_sb_MSS/user.bfm
+    C:/Users/Constantin/Documents/hshl_soundchip/hshl_soundchip/component/work/soundchip_sb_MSS/test.bfm
+    C:/Users/Constantin/Documents/hshl_soundchip/hshl_soundchip/component/Actel/SmartFusion2MSS/MSS/1.1.500/peripheral_init.bfm
+
+Firmware files for all Software IDE tools:
+    C:/Users/Constantin/Documents/hshl_soundchip/hshl_soundchip/component/work/soundchip_sb_MSS/sys_config_mss_clocks.h
+

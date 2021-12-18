@@ -1,0 +1,23 @@
+Microsemi Corporation - Microsemi Libero Software Release v2021.1 (Version 2021.1.0.17)
+
+Date      :  Thu Aug 19 11:59:46 2021
+Project   :  C:\Users\Constantin\Documents\hshl_soundchip\hshl_soundchip
+Component :  CORESPI_C0
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/Constantin/Documents/hshl_soundchip/hshl_soundchip/component/Actel/DirectCore/CORESPI/3.0.156/rtl/vhdl/core_obfuscated/spi_master.vhd
+    C:/Users/Constantin/Documents/hshl_soundchip/hshl_soundchip/component/Actel/DirectCore/CORESPI/3.0.156/rtl/vhdl/core_obfuscated/spi_slave.vhd
+    C:/Users/Constantin/Documents/hshl_soundchip/hshl_soundchip/component/Actel/DirectCore/CORESPI/3.0.156/rtl/vhdl/core_obfuscated/corespi_sfr.vhd
+    C:/Users/Constantin/Documents/hshl_soundchip/hshl_soundchip/component/Actel/DirectCore/CORESPI/3.0.156/rtl/vhdl/core_obfuscated/corespi.vhd
+    C:/Users/Constantin/Documents/hshl_soundchip/hshl_soundchip/component/Actel/DirectCore/CORESPI/3.0.156/rtl/vhdl/core_obfuscated/components.vhd
+    C:/Users/Constantin/Documents/hshl_soundchip/hshl_soundchip/component/work/CORESPI_C0/CORESPI_C0.vhd
+
+Stimulus files for all Simulation tools:
+    C:/Users/Constantin/Documents/hshl_soundchip/hshl_soundchip/component/Actel/DirectCore/CORESPI/3.0.156/mti/scripts/wave_usertb_vhdl.do
+
+    C:/Users/Constantin/Documents/hshl_soundchip/hshl_soundchip/component/Actel/DirectCore/CORESPI/3.0.156/coreparameters.vhd
+    C:/Users/Constantin/Documents/hshl_soundchip/hshl_soundchip/component/Actel/DirectCore/CORESPI/3.0.156/rtl/vhdl/test/user/corespi_pkg.vhd
+    C:/Users/Constantin/Documents/hshl_soundchip/hshl_soundchip/component/Actel/DirectCore/CORESPI/3.0.156/rtl/vhdl/test/user/tb_user_corespi.vhd
+
