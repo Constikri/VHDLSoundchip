@@ -1,4 +1,4 @@
--- Version: v2021.1 2021.1.0.17
+-- Version: v2021.2 2021.2.0.11
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -20,38 +20,43 @@ end OSC_C0_OSC_C0_0_OSC;
 
 architecture DEF_ARCH of OSC_C0_OSC_C0_0_OSC is 
 
+  component XTLOSC_FAB
+    port( A      : in    std_logic := 'U';
+          CLKOUT : out   std_logic
+        );
+  end component;
+
+  component XTLOSC
+    generic (MODE:std_logic_vector(1 downto 0) := "11"; 
+        FREQUENCY:real := 20.0);
+
+    port( XTL    : in    std_logic := 'U';
+          CLKOUT : out   std_logic
+        );
+  end component;
+
   component CLKINT
     port( A : in    std_logic := 'U';
           Y : out   std_logic
         );
   end component;
 
-  component RCOSC_1MHZ_FAB
-    port( A      : in    std_logic := 'U';
-          CLKOUT : out   std_logic
-        );
-  end component;
-
-  component RCOSC_1MHZ
-    port( CLKOUT : out   std_logic
-        );
-  end component;
-
-    signal N_RCOSC_1MHZ_CCC, N_RCOSC_1MHZ_CLKINT : std_logic;
+    signal N_XTLOSC_CCC, N_XTLOSC_CLKINT : std_logic;
 
 begin 
 
-    RCOSC_1MHZ_CCC <= N_RCOSC_1MHZ_CCC;
+    XTLOSC_CCC <= N_XTLOSC_CCC;
 
-    I_RCOSC_1MHZ_FAB_CLKINT : CLKINT
-      port map(A => N_RCOSC_1MHZ_CLKINT, Y => RCOSC_1MHZ_O2F);
+    I_XTLOSC_FAB : XTLOSC_FAB
+      port map(A => N_XTLOSC_CCC, CLKOUT => N_XTLOSC_CLKINT);
     
-    I_RCOSC_1MHZ_FAB : RCOSC_1MHZ_FAB
-      port map(A => N_RCOSC_1MHZ_CCC, CLKOUT => 
-        N_RCOSC_1MHZ_CLKINT);
+    I_XTLOSC : XTLOSC
+      generic map(MODE => "11", FREQUENCY => 20.0)
+
+      port map(XTL => XTL, CLKOUT => N_XTLOSC_CCC);
     
-    I_RCOSC_1MHZ : RCOSC_1MHZ
-      port map(CLKOUT => N_RCOSC_1MHZ_CCC);
+    I_XTLOSC_FAB_CLKINT : CLKINT
+      port map(A => N_XTLOSC_CLKINT, Y => XTLOSC_O2F);
     
 
 end DEF_ARCH; 

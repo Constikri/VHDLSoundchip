@@ -1,4 +1,4 @@
--- Version: v2021.1 2021.1.0.17
+-- Version: v2021.2 2021.2.0.11
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -7,9 +7,9 @@ use smartfusion2.all;
 
 entity soundchip_sb_CCC_0_FCCC is
 
-    port( RCOSC_1MHZ : in    std_logic;
-          LOCK       : out   std_logic;
-          GL0        : out   std_logic
+    port( RCOSC_25_50MHZ : in    std_logic;
+          LOCK           : out   std_logic;
+          GL0            : out   std_logic
         );
 
 end soundchip_sb_CCC_0_FCCC;
@@ -105,7 +105,7 @@ begin
     
     CCC_INST : CCC
 
-              generic map(INIT => "00" & x"000007F88000044D74000318C6318C1F18C61E80404040406300",
+              generic map(INIT => "00" & x"000007FB8000044D74000318C6318C1F18C61EC0404040400301",
          VCOFREQUENCY => 800.000)
 
       port map(Y0 => OPEN, Y1 => OPEN, Y2 => OPEN, Y3 => OPEN, 
@@ -132,8 +132,8 @@ begin
         PWDATA(1) => vcc_net, PWDATA(0) => vcc_net, CLK0_PAD => 
         gnd_net, CLK1_PAD => gnd_net, CLK2_PAD => gnd_net, 
         CLK3_PAD => gnd_net, GL0 => GL0_net, GL1 => OPEN, GL2 => 
-        OPEN, GL3 => OPEN, RCOSC_25_50MHZ => gnd_net, RCOSC_1MHZ
-         => RCOSC_1MHZ, XTLOSC => gnd_net);
+        OPEN, GL3 => OPEN, RCOSC_25_50MHZ => RCOSC_25_50MHZ, 
+        RCOSC_1MHZ => gnd_net, XTLOSC => gnd_net);
     
 
 end DEF_ARCH; 

@@ -1,6 +1,6 @@
 set_component soundchip_sb_MSS
 # Microsemi Corp.
-# Date: 2021-Aug-18 14:23:34
+# Date: 2022-Jan-23 18:58:44
 #
 
 create_clock -period 40 [ get_pins { MSS_ADLIB_INST/CLK_CONFIG_APB } ]

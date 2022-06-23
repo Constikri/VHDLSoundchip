@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Thu Aug 19 11:57:50 2021
--- Version: v2021.1 2021.1.0.17
+-- Created by SmartDesign Sun Jan 23 16:57:27 2022
+-- Version: v2021.2 2021.2.0.11
 ----------------------------------------------------------------------
 
 ----------------------------------------------------------------------
@@ -13,15 +13,15 @@
 --create_and_configure_core -core_vlnv {Actel:SgCore:OSC:2.0.101} -component_name {OSC_C0} -params {\
 --"RCOSC_1MHZ_DRIVES_CCC:1"  \
 --"RCOSC_1MHZ_DRIVES_FAB:1"  \
---"RCOSC_1MHZ_IS_USED:1"  \
+--"RCOSC_1MHZ_IS_USED:0"  \
 --"RCOSC_25_50MHZ_DRIVES_CCC:false"  \
 --"RCOSC_25_50MHZ_DRIVES_FAB:false"  \
 --"RCOSC_25_50MHZ_IS_USED:false"  \
 --"VOLTAGE_IS_1_2:true"  \
---"XTLOSC_DRIVES_CCC:false"  \
---"XTLOSC_DRIVES_FAB:false"  \
+--"XTLOSC_DRIVES_CCC:1"  \
+--"XTLOSC_DRIVES_FAB:1"  \
 --"XTLOSC_FREQ:20.00"  \
---"XTLOSC_IS_USED:false"  \
+--"XTLOSC_IS_USED:1"  \
 --"XTLOSC_SRC:CRYSTAL"   }
 --# Exporting Component Description of OSC_C0 to TCL done
 
@@ -39,9 +39,11 @@ use smartfusion2.all;
 entity OSC_C0 is
     -- Port list
     port(
+        -- Inputs
+        XTL        : in  std_logic;
         -- Outputs
-        RCOSC_1MHZ_CCC : out std_logic;
-        RCOSC_1MHZ_O2F : out std_logic
+        XTLOSC_CCC : out std_logic;
+        XTLOSC_O2F : out std_logic
         );
 end OSC_C0;
 ----------------------------------------------------------------------
@@ -69,27 +71,19 @@ end component;
 ----------------------------------------------------------------------
 -- Signal declarations
 ----------------------------------------------------------------------
-signal RCOSC_1MHZ_CCC_OUT_RCOSC_1MHZ_CCC       : std_logic;
-signal RCOSC_1MHZ_O2F_net_0                    : std_logic;
-signal RCOSC_1MHZ_O2F_net_1                    : std_logic;
-signal RCOSC_1MHZ_CCC_OUT_RCOSC_1MHZ_CCC_net_0 : std_logic;
-----------------------------------------------------------------------
--- TiedOff Signals
-----------------------------------------------------------------------
-signal GND_net                                 : std_logic;
+signal XTLOSC_CCC_OUT_XTLOSC_CCC       : std_logic;
+signal XTLOSC_O2F_net_0                : std_logic;
+signal XTLOSC_O2F_net_1                : std_logic;
+signal XTLOSC_CCC_OUT_XTLOSC_CCC_net_0 : std_logic;
 
 begin
 ----------------------------------------------------------------------
--- Constant assignments
-----------------------------------------------------------------------
- GND_net <= '0';
-----------------------------------------------------------------------
 -- Top level output port assignments
 ----------------------------------------------------------------------
- RCOSC_1MHZ_O2F_net_1                    <= RCOSC_1MHZ_O2F_net_0;
- RCOSC_1MHZ_O2F                          <= RCOSC_1MHZ_O2F_net_1;
- RCOSC_1MHZ_CCC_OUT_RCOSC_1MHZ_CCC_net_0 <= RCOSC_1MHZ_CCC_OUT_RCOSC_1MHZ_CCC;
- RCOSC_1MHZ_CCC                          <= RCOSC_1MHZ_CCC_OUT_RCOSC_1MHZ_CCC_net_0;
+ XTLOSC_O2F_net_1                <= XTLOSC_O2F_net_0;
+ XTLOSC_O2F                      <= XTLOSC_O2F_net_1;
+ XTLOSC_CCC_OUT_XTLOSC_CCC_net_0 <= XTLOSC_CCC_OUT_XTLOSC_CCC;
+ XTLOSC_CCC                      <= XTLOSC_CCC_OUT_XTLOSC_CCC_net_0;
 ----------------------------------------------------------------------
 -- Component instances
 ----------------------------------------------------------------------
@@ -97,14 +91,14 @@ begin
 OSC_C0_0 : OSC_C0_OSC_C0_0_OSC
     port map( 
         -- Inputs
-        XTL                => GND_net, -- tied to '0' from definition
+        XTL                => XTL,
         -- Outputs
         RCOSC_25_50MHZ_CCC => OPEN,
         RCOSC_25_50MHZ_O2F => OPEN,
-        RCOSC_1MHZ_CCC     => RCOSC_1MHZ_CCC_OUT_RCOSC_1MHZ_CCC,
-        RCOSC_1MHZ_O2F     => RCOSC_1MHZ_O2F_net_0,
-        XTLOSC_CCC         => OPEN,
-        XTLOSC_O2F         => OPEN 
+        RCOSC_1MHZ_CCC     => OPEN,
+        RCOSC_1MHZ_O2F     => OPEN,
+        XTLOSC_CCC         => XTLOSC_CCC_OUT_XTLOSC_CCC,
+        XTLOSC_O2F         => XTLOSC_O2F_net_0 
         );
 
 end RTL;

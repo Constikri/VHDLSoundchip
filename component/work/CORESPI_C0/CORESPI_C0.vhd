@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Thu Aug 19 11:59:46 2021
--- Version: v2021.1 2021.1.0.17
+-- Created by SmartDesign Sun Jan 23 18:57:06 2022
+-- Version: v2021.2 2021.2.0.11
 ----------------------------------------------------------------------
 
 ----------------------------------------------------------------------
@@ -11,7 +11,7 @@
 --# Part Number: M2S010-VF256
 --# Create and Configure the core component CORESPI_C0
 --create_and_configure_core -core_vlnv {Actel:DirectCore:CORESPI:3.0.156} -component_name {CORESPI_C0} -params {\
---"USE_MASTER:1"  \
+--"USE_MASTER:0"  \
 --"USE_SLAVE:1"   }
 --# Exporting Component Description of CORESPI_C0 to TCL done
 
@@ -84,10 +84,10 @@ signal enable_slave_net_1    : std_logic;
 signal interrupt_net_1       : std_logic;
 signal m_mosi_net_1          : std_logic;
 signal m_sck_net_1           : std_logic;
-signal m_ss_net_1            : std_logic_vector(7 downto 0);
 signal rx_data_ready_net_1   : std_logic;
 signal s_miso_net_1          : std_logic;
 signal tx_reg_empty_net_1    : std_logic;
+signal m_ss_net_1            : std_logic_vector(7 downto 0);
 signal APBslave_PRDATA_net_0 : std_logic_vector(7 downto 0);
 
 begin
@@ -104,14 +104,14 @@ begin
  m_mosi                <= m_mosi_net_1;
  m_sck_net_1           <= m_sck_net_0;
  m_sck                 <= m_sck_net_1;
- m_ss_net_1            <= m_ss_net_0;
- m_ss(7 downto 0)      <= m_ss_net_1;
  rx_data_ready_net_1   <= rx_data_ready_net_0;
  rx_data_ready         <= rx_data_ready_net_1;
  s_miso_net_1          <= s_miso_net_0;
  s_miso                <= s_miso_net_1;
  tx_reg_empty_net_1    <= tx_reg_empty_net_0;
  tx_reg_empty          <= tx_reg_empty_net_1;
+ m_ss_net_1            <= m_ss_net_0;
+ m_ss(7 downto 0)      <= m_ss_net_1;
  APBslave_PRDATA_net_0 <= APBslave_PRDATA;
  PRDATA(7 downto 0)    <= APBslave_PRDATA_net_0;
 ----------------------------------------------------------------------
@@ -121,33 +121,33 @@ begin
 CORESPI_C0_0 : entity CORESPI_LIB.CORESPI
     generic map( 
         FAMILY     => ( 15 ),
-        USE_MASTER => ( 1 ),
+        USE_MASTER => ( 0 ),
         USE_SLAVE  => ( 1 )
         )
     port map( 
         -- Inputs
-        PADDR         => PADDR,
         PCLK          => PCLK,
         PENABLE       => PENABLE,
         PRESETN       => PRESETN,
         PSEL          => PSEL,
-        PWDATA        => PWDATA,
         PWRITE        => PWRITE,
         m_miso        => m_miso,
         s_mosi        => s_mosi,
         s_sck         => s_sck,
         s_ss          => s_ss,
+        PADDR         => PADDR,
+        PWDATA        => PWDATA,
         -- Outputs
-        PRDATA        => APBslave_PRDATA,
         enable_master => enable_master_net_0,
         enable_slave  => enable_slave_net_0,
         interrupt     => interrupt_net_0,
         m_mosi        => m_mosi_net_0,
         m_sck         => m_sck_net_0,
-        m_ss          => m_ss_net_0,
         rx_data_ready => rx_data_ready_net_0,
         s_miso        => s_miso_net_0,
-        tx_reg_empty  => tx_reg_empty_net_0 
+        tx_reg_empty  => tx_reg_empty_net_0,
+        PRDATA        => APBslave_PRDATA,
+        m_ss          => m_ss_net_0 
         );
 
 end RTL;

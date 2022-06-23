@@ -1,4 +1,4 @@
--- Version: v2021.1 2021.1.0.17
+-- Version: v2021.2 2021.2.0.11
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -39,46 +39,25 @@ architecture DEF_ARCH of soundchip_sb_FABOSC_0_OSC is
         );
   end component;
 
-  component RCOSC_1MHZ_FAB
-    port( A      : in    std_logic := 'U';
-          CLKOUT : out   std_logic
-        );
-  end component;
-
-  component RCOSC_1MHZ
-    port( CLKOUT : out   std_logic
-        );
-  end component;
-
-    signal N_RCOSC_25_50MHZ_CLKOUT, N_RCOSC_25_50MHZ_CLKINT, 
-        N_RCOSC_1MHZ_CCC, N_RCOSC_1MHZ_CLKINT : std_logic;
+    signal N_RCOSC_25_50MHZ_CCC, N_RCOSC_25_50MHZ_CLKINT
+         : std_logic;
 
 begin 
 
-    RCOSC_1MHZ_CCC <= N_RCOSC_1MHZ_CCC;
+    RCOSC_25_50MHZ_CCC <= N_RCOSC_25_50MHZ_CCC;
 
     I_RCOSC_25_50MHZ_FAB : RCOSC_25_50MHZ_FAB
-      port map(A => N_RCOSC_25_50MHZ_CLKOUT, CLKOUT => 
+      port map(A => N_RCOSC_25_50MHZ_CCC, CLKOUT => 
         N_RCOSC_25_50MHZ_CLKINT);
     
     I_RCOSC_25_50MHZ : RCOSC_25_50MHZ
       generic map(FREQUENCY => 50.0)
 
-      port map(CLKOUT => N_RCOSC_25_50MHZ_CLKOUT);
-    
-    I_RCOSC_1MHZ_FAB_CLKINT : CLKINT
-      port map(A => N_RCOSC_1MHZ_CLKINT, Y => RCOSC_1MHZ_O2F);
-    
-    I_RCOSC_1MHZ_FAB : RCOSC_1MHZ_FAB
-      port map(A => N_RCOSC_1MHZ_CCC, CLKOUT => 
-        N_RCOSC_1MHZ_CLKINT);
+      port map(CLKOUT => N_RCOSC_25_50MHZ_CCC);
     
     I_RCOSC_25_50MHZ_FAB_CLKINT : CLKINT
       port map(A => N_RCOSC_25_50MHZ_CLKINT, Y => 
         RCOSC_25_50MHZ_O2F);
-    
-    I_RCOSC_1MHZ : RCOSC_1MHZ
-      port map(CLKOUT => N_RCOSC_1MHZ_CCC);
     
 
 end DEF_ARCH; 

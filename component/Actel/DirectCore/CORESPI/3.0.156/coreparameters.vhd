@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by Microsemi SmartDesign Thu Aug 19 11:59:46 2021
+-- Created by Microsemi SmartDesign Sun Jan 23 18:58:50 2022
 -- Parameters for CORESPI
 ----------------------------------------------------------------------
 
@@ -13,6 +13,6 @@ package coreparameters is
     constant FAMILY : integer := 15;
     constant HDL_license : string( 1 to 1 ) := "O";
     constant testbench : string( 1 to 4 ) := "User";
-    constant USE_MASTER : integer := 1;
+    constant USE_MASTER : integer := 0;
     constant USE_SLAVE : integer := 1;
 end coreparameters;

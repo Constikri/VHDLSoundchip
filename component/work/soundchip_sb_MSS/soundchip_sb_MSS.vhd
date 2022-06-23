@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Wed Aug 18 14:23:34 2021
--- Version: v2021.1 2021.1.0.17
+-- Created by SmartDesign Sun Jan 23 18:58:44 2022
+-- Version: v2021.2 2021.2.0.11
 ----------------------------------------------------------------------
 
 ----------------------------------------------------------------------
@@ -18,46 +18,30 @@ entity soundchip_sb_MSS is
     -- Port list
     port(
         -- Inputs
-        FIC_0_AHB_M_HRDATA     : in    std_logic_vector(31 downto 0);
-        FIC_0_AHB_M_HREADY     : in    std_logic;
-        FIC_0_AHB_M_HRESP      : in    std_logic;
-        FIC_2_APB_M_PRDATA     : in    std_logic_vector(31 downto 0);
-        FIC_2_APB_M_PREADY     : in    std_logic;
-        FIC_2_APB_M_PSLVERR    : in    std_logic;
-        I2C_0_BCLK             : in    std_logic;
-        I2C_0_SCL_F2M          : in    std_logic;
-        I2C_0_SDA_F2M          : in    std_logic;
-        MCCC_CLK_BASE          : in    std_logic;
-        MCCC_CLK_BASE_PLL_LOCK : in    std_logic;
-        MMUART_0_RXD_F2M       : in    std_logic;
-        MMUART_1_RXD_F2M       : in    std_logic;
-        MSS_INT_F2M            : in    std_logic_vector(15 downto 0);
-        MSS_RESET_N_F2M        : in    std_logic;
-        SPI_0_DI               : in    std_logic;
+        FIC_0_APB_M_PRDATA     : in  std_logic_vector(31 downto 0);
+        FIC_0_APB_M_PREADY     : in  std_logic;
+        FIC_0_APB_M_PSLVERR    : in  std_logic;
+        FIC_2_APB_M_PRDATA     : in  std_logic_vector(31 downto 0);
+        FIC_2_APB_M_PREADY     : in  std_logic;
+        FIC_2_APB_M_PSLVERR    : in  std_logic;
+        MCCC_CLK_BASE          : in  std_logic;
+        MCCC_CLK_BASE_PLL_LOCK : in  std_logic;
+        MSS_INT_F2M            : in  std_logic_vector(15 downto 0);
+        MSS_RESET_N_F2M        : in  std_logic;
         -- Outputs
-        FIC_0_AHB_M_HADDR      : out   std_logic_vector(31 downto 0);
-        FIC_0_AHB_M_HSIZE      : out   std_logic_vector(1 downto 0);
-        FIC_0_AHB_M_HTRANS     : out   std_logic_vector(1 downto 0);
-        FIC_0_AHB_M_HWDATA     : out   std_logic_vector(31 downto 0);
-        FIC_0_AHB_M_HWRITE     : out   std_logic;
-        FIC_2_APB_M_PADDR      : out   std_logic_vector(15 downto 2);
-        FIC_2_APB_M_PCLK       : out   std_logic;
-        FIC_2_APB_M_PENABLE    : out   std_logic;
-        FIC_2_APB_M_PRESET_N   : out   std_logic;
-        FIC_2_APB_M_PSEL       : out   std_logic;
-        FIC_2_APB_M_PWDATA     : out   std_logic_vector(31 downto 0);
-        FIC_2_APB_M_PWRITE     : out   std_logic;
-        I2C_0_SCL_M2F          : out   std_logic;
-        I2C_0_SCL_M2F_OE       : out   std_logic;
-        I2C_0_SDA_M2F          : out   std_logic;
-        I2C_0_SDA_M2F_OE       : out   std_logic;
-        MMUART_0_TXD_M2F       : out   std_logic;
-        MMUART_1_TXD_M2F       : out   std_logic;
-        MSS_RESET_N_M2F        : out   std_logic;
-        SPI_0_DO               : out   std_logic;
-        -- Inouts
-        SPI_0_CLK              : inout std_logic;
-        SPI_0_SS0              : inout std_logic
+        FIC_0_APB_M_PADDR      : out std_logic_vector(31 downto 0);
+        FIC_0_APB_M_PENABLE    : out std_logic;
+        FIC_0_APB_M_PSEL       : out std_logic;
+        FIC_0_APB_M_PWDATA     : out std_logic_vector(31 downto 0);
+        FIC_0_APB_M_PWRITE     : out std_logic;
+        FIC_2_APB_M_PADDR      : out std_logic_vector(15 downto 2);
+        FIC_2_APB_M_PCLK       : out std_logic;
+        FIC_2_APB_M_PENABLE    : out std_logic;
+        FIC_2_APB_M_PRESET_N   : out std_logic;
+        FIC_2_APB_M_PSEL       : out std_logic;
+        FIC_2_APB_M_PWDATA     : out std_logic_vector(31 downto 0);
+        FIC_2_APB_M_PWRITE     : out std_logic;
+        MSS_RESET_N_M2F        : out std_logic
         );
 end soundchip_sb_MSS;
 ----------------------------------------------------------------------
@@ -572,137 +556,71 @@ component MSS_010
         WDOGTIMEOUT                             : out std_logic
         );
 end component;
--- BIBUF
-component BIBUF
-    generic( 
-        IOSTD : string := "" 
-        );
-    -- Port list
-    port(
-        -- Inputs
-        D   : in    std_logic;
-        E   : in    std_logic;
-        -- Outputs
-        Y   : out   std_logic;
-        -- Inouts
-        PAD : inout std_logic
-        );
-end component;
--- INBUF
-component INBUF
-    generic( 
-        IOSTD : string := "" 
-        );
-    -- Port list
-    port(
-        -- Inputs
-        PAD : in  std_logic;
-        -- Outputs
-        Y   : out std_logic
-        );
-end component;
--- TRIBUFF
-component TRIBUFF
-    generic( 
-        IOSTD : string := "" 
-        );
-    -- Port list
-    port(
-        -- Inputs
-        D   : in  std_logic;
-        E   : in  std_logic;
-        -- Outputs
-        PAD : out std_logic
-        );
-end component;
 ----------------------------------------------------------------------
 -- Signal declarations
 ----------------------------------------------------------------------
-signal FIC_0_AHB_M_HADDR_net_0                      : std_logic_vector(31 downto 0);
-signal FIC_0_AHB_M_HSIZE_net_0                      : std_logic_vector(1 downto 0);
-signal FIC_0_AHB_M_HTRANS_net_0                     : std_logic;
-signal FIC_0_AHB_M_HWDATA_net_0                     : std_logic_vector(31 downto 0);
-signal FIC_0_AHB_M_HWRITE_net_0                     : std_logic;
-signal FIC_2_APB_M_PCLK_0                           : std_logic;
-signal FIC_2_APB_M_PRESET_N_0                       : std_logic;
-signal FIC_2_APB_MASTER_0_PADDR                     : std_logic_vector(15 downto 2);
-signal FIC_2_APB_MASTER_0_PENABLE                   : std_logic;
-signal FIC_2_APB_MASTER_0_PSELx                     : std_logic;
-signal FIC_2_APB_MASTER_0_PWDATA                    : std_logic_vector(31 downto 0);
-signal FIC_2_APB_MASTER_0_PWRITE                    : std_logic;
-signal I2C_0_SCL_M2F_net_0                          : std_logic;
-signal I2C_0_SCL_M2F_OE_net_0                       : std_logic;
-signal I2C_0_SDA_M2F_net_0                          : std_logic;
-signal I2C_0_SDA_M2F_OE_net_0                       : std_logic;
-signal MMUART_0_TXD_M2F_net_0                       : std_logic;
-signal MMUART_1_TXD_M2F_net_0                       : std_logic;
-signal MSS_ADLIB_INST_SPI0_SCK_USBA_XCLK_OE         : std_logic;
-signal MSS_ADLIB_INST_SPI0_SCK_USBA_XCLK_OUT        : std_logic;
-signal MSS_ADLIB_INST_SPI0_SDO_USBA_STP_MGPIO6A_OE  : std_logic;
-signal MSS_ADLIB_INST_SPI0_SDO_USBA_STP_MGPIO6A_OUT : std_logic;
-signal MSS_ADLIB_INST_SPI0_SS0_USBA_NXT_MGPIO7A_OE  : std_logic;
-signal MSS_ADLIB_INST_SPI0_SS0_USBA_NXT_MGPIO7A_OUT : std_logic;
-signal MSS_RESET_N_M2F_net_0                        : std_logic;
-signal SPI_0_CLK_PAD_Y                              : std_logic;
-signal SPI_0_DI_PAD_Y                               : std_logic;
-signal SPI_0_DO_net_0                               : std_logic;
-signal SPI_0_SS0_PAD_Y                              : std_logic;
-signal SPI_0_DO_net_1                               : std_logic;
-signal I2C_0_SDA_M2F_net_1                          : std_logic;
-signal I2C_0_SDA_M2F_OE_net_1                       : std_logic;
-signal I2C_0_SCL_M2F_net_1                          : std_logic;
-signal I2C_0_SCL_M2F_OE_net_1                       : std_logic;
-signal MSS_RESET_N_M2F_net_1                        : std_logic;
-signal MMUART_0_TXD_M2F_net_1                       : std_logic;
-signal MMUART_1_TXD_M2F_net_1                       : std_logic;
-signal FIC_0_AHB_M_HWRITE_net_1                     : std_logic;
-signal FIC_2_APB_M_PRESET_N_0_net_0                 : std_logic;
-signal FIC_2_APB_M_PCLK_0_net_0                     : std_logic;
-signal FIC_2_APB_MASTER_0_PWRITE_net_0              : std_logic;
-signal FIC_2_APB_MASTER_0_PENABLE_net_0             : std_logic;
-signal FIC_2_APB_MASTER_0_PSELx_net_0               : std_logic;
-signal FIC_0_AHB_M_HADDR_net_1                      : std_logic_vector(31 downto 0);
-signal FIC_0_AHB_M_HWDATA_net_1                     : std_logic_vector(31 downto 0);
-signal FIC_0_AHB_M_HSIZE_net_1                      : std_logic_vector(1 downto 0);
-signal FIC_0_AHB_M_HTRANS_net_1                     : std_logic_vector(1 to 1);
-signal FIC_2_APB_MASTER_0_PADDR_net_0               : std_logic_vector(15 downto 2);
-signal FIC_2_APB_MASTER_0_PWDATA_net_0              : std_logic_vector(31 downto 0);
+signal FIC_0_APB_MASTER_PADDR           : std_logic_vector(31 downto 0);
+signal FIC_0_APB_MASTER_PENABLE         : std_logic;
+signal FIC_0_APB_MASTER_PSELx           : std_logic;
+signal FIC_0_APB_MASTER_PWDATA          : std_logic_vector(31 downto 0);
+signal FIC_0_APB_MASTER_PWRITE          : std_logic;
+signal FIC_2_APB_M_PCLK_0               : std_logic;
+signal FIC_2_APB_M_PRESET_N_0           : std_logic;
+signal FIC_2_APB_MASTER_0_PADDR         : std_logic_vector(15 downto 2);
+signal FIC_2_APB_MASTER_0_PENABLE       : std_logic;
+signal FIC_2_APB_MASTER_0_PSELx         : std_logic;
+signal FIC_2_APB_MASTER_0_PWDATA        : std_logic_vector(31 downto 0);
+signal FIC_2_APB_MASTER_0_PWRITE        : std_logic;
+signal MSS_RESET_N_M2F_net_0            : std_logic;
+signal MSS_RESET_N_M2F_net_1            : std_logic;
+signal FIC_0_APB_MASTER_PSELx_net_0     : std_logic;
+signal FIC_0_APB_MASTER_PWRITE_net_0    : std_logic;
+signal FIC_0_APB_MASTER_PENABLE_net_0   : std_logic;
+signal FIC_2_APB_M_PRESET_N_0_net_0     : std_logic;
+signal FIC_2_APB_M_PCLK_0_net_0         : std_logic;
+signal FIC_2_APB_MASTER_0_PWRITE_net_0  : std_logic;
+signal FIC_2_APB_MASTER_0_PENABLE_net_0 : std_logic;
+signal FIC_2_APB_MASTER_0_PSELx_net_0   : std_logic;
+signal FIC_0_APB_MASTER_PADDR_net_0     : std_logic_vector(31 downto 0);
+signal FIC_0_APB_MASTER_PWDATA_net_0    : std_logic_vector(31 downto 0);
+signal FIC_2_APB_MASTER_0_PADDR_net_0   : std_logic_vector(15 downto 2);
+signal FIC_2_APB_MASTER_0_PWDATA_net_0  : std_logic_vector(31 downto 0);
 ----------------------------------------------------------------------
 -- TiedOff Signals
 ----------------------------------------------------------------------
-signal GND_net                                      : std_logic;
-signal DM_IN_const_net_0                            : std_logic_vector(2 downto 0);
-signal DRAM_DQ_IN_const_net_0                       : std_logic_vector(17 downto 0);
-signal DRAM_DQS_IN_const_net_0                      : std_logic_vector(2 downto 0);
-signal DRAM_FIFO_WE_IN_const_net_0                  : std_logic_vector(1 downto 0);
-signal VCC_net                                      : std_logic;
-signal F2_DMAREADY_const_net_0                      : std_logic_vector(1 downto 0);
-signal F_DMAREADY_const_net_0                       : std_logic_vector(1 downto 0);
-signal F_FM0_ADDR_const_net_0                       : std_logic_vector(31 downto 0);
-signal F_FM0_SIZE_const_net_0                       : std_logic_vector(1 downto 0);
-signal F_FM0_WDATA_const_net_0                      : std_logic_vector(31 downto 0);
-signal FAB_LINESTATE_const_net_0                    : std_logic_vector(1 downto 0);
-signal FAB_VSTATUS_const_net_0                      : std_logic_vector(7 downto 0);
-signal FAB_XDATAIN_const_net_0                      : std_logic_vector(7 downto 0);
-signal RCGF_const_net_0                             : std_logic_vector(9 downto 0);
-signal RXDF_const_net_0                             : std_logic_vector(7 downto 0);
-signal F_ARADDR_HADDR1_const_net_0                  : std_logic_vector(31 downto 0);
-signal F_ARBURST_HTRANS1_const_net_0                : std_logic_vector(1 downto 0);
-signal F_ARID_HSEL1_const_net_0                     : std_logic_vector(3 downto 0);
-signal F_ARLEN_HBURST1_const_net_0                  : std_logic_vector(3 downto 0);
-signal F_ARLOCK_HMASTLOCK1_const_net_0              : std_logic_vector(1 downto 0);
-signal F_ARSIZE_HSIZE1_const_net_0                  : std_logic_vector(1 downto 0);
-signal F_AWADDR_HADDR0_const_net_0                  : std_logic_vector(31 downto 0);
-signal F_AWBURST_HTRANS0_const_net_0                : std_logic_vector(1 downto 0);
-signal F_AWID_HSEL0_const_net_0                     : std_logic_vector(3 downto 0);
-signal F_AWLEN_HBURST0_const_net_0                  : std_logic_vector(3 downto 0);
-signal F_AWLOCK_HMASTLOCK0_const_net_0              : std_logic_vector(1 downto 0);
-signal F_AWSIZE_HSIZE0_const_net_0                  : std_logic_vector(1 downto 0);
-signal F_WDATA_HWDATA01_const_net_0                 : std_logic_vector(63 downto 0);
-signal F_WID_HREADY01_const_net_0                   : std_logic_vector(3 downto 0);
-signal F_WSTRB_const_net_0                          : std_logic_vector(7 downto 0);
-signal MDDR_FABRIC_PADDR_const_net_0                : std_logic_vector(10 downto 2);
-signal MDDR_FABRIC_PWDATA_const_net_0               : std_logic_vector(15 downto 0);
+signal GND_net                          : std_logic;
+signal DM_IN_const_net_0                : std_logic_vector(2 downto 0);
+signal DRAM_DQ_IN_const_net_0           : std_logic_vector(17 downto 0);
+signal DRAM_DQS_IN_const_net_0          : std_logic_vector(2 downto 0);
+signal DRAM_FIFO_WE_IN_const_net_0      : std_logic_vector(1 downto 0);
+signal VCC_net                          : std_logic;
+signal F2_DMAREADY_const_net_0          : std_logic_vector(1 downto 0);
+signal F_DMAREADY_const_net_0           : std_logic_vector(1 downto 0);
+signal F_FM0_ADDR_const_net_0           : std_logic_vector(31 downto 0);
+signal F_FM0_SIZE_const_net_0           : std_logic_vector(1 downto 0);
+signal F_FM0_WDATA_const_net_0          : std_logic_vector(31 downto 0);
+signal FAB_LINESTATE_const_net_0        : std_logic_vector(1 downto 0);
+signal FAB_VSTATUS_const_net_0          : std_logic_vector(7 downto 0);
+signal FAB_XDATAIN_const_net_0          : std_logic_vector(7 downto 0);
+signal RCGF_const_net_0                 : std_logic_vector(9 downto 0);
+signal RXDF_const_net_0                 : std_logic_vector(7 downto 0);
+signal F_ARADDR_HADDR1_const_net_0      : std_logic_vector(31 downto 0);
+signal F_ARBURST_HTRANS1_const_net_0    : std_logic_vector(1 downto 0);
+signal F_ARID_HSEL1_const_net_0         : std_logic_vector(3 downto 0);
+signal F_ARLEN_HBURST1_const_net_0      : std_logic_vector(3 downto 0);
+signal F_ARLOCK_HMASTLOCK1_const_net_0  : std_logic_vector(1 downto 0);
+signal F_ARSIZE_HSIZE1_const_net_0      : std_logic_vector(1 downto 0);
+signal F_AWADDR_HADDR0_const_net_0      : std_logic_vector(31 downto 0);
+signal F_AWBURST_HTRANS0_const_net_0    : std_logic_vector(1 downto 0);
+signal F_AWID_HSEL0_const_net_0         : std_logic_vector(3 downto 0);
+signal F_AWLEN_HBURST0_const_net_0      : std_logic_vector(3 downto 0);
+signal F_AWLOCK_HMASTLOCK0_const_net_0  : std_logic_vector(1 downto 0);
+signal F_AWSIZE_HSIZE0_const_net_0      : std_logic_vector(1 downto 0);
+signal F_WDATA_HWDATA01_const_net_0     : std_logic_vector(63 downto 0);
+signal F_WID_HREADY01_const_net_0       : std_logic_vector(3 downto 0);
+signal F_WSTRB_const_net_0              : std_logic_vector(7 downto 0);
+signal MDDR_FABRIC_PADDR_const_net_0    : std_logic_vector(10 downto 2);
+signal MDDR_FABRIC_PWDATA_const_net_0   : std_logic_vector(15 downto 0);
 
 begin
 ----------------------------------------------------------------------
@@ -742,30 +660,16 @@ begin
  MDDR_FABRIC_PADDR_const_net_0   <= B"111111111";
  MDDR_FABRIC_PWDATA_const_net_0  <= B"1111111111111111";
 ----------------------------------------------------------------------
--- TieOff assignments
-----------------------------------------------------------------------
- FIC_0_AHB_M_HTRANS(0)            <= '0';
-----------------------------------------------------------------------
 -- Top level output port assignments
 ----------------------------------------------------------------------
- SPI_0_DO_net_1                   <= SPI_0_DO_net_0;
- SPI_0_DO                         <= SPI_0_DO_net_1;
- I2C_0_SDA_M2F_net_1              <= I2C_0_SDA_M2F_net_0;
- I2C_0_SDA_M2F                    <= I2C_0_SDA_M2F_net_1;
- I2C_0_SDA_M2F_OE_net_1           <= I2C_0_SDA_M2F_OE_net_0;
- I2C_0_SDA_M2F_OE                 <= I2C_0_SDA_M2F_OE_net_1;
- I2C_0_SCL_M2F_net_1              <= I2C_0_SCL_M2F_net_0;
- I2C_0_SCL_M2F                    <= I2C_0_SCL_M2F_net_1;
- I2C_0_SCL_M2F_OE_net_1           <= I2C_0_SCL_M2F_OE_net_0;
- I2C_0_SCL_M2F_OE                 <= I2C_0_SCL_M2F_OE_net_1;
  MSS_RESET_N_M2F_net_1            <= MSS_RESET_N_M2F_net_0;
  MSS_RESET_N_M2F                  <= MSS_RESET_N_M2F_net_1;
- MMUART_0_TXD_M2F_net_1           <= MMUART_0_TXD_M2F_net_0;
- MMUART_0_TXD_M2F                 <= MMUART_0_TXD_M2F_net_1;
- MMUART_1_TXD_M2F_net_1           <= MMUART_1_TXD_M2F_net_0;
- MMUART_1_TXD_M2F                 <= MMUART_1_TXD_M2F_net_1;
- FIC_0_AHB_M_HWRITE_net_1         <= FIC_0_AHB_M_HWRITE_net_0;
- FIC_0_AHB_M_HWRITE               <= FIC_0_AHB_M_HWRITE_net_1;
+ FIC_0_APB_MASTER_PSELx_net_0     <= FIC_0_APB_MASTER_PSELx;
+ FIC_0_APB_M_PSEL                 <= FIC_0_APB_MASTER_PSELx_net_0;
+ FIC_0_APB_MASTER_PWRITE_net_0    <= FIC_0_APB_MASTER_PWRITE;
+ FIC_0_APB_M_PWRITE               <= FIC_0_APB_MASTER_PWRITE_net_0;
+ FIC_0_APB_MASTER_PENABLE_net_0   <= FIC_0_APB_MASTER_PENABLE;
+ FIC_0_APB_M_PENABLE              <= FIC_0_APB_MASTER_PENABLE_net_0;
  FIC_2_APB_M_PRESET_N_0_net_0     <= FIC_2_APB_M_PRESET_N_0;
  FIC_2_APB_M_PRESET_N             <= FIC_2_APB_M_PRESET_N_0_net_0;
  FIC_2_APB_M_PCLK_0_net_0         <= FIC_2_APB_M_PCLK_0;
@@ -776,14 +680,10 @@ begin
  FIC_2_APB_M_PENABLE              <= FIC_2_APB_MASTER_0_PENABLE_net_0;
  FIC_2_APB_MASTER_0_PSELx_net_0   <= FIC_2_APB_MASTER_0_PSELx;
  FIC_2_APB_M_PSEL                 <= FIC_2_APB_MASTER_0_PSELx_net_0;
- FIC_0_AHB_M_HADDR_net_1          <= FIC_0_AHB_M_HADDR_net_0;
- FIC_0_AHB_M_HADDR(31 downto 0)   <= FIC_0_AHB_M_HADDR_net_1;
- FIC_0_AHB_M_HWDATA_net_1         <= FIC_0_AHB_M_HWDATA_net_0;
- FIC_0_AHB_M_HWDATA(31 downto 0)  <= FIC_0_AHB_M_HWDATA_net_1;
- FIC_0_AHB_M_HSIZE_net_1          <= FIC_0_AHB_M_HSIZE_net_0;
- FIC_0_AHB_M_HSIZE(1 downto 0)    <= FIC_0_AHB_M_HSIZE_net_1;
- FIC_0_AHB_M_HTRANS_net_1(1)      <= FIC_0_AHB_M_HTRANS_net_0;
- FIC_0_AHB_M_HTRANS(1)            <= FIC_0_AHB_M_HTRANS_net_1(1);
+ FIC_0_APB_MASTER_PADDR_net_0     <= FIC_0_APB_MASTER_PADDR;
+ FIC_0_APB_M_PADDR(31 downto 0)   <= FIC_0_APB_MASTER_PADDR_net_0;
+ FIC_0_APB_MASTER_PWDATA_net_0    <= FIC_0_APB_MASTER_PWDATA;
+ FIC_0_APB_M_PWDATA(31 downto 0)  <= FIC_0_APB_MASTER_PWDATA_net_0;
  FIC_2_APB_MASTER_0_PADDR_net_0   <= FIC_2_APB_MASTER_0_PADDR;
  FIC_2_APB_M_PADDR(15 downto 2)   <= FIC_2_APB_MASTER_0_PADDR_net_0;
  FIC_2_APB_MASTER_0_PWDATA_net_0  <= FIC_2_APB_MASTER_0_PWDATA;
@@ -796,7 +696,7 @@ MSS_ADLIB_INST : MSS_010
     generic map( 
         ACT_UBITS         => ( x"FFFFFFFFFFFFFF" ),
         DDR_CLK_FREQ      => ( 100.0 ),
-        INIT              => ( "00" & x"000300C00000030000000000000000000000C000000000000000000000000000000000000000000000000000000000001203610000000000000000000000000000000000000000F00000000F000000000000000000000000000000007FFFFFFFB000001007C33C000000006092C0104003FFFFE4000000000000100000000F0F11C000001825D04010842108421000001FE34001FF8000000400000000020091007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" ),
+        INIT              => ( "00" & x"0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000F00000000F000000000000000000000000000000007FFFFFFFB000001007C33C000000006092C0104003FFFFE400000000000010000000000F01C000001FE5FE4010842108421000001FE34001FF8000000400000000020091007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" ),
         MEMORYFILE        => ( "ENVM_init.mem" ),
         RTC_MAIN_XTL_FREQ => ( 0.0 ),
         RTC_MAIN_XTL_MODE => ( "" )
@@ -821,9 +721,9 @@ MSS_ADLIB_INST : MSS_010
         F_FM0_TRANS1                            => GND_net, -- tied to '0' from definition
         F_FM0_WDATA                             => F_FM0_WDATA_const_net_0, -- tied to X"0" from definition
         F_FM0_WRITE                             => GND_net, -- tied to '0' from definition
-        F_HM0_RDATA                             => FIC_0_AHB_M_HRDATA,
-        F_HM0_READY                             => FIC_0_AHB_M_HREADY,
-        F_HM0_RESP                              => FIC_0_AHB_M_HRESP,
+        F_HM0_RDATA                             => FIC_0_APB_M_PRDATA,
+        F_HM0_READY                             => FIC_0_APB_M_PREADY,
+        F_HM0_RESP                              => FIC_0_APB_M_PSLVERR,
         FAB_AVALID                              => VCC_net, -- tied to '1' from definition
         FAB_HOSTDISCON                          => VCC_net, -- tied to '1' from definition
         FAB_IDDIG                               => VCC_net, -- tied to '1' from definition
@@ -840,9 +740,9 @@ MSS_ADLIB_INST : MSS_010
         FAB_VSTATUS                             => FAB_VSTATUS_const_net_0, -- tied to X"1" from definition
         FAB_XDATAIN                             => FAB_XDATAIN_const_net_0, -- tied to X"1" from definition
         GTX_CLKPF                               => VCC_net, -- tied to '1' from definition
-        I2C0_BCLK                               => I2C_0_BCLK,
-        I2C0_SCL_F2H_SCP                        => I2C_0_SCL_F2M,
-        I2C0_SDA_F2H_SCP                        => I2C_0_SDA_F2M,
+        I2C0_BCLK                               => VCC_net, -- tied to '1' from definition
+        I2C0_SCL_F2H_SCP                        => VCC_net, -- tied to '1' from definition
+        I2C0_SDA_F2H_SCP                        => VCC_net, -- tied to '1' from definition
         I2C1_BCLK                               => VCC_net, -- tied to '1' from definition
         I2C1_SCL_F2H_SCP                        => VCC_net, -- tied to '1' from definition
         I2C1_SDA_F2H_SCP                        => VCC_net, -- tied to '1' from definition
@@ -885,7 +785,7 @@ MSS_ADLIB_INST : MSS_010
         MMUART0_DTR_F2H_SCP                     => VCC_net, -- tied to '1' from definition
         MMUART0_RI_F2H_SCP                      => VCC_net, -- tied to '1' from definition
         MMUART0_RTS_F2H_SCP                     => VCC_net, -- tied to '1' from definition
-        MMUART0_RXD_F2H_SCP                     => MMUART_0_RXD_F2M,
+        MMUART0_RXD_F2H_SCP                     => VCC_net, -- tied to '1' from definition
         MMUART0_SCK_F2H_SCP                     => VCC_net, -- tied to '1' from definition
         MMUART0_TXD_F2H_SCP                     => VCC_net, -- tied to '1' from definition
         MMUART1_CTS_F2H_SCP                     => VCC_net, -- tied to '1' from definition
@@ -893,7 +793,7 @@ MSS_ADLIB_INST : MSS_010
         MMUART1_DSR_F2H_SCP                     => VCC_net, -- tied to '1' from definition
         MMUART1_RI_F2H_SCP                      => VCC_net, -- tied to '1' from definition
         MMUART1_RTS_F2H_SCP                     => VCC_net, -- tied to '1' from definition
-        MMUART1_RXD_F2H_SCP                     => MMUART_1_RXD_F2M,
+        MMUART1_RXD_F2H_SCP                     => VCC_net, -- tied to '1' from definition
         MMUART1_SCK_F2H_SCP                     => VCC_net, -- tied to '1' from definition
         MMUART1_TXD_F2H_SCP                     => VCC_net, -- tied to '1' from definition
         PER2_FABRIC_PRDATA                      => FIC_2_APB_M_PRDATA,
@@ -997,10 +897,10 @@ MSS_ADLIB_INST : MSS_010
         RGMII_TXD1_RMII_TXD1_USBB_STP_IN        => GND_net,
         RGMII_TXD2_USBB_DATA5_IN                => GND_net,
         RGMII_TXD3_USBB_DATA6_IN                => GND_net,
-        SPI0_SCK_USBA_XCLK_IN                   => SPI_0_CLK_PAD_Y,
-        SPI0_SDI_USBA_DIR_MGPIO5A_IN            => SPI_0_DI_PAD_Y,
+        SPI0_SCK_USBA_XCLK_IN                   => GND_net,
+        SPI0_SDI_USBA_DIR_MGPIO5A_IN            => GND_net,
         SPI0_SDO_USBA_STP_MGPIO6A_IN            => GND_net,
-        SPI0_SS0_USBA_NXT_MGPIO7A_IN            => SPI_0_SS0_PAD_Y,
+        SPI0_SS0_USBA_NXT_MGPIO7A_IN            => GND_net,
         SPI0_SS1_USBA_DATA5_MGPIO8A_IN          => GND_net,
         SPI0_SS2_USBA_DATA6_MGPIO9A_IN          => GND_net,
         SPI0_SS3_USBA_DATA7_MGPIO10A_IN         => GND_net,
@@ -1030,13 +930,13 @@ MSS_ADLIB_INST : MSS_010
         F_FM0_RDATA                             => OPEN,
         F_FM0_READYOUT                          => OPEN,
         F_FM0_RESP                              => OPEN,
-        F_HM0_ADDR                              => FIC_0_AHB_M_HADDR_net_0,
-        F_HM0_ENABLE                            => OPEN,
-        F_HM0_SEL                               => OPEN,
-        F_HM0_SIZE                              => FIC_0_AHB_M_HSIZE_net_0,
-        F_HM0_TRANS1                            => FIC_0_AHB_M_HTRANS_net_0,
-        F_HM0_WDATA                             => FIC_0_AHB_M_HWDATA_net_0,
-        F_HM0_WRITE                             => FIC_0_AHB_M_HWRITE_net_0,
+        F_HM0_ADDR                              => FIC_0_APB_MASTER_PADDR,
+        F_HM0_ENABLE                            => FIC_0_APB_MASTER_PENABLE,
+        F_HM0_SEL                               => FIC_0_APB_MASTER_PSELx,
+        F_HM0_SIZE                              => OPEN,
+        F_HM0_TRANS1                            => OPEN,
+        F_HM0_WDATA                             => FIC_0_APB_MASTER_PWDATA,
+        F_HM0_WRITE                             => FIC_0_APB_MASTER_PWRITE,
         FAB_CHRGVBUS                            => OPEN,
         FAB_DISCHRGVBUS                         => OPEN,
         FAB_DMPULLDOWN                          => OPEN,
@@ -1059,10 +959,10 @@ MSS_ADLIB_INST : MSS_010
         H2F_INTERRUPT                           => OPEN,
         H2F_NMI                                 => OPEN,
         H2FCALIB                                => OPEN,
-        I2C0_SCL_MGPIO31B_H2F_A                 => I2C_0_SCL_M2F_net_0,
-        I2C0_SCL_MGPIO31B_H2F_B                 => I2C_0_SCL_M2F_OE_net_0,
-        I2C0_SDA_MGPIO30B_H2F_A                 => I2C_0_SDA_M2F_net_0,
-        I2C0_SDA_MGPIO30B_H2F_B                 => I2C_0_SDA_M2F_OE_net_0,
+        I2C0_SCL_MGPIO31B_H2F_A                 => OPEN,
+        I2C0_SCL_MGPIO31B_H2F_B                 => OPEN,
+        I2C0_SDA_MGPIO30B_H2F_A                 => OPEN,
+        I2C0_SDA_MGPIO30B_H2F_B                 => OPEN,
         I2C1_SCL_MGPIO1A_H2F_A                  => OPEN,
         I2C1_SCL_MGPIO1A_H2F_B                  => OPEN,
         I2C1_SDA_MGPIO0A_H2F_A                  => OPEN,
@@ -1086,7 +986,7 @@ MSS_ADLIB_INST : MSS_010
         MMUART0_RXD_MGPIO28B_H2F_B              => OPEN,
         MMUART0_SCK_MGPIO29B_H2F_A              => OPEN,
         MMUART0_SCK_MGPIO29B_H2F_B              => OPEN,
-        MMUART0_TXD_MGPIO27B_H2F_A              => MMUART_0_TXD_M2F_net_0,
+        MMUART0_TXD_MGPIO27B_H2F_A              => OPEN,
         MMUART0_TXD_MGPIO27B_H2F_B              => OPEN,
         MMUART1_DTR_MGPIO12B_H2F_A              => OPEN,
         MMUART1_RTS_MGPIO11B_H2F_A              => OPEN,
@@ -1095,7 +995,7 @@ MSS_ADLIB_INST : MSS_010
         MMUART1_RXD_MGPIO26B_H2F_B              => OPEN,
         MMUART1_SCK_MGPIO25B_H2F_A              => OPEN,
         MMUART1_SCK_MGPIO25B_H2F_B              => OPEN,
-        MMUART1_TXD_MGPIO24B_H2F_A              => MMUART_1_TXD_M2F_net_0,
+        MMUART1_TXD_MGPIO24B_H2F_A              => OPEN,
         MMUART1_TXD_MGPIO24B_H2F_B              => OPEN,
         MPLL_LOCK                               => OPEN,
         PER2_FABRIC_PADDR                       => FIC_2_APB_MASTER_0_PADDR,
@@ -1218,10 +1118,10 @@ MSS_ADLIB_INST : MSS_010
         RGMII_TXD1_RMII_TXD1_USBB_STP_OUT       => OPEN,
         RGMII_TXD2_USBB_DATA5_OUT               => OPEN,
         RGMII_TXD3_USBB_DATA6_OUT               => OPEN,
-        SPI0_SCK_USBA_XCLK_OUT                  => MSS_ADLIB_INST_SPI0_SCK_USBA_XCLK_OUT,
+        SPI0_SCK_USBA_XCLK_OUT                  => OPEN,
         SPI0_SDI_USBA_DIR_MGPIO5A_OUT           => OPEN,
-        SPI0_SDO_USBA_STP_MGPIO6A_OUT           => MSS_ADLIB_INST_SPI0_SDO_USBA_STP_MGPIO6A_OUT,
-        SPI0_SS0_USBA_NXT_MGPIO7A_OUT           => MSS_ADLIB_INST_SPI0_SS0_USBA_NXT_MGPIO7A_OUT,
+        SPI0_SDO_USBA_STP_MGPIO6A_OUT           => OPEN,
+        SPI0_SS0_USBA_NXT_MGPIO7A_OUT           => OPEN,
         SPI0_SS1_USBA_DATA5_MGPIO8A_OUT         => OPEN,
         SPI0_SS2_USBA_DATA6_MGPIO9A_OUT         => OPEN,
         SPI0_SS3_USBA_DATA7_MGPIO10A_OUT        => OPEN,
@@ -1274,10 +1174,10 @@ MSS_ADLIB_INST : MSS_010
         RGMII_TXD1_RMII_TXD1_USBB_STP_OE        => OPEN,
         RGMII_TXD2_USBB_DATA5_OE                => OPEN,
         RGMII_TXD3_USBB_DATA6_OE                => OPEN,
-        SPI0_SCK_USBA_XCLK_OE                   => MSS_ADLIB_INST_SPI0_SCK_USBA_XCLK_OE,
+        SPI0_SCK_USBA_XCLK_OE                   => OPEN,
         SPI0_SDI_USBA_DIR_MGPIO5A_OE            => OPEN,
-        SPI0_SDO_USBA_STP_MGPIO6A_OE            => MSS_ADLIB_INST_SPI0_SDO_USBA_STP_MGPIO6A_OE,
-        SPI0_SS0_USBA_NXT_MGPIO7A_OE            => MSS_ADLIB_INST_SPI0_SS0_USBA_NXT_MGPIO7A_OE,
+        SPI0_SDO_USBA_STP_MGPIO6A_OE            => OPEN,
+        SPI0_SS0_USBA_NXT_MGPIO7A_OE            => OPEN,
         SPI0_SS1_USBA_DATA5_MGPIO8A_OE          => OPEN,
         SPI0_SS2_USBA_DATA6_MGPIO9A_OE          => OPEN,
         SPI0_SS3_USBA_DATA7_MGPIO10A_OE         => OPEN,
@@ -1293,45 +1193,6 @@ MSS_ADLIB_INST : MSS_010
         SPI1_SS6_MGPIO23A_OE                    => OPEN,
         SPI1_SS7_MGPIO24A_OE                    => OPEN,
         USBC_XCLK_OE                            => OPEN 
-        );
--- SPI_0_CLK_PAD
-SPI_0_CLK_PAD : BIBUF
-    port map( 
-        -- Inputs
-        D   => MSS_ADLIB_INST_SPI0_SCK_USBA_XCLK_OUT,
-        E   => MSS_ADLIB_INST_SPI0_SCK_USBA_XCLK_OE,
-        -- Outputs
-        Y   => SPI_0_CLK_PAD_Y,
-        -- Inouts
-        PAD => SPI_0_CLK 
-        );
--- SPI_0_DI_PAD
-SPI_0_DI_PAD : INBUF
-    port map( 
-        -- Inputs
-        PAD => SPI_0_DI,
-        -- Outputs
-        Y   => SPI_0_DI_PAD_Y 
-        );
--- SPI_0_DO_PAD
-SPI_0_DO_PAD : TRIBUFF
-    port map( 
-        -- Inputs
-        D   => MSS_ADLIB_INST_SPI0_SDO_USBA_STP_MGPIO6A_OUT,
-        E   => MSS_ADLIB_INST_SPI0_SDO_USBA_STP_MGPIO6A_OE,
-        -- Outputs
-        PAD => SPI_0_DO_net_0 
-        );
--- SPI_0_SS0_PAD
-SPI_0_SS0_PAD : BIBUF
-    port map( 
-        -- Inputs
-        D   => MSS_ADLIB_INST_SPI0_SS0_USBA_NXT_MGPIO7A_OUT,
-        E   => MSS_ADLIB_INST_SPI0_SS0_USBA_NXT_MGPIO7A_OE,
-        -- Outputs
-        Y   => SPI_0_SS0_PAD_Y,
-        -- Inouts
-        PAD => SPI_0_SS0 
         );
 
 end RTL;

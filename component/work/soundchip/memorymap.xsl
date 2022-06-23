@@ -685,7 +685,7 @@
 	    <Comment-->
 
             <xsl:apply-templates select="addressNames" />
-            <a href="#memmap">master list</a>,
+            <a href="#memmap">Initiator list</a>,
             <xsl:call-template name="top-link"/>
 
             <br/><br/>
@@ -704,7 +704,7 @@
         <xsl:value-of select="text()"/>
     </xsl:template>
 
-    <xsl:template match="master">
+    <xsl:template match="Initiator">
         <li>
             <div class="content">
                 <xsl:value-of select="text()"/>

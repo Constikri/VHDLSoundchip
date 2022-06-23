@@ -8,7 +8,7 @@
 </header>
 <row>
  <cell>Date:</cell>
- <cell>Wed Aug 18 14:23:36 2021</cell>
+ <cell>Sun Jan 23 18:58:47 2022</cell>
 </row>
 <separator/>
 <row>
@@ -33,19 +33,6 @@
 </row>
 </table>
 <text></text>
-<section>
-<name>CCC Generator Messages</name>
-<table>
-<header>
- <cell>Severity</cell>
- <cell>Message</cell>
-</header>
-<row>
- <cell>Warning</cell>
- <cell>The selected Lock Window is too low when using the 1MHz RC oscillator as the reference clock. The PLL may not lock. Select a Lock Window settings of 64000 ppm</cell>
-</row>
-</table>
-</section>
 <section>
 <name>Outputs Configuration Summary</name>
 <table>
@@ -77,11 +64,11 @@
 </header>
 <row>
  <cell>Reference clock frequency</cell>
- <cell>1 MHz</cell>
+ <cell>50 MHz</cell>
 </row>
 <row>
  <cell>Reference clock source</cell>
- <cell>On-chip 1 MHz RC Oscillator</cell>
+ <cell>On-chip 25/50 MHz RC Oscillator</cell>
 </row>
 <row>
  <cell>Output frequency</cell>
@@ -98,7 +85,7 @@
 </row>
 <row>
  <cell>CCC reference clock divider</cell>
- <cell>1</cell>
+ <cell>2</cell>
 </row>
 <separator/>
 <row>
@@ -111,7 +98,7 @@
 </row>
 <row>
  <cell>CCC feedback divider</cell>
- <cell>100</cell>
+ <cell>4</cell>
 </row>
 <row>
  <cell>External feedback divider</cell>
@@ -168,13 +155,13 @@
 <row>
  <cell>FCCC_RFMUX_CR</cell>
  <cell>0x01</cell>
- <cell>0x0a</cell>
+ <cell>0x0b</cell>
  <cell>RFMUX configuration register</cell>
 </row>
 <row>
  <cell>FCCC_RFDIV_CR</cell>
  <cell>0x02</cell>
- <cell>0x00</cell>
+ <cell>0x01</cell>
  <cell>RFDIV configuration register</cell>
 </row>
 <row>
@@ -186,7 +173,7 @@
 <row>
  <cell>FCCC_FBDIV_CR0</cell>
  <cell>0x04</cell>
- <cell>0x63</cell>
+ <cell>0x03</cell>
  <cell>FBDIV configuration register 0</cell>
 </row>
 <row>
@@ -360,7 +347,7 @@
 <row>
  <cell>FCCC_PLL_CR10</cell>
  <cell>0x21</cell>
- <cell>0x01</cell>
+ <cell>0x07</cell>
  <cell>PLL loop filter range configuration register</cell>
 </row>
 <row>
