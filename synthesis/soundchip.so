@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>soundchip</design>
+	<target_verilog>C:\Users\Constantin\Documents\VHDLSoundchip\synthesis\soundchip.vm</target_verilog>
+</SynplifyOutput>

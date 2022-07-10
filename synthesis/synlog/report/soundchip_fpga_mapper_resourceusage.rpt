@@ -1,0 +1,41 @@
+Resource Usage Report for soundchip 
+
+Mapping to part: m2s010vf400std
+Cell usage:
+CCC             1 use
+CLKINT          5 uses
+RCOSC_25_50MHZ  1 use
+RCOSC_25_50MHZ_FAB  1 use
+SYSRESET        1 use
+CFG2           34 uses
+CFG3           8 uses
+CFG4           5 uses
+
+Carry cells:
+ARI1            36 uses - used for arithmetic functions
+
+
+Sequential Cells: 
+SLE            151 uses
+
+DSP Blocks:    0 of 22 (0%)
+
+I/O ports: 7
+I/O primitives: 6
+INBUF          3 uses
+OUTBUF         3 uses
+
+
+Global Clock Buffers: 5
+
+Total LUTs:    83
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  151 + 0 + 0 + 0 = 151;
+Total number of LUTs after P&R:  83 + 0 + 0 + 0 = 83;
+

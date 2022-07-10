@@ -1,0 +1,8 @@
+@W: CL240 :"C:\Users\Constantin\Documents\VHDLSoundchip\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":16:10:16:19|Signal XTLOSC_O2F is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\Constantin\Documents\VHDLSoundchip\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":15:10:15:19|Signal XTLOSC_CCC is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\Constantin\Documents\VHDLSoundchip\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":14:10:14:23|Signal RCOSC_1MHZ_O2F is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\Constantin\Documents\VHDLSoundchip\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":13:10:13:23|Signal RCOSC_1MHZ_CCC is floating; a simulation mismatch is possible.
+@W: CL117 :"C:\Users\Constantin\Documents\VHDLSoundchip\hdl\data_receiver.vhd":38:8:38:9|Latch generated from process for signal data_right(15 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\Constantin\Documents\VHDLSoundchip\hdl\data_receiver.vhd":38:8:38:9|Latch generated from process for signal data_left(15 downto 0); possible missing assignment in an if or case statement.
+@W: CL260 :"C:\Users\Constantin\Documents\VHDLSoundchip\hdl\delta_adder.vhd":41:2:41:3|Pruning register bit 17 of data_out(17 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+

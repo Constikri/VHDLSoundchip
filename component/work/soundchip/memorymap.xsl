@@ -717,7 +717,7 @@
             <xsl:if test="count = 1">
                 <tr bgcolor="#aaaacc">
 	
-                    <th rowspan="1">Peripheral</th>
+                    <th rowspan="1">Target</th>
                     <th colspan="1">Offset Address</th>
 		    <th colspan="1">Range  </th>
 		    <th colspan="1">High Address  </th>
@@ -728,7 +728,7 @@
             <xsl:if test="count &gt; 1">
                 <tr bgcolor="#aaaacc">
 	
-                    <th rowspan="2">Peripheral</th>
+                    <th rowspan="2">Target</th>
                     <th colspan="2">Offset Address</th>
 		    <th colspan="1" rowspan="2">Range  </th>
 		     <th colspan="2">High Address  </th>

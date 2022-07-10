@@ -23,8 +23,7 @@ use IEEE.numeric_std.all;
 
 entity dac is
 port (
-    --<port_name> : <direction> <type>;
-	data_in : IN unsigned(15 downto 0);
+	data_in : IN std_logic_vector(15 downto 0);
 	clk     : IN std_logic;
 	reset   : IN std_logic;
     dac_out : OUT std_logic
@@ -36,7 +35,7 @@ architecture architecture_dac of dac is
    
    component delta_adder is
 		port (
-			data_in  : IN  unsigned(15 downto 0);
+			data_in  : IN  std_logic_vector(15 downto 0);
 			delta : IN  std_logic;
 			clk   : IN  std_logic;
 			reset : IN  std_logic;
@@ -55,7 +54,7 @@ begin
 
 	dac_out <= delta_sig;
 	
-	DELTA_ADDER1: delta_adder port map (
+	DELTA_ADDER_0: delta_adder port map (
 		data_in => data_in,
 		delta   => delta_sig,
 		clk     => clk,
@@ -63,7 +62,7 @@ begin
 		data_out => data_delta
 	);
 	
-	SIGMA_ADDER1: sigma_adder port map (
+	SIGMA_ADDER_0: sigma_adder port map (
 		delta_in => data_delta,
 		clk      => clk,
 		reset    => reset,

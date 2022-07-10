@@ -1,0 +1,4 @@
+CKID0001:@|S:FCCC_C0_0.FCCC_C0_0.CCC_INST@|E:dac_1.SIGMA_ADDER_0.sigma_register[15]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:FCCC_C0_0.FCCC_C0_0.CCC_INST@|E:SPI_SLAVE_0.bit_cnt[4]@|F:@syn_sample_clock_path1==CKID0002@|M:ClockId0002 
+CKID0003:@|S:SPI_SLAVE_0.DOUT_VLD@|E:data_receiver_0.data_right[6]@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003 
+CKID0004:@|S:OSC_C0_0.OSC_C0_0.I_RCOSC_25_50MHZ@|E:CORERESET_PF_C0_0.CORERESET_PF_C0_0.dff_0@|F:@syn_sample_clock_path==CKID0004@|M:ClockId0004 

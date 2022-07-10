@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\Users\Constantin\Documents\VHDLSoundchip\synthesis\synlog\soundchip_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>270.6 MHz</data>
+<data>6.305</data>
+</row>
+<row>
+<data>FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>476.6 MHz</data>
+<data>7.902</data>
+</row>
+<row>
+<data>OSC_C0_0/OSC_C0_0/I_RCOSC_25_50MHZ/CLKOUT</data>
+<data>50.0 MHz</data>
+<data>1190.9 MHz</data>
+<data>19.160</data>
+</row>
+<row>
+<data>SPI_SLAVE|DOUT_VLD_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>System</data>
+<data>100.0 MHz</data>
+<data>NA</data>
+<data>18.538</data>
+</row>
+</report_table>

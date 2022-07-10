@@ -1,0 +1,8 @@
+DESIGN=soundchip
+DESDIR=C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip
+TARGET_DIR=C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip
+FAM=SmartFusion2
+DIE=PA4M1000_N
+PACKAGE=vf256
+SPEED=STD
+PDC_FILE=C:\Users\Constantin\Documents\VHDLSoundchip\constraint\io\io_const.pdc,,C:\Users\Constantin\Documents\VHDLSoundchip\constraint\io\root_io.pdc,,C:\Users\Constantin\Documents\VHDLSoundchip\constraint\fp\floor_plan_constraints.pdc,,

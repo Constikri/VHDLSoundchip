@@ -1,0 +1,93 @@
+m255
+K4
+z2
+!s11e vcom 2021.3 2021.07, Jul 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Constantin/Documents/VHDLSoundchip/simulation
+Ecorereset_pf_c0_corereset_pf_c0_0_corereset_pf
+Z1 w1656854121
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 25
+R0
+Z4 8C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/core/corereset_pf.vhd
+Z5 FC:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/core/corereset_pf.vhd
+l0
+L23 1
+VXfihLP=Ez[?0iFKHlgT>K2
+!s100 Vegj7>8ZX4eA5D^VdVUI52
+Z6 OW;C;2021.3;73
+33
+Z7 !s110 1657480382
+!i10b 1
+Z8 !s108 1657480382.000000
+Z9 !s90 -reportprogress|300|-2008|-explicit|-work|CORERESET_PF_LIB|C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/core/corereset_pf.vhd|
+Z10 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/core/corereset_pf.vhd|
+!i113 1
+Z11 o-2008 -explicit -work CORERESET_PF_LIB -O0
+Z12 tCvgOpt 0
+Aarchitecture_corereset_pf
+R2
+R3
+DEx4 work 46 corereset_pf_c0_corereset_pf_c0_0_corereset_pf 0 22 XfihLP=Ez[?0iFKHlgT>K2
+!i122 25
+l43
+L35 36
+VNga<ofZn9GHhRzAhk6RX00
+!s100 O;g0zPOVAACT6S9REifYG3
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecorereset_pf_tb
+R1
+R2
+R3
+!i122 26
+R0
+Z13 8C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd
+Z14 FC:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd
+l0
+L32 1
+VgzLW6CbRMdInH`YLeQBIo2
+!s100 K1F6KEE?E?MW6Umm:QCj00
+R6
+33
+Z15 !s110 1657480386
+!i10b 1
+Z16 !s108 1657480386.000000
+Z17 !s90 -reportprogress|300|-2008|-explicit|-work|CORERESET_PF_LIB|C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd|
+Z18 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+Z19 DEx4 work 15 corereset_pf_tb 0 22 gzLW6CbRMdInH`YLeQBIo2
+!i122 26
+l65
+Z20 L35 131
+Z21 V=4e:fJeI2]L06IaKo]hoJ1
+Z22 !s100 :6Pl9agPB`iE=hKNNkWlO3
+R6
+33
+R15
+!i10b 1
+R16
+R17
+R18
+!i113 1
+R11
+R12

@@ -1,0 +1,40 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:"C:\Users\Constantin\Documents\VHDLSoundchip\component\work\soundchip\soundchip.vhd":17:7:17:15|Top entity is set to soundchip.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Constantin\Documents\VHDLSoundchip\component\work\CORERESET_PF_C0\CORERESET_PF_C0_0\core\corereset_pf.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Constantin\Documents\VHDLSoundchip\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Constantin\Documents\VHDLSoundchip\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Constantin\Documents\VHDLSoundchip\hdl\spi_slave.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Constantin\Documents\VHDLSoundchip\hdl\delta_adder.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Constantin\Documents\VHDLSoundchip\hdl\sigma_adder.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Constantin\Documents\VHDLSoundchip\hdl\data_receiver.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Constantin\Documents\VHDLSoundchip\component\work\CORERESET_PF_C0\CORERESET_PF_C0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Constantin\Documents\VHDLSoundchip\component\work\FCCC_C0\FCCC_C0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Constantin\Documents\VHDLSoundchip\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Constantin\Documents\VHDLSoundchip\component\work\OSC_C0\OSC_C0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Constantin\Documents\VHDLSoundchip\hdl\dac.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Constantin\Documents\VHDLSoundchip\component\work\soundchip\soundchip.vhd'.
+@N: CD231 :"C:\Microsemi\Libero_SoC_v2022.1\SynplifyPro\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\Users\Constantin\Documents\VHDLSoundchip\component\work\soundchip\soundchip.vhd":17:7:17:15|Synthesizing work.soundchip.rtl.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v2022.1\SynplifyPro\lib\generic\smartfusion2.vhd":790:10:790:17|Synthesizing smartfusion2.sysreset.syn_black_box.
+@N: CD630 :"C:\Users\Constantin\Documents\VHDLSoundchip\hdl\spi_slave.vhd":16:7:16:15|Synthesizing work.spi_slave.rtl.
+@N: CD364 :"C:\Users\Constantin\Documents\VHDLSoundchip\hdl\spi_slave.vhd":168:20:168:29|Removing redundant assignment.
+@N: CD630 :"C:\Users\Constantin\Documents\VHDLSoundchip\component\work\OSC_C0\OSC_C0.vhd":39:7:39:12|Synthesizing work.osc_c0.rtl.
+@N: CD630 :"C:\Users\Constantin\Documents\VHDLSoundchip\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":8:7:8:25|Synthesizing work.osc_c0_osc_c0_0_osc.def_arch.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v2022.1\SynplifyPro\lib\generic\smartfusion2.vhd":562:10:562:15|Synthesizing smartfusion2.clkint.syn_black_box.
+@N: CD630 :"C:\Users\Constantin\Documents\VHDLSoundchip\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd":19:7:19:20|Synthesizing work.rcosc_25_50mhz.def_arch.
+@N: CD630 :"C:\Users\Constantin\Documents\VHDLSoundchip\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd":79:7:79:24|Synthesizing work.rcosc_25_50mhz_fab.def_arch.
+@N: CD630 :"C:\Users\Constantin\Documents\VHDLSoundchip\component\work\FCCC_C0\FCCC_C0.vhd":145:7:145:13|Synthesizing work.fccc_c0.rtl.
+@N: CD630 :"C:\Users\Constantin\Documents\VHDLSoundchip\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd":8:7:8:28|Synthesizing work.fccc_c0_fccc_c0_0_fccc.def_arch.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v2022.1\SynplifyPro\lib\generic\smartfusion2.vhd":798:10:798:12|Synthesizing smartfusion2.ccc.syn_black_box.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v2022.1\SynplifyPro\lib\generic\smartfusion2.vhd":576:10:576:12|Synthesizing smartfusion2.gnd.syn_black_box.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v2022.1\SynplifyPro\lib\generic\smartfusion2.vhd":582:10:582:12|Synthesizing smartfusion2.vcc.syn_black_box.
+@N: CD630 :"C:\Users\Constantin\Documents\VHDLSoundchip\hdl\data_receiver.vhd":23:7:23:19|Synthesizing work.data_receiver.architecture_data_receiver.
+@N: CD630 :"C:\Users\Constantin\Documents\VHDLSoundchip\hdl\dac.vhd":24:7:24:9|Synthesizing work.dac.architecture_dac.
+@N: CD630 :"C:\Users\Constantin\Documents\VHDLSoundchip\hdl\sigma_adder.vhd":24:7:24:17|Synthesizing work.sigma_adder.architecture_sigma_adder.
+@N: CD630 :"C:\Users\Constantin\Documents\VHDLSoundchip\hdl\delta_adder.vhd":24:7:24:17|Synthesizing work.delta_adder.architecture_delta_adder.
+@N: CD630 :"C:\Users\Constantin\Documents\VHDLSoundchip\component\work\CORERESET_PF_C0\CORERESET_PF_C0.vhd":29:7:29:21|Synthesizing work.corereset_pf_c0.rtl.
+@N: CD630 :"C:\Users\Constantin\Documents\VHDLSoundchip\component\work\CORERESET_PF_C0\CORERESET_PF_C0_0\core\corereset_pf.vhd":23:7:23:52|Synthesizing corereset_pf_lib.corereset_pf_c0_corereset_pf_c0_0_corereset_pf.architecture_corereset_pf.
+@N: CL159 :"C:\Users\Constantin\Documents\VHDLSoundchip\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":10:10:10:12|Input XTL is unused.
+@N|Running in 64-bit mode
+

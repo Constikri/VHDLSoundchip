@@ -1,0 +1,7 @@
+C:\Microsemi\Libero_SoC_v2022.1\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  work.soundchip  -multisrs  C:\Users\Constantin\Documents\VHDLSoundchip\synthesis\synwork\soundchip_comp.srs  -osyn  C:\Users\Constantin\Documents\VHDLSoundchip\synthesis\synwork\soundchip_mult.srs  -log  C:\Users\Constantin\Documents\VHDLSoundchip\synthesis\synlog\soundchip_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\Microsemi\Libero_SoC_v2022.1\SynplifyPro\bin64\syn_nfilter.exe -link -top work.soundchip -multisrs ..\synwork\soundchip_comp.srs -osyn ..\synwork\soundchip_mult.srs -log ..\synlog\soundchip_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\soundchip_comp.srs|io:i|time:1657480682|size:18623|exec:0|csum:24446475802FF3FC62374702EDC27701
+file:..\synwork\soundchip_mult.srs|io:o|time:1657480683|size:5343|exec:0|csum:
+file:..\synlog\soundchip_multi_srs_gen.srr|io:o|time:1657480683|size:1164|exec:0|csum:
+file:..\..\..\..\..\..\Microsemi\Libero_SoC_v2022.1\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1646899183|size:8735744|exec:1|csum:DBF1450D743508EFEEE3FEEA6591E533

@@ -1,0 +1,339 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: S-2021.09M
+Install: C:\Microsemi\Libero_SoC_v2022.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-1NBCJI9
+
+Implementation : synthesis
+
+#### START OF AREA REPORT #####[
+
+Part:			M2S010VF400STD (Microchip)
+
+-------------------------------------------------------------------------
+########   Utilization report for  Top level view:   soundchip   ########
+=========================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      151                100 %                
+=================================================
+Total SEQUENTIAL ELEMENTS in the block soundchip:	151 (54.12 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           47                 100 %                
+ARI1          36                 100 %                
+BLACK BOX     4                  100 %                
+======================================================
+Total COMBINATIONAL LOGIC in the block soundchip:	87 (31.18 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     5                  100 %                
+===================================================
+Total GLOBAL BUFFERS in the block soundchip:	5 (1.79 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+IO       6                  100 %                
+=================================================
+Total IO PADS in the block soundchip:	6 (2.15 % Utilization)
+
+---------------------------------------------------------------------
+########   Utilization report for  cell:   CORERESET_PF_C0   ########
+Instance path:   soundchip.CORERESET_PF_C0                           
+=====================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      3                  1.99 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block soundchip.CORERESET_PF_C0:	3 (1.08 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      1                  2.13 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block soundchip.CORERESET_PF_C0:	1 (0.36 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     1                  20 %                 
+===================================================
+Total GLOBAL BUFFERS in the block soundchip.CORERESET_PF_C0:	1 (0.36 % Utilization)
+
+----------------------------------------------------------------------------------------------------
+########   Utilization report for  cell:   CORERESET_PF_C0_CORERESET_PF_C0_0_corereset_pf   ########
+Instance path:   CORERESET_PF_C0.CORERESET_PF_C0_CORERESET_PF_C0_0_corereset_pf                     
+====================================================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      3                  1.99 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block CORERESET_PF_C0.CORERESET_PF_C0_CORERESET_PF_C0_0_corereset_pf:	3 (1.08 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      1                  2.13 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block CORERESET_PF_C0.CORERESET_PF_C0_CORERESET_PF_C0_0_corereset_pf:	1 (0.36 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     1                  20 %                 
+===================================================
+Total GLOBAL BUFFERS in the block CORERESET_PF_C0.CORERESET_PF_C0_CORERESET_PF_C0_0_corereset_pf:	1 (0.36 % Utilization)
+
+-------------------------------------------------------------
+########   Utilization report for  cell:   FCCC_C0   ########
+Instance path:   soundchip.FCCC_C0                           
+=============================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+BLACK BOX     1                  25 %                 
+======================================================
+Total COMBINATIONAL LOGIC in the block soundchip.FCCC_C0:	1 (0.36 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     2                  40 %                 
+===================================================
+Total GLOBAL BUFFERS in the block soundchip.FCCC_C0:	2 (0.72 % Utilization)
+
+----------------------------------------------------------------------------
+########   Utilization report for  cell:   FCCC_C0_FCCC_C0_0_FCCC   ########
+Instance path:   FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC                             
+============================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+BLACK BOX     1                  25 %                 
+======================================================
+Total COMBINATIONAL LOGIC in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	1 (0.36 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     2                  40 %                 
+===================================================
+Total GLOBAL BUFFERS in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	2 (0.72 % Utilization)
+
+------------------------------------------------------------
+########   Utilization report for  cell:   OSC_C0   ########
+Instance path:   soundchip.OSC_C0                           
+============================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+BLACK BOX     2                  50 %                 
+======================================================
+Total COMBINATIONAL LOGIC in the block soundchip.OSC_C0:	2 (0.72 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     1                  20 %                 
+===================================================
+Total GLOBAL BUFFERS in the block soundchip.OSC_C0:	1 (0.36 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   OSC_C0_OSC_C0_0_OSC   ########
+Instance path:   OSC_C0.OSC_C0_OSC_C0_0_OSC                              
+=========================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+BLACK BOX     2                  50 %                 
+======================================================
+Total COMBINATIONAL LOGIC in the block OSC_C0.OSC_C0_OSC_C0_0_OSC:	2 (0.72 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     1                  20 %                 
+===================================================
+Total GLOBAL BUFFERS in the block OSC_C0.OSC_C0_OSC_C0_0_OSC:	1 (0.36 % Utilization)
+
+---------------------------------------------------------------
+########   Utilization report for  cell:   SPI_SLAVE   ########
+Instance path:   soundchip.SPI_SLAVE                           
+===============================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      46                 30.5 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block soundchip.SPI_SLAVE:	46 (16.49 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      46                 97.9 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block soundchip.SPI_SLAVE:	46 (16.49 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     1                  20 %                 
+===================================================
+Total GLOBAL BUFFERS in the block soundchip.SPI_SLAVE:	1 (0.36 % Utilization)
+
+---------------------------------------------------------
+########   Utilization report for  cell:   dac   ########
+Instance path:   soundchip.dac                           
+=========================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      35                 23.2 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block soundchip.dac:	35 (12.54 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+ARI1     18                 50 %                 
+=================================================
+Total COMBINATIONAL LOGIC in the block soundchip.dac:	18 (6.45 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   delta_adder   ########
+Instance path:   dac.delta_adder                                 
+=================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      17                 11.3 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block dac.delta_adder:	17 (6.09 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   sigma_adder   ########
+Instance path:   dac.sigma_adder                                 
+=================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      18                 11.9 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block dac.sigma_adder:	18 (6.45 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+ARI1     18                 50 %                 
+=================================================
+Total COMBINATIONAL LOGIC in the block dac.sigma_adder:	18 (6.45 % Utilization)
+
+-----------------------------------------------------------
+########   Utilization report for  cell:   dac_0   ########
+Instance path:   soundchip.dac_0                           
+===========================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      35                 23.2 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block soundchip.dac_0:	35 (12.54 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+ARI1     18                 50 %                 
+=================================================
+Total COMBINATIONAL LOGIC in the block soundchip.dac_0:	18 (6.45 % Utilization)
+
+-------------------------------------------------------------------
+########   Utilization report for  cell:   delta_adder_0   ########
+Instance path:   dac_0.delta_adder_0                               
+===================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      17                 11.3 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block dac_0.delta_adder_0:	17 (6.09 % Utilization)
+
+-------------------------------------------------------------------
+########   Utilization report for  cell:   sigma_adder_0   ########
+Instance path:   dac_0.sigma_adder_0                               
+===================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      18                 11.9 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block dac_0.sigma_adder_0:	18 (6.45 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+ARI1     18                 50 %                 
+=================================================
+Total COMBINATIONAL LOGIC in the block dac_0.sigma_adder_0:	18 (6.45 % Utilization)
+
+-------------------------------------------------------------------
+########   Utilization report for  cell:   data_receiver   ########
+Instance path:   soundchip.data_receiver                           
+===================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      32                 21.2 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block soundchip.data_receiver:	32 (11.47 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

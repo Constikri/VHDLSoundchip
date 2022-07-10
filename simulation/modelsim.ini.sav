@@ -1,7 +1,9 @@
 [Library]
 others = $MODEL_TECH/../modelsim.ini
-SmartFusion2 = C:/Microsemi/Libero_SoC_v2021.2/Designer/lib/modelsimpro/precompiled/vlog/SmartFusion2
-syncad_vhdl_lib = C:\Microsemi\Libero_SoC_v2021.2\Designer/lib/actel/syncad_vhdl_lib
+SmartFusion2 = C:/Microsemi/Libero_SoC_v2022.1/Designer/lib/modelsimpro/precompiled/vlog/SmartFusion2
+presynth = presynth
+CORERESET_PF_LIB = CORERESET_PF_LIB
+syncad_vhdl_lib = C:\Microsemi\Libero_SoC_v2022.1\Designer/lib/actel/syncad_vhdl_lib
 
 [vcom]
 VHDL93 = 1

@@ -1,0 +1,27 @@
+# Microsemi Physical design constraints file
+
+# Version: 2022.1 2022.1.0.10
+
+# Design Name: soundchip 
+
+# Input Netlist Format: EDIF 
+
+# Family: SmartFusion2 , Die: M2S010 , Package: 256 VF , Speed grade: STD 
+
+# Date generated: Sun Jul 10 17:03:01 2022 
+
+
+#
+# Local clock constraints
+#
+
+
+#
+# Region constraints
+#
+
+
+#
+# Core cell constraints
+#
+

@@ -1,0 +1,40 @@
+data HELP_TYPE_DES 2
+data DESIGN soundchip
+data HPATH 'C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip'
+data CPATH 'C:/Users/Constantin/Documents/VHDLSoundchip/constraint/fp'
+data CDIR 'C:/Users/Constantin/Documents/VHDLSoundchip/constraint'
+data NLV_HIDE_OPTION_DLG 1
+data REGION_DEFCOLOR_EMPTY 2143322112
+data REGION_DEFCOLOR_INCLUSIVE 2147442270
+data REGION_DEFCOLOR_EXCLUSIVE 2143338688
+data REGION_DEFCOLOR_CLOCK 16735838
+data ETYPE CP
+data FAM SmartFusion2
+data DIE PA4M1000_N
+data PACKAGE vf256
+data SPEED STD
+data HYDRA_EXPORT_DATA 1
+data HYDRA_PRESERVE_DATA_FILES 1
+data VCCI_1.2_VOLTR COM
+data VCCI_1.5_VOLTR COM
+data VCCI_1.8_VOLTR COM
+data VCCI_2.5_VOLTR COM
+data VCCI_3.3_VOLTR COM
+data FLOW_TYPE NEW
+data AFL 'C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/COMPILE/soundchip.afl'
+data ADL 'C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/soundchip.adl'
+data LOC 'C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/COMPILE/soundchip.loc'
+data SEG 'C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/COMPILE/soundchip.seg'
+
+data FP_PDC_0 'C:/Users/Constantin/Documents/VHDLSoundchip/constraint/fp/full_floorplan.pdc'
+data IO_PDC_0 'C:/Users/Constantin/Documents/VHDLSoundchip/constraint/io/full_io.pdc'
+data TARGET_IOPDC  'C:/Users/Constantin/Documents/VHDLSoundchip/constraint/io/user.pdc'
+data TARGET_FPPDC  'C:/Users/Constantin/Documents/VHDLSoundchip/constraint/fp/user.pdc'
+data TARGET_DEVICES_FOR_MIGRATION 'PA4M1000_N '
+data RESTRICTPROBEPINS 1
+data RESTRICTSPIPINS 0
+data GDEV_SKIP_UNASSIGN_CMP_CHECK    1 
+data HIDE_MIGRATION_PINS_MENU        1 
+data PLANNER_IS_READONLY   0 
+data IO_DEFT_STD LVCMOS33
+

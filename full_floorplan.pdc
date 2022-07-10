@@ -1,0 +1,273 @@
+# Microsemi Physical design constraints file
+
+# Version: 2022.1 2022.1.0.10
+
+# Design Name: soundchip 
+
+# Input Netlist Format: EDIF 
+
+# Family: SmartFusion2 , Die: M2S010 , Package: 256 VF , Speed grade: STD 
+
+# Date generated: Tue Jul  5 13:52:53 2022 
+
+
+#
+# Local clock constraints
+#
+
+
+#
+# Region constraints
+#
+
+
+#
+# Core cell constraints
+#
+
+set_location dac_1/DELTA_ADDER1/data_out_1\[13\] -fixed no 345 7
+set_location SPI_SLAVE_0/cs_n_reg -fixed no 319 4
+set_location CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_0 -fixed no 351 25
+set_location data_receiver_0/data_left\[5\] -fixed no 334 10
+set_location SPI_SLAVE_0/data_shreg\[31\] -fixed no 338 10
+set_location data_receiver_0/data_left\[8\] -fixed no 323 10
+set_location dac_1/DELTA_ADDER1/data_out_1\[15\] -fixed no 344 7
+set_location SPI_SLAVE_0/sclk_meta -fixed no 321 4
+set_location data_receiver_0/data_left\[14\] -fixed no 333 10
+set_location SPI_SLAVE_0/data_shreg\[8\] -fixed no 321 7
+set_location SPI_SLAVE_0/bit_cnt\[2\] -fixed no 323 4
+set_location dac_0/DELTA_ADDER1/data_to_sign\[5\] -fixed no 331 13
+set_location SPI_SLAVE_0/data_shreg\[5\] -fixed no 322 7
+set_location dac_0/SIGMA_ADDER1/sigma_register\[1\] -fixed no 304 13
+set_location SPI_SLAVE_0/bit_cnt\[0\] -fixed no 314 4
+set_location dac_0/DELTA_ADDER1/data_to_sign\[6\] -fixed no 330 13
+set_location SPI_SLAVE_0/data_shreg\[19\] -fixed no 292 10
+set_location data_receiver_0/data_right\[11\] -fixed no 346 10
+set_location dac_1/DELTA_ADDER1/data_out_1\[0\] -fixed no 335 7
+set_location dac_0/DELTA_ADDER1/data_to_sign\[15\] -fixed no 322 16
+set_location dac_0/SIGMA_ADDER1/sigma_register\[12\] -fixed no 315 13
+set_location SPI_SLAVE_0/data_shreg_RNO\[26\] -fixed no 336 9
+set_location SPI_SLAVE_0/data_shreg\[17\] -fixed no 299 10
+set_location dac_0/DELTA_ADDER1/data_out_1\[12\] -fixed no 309 10
+set_location dac_1/DELTA_ADDER1/data_to_sign\[1\] -fixed no 334 7
+set_location SPI_SLAVE_0/bit_cnt_RNO\[4\] -fixed no 322 3
+set_location dac_0/SIGMA_ADDER1/sigma_register\[9\] -fixed no 312 13
+set_location data_receiver_0/data_right\[1\] -fixed no 315 10
+set_location dac_0/DELTA_ADDER1/data_to_sign\[0\] -fixed no 308 10
+set_location dac_0/SIGMA_ADDER1/sigma_register\[8\] -fixed no 311 13
+set_location data_receiver_0/data_right\[5\] -fixed no 324 10
+set_location dac_0/SIGMA_ADDER1/sigma_register\[2\] -fixed no 305 13
+set_location dac_0/DELTA_ADDER1/data_out_1\[8\] -fixed no 300 13
+set_location SPI_SLAVE_0/data_shreg\[23\] -fixed no 293 10
+set_location SPI_SLAVE_0/data_shreg_RNO\[9\] -fixed no 327 15
+set_location data_receiver_0/data_right\[10\] -fixed no 339 10
+set_location dac_1/DELTA_ADDER1/data_out_1\[2\] -fixed no 326 4
+set_location SPI_SLAVE_0/bit_cnt_0_i_a2\[0\] -fixed no 316 3
+set_location data_receiver_0/data_left\[11\] -fixed no 330 16
+set_location dac_0/DELTA_ADDER1/data_to_sign\[2\] -fixed no 307 10
+set_location SPI_SLAVE_0/data_shreg_RNO\[15\] -fixed no 333 15
+set_location dac_1/DELTA_ADDER1/data_out_1\[3\] -fixed no 352 4
+set_location SPI_SLAVE_0/data_shreg_RNO\[21\] -fixed no 296 9
+set_location SPI_SLAVE_0/last_bit_en -fixed no 320 4
+set_location data_receiver_0/data_right\[9\] -fixed no 340 10
+set_location data_receiver_0/data_right\[2\] -fixed no 320 10
+set_location data_receiver_0/data_left\[12\] -fixed no 322 10
+set_location SPI_SLAVE_0/data_shreg\[9\] -fixed no 327 16
+set_location SPI_SLAVE_0/data_shreg_RNO\[6\] -fixed no 317 6
+set_location SPI_SLAVE_0/data_shreg_RNO\[13\] -fixed no 325 15
+set_location SPI_SLAVE_0/data_shreg_RNO\[3\] -fixed no 320 6
+set_location SPI_SLAVE_0/data_shreg\[25\] -fixed no 289 10
+set_location data_receiver_0/data_right\[13\] -fixed no 328 10
+set_location OSC_C0_0/OSC_C0_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_RGB1 -fixed no 218 24
+set_location dac_0/SIGMA_ADDER1/sigma_register\[6\] -fixed no 309 13
+set_location dac_1/DELTA_ADDER1/data_out_1\[16\] -fixed no 346 4
+set_location dac_1/DELTA_ADDER1/data_to_sign\[6\] -fixed no 333 7
+set_location data_receiver_0/data_left\[2\] -fixed no 313 10
+set_location dac_1/DELTA_ADDER1/data_out_1\[6\] -fixed no 332 7
+set_location dac_0/DELTA_ADDER1/data_to_sign\[12\] -fixed no 310 10
+set_location SPI_SLAVE_0/MISO -fixed no 341 10
+set_location SPI_SLAVE_0/data_shreg\[18\] -fixed no 295 10
+set_location data_receiver_0/data_right\[7\] -fixed no 331 10
+set_location dac_1/DELTA_ADDER1/data_to_sign\[15\] -fixed no 343 7
+set_location dac_1/SIGMA_ADDER1/sigma_register\[14\] -fixed no 341 4
+set_location data_receiver_0/data_right\[4\] -fixed no 316 10
+set_location dac_1/SIGMA_ADDER1/sigma_register\[11\] -fixed no 338 4
+set_location dac_1/DELTA_ADDER1/data_out_1\[14\] -fixed no 342 7
+set_location SPI_SLAVE_0/bit_cnt_0_i_o2\[3\] -fixed no 321 3
+set_location dac_0/SIGMA_ADDER1/sigma_register\[4\] -fixed no 307 13
+set_location dac_0/DELTA_ADDER1/data_out_1\[5\] -fixed no 329 13
+set_location SPI_SLAVE_0/bit_cnt\[4\] -fixed no 322 4
+set_location SPI_SLAVE_0/bit_cnt\[3\] -fixed no 315 4
+set_location dac_1/SIGMA_ADDER1/sigma_register\[3\] -fixed no 330 4
+set_location SPI_SLAVE_0/data_shreg\[21\] -fixed no 296 10
+set_location SPI_SLAVE_0/data_shreg_RNO\[18\] -fixed no 295 9
+set_location data_receiver_0/data_left\[1\] -fixed no 329 10
+set_location SPI_SLAVE_0/data_shreg\[26\] -fixed no 336 10
+set_location dac_1/SIGMA_ADDER1/sigma_register\[15\] -fixed no 342 4
+set_location dac_0/DELTA_ADDER1/data_out_1\[3\] -fixed no 301 13
+set_location dac_0/DELTA_ADDER1/data_out_1\[2\] -fixed no 302 13
+set_location data_receiver_0/data_right\[14\] -fixed no 347 10
+set_location SPI_SLAVE_0/data_shreg\[24\] -fixed no 291 10
+set_location dac_1/SIGMA_ADDER1/sigma_register\[7\] -fixed no 334 4
+set_location SPI_SLAVE_0/data_shreg_p.un3_spi_clk_redge_en_0_a2 -fixed no 312 6
+set_location data_receiver_0/data_right\[15\] -fixed no 345 10
+set_location dac_0/SIGMA_ADDER1/sigma_register\[0\] -fixed no 303 13
+set_location dac_0/DELTA_ADDER1/data_to_sign\[4\] -fixed no 328 13
+set_location SPI_SLAVE_0/data_shreg\[30\] -fixed no 343 10
+set_location SPI_SLAVE_0/MISO_RNO -fixed no 318 6
+set_location SPI_SLAVE_0/data_shreg_RNO\[24\] -fixed no 291 9
+set_location data_receiver_0/data_right\[12\] -fixed no 335 10
+set_location data_receiver_0/data_right\[6\] -fixed no 318 10
+set_location SPI_SLAVE_0/data_shreg\[0\] -fixed no 313 7
+set_location dac_1/SIGMA_ADDER1/sigma_register\[13\] -fixed no 340 4
+set_location SPI_SLAVE_0/data_shreg_RNO\[12\] -fixed no 332 15
+set_location SPI_SLAVE_0/data_shreg\[3\] -fixed no 320 7
+set_location data_receiver_0/data_left\[10\] -fixed no 335 16
+set_location CORERESET_PF_C0_0/CORERESET_PF_C0_0/un1_a -fixed no 374 24
+set_location dac_1/DELTA_ADDER1/data_out_1\[9\] -fixed no 341 7
+set_location SPI_SLAVE_0/bit_cnt\[1\] -fixed no 318 4
+set_location dac_1/SIGMA_ADDER1/sigma_register\[6\] -fixed no 333 4
+set_location dac_0/DELTA_ADDER1/data_out_1\[10\] -fixed no 321 16
+set_location dac_0/DELTA_ADDER1/data_to_sign\[10\] -fixed no 320 16
+set_location SPI_SLAVE_0/data_shreg\[6\] -fixed no 317 7
+set_location dac_1/DELTA_ADDER1/data_to_sign\[12\] -fixed no 340 7
+set_location SPI_SLAVE_0/data_shreg_RNO\[27\] -fixed no 342 9
+set_location data_receiver_0/data_left\[3\] -fixed no 317 10
+set_location SPI_SLAVE_0/bit_cnt_0_i_o2\[1\] -fixed no 319 3
+set_location dac_1/SIGMA_ADDER1/dac_out -fixed no 347 4
+set_location dac_0/DELTA_ADDER1/data_to_sign\[7\] -fixed no 305 10
+set_location dac_1/DELTA_ADDER1/data_out_1\[11\] -fixed no 351 4
+set_location SPI_SLAVE_0/bit_cnt_RNO\[3\] -fixed no 315 3
+set_location SPI_SLAVE_0/DOUT_VLD_inferred_clock_RNITLG3 -fixed no 225 54
+set_location dac_0/DELTA_ADDER1/data_out_1\[0\] -fixed no 304 10
+set_location dac_1/SIGMA_ADDER1/sigma_register\[0\] -fixed no 327 4
+set_location dac_1/DELTA_ADDER1/data_to_sign\[4\] -fixed no 331 7
+set_location dac_1/SIGMA_ADDER1/sigma_register\[10\] -fixed no 337 4
+set_location dac_0/DELTA_ADDER1/data_out_1\[13\] -fixed no 319 16
+set_location SPI_SLAVE_0/sclk_reg -fixed no 316 4
+set_location SPI_SLAVE_0/data_shreg_RNO\[2\] -fixed no 314 6
+set_location SPI_SLAVE_0/spi_clk_reg_RNO -fixed no 313 3
+set_location SPI_SLAVE_0/mosi_reg -fixed no 312 7
+set_location data_receiver_0/data_right\[0\] -fixed no 332 10
+set_location data_receiver_0/data_left\[6\] -fixed no 327 10
+set_location dac_1/DELTA_ADDER1/data_out_1\[5\] -fixed no 330 7
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1 -fixed no 218 15
+set_location dac_0/DELTA_ADDER1/data_out_1\[15\] -fixed no 318 16
+set_location SPI_SLAVE_0/data_shreg_RNO\[19\] -fixed no 292 9
+set_location dac_0/DELTA_ADDER1/data_to_sign\[1\] -fixed no 327 13
+set_location SPI_SLAVE_0/data_shreg\[13\] -fixed no 325 16
+set_location SPI_SLAVE_0/data_shreg_RNO\[20\] -fixed no 294 9
+set_location SPI_SLAVE_0/data_shreg\[2\] -fixed no 314 7
+set_location dac_1/DELTA_ADDER1/data_out_1\[7\] -fixed no 324 4
+set_location dac_1/SIGMA_ADDER1/sigma_register\[17\] -fixed no 344 4
+set_location dac_1/SIGMA_ADDER1/sigma_register\[5\] -fixed no 332 4
+set_location SPI_SLAVE_0/data_shreg_RNO\[0\] -fixed no 313 6
+set_location SPI_SLAVE_0/bit_cnt_RNO\[2\] -fixed no 323 3
+set_location SPI_SLAVE_0/bit_cnt_RNO\[0\] -fixed no 314 3
+set_location SPI_SLAVE_0/data_shreg\[22\] -fixed no 298 10
+set_location SPI_SLAVE_0/data_shreg\[15\] -fixed no 333 16
+set_location dac_1/SIGMA_ADDER1/sigma_register\[4\] -fixed no 331 4
+set_location dac_0/DELTA_ADDER1/data_out_1\[4\] -fixed no 326 13
+set_location data_receiver_0/data_right\[8\] -fixed no 319 10
+set_location dac_1/DELTA_ADDER1/data_to_sign\[10\] -fixed no 356 4
+set_location dac_1/DELTA_ADDER1/data_to_sign\[8\] -fixed no 329 7
+set_location SPI_SLAVE_0/data_shreg_RNO\[31\] -fixed no 338 9
+set_location dac_1/SIGMA_ADDER1/sigma_register\[16\] -fixed no 343 4
+set_location data_receiver_0/data_left\[13\] -fixed no 328 16
+set_location dac_0/DELTA_ADDER1/data_to_sign\[14\] -fixed no 332 13
+set_location dac_0/DELTA_ADDER1/data_to_sign\[11\] -fixed no 316 16
+set_location SPI_SLAVE_0/data_shreg_RNO\[16\] -fixed no 331 15
+set_location SPI_SLAVE_0/last_bit_en_0_0_a2_3 -fixed no 312 3
+set_location SPI_SLAVE_0/cs_n_meta -fixed no 317 4
+set_location SPI_SLAVE_0/data_shreg\[20\] -fixed no 294 10
+set_location SPI_SLAVE_0/data_shreg\[1\] -fixed no 323 7
+set_location dac_1/SIGMA_ADDER1/sigma_register\[9\] -fixed no 336 4
+set_location dac_0/DELTA_ADDER1/data_to_sign\[3\] -fixed no 303 10
+set_location SPI_SLAVE_0/DOUT_VLD -fixed no 316 6
+set_location SPI_SLAVE_0/data_shreg_RNO\[11\] -fixed no 326 15
+set_location OSC_C0_0/OSC_C0_0/I_RCOSC_25_50MHZ_FAB -fixed no 397 92
+set_location dac_1/DELTA_ADDER1/data_to_sign\[0\] -fixed no 328 7
+set_location dac_1/DELTA_ADDER1/data_out_1\[4\] -fixed no 327 7
+set_location dac_0/DELTA_ADDER1/data_out_1\[7\] -fixed no 302 10
+set_location dac_0/DELTA_ADDER1/data_out_1\[16\] -fixed no 322 13
+set_location SPI_SLAVE_0/data_shreg\[11\] -fixed no 326 16
+set_location SPI_SLAVE_0/data_shreg_RNO\[25\] -fixed no 289 9
+set_location data_receiver_0/data_left\[15\] -fixed no 330 10
+set_location SPI_SLAVE_0/last_bit_en_0_0_a2 -fixed no 320 3
+set_location SPI_SLAVE_0/data_shreg\[16\] -fixed no 331 16
+set_location dac_1/DELTA_ADDER1/data_out_1\[12\] -fixed no 339 7
+set_location dac_1/SIGMA_ADDER1/sigma_register\[12\] -fixed no 339 4
+set_location SPI_SLAVE_0/data_shreg_RNO\[4\] -fixed no 315 6
+set_location SPI_SLAVE_0/data_shreg\[14\] -fixed no 329 16
+set_location dac_0/SIGMA_ADDER1/dac_out -fixed no 323 13
+set_location dac_0/DELTA_ADDER1/data_to_sign\[9\] -fixed no 315 16
+set_location dac_0/SIGMA_ADDER1/sigma_register\[14\] -fixed no 317 13
+set_location dac_0/SIGMA_ADDER1/sigma_register\[3\] -fixed no 306 13
+set_location dac_0/SIGMA_ADDER1/sigma_register\[11\] -fixed no 314 13
+set_location SPI_SLAVE_0/data_shreg_RNO\[23\] -fixed no 293 9
+set_location dac_0/DELTA_ADDER1/data_out_1\[9\] -fixed no 314 16
+set_location dac_0/DELTA_ADDER1/data_out_1\[14\] -fixed no 321 13
+set_location data_receiver_0/data_left\[0\] -fixed no 314 10
+set_location dac_1/SIGMA_ADDER1/sigma_register\[8\] -fixed no 335 4
+set_location dac_1/SIGMA_ADDER1/sigma_register\[1\] -fixed no 328 4
+set_location FCCC_C0_0/FCCC_C0_0/GL1_INST -fixed no 220 54
+set_location SPI_SLAVE_0/data_shreg\[29\] -fixed no 337 10
+set_location dac_1/DELTA_ADDER1/data_to_sign\[14\] -fixed no 338 7
+set_location dac_1/DELTA_ADDER1/data_to_sign\[11\] -fixed no 349 4
+set_location dac_0/SIGMA_ADDER1/sigma_register\[15\] -fixed no 318 13
+set_location OSC_C0_0/OSC_C0_0/I_RCOSC_25_50MHZ_FAB_CLKINT -fixed no 219 54
+set_location dac_0/DELTA_ADDER1/data_to_sign\[13\] -fixed no 323 16
+set_location SPI_SLAVE_0/data_shreg\[27\] -fixed no 342 10
+set_location SPI_SLAVE_0/spi_clk_reg -fixed no 313 4
+set_location SPI_SLAVE_0/mosi_meta -fixed no 316 7
+set_location dac_0/DELTA_ADDER1/data_to_sign\[8\] -fixed no 301 10
+set_location dac_1/DELTA_ADDER1/data_to_sign\[5\] -fixed no 326 7
+set_location dac_1/DELTA_ADDER1/data_to_sign\[2\] -fixed no 300 10
+set_location dac_1/DELTA_ADDER1/data_to_sign\[7\] -fixed no 325 4
+set_location dac_1/DELTA_ADDER1/data_out_1\[1\] -fixed no 325 7
+set_location dac_0/SIGMA_ADDER1/sigma_register\[13\] -fixed no 316 13
+set_location dac_0/SIGMA_ADDER1/sigma_register\[5\] -fixed no 308 13
+set_location dac_1/DELTA_ADDER1/data_out_1\[8\] -fixed no 324 7
+set_location SPI_SLAVE_0/DOUT_VLD_inferred_clock_RNITLG3/U0_RGB1 -fixed no 219 15
+set_location SPI_SLAVE_0/data_shreg_RNO\[28\] -fixed no 344 9
+set_location CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_1_rep -fixed no 350 25
+set_location SPI_SLAVE_0/data_shreg_RNO\[14\] -fixed no 329 15
+set_location data_receiver_0/data_left\[9\] -fixed no 334 16
+set_location dac_1/DELTA_ADDER1/data_to_sign\[9\] -fixed no 337 7
+set_location dac_1/SIGMA_ADDER1/sigma_register\[2\] -fixed no 329 4
+set_location FCCC_C0_0/FCCC_C0_0/GL1_INST/U0_RGB1 -fixed no 220 15
+set_location SPI_SLAVE_0/data_shreg\[4\] -fixed no 315 7
+set_location dac_0/DELTA_ADDER1/data_out_1\[11\] -fixed no 312 16
+set_location SPI_SLAVE_0/data_shreg_RNO\[22\] -fixed no 298 9
+set_location data_receiver_0/data_left\[7\] -fixed no 312 10
+set_location dac_0/SIGMA_ADDER1/sigma_register\[10\] -fixed no 313 13
+set_location data_receiver_0/data_right\[3\] -fixed no 325 10
+set_location SPI_SLAVE_0/data_shreg\[28\] -fixed no 344 10
+set_location SPI_SLAVE_0/data_shreg\[12\] -fixed no 332 16
+set_location SPI_SLAVE_0/data_shreg_RNO\[17\] -fixed no 299 9
+set_location SPI_SLAVE_0/data_shreg\[7\] -fixed no 319 7
+set_location SPI_SLAVE_0/data_shreg_RNO\[5\] -fixed no 322 6
+set_location dac_1/DELTA_ADDER1/data_to_sign\[3\] -fixed no 348 4
+set_location SPI_SLAVE_0/bit_cnt_RNO\[1\] -fixed no 318 3
+set_location CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_1_rep_RNI6BBA/U0_RGB1 -fixed no 221 15
+set_location dac_1/DELTA_ADDER1/data_to_sign\[13\] -fixed no 336 7
+set_location SPI_SLAVE_0/data_shreg_RNO\[30\] -fixed no 343 9
+set_location dac_0/DELTA_ADDER1/data_out_1\[1\] -fixed no 325 13
+set_location SPI_SLAVE_0/data_shreg_RNO\[7\] -fixed no 319 6
+set_location dac_0/DELTA_ADDER1/data_out_1\[6\] -fixed no 324 13
+set_location dac_0/SIGMA_ADDER1/sigma_register\[17\] -fixed no 320 13
+set_location CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_1_rep_RNI6BBA -fixed no 221 54
+set_location dac_1/DELTA_ADDER1/data_out_1\[10\] -fixed no 345 4
+set_location data_receiver_0/data_left\[4\] -fixed no 321 10
+set_location SPI_SLAVE_0/data_shreg\[10\] -fixed no 324 16
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST -fixed no 218 54
+set_location SPI_SLAVE_0/data_shreg_RNO\[1\] -fixed no 323 6
+set_location CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_1 -fixed no 348 25
+set_location dac_0/SIGMA_ADDER1/sigma_register\[7\] -fixed no 310 13
+set_location SPI_SLAVE_0/data_shreg_RNO\[29\] -fixed no 337 9
+set_location SPI_SLAVE_0/data_shreg_RNO\[8\] -fixed no 321 6
+set_location SPI_SLAVE_0/data_shreg_RNO\[10\] -fixed no 324 15
+set_location dac_0/SIGMA_ADDER1/sigma_register\[16\] -fixed no 319 13
+set_location FCCC_C0_0/FCCC_C0_0/CCC_INST -fixed no 390 92
+set_location dac_0/SIGMA_ADDER1/temp_reg_cry_0 -fixed no 303 12
+set_location dac_1/SIGMA_ADDER1/temp_reg_cry_0 -fixed no 327 3

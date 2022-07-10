@@ -1,0 +1,27 @@
+data HELP_TYPE_DES 2data DESIGN soundchip
+data HPATH 'C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip'
+data CPATH 'C:/Users/Constantin/Documents/VHDLSoundchip/constraint/io'
+data CDIR 'C:/Users/Constantin/Documents/VHDLSoundchip/constraint'
+data ETYPE IO
+data FAM SmartFusion2
+data DIE PA4M1000_N
+data PACKAGE vf256
+data HYDRA_EXPORT_DATA 1
+data HYDRA_PRESERVE_DATA_FILES 1
+data VCCI_1.2_VOLTR COM
+data VCCI_1.5_VOLTR COM
+data VCCI_1.8_VOLTR COM
+data VCCI_2.5_VOLTR COM
+data VCCI_3.3_VOLTR COM
+data FLOW_TYPE NEW
+data AFL 'C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/soundchip.afl'
+data ADL 'C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/soundchip.adl'
+data LOC 'C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/soundchip.loc'
+data SEG 'C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/soundchip.seg'
+data NMAT_PDC 'C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/soundchip.nmatinit.pdc'
+
+data IO_PDC_0 'C:/Users/Constantin/Documents/VHDLSoundchip/constraint/io/io_const.pdc'
+data IO_PDC_1 'C:/Users/Constantin/Documents/VHDLSoundchip/constraint/io/root_io.pdc'
+data TARGET_IOPDC  'C:/Users/Constantin/Documents/VHDLSoundchip/constraint/io/user.pdc'
+data TARGET_FPPDC  'C:/Users/Constantin/Documents/VHDLSoundchip/constraint/fp/user.pdc'
+

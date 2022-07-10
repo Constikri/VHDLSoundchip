@@ -19,7 +19,7 @@
 library IEEE;
 
 use IEEE.std_logic_1164.all;
-use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
 
 entity sigma_adder is
 port (
@@ -36,17 +36,17 @@ architecture architecture_sigma_adder of sigma_adder is
 
 begin
 	process(clk, reset)
-		variable temp_reg : signed(18 downto 0);
+		variable temp_reg : signed(17 downto 0);
 	begin
 		if(reset = '1') then
 			sigma_register <= (17 => '1', others => '0');
 		else
 			if(rising_edge(clk)) then
-				dac_out <= sigma_register(17);
 				temp_reg := delta_in + sigma_register;
 				sigma_register <= temp_reg(17 downto 0);
 			end if;
 		end if;
 	end process;
-   -- architecture body
+   
+    dac_out <= sigma_register(17);
 end architecture_sigma_adder;

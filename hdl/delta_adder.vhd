@@ -16,14 +16,14 @@
 --
 --------------------------------------------------------------------------------
 
-library IEEE;
+library ieee;
 
-use IEEE.std_logic_1164.all;
-use ieee.std_logic_unsigned.all;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity delta_adder is
 port (
-	data_in  : IN  unsigned(15 downto 0);
+	data_in  : IN  std_logic_vector(15 downto 0);
 	delta : IN  std_logic;
 	clk   : IN  std_logic;
 	reset : IN  std_logic;
@@ -31,7 +31,6 @@ port (
 );
 end delta_adder;
 architecture architecture_delta_adder of delta_adder is
-
 	constant delta_at_one  : signed(17 downto 0) := (17 downto 16 => '1', others => '0');
 	constant delta_at_zero : signed(17 downto 0) := (others => '0');
 
@@ -40,10 +39,10 @@ begin
 	begin
 	
 		if(reset = '1') then
-		
+            data_out <= (others => '0');
 		else
 			if(rising_edge(clk)) then
-				data_out <= delta_at_one + data_in when (delta = '1') else delta_at_zero + data_in;
+				data_out <= delta_at_one + ("00" & signed(data_in)) when (delta = '1') else delta_at_zero + ("00" & signed(data_in));
 			end if;
 		end if;
 		

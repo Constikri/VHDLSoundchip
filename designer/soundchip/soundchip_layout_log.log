@@ -1,0 +1,78 @@
+INFO: Reading User SDC file C:\Users\Constantin\Documents\VHDLSoundchip\constraint\soundchip_derived_constraints.sdc.
+INFO: The option "Abort flow if errors are found in SDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated SDC files. Please uncheck the option to ignore the errors and continue running the tool.
+
+No errors or warnings found.
+INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
+***** Place and Route Configurations *****
+Timing-driven            : ON
+Power-driven             : OFF
+I/O Register Combining   : ON
+High-effort              : OFF
+Repair min-delay         : ON
+Incremental              : OFF
+Inter-clock optimization : ON
+
+INFO: Reading User PDC file C:\Users\Constantin\Documents\VHDLSoundchip\constraint\io\full_io.pdc. 0 error(s) and 0 warning(s)
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 6 fixed I/O macros, 0 unfixed I/O macros
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 0 seconds
+
+Placer V5.0 - 2022.1.0 
+Design: soundchip                       Started: Sun Jul 10 21:18:27 2022
+
+Initializing Normal-Effort Timing-Driven Placement ...
+Clustering ...
+Placing ...
+Improving placement ...
+End of placement.
+
+Placer Runtime Summary   :
+Clustering (1 pass)      : 0 seconds
+Placement                : 0 seconds
+Improvement              : 0 seconds
+
+Placer completed successfully.
+
+Design: soundchip                       
+Finished: Sun Jul 10 21:18:38 2022
+Total CPU Time:     00:00:09            Total Elapsed Time: 00:00:11
+Total Memory Usage: 300.6 Mbytes
+                        o - o - o - o - o - o
+
+
+Router 
+Design: C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\soundchipStarted: Sun Jul 10 21:18:41 2022
+
+
+Router completed successfully.
+
+Design: C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\soundchip
+Finished: Sun Jul 10 21:18:44 2022
+Total CPU Time:     00:00:03            Total Elapsed Time: 00:00:03
+Total Memory Usage: 445.5 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 1:
+  Total violating paths eligible for improvement: 0
+  Worst minimum delay slack: 
+Resource Usage
++---------------+------+-------+------------+
+| Type          | Used | Total | Percentage |
++---------------+------+-------+------------+
+| 4LUT          | 83   | 12084 | 0.69       |
+| DFF           | 151  | 12084 | 1.25       |
+| I/O Register  | 0    | 408   | 0.00       |
+| Logic Element | 153  | 12084 | 1.27       |
++---------------+------+-------+------------+
+
+I/O Placement
++--------+-------+------------+
+| Type   | Count | Percentage |
++--------+-------+------------+
+| Locked |  6    | 100.00%    |
+| Placed |  0    | 0.00%      |
++--------+-------+------------+
+

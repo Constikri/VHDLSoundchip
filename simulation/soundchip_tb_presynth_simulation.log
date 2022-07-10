@@ -1,0 +1,251 @@
+# Reading pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim Microsemi Pro vmap 2021.3 Lib Mapping Utility 2021.07 Jul 14 2021
+# vmap presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi Pro vmap 2021.3 Lib Mapping Utility 2021.07 Jul 14 2021
+# vmap SmartFusion2 C:/Microsemi/Libero_SoC_v2022.1/Designer/lib/modelsimpro/precompiled/vlog/SmartFusion2 
+# Modifying modelsim.ini
+# INFO: Simulation library CORERESET_PF_LIB already exists
+# Model Technology ModelSim Microsemi Pro vmap 2021.3 Lib Mapping Utility 2021.07 Jul 14 2021
+# vmap CORERESET_PF_LIB CORERESET_PF_LIB 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi Pro vcom 2021.3 Compiler 2021.07 Jul 14 2021
+# Start time: 21:13:02 on Jul 10,2022
+# vcom -reportprogress 300 -2008 -explicit -work CORERESET_PF_LIB C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/core/corereset_pf.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CORERESET_PF_C0_CORERESET_PF_C0_0_corereset_pf
+# -- Compiling architecture architecture_corereset_pf of CORERESET_PF_C0_CORERESET_PF_C0_0_corereset_pf
+# End time: 21:13:02 on Jul 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi Pro vcom 2021.3 Compiler 2021.07 Jul 14 2021
+# Start time: 21:13:02 on Jul 10,2022
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CORERESET_PF_C0
+# -- Compiling architecture RTL of CORERESET_PF_C0
+# End time: 21:13:02 on Jul 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi Pro vcom 2021.3 Compiler 2021.07 Jul 14 2021
+# Start time: 21:13:02 on Jul 10,2022
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Constantin/Documents/VHDLSoundchip/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FCCC_C0_FCCC_C0_0_FCCC
+# -- Compiling architecture DEF_ARCH of FCCC_C0_FCCC_C0_0_FCCC
+# End time: 21:13:02 on Jul 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi Pro vcom 2021.3 Compiler 2021.07 Jul 14 2021
+# Start time: 21:13:02 on Jul 10,2022
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Constantin/Documents/VHDLSoundchip/component/work/FCCC_C0/FCCC_C0.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FCCC_C0
+# -- Compiling architecture RTL of FCCC_C0
+# End time: 21:13:02 on Jul 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi Pro vcom 2021.3 Compiler 2021.07 Jul 14 2021
+# Start time: 21:13:02 on Jul 10,2022
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Constantin/Documents/VHDLSoundchip/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity OSC_C0_OSC_C0_0_OSC
+# -- Compiling architecture DEF_ARCH of OSC_C0_OSC_C0_0_OSC
+# End time: 21:13:02 on Jul 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi Pro vcom 2021.3 Compiler 2021.07 Jul 14 2021
+# Start time: 21:13:02 on Jul 10,2022
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Constantin/Documents/VHDLSoundchip/component/work/OSC_C0/OSC_C0.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity OSC_C0
+# -- Compiling architecture RTL of OSC_C0
+# End time: 21:13:02 on Jul 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi Pro vcom 2021.3 Compiler 2021.07 Jul 14 2021
+# Start time: 21:13:02 on Jul 10,2022
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Constantin/Documents/VHDLSoundchip/hdl/spi_slave.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_SLAVE
+# -- Compiling architecture RTL of SPI_SLAVE
+# End time: 21:13:03 on Jul 10,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi Pro vcom 2021.3 Compiler 2021.07 Jul 14 2021
+# Start time: 21:13:03 on Jul 10,2022
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Constantin/Documents/VHDLSoundchip/hdl/delta_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity delta_adder
+# -- Compiling architecture architecture_delta_adder of delta_adder
+# End time: 21:13:03 on Jul 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi Pro vcom 2021.3 Compiler 2021.07 Jul 14 2021
+# Start time: 21:13:05 on Jul 10,2022
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Constantin/Documents/VHDLSoundchip/hdl/sigma_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sigma_adder
+# -- Compiling architecture architecture_sigma_adder of sigma_adder
+# End time: 21:13:05 on Jul 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi Pro vcom 2021.3 Compiler 2021.07 Jul 14 2021
+# Start time: 21:13:05 on Jul 10,2022
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Constantin/Documents/VHDLSoundchip/hdl/dac.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity dac
+# -- Compiling architecture architecture_dac of dac
+# End time: 21:13:05 on Jul 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi Pro vcom 2021.3 Compiler 2021.07 Jul 14 2021
+# Start time: 21:13:05 on Jul 10,2022
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Constantin/Documents/VHDLSoundchip/hdl/data_receiver.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity data_receiver
+# -- Compiling architecture architecture_data_receiver of data_receiver
+# End time: 21:13:06 on Jul 10,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi Pro vcom 2021.3 Compiler 2021.07 Jul 14 2021
+# Start time: 21:13:06 on Jul 10,2022
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Constantin/Documents/VHDLSoundchip/component/work/soundchip/soundchip.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity soundchip
+# -- Compiling architecture RTL of soundchip
+# End time: 21:13:06 on Jul 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi Pro vcom 2021.3 Compiler 2021.07 Jul 14 2021
+# Start time: 21:13:06 on Jul 10,2022
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/data_receiver_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity data_receiver_tb
+# -- Compiling architecture behavioral of data_receiver_tb
+# End time: 21:13:06 on Jul 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi Pro vcom 2021.3 Compiler 2021.07 Jul 14 2021
+# Start time: 21:13:06 on Jul 10,2022
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/delta_adder_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity delta_adder_tb
+# -- Compiling architecture behavioral of delta_adder_tb
+# End time: 21:13:06 on Jul 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi Pro vcom 2021.3 Compiler 2021.07 Jul 14 2021
+# Start time: 21:13:06 on Jul 10,2022
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/sigma_adder_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sigma_adder_tb
+# -- Compiling architecture behavioral of sigma_adder_tb
+# End time: 21:13:06 on Jul 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi Pro vcom 2021.3 Compiler 2021.07 Jul 14 2021
+# Start time: 21:13:06 on Jul 10,2022
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/dac_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dac_tb
+# -- Compiling architecture behavioral of dac_tb
+# End time: 21:13:06 on Jul 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi Pro vcom 2021.3 Compiler 2021.07 Jul 14 2021
+# Start time: 21:13:06 on Jul 10,2022
+# vcom -reportprogress 300 -2008 -explicit -work CORERESET_PF_LIB C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity corereset_pf_tb
+# -- Compiling architecture behavioral of corereset_pf_tb
+# ** Warning: C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd(79): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd(81): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd(83): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd(85): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd(92): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd(94): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd(102): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd(104): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd(106): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd(108): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd(115): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd(117): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd(124): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd(126): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd(128): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd(130): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd(137): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/test/corereset_pf_tb.vhd(139): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 21:13:06 on Jul 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 18
+# vsim -L SmartFusion2 -L presynth -L CORERESET_PF_LIB -t 1fs CORERESET_PF_LIB.soundchip_tb 
+# Start time: 21:13:06 on Jul 10,2022
+# ** Error: (vsim-3170) Could not find 'soundchip_tb'.
+#         Searched libraries:
+#             C:/Microsemi/Libero_SoC_v2022.1/Designer/lib/modelsimpro/precompiled/vlog/SmartFusion2
+#             C:/Users/Constantin/Documents/VHDLSoundchip/simulation/presynth
+#             C:/Users/Constantin/Documents/VHDLSoundchip/simulation/CORERESET_PF_LIB
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run.do PAUSED at line 38
+vsim presynth.dac_tb
+# vsim presynth.dac_tb 
+# Start time: 21:13:06 on Jul 10,2022
+# //  ModelSim Microsemi Pro 2021.3 Jul 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim Microsemi Pro and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading presynth.dac_tb(behavioral)
+# Loading ieee.numeric_std(body)
+# Loading presynth.dac(architecture_dac)
+# Loading presynth.delta_adder(architecture_delta_adder)
+# Loading presynth.sigma_adder(architecture_sigma_adder)
+add wave -position insertpoint  \
+sim:/dac_tb/SYSCLK \
+sim:/dac_tb/NSYSRESET \
+sim:/dac_tb/data_in_sig \
+sim:/dac_tb/dac_out_sig
+run
+# End time: 21:16:20 on Jul 10,2022, Elapsed time: 0:03:14
+# Errors: 1, Warnings: 0
