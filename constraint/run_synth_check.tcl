@@ -1,8 +1,6 @@
 set_device -family {SmartFusion2} -die {M2S010} -speed {STD}
 set_editor_type {SYNTHESIS}
 set_proj_path {C:\Users\Constantin\Documents\VHDLSoundchip\hshl_soundchip.prjx}
-read_vhdl -mode vhdl_2008 -lib CORERESET_PF_LIB {C:\Users\Constantin\Documents\VHDLSoundchip\component\work\CORERESET_PF_C0\CORERESET_PF_C0_0\core\corereset_pf.vhd}
-read_vhdl -mode vhdl_2008 {C:\Users\Constantin\Documents\VHDLSoundchip\component\work\CORERESET_PF_C0\CORERESET_PF_C0.vhd}
 read_vhdl -mode vhdl_2008 {C:\Users\Constantin\Documents\VHDLSoundchip\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd}
 read_vhdl -mode vhdl_2008 {C:\Users\Constantin\Documents\VHDLSoundchip\component\work\FCCC_C0\FCCC_C0.vhd}
 read_vhdl -mode vhdl_2008 {C:\Users\Constantin\Documents\VHDLSoundchip\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd}
@@ -15,5 +13,5 @@ read_vhdl -mode vhdl_2008 {C:\Users\Constantin\Documents\VHDLSoundchip\hdl\data_
 read_vhdl -mode vhdl_2008 {C:\Users\Constantin\Documents\VHDLSoundchip\component\work\soundchip\soundchip.vhd}
 set_top_level {soundchip}
 map_netlist
-read_sdc {C:\Users\Constantin\Documents\VHDLSoundchip\constraint\soundchip_derived_constraints.sdc}
+read_sdc {C:\Users\Constantin\Documents\VHDLSoundchip\constraint\user.sdc}
 set_output_sdc {C:\Users\Constantin\Documents\VHDLSoundchip\constraint\user.sdc}

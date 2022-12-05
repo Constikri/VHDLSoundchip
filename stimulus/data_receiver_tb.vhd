@@ -31,6 +31,7 @@ architecture behavioral of data_receiver_tb is
     signal NSYSRESET : std_logic := '0';
     
     signal data_rdy_sig : std_logic := '0';
+    signal dac_reset_sig : std_logic;
     signal data_in_sig : std_logic_vector(31 downto 0) := (others => '0');
     signal data_right_sig : std_logic_vector(15 downto 0);
     signal data_left_sig: std_logic_vector(15 downto 0);
@@ -43,6 +44,7 @@ architecture behavioral of data_receiver_tb is
             data_in    : in std_logic_vector(31 downto 0);
             
             -- Outputs
+            dac_reset  : OUT std_logic;
             data_left  : OUT std_logic_vector(15 downto 0);
             data_right : OUT std_logic_vector(15 downto 0)
         );
@@ -62,6 +64,7 @@ begin
             data_in => data_in_sig,
             
             -- Outputs
+            dac_reset => dac_reset_sig,
             data_left => data_left_sig,
             data_right => data_right_sig
         );
@@ -74,11 +77,11 @@ begin
             
             data_in_sig <= ("00001111011100101110110001110010"); 
             wait for SYSCLK_PERIOD;
-            assert ((data_left_sig = "0000000000000000") and (data_right_sig = "0000000000000000"));
+            assert ((data_left_sig = "0000000000000000") and (data_right_sig = "0000000000000000") and (dac_reset_sig = '0'));
             
             data_rdy_sig <= '1';
             wait for SYSCLK_PERIOD;
-            assert ((data_left_sig = "1110110001110010") and (data_right_sig = "0000111101110010"));
+            assert ((data_left_sig = "1110110001110010") and (data_right_sig = "0000111101110010") and (dac_reset_sig = '1'));
             
             data_rdy_sig <= '0';
             wait for SYSCLK_PERIOD;
@@ -86,7 +89,7 @@ begin
             data_rdy_sig <= '1';
             data_in_sig <= ("00110100100000010000011111010010");
             wait for SYSCLK_PERIOD;
-            assert ((data_left_sig = "0000011111010010") and (data_right_sig = "0011010010000001"));
+            assert ((data_left_sig = "0000011111010010") and (data_right_sig = "0011010010000001") and (dac_reset_sig = '1'));
             
             wait;
         end process;

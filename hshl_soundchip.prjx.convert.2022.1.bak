@@ -1,0 +1,631 @@
+KEY LIBERO "2022.1"
+KEY CAPTURE "2022.1.0.10"
+KEY DEFAULT_IMPORT_LOC "C:\Actelprj\A3P_Verilog_labs\lab2"
+KEY DEFAULT_OPEN_LOC ""
+KEY ProjectID "0"
+KEY HDLTechnology "VHDL"
+KEY VERILOGMODE "VERILOG2001"
+KEY VHDLMODE "VHDL2008"
+KEY SYSTEMVERILOGMFCU "FALSE"
+KEY UseConstraintFlowTechnology "TRUE"
+KEY VendorTechnology_Family "SmartFusion2"
+KEY VendorTechnology_Die "PA4M1000_N"
+KEY VendorTechnology_Package "vf256"
+KEY VendorTechnology_Speed "STD"
+KEY VendorTechnology_DieVoltage "1.2"
+KEY VendorTechnology_PART_RANGE "COM"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE "100_MS"
+KEY VendorTechnology_IO_DEFT_STD "LVCMOS25"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY "PLL_SUPPLY_25"
+KEY VendorTechnology_RAD_EXPOSURE ""
+KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
+KEY VendorTechnology_RESTRICTPROBEPINS "1"
+KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE "0"
+KEY VendorTechnology_TARGETDEVICESFORMIGRATION "PA4M1000_N"
+KEY VendorTechnology_TEMPR "COM"
+KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
+KEY VendorTechnology_VCCI_1.2_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
+KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
+KEY VendorTechnology_VOLTR "COM"
+KEY ProjectLocation "C:\Users\Constantin\Documents\VHDLSoundchip"
+KEY ProjectDescription ""
+KEY UseRootLocationForLinkedFiles "FALSE"
+KEY RootLocationENVForLinkedFiles ""
+KEY RootLocationForLinkedFiles ""
+KEY GlobalIncludePaths ""
+KEY Pa4PeripheralNewSeq "GOOD"
+KEY MemoryMapDrcSeverity "FALSE"
+KEY LossOfDataDRCSeverity "TRUE"
+KEY IdWidthMismatchDRCSeverity "TRUE"
+KEY SimulationType "VHDL"
+KEY Vendor "Actel"
+KEY ActiveRoot "soundchip::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+VALUE="Impl2",NUM=2
+VALUE="Impl3",NUM=3
+CURREV=3
+ENDLIST
+LIST GlobalIncludeFileList
+ENDLIST
+LIST FileManager
+VALUE "<project>\component\Actel\SgCore\FCCC\2.0.201\FCCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1664977816"
+SIZE="241"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1665157617"
+SIZE="682"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd,hdl"
+STATE="utd"
+TIME="1629289419"
+SIZE="2164"
+PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="SYNPLIFY7_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps_pre.vhd,hdl"
+STATE="utd"
+TIME="1629289419"
+SIZE="2108"
+PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="PRECISION_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS\1.1.500\MSS.cxf,actgen_cxf"
+STATE="utd"
+TIME="1656708688"
+SIZE="526"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CCC\1.0.100\MSS_CCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1656708685"
+SIZE="253"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CC\1.0.100\MSS_CC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1656708685"
+SIZE="252"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CFGM\1.1.100\MSS_CFGM.cxf,actgen_cxf"
+STATE="utd"
+TIME="1656708685"
+SIZE="254"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
+STATE="utd"
+TIME="1656708685"
+SIZE="253"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_DDRB\1.0.200\MSS_DDRB.cxf,actgen_cxf"
+STATE="utd"
+TIME="1656708685"
+SIZE="254"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_EDAC\1.0.101\MSS_EDAC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1656708685"
+SIZE="254"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_ENVM\1.0.101\MSS_ENVM.cxf,actgen_cxf"
+STATE="utd"
+TIME="1656708685"
+SIZE="254"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_FIC32\1.0.100\MSS_FIC32.cxf,actgen_cxf"
+STATE="utd"
+TIME="1656708685"
+SIZE="255"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_INTR\1.0.200\MSS_INTR.cxf,actgen_cxf"
+STATE="utd"
+TIME="1656708685"
+SIZE="254"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_RESET\1.0.100\MSS_RESET.cxf,actgen_cxf"
+STATE="utd"
+TIME="1656708685"
+SIZE="255"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SECURITY\1.0.100\MSS_SECURITY.cxf,actgen_cxf"
+STATE="utd"
+TIME="1656708685"
+SIZE="258"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SWITCH\1.0.101\MSS_SWITCH.cxf,actgen_cxf"
+STATE="utd"
+TIME="1656708685"
+SIZE="256"
+ENDFILE
+VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
+STATE="utd"
+TIME="1656848334"
+SIZE="437"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1664977816"
+SIZE="10453"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0.vhd,hdl"
+STATE="utd"
+TIME="1664977816"
+SIZE="7401"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1664977816"
+SIZE="705"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd,hdl"
+STATE="utd"
+TIME="1664977816"
+SIZE="5574"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1665157618"
+SIZE="2901"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0.vhd,hdl"
+STATE="utd"
+TIME="1665157617"
+SIZE="4311"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1665157617"
+SIZE="460"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd,hdl"
+STATE="utd"
+TIME="1665157617"
+SIZE="897"
+PARENT="<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\soundchip\soundchip.cxf,actgen_cxf"
+STATE="utd"
+TIME="1667144159"
+SIZE="3430"
+ENDFILE
+VALUE "<project>\component\work\soundchip\soundchip.vhd,hdl"
+STATE="utd"
+TIME="1667144159"
+SIZE="9018"
+PARENT="<project>\component\work\soundchip\soundchip.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\constraint\io\full_io.pdc,io_pdc"
+STATE="utd"
+TIME="1664822027"
+SIZE="2087"
+IS_TARGET="TRUE"
+ENDFILE
+VALUE "<project>\constraint\io\user.pdc,io_pdc"
+STATE="utd"
+TIME="1658764971"
+SIZE="741"
+ENDFILE
+VALUE "<project>\constraint\user.sdc,sdc"
+STATE="utd"
+TIME="1667488891"
+SIZE="405"
+IS_TARGET="TRUE"
+ENDFILE
+VALUE "<project>\hdl\dac.vhd,hdl"
+STATE="utd"
+TIME="1658320617"
+SIZE="1693"
+ENDFILE
+VALUE "<project>\hdl\data_receiver.vhd,hdl"
+STATE="utd"
+TIME="1666800657"
+SIZE="1477"
+ENDFILE
+VALUE "<project>\hdl\delta_adder.vhd,hdl"
+STATE="utd"
+TIME="1657465680"
+SIZE="1373"
+ENDFILE
+VALUE "<project>\hdl\sigma_adder.vhd,hdl"
+STATE="utd"
+TIME="1666800626"
+SIZE="1285"
+ENDFILE
+VALUE "<project>\hdl\spi_slave.vhd,hdl"
+STATE="utd"
+TIME="1656847886"
+SIZE="9026"
+ENDFILE
+VALUE "<project>\simulation\run.do,do"
+STATE="utd"
+TIME="1667144227"
+SIZE="681"
+ENDFILE
+VALUE "<project>\simulation\soundchip_tb_postsynth_simulation.log,log"
+STATE="utd"
+TIME="1667145566"
+SIZE="150031"
+ENDFILE
+VALUE "<project>\simulation\soundchip_tb_presynth_simulation.log,log"
+STATE="utd"
+TIME="1667486459"
+SIZE="20"
+ENDFILE
+VALUE "<project>\simulation\subsystem.bfm,sim"
+STATE="utd"
+TIME="1667144227"
+SIZE="233"
+ENDFILE
+VALUE "<project>\stimulus\dac_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1657631924"
+SIZE="4943"
+ENDFILE
+VALUE "<project>\stimulus\data_receiver_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1658511753"
+SIZE="3106"
+ENDFILE
+VALUE "<project>\stimulus\delta_adder_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1657467937"
+SIZE="2748"
+ENDFILE
+VALUE "<project>\stimulus\sigma_adder_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1657478312"
+SIZE="3581"
+ENDFILE
+VALUE "<project>\stimulus\soundchip_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1664977389"
+SIZE="5254"
+ENDFILE
+VALUE "<project>\stimulus\spi_slave_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1658513090"
+SIZE="7957"
+ENDFILE
+VALUE "<project>\synthesis\soundchip.so,so"
+STATE="utd"
+TIME="1667144175"
+SIZE="236"
+ENDFILE
+VALUE "<project>\synthesis\soundchip.vm,syn_vm"
+STATE="utd"
+TIME="1667144175"
+SIZE="63285"
+ENDFILE
+VALUE "<project>\synthesis\soundchip_syn.prj,prj"
+STATE="utd"
+TIME="1667144176"
+SIZE="3439"
+ENDFILE
+VALUE "<project>\synthesis\soundchip_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1667144175"
+SIZE="1428"
+ENDFILE
+ENDLIST
+LIST UsedFile
+ENDLIST
+LIST NewModulesInfo
+LIST "soundchip::work"
+FILE "<project>\component\work\soundchip\soundchip.vhd,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\soundchip_tb.vhd,tb_hdl"
+ENDLIST
+LIST SynthesisConstraints
+VALUE "<project>\constraint\user.sdc,sdc"
+ENDLIST
+LIST TimingConstraints
+VALUE "<project>\constraint\user.sdc,sdc"
+ENDLIST
+LIST PNRConstraints
+VALUE "<project>\constraint\io\full_io.pdc,io_pdc"
+VALUE "<project>\constraint\io\user.pdc,io_pdc"
+VALUE "<project>\constraint\user.sdc,sdc"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+LIST Impl2
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+LIST Impl3
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+LIST soundchip
+VALUE "<project>\stimulus\soundchip_tb.vhd,tb_hdl"
+ENDLIST
+ENDLIST
+LIST Other_Association
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=6000ms
+Resolution=1fs
+VsimOpt=
+EntityName=soundchip_tb
+TopInstanceName=soundchip_0
+DoFileName=
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DisablePulseFiltering=false
+DumpVCD=false
+VCDFileName=power.vcd
+VHDL2008=false
+Verilog2001=false
+SystemVerilog=false
+TimeUnit=1
+TimeUnitBase=ns
+Precision=1
+PrecisionBase=ns
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=FALSE
+LibraryPath=C:/Microsemi/Libero_SoC_v2022.1/Designer/lib/modelsimpro/precompiled\vlog\SmartFusion2
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+PeriInitStandalone=FALSE
+OnDemandBuildDH=TRUE
+EnableViewDraw=FALSE
+UpdateViewDrawIni=TRUE
+GenerateHDLFromSchematic=TRUE
+VmNetlistFlowOn=TRUE
+EnableDesignSeparationOn=FALSE
+EnableSETMitigationOn=FALSE
+DisplayFanoutLimit=10
+AbortFlowOnPDCErrorsOn=TRUE
+AbortFlowOnSDCErrorsOn=TRUE
+AbortFlowOn3.3V_IO_ON=FALSE
+InstantiateInSmartDesign=FALSE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="SoftConsole"
+FUNCTION="SoftwareIDE"
+TOOL="SoftConsole"
+LOCATION="eclipse.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Synplify Pro ME"
+FUNCTION="Synthesis"
+TOOL="Synplify Pro ME"
+LOCATION="C:\Microsemi\Libero_SoC_v2022.1\SynplifyPro\bin\synplify_pro.exe"
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="ModelSim ME Pro"
+FUNCTION="Simulation"
+TOOL="ModelSim Pro Edition"
+LOCATION="C:\Microsemi\Libero_SoC_v2022.1\ModelSimPro\win32acoem\modelsim.exe"
+PARAM=" -l soundchip_tb_postsynth_simulation.log "
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Identify Debugger"
+FUNCTION="IdentifyDebugger"
+TOOL="Identify Debugger"
+LOCATION="C:\Microsemi\Libero_SoC_v2022.1\Identify\bin\identify_debugger.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "soundchip::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+LIST Impl2
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+LIST Impl3
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+ENDLIST
+LIST OpenedFileList
+ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;synthesis:soundchip.srr
+SmartDesign;soundchip;0
+HDL;constraint\user.sdc;0
+HDL;hdl\data_receiver.vhd;0
+HDL;hdl\sigma_adder.vhd;0
+HDL;hdl\spi_slave.vhd;0
+HDL;constraint\io\full_io.pdc;0
+HDL;stimulus\soundchip_tb.vhd;0
+Constraint Manager;Constraint Manager;0
+HDL;hdl\delta_adder.vhd;0
+ACTIVEVIEW;Reports
+ENDLIST
+LIST ModuleSubBlockList
+LIST "dac::work","hdl\dac.vhd","FALSE","FALSE"
+SUBBLOCK "delta_adder::work","hdl\delta_adder.vhd","FALSE","FALSE"
+SUBBLOCK "sigma_adder::work","hdl\sigma_adder.vhd","FALSE","FALSE"
+ENDLIST
+LIST "data_receiver::work","hdl\data_receiver.vhd","FALSE","FALSE"
+ENDLIST
+LIST "delta_adder::work","hdl\delta_adder.vhd","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.vhd","TRUE","FALSE"
+SUBBLOCK "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd","FALSE","FALSE"
+ENDLIST
+LIST "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd","FALSE","FALSE"
+ENDLIST
+LIST "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
+SUBBLOCK "OSC_C0_OSC_C0_0_OSC::work","component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd","FALSE","FALSE"
+ENDLIST
+LIST "OSC_C0_OSC_C0_0_OSC::work","component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd","FALSE","FALSE"
+SUBBLOCK "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_1MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_1MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_25_50MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "sigma_adder::work","hdl\sigma_adder.vhd","FALSE","FALSE"
+ENDLIST
+LIST "soundchip::work","component\work\soundchip\soundchip.vhd","TRUE","FALSE"
+SUBBLOCK "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.vhd","TRUE","FALSE"
+SUBBLOCK "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
+SUBBLOCK "SPI_SLAVE::work","hdl\spi_slave.vhd","FALSE","FALSE"
+SUBBLOCK "dac::work","hdl\dac.vhd","FALSE","FALSE"
+SUBBLOCK "data_receiver::work","hdl\data_receiver.vhd","FALSE","FALSE"
+ENDLIST
+LIST "SPI_SLAVE::work","hdl\spi_slave.vhd","FALSE","FALSE"
+ENDLIST
+LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "XTLOSC_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "dac_tb::work","stimulus\dac_tb.vhd","FALSE","TRUE"
+SUBBLOCK "dac::work","hdl\dac.vhd","FALSE","FALSE"
+ENDLIST
+LIST "data_receiver_tb::work","stimulus\data_receiver_tb.vhd","FALSE","TRUE"
+SUBBLOCK "data_receiver::work","hdl\data_receiver.vhd","FALSE","FALSE"
+ENDLIST
+LIST "delta_adder_tb::work","stimulus\delta_adder_tb.vhd","FALSE","TRUE"
+SUBBLOCK "delta_adder::work","hdl\delta_adder.vhd","FALSE","FALSE"
+ENDLIST
+LIST "SPI_SLAVE::work","hdl\spi_slave.vhd","FALSE","FALSE"
+ENDLIST
+LIST "sigma_adder_tb::work","stimulus\sigma_adder_tb.vhd","FALSE","TRUE"
+SUBBLOCK "sigma_adder::work","hdl\sigma_adder.vhd","FALSE","FALSE"
+ENDLIST
+LIST "soundchip_tb::work","stimulus\soundchip_tb.vhd","FALSE","TRUE"
+SUBBLOCK "soundchip::work","component\work\soundchip\soundchip.vhd","TRUE","FALSE"
+ENDLIST
+LIST "SPI_SLAVE_TB::work","stimulus\spi_slave_tb.vhd","FALSE","TRUE"
+SUBBLOCK "SPI_SLAVE::work","hdl\spi_slave.vhd","FALSE","FALSE"
+ENDLIST
+ENDLIST
+LIST ActiveTestBenchList
+ENDLIST
+LIST IOTabList
+VALUE "constraint\io\full_io.pdc"
+VALUE "constraint\io\user.pdc"
+ENDLIST
+LIST FPTabList
+ENDLIST
+LIST TimingTabList
+VALUE "constraint\user.sdc"
+ENDLIST
+LIST FDCTabList
+ENDLIST

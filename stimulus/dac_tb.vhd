@@ -25,7 +25,7 @@ end dac_tb;
 
 architecture behavioral of dac_tb is
 
-    constant SYSCLK_PERIOD : time := 20 ns; -- 50MHZ
+    constant SYSCLK_PERIOD : time := 10 ns; -- 100MHZ
 
     signal SYSCLK : std_logic := '0';
     signal NSYSRESET : std_logic := '0';
@@ -48,20 +48,6 @@ architecture behavioral of dac_tb is
 
 begin
 
-    process
-        variable vhdl_initial : BOOLEAN := TRUE;
-
-    begin
-        if ( vhdl_initial ) then
-            -- Assert Reset
-            NSYSRESET <= '1';
-            wait for ( SYSCLK_PERIOD * 2 );
-            
-            NSYSRESET <= '0';
-            wait;
-        end if;
-    end process;
-
     -- Clock Driver
     SYSCLK <= not SYSCLK after (SYSCLK_PERIOD / 2.0 );
 
@@ -80,56 +66,106 @@ begin
         
     tb: process
         begin
-        wait until NSYSRESET = '0';
+        NSYSRESET <= not NSYSRESET;
+        wait for (SYSCLK_PERIOD * 5);
+        NSYSRESET <= not NSYSRESET;
         
         data_in_sig <= "0000000000000000";
         wait for 22670 ns;
         
+        NSYSRESET <= not NSYSRESET;
+        wait for SYSCLK_PERIOD;
+        NSYSRESET <= not NSYSRESET;
         data_in_sig <= "0000000000000001";
         wait for 22670 ns;
         
+        NSYSRESET <= not NSYSRESET;
+        wait for SYSCLK_PERIOD;
+        NSYSRESET <= not NSYSRESET;
         data_in_sig <= "0000000000000011";
         wait for 22670 ns;
         
+        NSYSRESET <= not NSYSRESET;
+        wait for SYSCLK_PERIOD;
+        NSYSRESET <= not NSYSRESET;
         data_in_sig <= "0000000000000111";
         wait for 22670 ns;
         
+        NSYSRESET <= not NSYSRESET;
+        wait for SYSCLK_PERIOD;
+        NSYSRESET <= not NSYSRESET;
         data_in_sig <= "0000000000001111";
         wait for 22670 ns;
         
+        NSYSRESET <= not NSYSRESET;
+        wait for SYSCLK_PERIOD;
+        NSYSRESET <= not NSYSRESET;
         data_in_sig <= "0000000000011111";
         wait for 22670 ns;
         
+        NSYSRESET <= not NSYSRESET;
+        wait for SYSCLK_PERIOD;
+        NSYSRESET <= not NSYSRESET;
         data_in_sig <= "0000000000111111";
         wait for 22670 ns;
         
+        NSYSRESET <= not NSYSRESET;
+        wait for SYSCLK_PERIOD;
+        NSYSRESET <= not NSYSRESET;
         data_in_sig <= "0000000001111111";
         wait for 22670 ns;
         
+        NSYSRESET <= not NSYSRESET;
+        wait for SYSCLK_PERIOD;
+        NSYSRESET <= not NSYSRESET;
         data_in_sig <= "0000000011111111";
         wait for 22670 ns;
         
+        NSYSRESET <= not NSYSRESET;
+        wait for SYSCLK_PERIOD;
+        NSYSRESET <= not NSYSRESET;
         data_in_sig <= "0000000111111111";
         wait for 22670 ns;
         
+        NSYSRESET <= not NSYSRESET;
+        wait for SYSCLK_PERIOD;
+        NSYSRESET <= not NSYSRESET;
         data_in_sig <= "0000001111111111";
         wait for 22670 ns;
         
+        NSYSRESET <= not NSYSRESET;
+        wait for SYSCLK_PERIOD;
+        NSYSRESET <= not NSYSRESET;
         data_in_sig <= "0000011111111111";
         wait for 22670 ns;
         
+        NSYSRESET <= not NSYSRESET;
+        wait for SYSCLK_PERIOD;
+        NSYSRESET <= not NSYSRESET;
         data_in_sig <= "0000111111111111";
         wait for 22670 ns;
         
+        NSYSRESET <= not NSYSRESET;
+        wait for SYSCLK_PERIOD;
+        NSYSRESET <= not NSYSRESET;
         data_in_sig <= "0001111111111111";
         wait for 22670 ns;
         
+        NSYSRESET <= not NSYSRESET;
+        wait for SYSCLK_PERIOD;
+        NSYSRESET <= not NSYSRESET;
         data_in_sig <= "0011111111111111";
         wait for 22670 ns;
         
+        NSYSRESET <= not NSYSRESET;
+        wait for SYSCLK_PERIOD;
+        NSYSRESET <= not NSYSRESET;
         data_in_sig <= "0111111111111111";
         wait for 22670 ns;
         
+        NSYSRESET <= not NSYSRESET;
+        wait for SYSCLK_PERIOD;
+        NSYSRESET <= not NSYSRESET;
         data_in_sig <= "1111111111111111";
         wait for 22670 ns;
         

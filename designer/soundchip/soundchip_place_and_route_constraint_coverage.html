@@ -1,0 +1,632 @@
+<html>
+    <head>
+        <style>
+      body { font-family:arial; font-size:10pt; text-align:left; }
+      h1, h2 {
+          padding-top: 30px;
+      }
+      h3 {
+          padding-top: 20px;
+      }
+      h4, h5, h6 {
+          padding-top: 10px;
+          font-size:12pt;
+      }
+      table {
+          font-family:arial; font-size:10pt; text-align:left;
+          border-color:#B0B0B0;
+          border-style:solid;
+          border-width:1px;
+          border-collapse:collapse;
+      }
+      table th, table td {
+          font-family:arial; font-size:10pt; text-align:left;
+          border-color:#B0B0B0;
+          border-style:solid;
+          border-width:1px;
+          padding: 4px;
+      }
+     </style>
+    </head>
+    <body>
+        <p>SmartTime Version 2022.1.0.10</p>
+        <p>Microsemi Corporation - Microsemi Libero Software Release v2022.1 (Version 2022.1.0.10)
+Date: Fri Oct  7 17:54:46 2022 </p>
+        <table cellpadding="4">
+            <tr/>
+            <tr>
+                <td>Design</td>
+                <td>soundchip</td>
+            </tr>
+            <tr>
+                <td>Family</td>
+                <td>SmartFusion2</td>
+            </tr>
+            <tr>
+                <td>Die</td>
+                <td>M2S010</td>
+            </tr>
+            <tr>
+                <td>Package</td>
+                <td>256 VF</td>
+            </tr>
+            <tr>
+                <td>Temperature Range</td>
+                <td>0 - 85 C</td>
+            </tr>
+            <tr>
+                <td>Voltage Range</td>
+                <td>1.14 - 1.26 V</td>
+            </tr>
+            <tr>
+                <td>Speed Grade</td>
+                <td>STD</td>
+            </tr>
+        </table>
+        <p/>
+        <p/>
+        <h2>Coverage Summary</h2>
+        <p/>
+        <table cellpadding="4">
+            <tr>
+                <th>Type of check</th>
+                <th>Constrained</th>
+                <th>UnConstrained</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Setup</td>
+                <td>          115</td>
+                <td>           67</td>
+                <td>          182</td>
+            </tr>
+            <tr>
+                <td>Recovery</td>
+                <td>           70</td>
+                <td>           32</td>
+                <td>          102</td>
+            </tr>
+            <tr>
+                <td>Output Setup</td>
+                <td>            0</td>
+                <td>           10</td>
+                <td>           10</td>
+            </tr>
+            <tr>
+                <td>Total Setup</td>
+                <td>          185</td>
+                <td>          109</td>
+                <td>          294</td>
+            </tr>
+            <tr>
+                <td>Hold</td>
+                <td>          115</td>
+                <td>           67</td>
+                <td>          182</td>
+            </tr>
+            <tr>
+                <td>Removal</td>
+                <td>           70</td>
+                <td>           32</td>
+                <td>          102</td>
+            </tr>
+            <tr>
+                <td>Output Hold</td>
+                <td>            0</td>
+                <td>           10</td>
+                <td>           10</td>
+            </tr>
+            <tr>
+                <td>Total Hold</td>
+                <td>          185</td>
+                <td>          109</td>
+                <td>          294</td>
+            </tr>
+        </table>
+        <h3>Clock domain: </h3>
+        <p>FCCC_C0_0</p>
+        <p/>
+        <table cellpadding="4">
+            <tr>
+                <th>Type of check</th>
+                <th>Constrained</th>
+                <th>UnConstrained</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Setup</td>
+                <td>          115</td>
+                <td>           35</td>
+                <td>          150</td>
+            </tr>
+            <tr>
+                <td>Recovery</td>
+                <td>           70</td>
+                <td>            0</td>
+                <td>           70</td>
+            </tr>
+            <tr>
+                <td>Output Setup</td>
+                <td>            0</td>
+                <td>            4</td>
+                <td>            4</td>
+            </tr>
+            <tr>
+                <td>Total Setup</td>
+                <td>          185</td>
+                <td>           39</td>
+                <td>          224</td>
+            </tr>
+            <tr>
+                <td>Hold</td>
+                <td>          115</td>
+                <td>           35</td>
+                <td>          150</td>
+            </tr>
+            <tr>
+                <td>Removal</td>
+                <td>           70</td>
+                <td>            0</td>
+                <td>           70</td>
+            </tr>
+            <tr>
+                <td>Output Hold</td>
+                <td>            0</td>
+                <td>            4</td>
+                <td>            4</td>
+            </tr>
+            <tr>
+                <td>Total Hold</td>
+                <td>          185</td>
+                <td>           39</td>
+                <td>          224</td>
+            </tr>
+        </table>
+        <h4>Enhancement Suggestions</h4>
+        <p/>
+        <p> - Max input delay constraint missing on ports:</p>
+        <p/>
+        <ul>
+            <li>spi_mosi</li>
+            <li>spi_sck</li>
+            <li>spi_ss</li>
+        </ul>
+        <p/>
+        <p> - Min input delay constraint missing on ports:</p>
+        <p/>
+        <ul>
+            <li>spi_mosi</li>
+            <li>spi_sck</li>
+            <li>spi_ss</li>
+        </ul>
+        <p/>
+        <p/>
+        <p> - Max output delay constraint missing on ports:</p>
+        <p/>
+        <ul>
+            <li>dac_out_left</li>
+            <li>dac_out_right</li>
+            <li>miso_cp</li>
+            <li>spi_miso</li>
+        </ul>
+        <p/>
+        <p> - Min output delay constraint missing on ports:</p>
+        <p/>
+        <ul>
+            <li>dac_out_left</li>
+            <li>dac_out_right</li>
+            <li>miso_cp</li>
+            <li>spi_miso</li>
+        </ul>
+        <p/>
+        <p/>
+        <p> - Setup unconstrained for the following pins:</p>
+        <p/>
+        <ul>
+            <li>SPI_SLAVE_0/cs_n_meta:D</li>
+            <li>SPI_SLAVE_0/mosi_meta:D</li>
+            <li>SPI_SLAVE_0/sclk_meta:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[0]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[10]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[11]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[12]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[13]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[14]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[15]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[1]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[2]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[3]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[4]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[5]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[6]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[7]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[8]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[9]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[0]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[10]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[11]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[12]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[13]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[14]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[15]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[1]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[2]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[3]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[4]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[5]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[6]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[7]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[8]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[9]:D</li>
+        </ul>
+        <p/>
+        <p> - Hold unconstrained for the following pins:</p>
+        <p/>
+        <ul>
+            <li>SPI_SLAVE_0/cs_n_meta:D</li>
+            <li>SPI_SLAVE_0/mosi_meta:D</li>
+            <li>SPI_SLAVE_0/sclk_meta:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[0]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[10]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[11]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[12]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[13]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[14]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[15]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[1]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[2]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[3]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[4]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[5]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[6]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[7]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[8]:D</li>
+            <li>dac_0/DELTA_ADDER_0/data_out_1[9]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[0]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[10]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[11]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[12]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[13]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[14]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[15]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[1]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[2]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[3]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[4]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[5]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[6]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[7]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[8]:D</li>
+            <li>dac_1/DELTA_ADDER_0/data_out_1[9]:D</li>
+        </ul>
+        <p/>
+        <h3>Clock domain: </h3>
+        <p>OSC_0</p>
+        <p/>
+        <table cellpadding="4">
+            <tr>
+                <th>Type of check</th>
+                <th>Constrained</th>
+                <th>UnConstrained</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Setup</td>
+                <td>            0</td>
+                <td>            0</td>
+                <td>            0</td>
+            </tr>
+            <tr>
+                <td>Recovery</td>
+                <td>            0</td>
+                <td>            0</td>
+                <td>            0</td>
+            </tr>
+            <tr>
+                <td>Output Setup</td>
+                <td>            0</td>
+                <td>            0</td>
+                <td>            0</td>
+            </tr>
+            <tr>
+                <td>Total Setup</td>
+                <td>            0</td>
+                <td>            0</td>
+                <td>            0</td>
+            </tr>
+            <tr>
+                <td>Hold</td>
+                <td>            0</td>
+                <td>            0</td>
+                <td>            0</td>
+            </tr>
+            <tr>
+                <td>Removal</td>
+                <td>            0</td>
+                <td>            0</td>
+                <td>            0</td>
+            </tr>
+            <tr>
+                <td>Output Hold</td>
+                <td>            0</td>
+                <td>            0</td>
+                <td>            0</td>
+            </tr>
+            <tr>
+                <td>Total Hold</td>
+                <td>            0</td>
+                <td>            0</td>
+                <td>            0</td>
+            </tr>
+        </table>
+        <h3>Clock domain: </h3>
+        <p>gated-clocks</p>
+        <p/>
+        <table cellpadding="4">
+            <tr>
+                <th>Type of check</th>
+                <th>Constrained</th>
+                <th>UnConstrained</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Setup</td>
+                <td>            0</td>
+                <td>           32</td>
+                <td>           32</td>
+            </tr>
+            <tr>
+                <td>Recovery</td>
+                <td>            0</td>
+                <td>           32</td>
+                <td>           32</td>
+            </tr>
+            <tr>
+                <td>Output Setup</td>
+                <td>            0</td>
+                <td>            3</td>
+                <td>            3</td>
+            </tr>
+            <tr>
+                <td>Total Setup</td>
+                <td>            0</td>
+                <td>           67</td>
+                <td>           67</td>
+            </tr>
+            <tr>
+                <td>Hold</td>
+                <td>            0</td>
+                <td>           32</td>
+                <td>           32</td>
+            </tr>
+            <tr>
+                <td>Removal</td>
+                <td>            0</td>
+                <td>           32</td>
+                <td>           32</td>
+            </tr>
+            <tr>
+                <td>Output Hold</td>
+                <td>            0</td>
+                <td>            3</td>
+                <td>            3</td>
+            </tr>
+            <tr>
+                <td>Total Hold</td>
+                <td>            0</td>
+                <td>           67</td>
+                <td>           67</td>
+            </tr>
+        </table>
+        <h4>Enhancement Suggestions</h4>
+        <p/>
+        <p> - Clock constraint is missing </p>
+        <p/>
+        <p/>
+        <p> - Setup unconstrained for the following pins:</p>
+        <p/>
+        <ul>
+            <li>data_receiver_0/data[0]:D</li>
+            <li>data_receiver_0/data[10]:D</li>
+            <li>data_receiver_0/data[11]:D</li>
+            <li>data_receiver_0/data[12]:D</li>
+            <li>data_receiver_0/data[13]:D</li>
+            <li>data_receiver_0/data[14]:D</li>
+            <li>data_receiver_0/data[15]:D</li>
+            <li>data_receiver_0/data[16]:D</li>
+            <li>data_receiver_0/data[17]:D</li>
+            <li>data_receiver_0/data[18]:D</li>
+            <li>data_receiver_0/data[19]:D</li>
+            <li>data_receiver_0/data[1]:D</li>
+            <li>data_receiver_0/data[20]:D</li>
+            <li>data_receiver_0/data[21]:D</li>
+            <li>data_receiver_0/data[22]:D</li>
+            <li>data_receiver_0/data[23]:D</li>
+            <li>data_receiver_0/data[24]:D</li>
+            <li>data_receiver_0/data[25]:D</li>
+            <li>data_receiver_0/data[26]:D</li>
+            <li>data_receiver_0/data[27]:D</li>
+            <li>data_receiver_0/data[28]:D</li>
+            <li>data_receiver_0/data[29]:D</li>
+            <li>data_receiver_0/data[2]:D</li>
+            <li>data_receiver_0/data[30]:D</li>
+            <li>data_receiver_0/data[31]:D</li>
+            <li>data_receiver_0/data[3]:D</li>
+            <li>data_receiver_0/data[4]:D</li>
+            <li>data_receiver_0/data[5]:D</li>
+            <li>data_receiver_0/data[6]:D</li>
+            <li>data_receiver_0/data[7]:D</li>
+            <li>data_receiver_0/data[8]:D</li>
+            <li>data_receiver_0/data[9]:D</li>
+        </ul>
+        <p/>
+        <p> - Recovery unconstrained for the following pins:</p>
+        <p/>
+        <ul>
+            <li>data_receiver_0/data[0]:ALn</li>
+            <li>data_receiver_0/data[10]:ALn</li>
+            <li>data_receiver_0/data[11]:ALn</li>
+            <li>data_receiver_0/data[12]:ALn</li>
+            <li>data_receiver_0/data[13]:ALn</li>
+            <li>data_receiver_0/data[14]:ALn</li>
+            <li>data_receiver_0/data[15]:ALn</li>
+            <li>data_receiver_0/data[16]:ALn</li>
+            <li>data_receiver_0/data[17]:ALn</li>
+            <li>data_receiver_0/data[18]:ALn</li>
+            <li>data_receiver_0/data[19]:ALn</li>
+            <li>data_receiver_0/data[1]:ALn</li>
+            <li>data_receiver_0/data[20]:ALn</li>
+            <li>data_receiver_0/data[21]:ALn</li>
+            <li>data_receiver_0/data[22]:ALn</li>
+            <li>data_receiver_0/data[23]:ALn</li>
+            <li>data_receiver_0/data[24]:ALn</li>
+            <li>data_receiver_0/data[25]:ALn</li>
+            <li>data_receiver_0/data[26]:ALn</li>
+            <li>data_receiver_0/data[27]:ALn</li>
+            <li>data_receiver_0/data[28]:ALn</li>
+            <li>data_receiver_0/data[29]:ALn</li>
+            <li>data_receiver_0/data[2]:ALn</li>
+            <li>data_receiver_0/data[30]:ALn</li>
+            <li>data_receiver_0/data[31]:ALn</li>
+            <li>data_receiver_0/data[3]:ALn</li>
+            <li>data_receiver_0/data[4]:ALn</li>
+            <li>data_receiver_0/data[5]:ALn</li>
+            <li>data_receiver_0/data[6]:ALn</li>
+            <li>data_receiver_0/data[7]:ALn</li>
+            <li>data_receiver_0/data[8]:ALn</li>
+            <li>data_receiver_0/data[9]:ALn</li>
+        </ul>
+        <p/>
+        <p> - Hold unconstrained for the following pins:</p>
+        <p/>
+        <ul>
+            <li>data_receiver_0/data[0]:D</li>
+            <li>data_receiver_0/data[10]:D</li>
+            <li>data_receiver_0/data[11]:D</li>
+            <li>data_receiver_0/data[12]:D</li>
+            <li>data_receiver_0/data[13]:D</li>
+            <li>data_receiver_0/data[14]:D</li>
+            <li>data_receiver_0/data[15]:D</li>
+            <li>data_receiver_0/data[16]:D</li>
+            <li>data_receiver_0/data[17]:D</li>
+            <li>data_receiver_0/data[18]:D</li>
+            <li>data_receiver_0/data[19]:D</li>
+            <li>data_receiver_0/data[1]:D</li>
+            <li>data_receiver_0/data[20]:D</li>
+            <li>data_receiver_0/data[21]:D</li>
+            <li>data_receiver_0/data[22]:D</li>
+            <li>data_receiver_0/data[23]:D</li>
+            <li>data_receiver_0/data[24]:D</li>
+            <li>data_receiver_0/data[25]:D</li>
+            <li>data_receiver_0/data[26]:D</li>
+            <li>data_receiver_0/data[27]:D</li>
+            <li>data_receiver_0/data[28]:D</li>
+            <li>data_receiver_0/data[29]:D</li>
+            <li>data_receiver_0/data[2]:D</li>
+            <li>data_receiver_0/data[30]:D</li>
+            <li>data_receiver_0/data[31]:D</li>
+            <li>data_receiver_0/data[3]:D</li>
+            <li>data_receiver_0/data[4]:D</li>
+            <li>data_receiver_0/data[5]:D</li>
+            <li>data_receiver_0/data[6]:D</li>
+            <li>data_receiver_0/data[7]:D</li>
+            <li>data_receiver_0/data[8]:D</li>
+            <li>data_receiver_0/data[9]:D</li>
+        </ul>
+        <p/>
+        <p> - Removal unconstrained for the following pins:</p>
+        <p/>
+        <ul>
+            <li>data_receiver_0/data[0]:ALn</li>
+            <li>data_receiver_0/data[10]:ALn</li>
+            <li>data_receiver_0/data[11]:ALn</li>
+            <li>data_receiver_0/data[12]:ALn</li>
+            <li>data_receiver_0/data[13]:ALn</li>
+            <li>data_receiver_0/data[14]:ALn</li>
+            <li>data_receiver_0/data[15]:ALn</li>
+            <li>data_receiver_0/data[16]:ALn</li>
+            <li>data_receiver_0/data[17]:ALn</li>
+            <li>data_receiver_0/data[18]:ALn</li>
+            <li>data_receiver_0/data[19]:ALn</li>
+            <li>data_receiver_0/data[1]:ALn</li>
+            <li>data_receiver_0/data[20]:ALn</li>
+            <li>data_receiver_0/data[21]:ALn</li>
+            <li>data_receiver_0/data[22]:ALn</li>
+            <li>data_receiver_0/data[23]:ALn</li>
+            <li>data_receiver_0/data[24]:ALn</li>
+            <li>data_receiver_0/data[25]:ALn</li>
+            <li>data_receiver_0/data[26]:ALn</li>
+            <li>data_receiver_0/data[27]:ALn</li>
+            <li>data_receiver_0/data[28]:ALn</li>
+            <li>data_receiver_0/data[29]:ALn</li>
+            <li>data_receiver_0/data[2]:ALn</li>
+            <li>data_receiver_0/data[30]:ALn</li>
+            <li>data_receiver_0/data[31]:ALn</li>
+            <li>data_receiver_0/data[3]:ALn</li>
+            <li>data_receiver_0/data[4]:ALn</li>
+            <li>data_receiver_0/data[5]:ALn</li>
+            <li>data_receiver_0/data[6]:ALn</li>
+            <li>data_receiver_0/data[7]:ALn</li>
+            <li>data_receiver_0/data[8]:ALn</li>
+            <li>data_receiver_0/data[9]:ALn</li>
+        </ul>
+        <p/>
+        <h3>Input to Output</h3>
+        <table cellpadding="4">
+            <tr>
+                <th>Type of check</th>
+                <th>Constrained</th>
+                <th>UnConstrained</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Output Setup</td>
+                <td>            0</td>
+                <td>            3</td>
+                <td>            3</td>
+            </tr>
+            <tr>
+                <td>Output Hold</td>
+                <td>            0</td>
+                <td>            3</td>
+                <td>            3</td>
+            </tr>
+        </table>
+        <h4>Enhancement Suggestions</h4>
+        <p/>
+        <p> - Max delay constraint missing on input ports:</p>
+        <p/>
+        <ul>
+            <li>spi_mosi</li>
+            <li>spi_sck</li>
+            <li>spi_ss</li>
+        </ul>
+        <p/>
+        <p> - Min delay constraint missing on input ports:</p>
+        <p/>
+        <ul>
+            <li>spi_mosi</li>
+            <li>spi_sck</li>
+            <li>spi_ss</li>
+        </ul>
+        <p/>
+        <p/>
+        <p> - Max delay constraint missing on output ports:</p>
+        <p/>
+        <ul>
+            <li>mosi_out</li>
+            <li>sck_out</li>
+            <li>ss_out</li>
+        </ul>
+        <p/>
+        <p> - Min delay constraint missing on output ports:</p>
+        <p/>
+        <ul>
+            <li>mosi_out</li>
+            <li>sck_out</li>
+            <li>ss_out</li>
+        </ul>
+        <p/>
+        <p/>
+    </body>
+</html>

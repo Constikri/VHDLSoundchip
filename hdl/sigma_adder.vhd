@@ -26,7 +26,7 @@ port (
 	delta_in : IN signed(17 downto 0);
 	clk      : IN std_logic;
 	reset    : IN std_logic;
-	dac_out  : OUT std_logic
+	sigma_out  : OUT std_logic
 );
 end sigma_adder;
 
@@ -39,7 +39,7 @@ begin
 		variable temp_reg : signed(17 downto 0);
 	begin
 		if(reset = '1') then
-			sigma_register <= (17 => '1', others => '0');
+			sigma_register <= (others => '0'); -- 17 => '1', 
 		else
 			if(rising_edge(clk)) then
 				temp_reg := delta_in + sigma_register;
@@ -48,5 +48,5 @@ begin
 		end if;
 	end process;
    
-    dac_out <= sigma_register(17);
+    sigma_out <= sigma_register(17);
 end architecture_sigma_adder;

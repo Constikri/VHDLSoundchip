@@ -1,8 +1,8 @@
 ----------------------------------------------------------------
--Pin Report - Date: Sun Jul 10 21:18:51 2022 Pinchecksum: NOT-AVAILABLE
+-Pin Report - Date: Mon Dec  5 15:56:34 2022 Pinchecksum: NOT-AVAILABLE
 -Product: Designer
--Release: v2022.1
--Version: 2022.1.0.10
+-Release: v2022.2
+-Version: 2022.2.0.10
 -Design Name: soundchip
 -Family: SmartFusion2
 -Die: M2S010
@@ -125,7 +125,7 @@ G15                    VSS                                         Reserved
 G16                    MSIO19NB2/GPIO_14_A                         Unassigned     
 H1                     MSIOD85PB6/CCC_NE1_CLKI1                    Special        
 H2                     VDDI7                                       Reserved       
-H3                     MSIO81PB7                                   Unassigned     
+H3      spi_miso       MSIO81PB7                                   Fixed          LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
 H4                     MSIO81NB7                                   Unassigned     
 H5                     MSIOD86PB6                                  Unassigned     
 H6                     VDDI6                                       Reserved       
@@ -150,9 +150,9 @@ J8                     VSS                                         Reserved
 J9                     VDD                                         Reserved       
 J10                    VSS                                         Reserved       
 J11                    VDDI2                                       Reserved       
-J12     spi_ss         MSIO13NB2/SPI_0_SS0/GPIO_7_A                Fixed          LVCMOS33  Input      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           ---                ---               
-J13     spi_mosi       MSIO12NB2/SPI_0_SDI/GPIO_5_A                Fixed          LVCMOS33  Input      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           ---                ---               
-J14     spi_sck        MSIO12PB2/SPI_0_CLK                         Fixed          LVCMOS33  Input      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           ---                ---               
+J12                    MSIO13NB2/SPI_0_SS0/GPIO_7_A                Unassigned     
+J13                    MSIO12NB2/SPI_0_SDI/GPIO_5_A                Unassigned     
+J14                    MSIO12PB2/SPI_0_CLK                         Unassigned     
 J15                    VDDI2                                       Reserved       
 J16                    MSIO11PB2/I2C_1_SDA/GPIO_0_A/CCC_NE0_CLKI1  Special        
 K1                     MSIOD101NB5                                 Unassigned     
@@ -166,7 +166,7 @@ K8                     VDD                                         Reserved
 K9                     VSS                                         Reserved       
 K10                    VDD                                         Reserved       
 K11                    VPPNVM                                      Reserved       
-K12     spi_miso       MSIO13PB2/SPI_0_SDO/GPIO_6_A                Fixed          LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
+K12                    MSIO13PB2/SPI_0_SDO/GPIO_6_A                Unassigned     
 K13                    VSS                                         Reserved       
 K14                    MSIO6PB2/USB_DATA6_B                        Unassigned     
 K15                    MSIO6NB2                                    Unassigned     
@@ -183,8 +183,8 @@ L9                     VPP                                         Reserved
 L10                    VSSNVM                                      Reserved       
 L11                    MSIO3PB2/USB_DATA0_B                        Unassigned     
 L12                    MSIO3NB2/USB_DATA1_B                        Unassigned     
-L13                    MSIO5NB2/USB_DATA5_B                        Unassigned     
-L14                    MSIO5PB2/USB_DATA4_B                        Unassigned     
+L13     spi_sck        MSIO5NB2/USB_DATA5_B                        Fixed          LVCMOS33  Input      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           ---                ---               
+L14     spi_ss         MSIO5PB2/USB_DATA4_B                        Fixed          LVCMOS33  Input      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           ---                ---               
 L15                    MSIO4NB2/USB_DATA3_B                        Unassigned     
 L16                    VSS                                         Reserved       
 M1                     VSS                                         Reserved       
@@ -231,7 +231,7 @@ P9                     MSIO113PB4                                  Unassigned
 P10                    MSIO109PB4                                  Unassigned     
 P11                    VDDI4                                       Reserved       
 P12                    MSIO117PB4                                  Unassigned     
-P13                    MSIO117NB4                                  Unassigned     
+P13     spi_mosi       MSIO117NB4                                  Fixed          LVCMOS33  Input      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           ---                ---               
 P14                    JTAG_TDO/M3_TDO/M3_SWO                      Reserved       
 P15                    VSS                                         Reserved       
 P16                    JTAG_TDI/M3_TDI                             Reserved       

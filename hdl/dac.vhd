@@ -30,8 +30,8 @@ port (
 );
 end dac;
 architecture architecture_dac of dac is
-   signal data_delta : signed(17 downto 0);
-   signal delta_sig  : std_logic;
+   signal data_delta : signed(17 downto 0) := (others => '0');
+   signal delta_sig  : std_logic := '1';
    
    component delta_adder is
 		port (
@@ -47,7 +47,7 @@ architecture architecture_dac of dac is
 			delta_in : IN signed(17 downto 0);
 			clk      : IN std_logic;
 			reset    : IN std_logic;
-			dac_out  : OUT std_logic
+			sigma_out  : OUT std_logic
 		);
 	end component;
 begin
@@ -66,6 +66,6 @@ begin
 		delta_in => data_delta,
 		clk      => clk,
 		reset    => reset,
-		dac_out  => delta_sig
+		sigma_out  => delta_sig
 	);
 end architecture_dac;

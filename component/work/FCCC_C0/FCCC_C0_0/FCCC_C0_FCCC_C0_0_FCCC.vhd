@@ -1,4 +1,4 @@
--- Version: 2022.1 2022.1.0.10
+-- Version: 2022.2 2022.2.0.10
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -9,19 +9,12 @@ entity FCCC_C0_FCCC_C0_0_FCCC is
 
     port( RCOSC_25_50MHZ : in    std_logic;
           LOCK           : out   std_logic;
-          GL0            : out   std_logic;
-          GL1            : out   std_logic
+          GL0            : out   std_logic
         );
 
 end FCCC_C0_FCCC_C0_0_FCCC;
 
 architecture DEF_ARCH of FCCC_C0_FCCC_C0_0_FCCC is 
-
-  component CLKINT
-    port( A : in    std_logic := 'U';
-          Y : out   std_logic
-        );
-  end component;
 
   component VCC
     port( Y : out   std_logic
@@ -30,6 +23,12 @@ architecture DEF_ARCH of FCCC_C0_FCCC_C0_0_FCCC is
 
   component GND
     port( Y : out   std_logic
+        );
+  end component;
+
+  component CLKINT
+    port( A : in    std_logic := 'U';
+          Y : out   std_logic
         );
   end component;
 
@@ -89,15 +88,12 @@ architecture DEF_ARCH of FCCC_C0_FCCC_C0_0_FCCC is
         );
   end component;
 
-    signal gnd_net, vcc_net, GL0_net, GL1_net : std_logic;
+    signal gnd_net, vcc_net, GL0_net : std_logic;
     signal nc8, nc7, nc6, nc2, nc5, nc4, nc3, nc1 : std_logic;
 
 begin 
 
 
-    GL1_INST : CLKINT
-      port map(A => GL1_net, Y => GL1);
-    
     vcc_inst : VCC
       port map(Y => vcc_net);
     
@@ -109,7 +105,7 @@ begin
     
     CCC_INST : CCC
 
-              generic map(INIT => "00" & x"000007FB8000044D74000F18C6308C271839DEC0404045000301",
+              generic map(INIT => "00" & x"000007FB8000044D74000318C6318C1F18C61EC0404040400301",
          VCOFREQUENCY => 800.000)
 
       port map(Y0 => OPEN, Y1 => OPEN, Y2 => OPEN, Y3 => OPEN, 
@@ -135,8 +131,8 @@ begin
         vcc_net, PWDATA(3) => vcc_net, PWDATA(2) => vcc_net, 
         PWDATA(1) => vcc_net, PWDATA(0) => vcc_net, CLK0_PAD => 
         gnd_net, CLK1_PAD => gnd_net, CLK2_PAD => gnd_net, 
-        CLK3_PAD => gnd_net, GL0 => GL0_net, GL1 => GL1_net, GL2
-         => OPEN, GL3 => OPEN, RCOSC_25_50MHZ => RCOSC_25_50MHZ, 
+        CLK3_PAD => gnd_net, GL0 => GL0_net, GL1 => OPEN, GL2 => 
+        OPEN, GL3 => OPEN, RCOSC_25_50MHZ => RCOSC_25_50MHZ, 
         RCOSC_1MHZ => gnd_net, XTLOSC => gnd_net);
     
 

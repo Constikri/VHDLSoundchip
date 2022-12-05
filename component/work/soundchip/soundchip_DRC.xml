@@ -3,73 +3,10 @@
 <drcreport>
   <header>soundchip</header>
   <drc>
-    <status>C:\Microsemi\Libero_SoC_v2022.1\Designer/data/drcreport\error.png</status>
+    <status>C:\Microchip\Libero_SoC_v2022.2\Designer/data/drcreport\error.png</status>
     <StatusMessage>Error</StatusMessage>
     <message>Undriven Pin</message>
-    <detail>Unconnected input pin CORESPI_C1_0:PRESETN</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/soundchip/pins/CORESPI_C1_0:PRESETN</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v2022.1\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Floating Driver</message>
-    <detail>Floating output pin CORESPI_C1_0:SPIINT</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/soundchip/pins/CORESPI_C1_0:SPIINT</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v2022.1\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Floating Driver</message>
-    <detail>Floating output pin CORESPI_C1_0:SPIRXAVAIL</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/soundchip/pins/CORESPI_C1_0:SPIRXAVAIL</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v2022.1\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Floating Driver</message>
-    <detail>Floating output pin CORESPI_C1_0:SPITXRFM</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/soundchip/pins/CORESPI_C1_0:SPITXRFM</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v2022.1\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Floating Driver</message>
-    <detail>Floating output pin CORESPI_C1_0:SPIOEN</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/soundchip/pins/CORESPI_C1_0:SPIOEN</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v2022.1\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Floating Driver</message>
-    <detail>Floating output pin CORESPI_C1_0:SPIMODE</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/soundchip/pins/CORESPI_C1_0:SPIMODE</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v2022.1\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Unconnected Bus Interface</message>
-    <detail>Unconnected bus interface pin CORESPI_C1_0:APB_bif</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/soundchip/pins/CORESPI_C1_0:APB_bif</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v2022.1\Designer/data/drcreport\error.png</status>
-    <StatusMessage>Error</StatusMessage>
-    <message>Undriven Pin</message>
-    <detail>Unconnected input pin dac_0:reset</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/soundchip/pins/dac_0:reset</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v2022.1\Designer/data/drcreport\error.png</status>
-    <StatusMessage>Error</StatusMessage>
-    <message>Undriven Pin</message>
-    <detail>Unconnected input pin soundchip_sb_0:CLK0</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/soundchip/pins/soundchip_sb_0:CLK0</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v2022.1\Designer/data/drcreport\error.png</status>
-    <StatusMessage>Error</StatusMessage>
-    <message>Required Bus Interface Connection</message>
-    <detail>Unconnected bus interface pin soundchip_sb_0:RCOSC_25_50MHZ_CCC_OUT</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/soundchip/pins/soundchip_sb_0:RCOSC_25_50MHZ_CCC_OUT</crossprobe>
+    <detail>Unconnected input pin DOUT</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/soundchip/pins/soundchip:DOUT</crossprobe>
   </drc>
 </drcreport>

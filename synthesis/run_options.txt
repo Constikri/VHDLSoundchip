@@ -1,22 +1,20 @@
 #--  Synopsys, Inc.
-#--  Version S-2021.09M
+#--  Version S-2021.09M-SP1
 #--  Project file C:\Users\Constantin\Documents\VHDLSoundchip\synthesis\run_options.txt
-#--  Written on Sun Jul 10 21:17:55 2022
+#--  Written on Mon Dec  5 15:55:49 2022
 
 
 #project files
-add_file -vhdl -lib CORERESET_PF_LIB "C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0_0/core/corereset_pf.vhd"
-add_file -vhdl -lib work "C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0.vhd"
 add_file -vhdl -lib work "C:/Users/Constantin/Documents/VHDLSoundchip/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd"
 add_file -vhdl -lib work "C:/Users/Constantin/Documents/VHDLSoundchip/component/work/FCCC_C0/FCCC_C0.vhd"
 add_file -vhdl -lib work "C:/Users/Constantin/Documents/VHDLSoundchip/component/Actel/SgCore/OSC/2.0.101/osc_comps.vhd"
 add_file -vhdl -lib work "C:/Users/Constantin/Documents/VHDLSoundchip/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd"
 add_file -vhdl -lib work "C:/Users/Constantin/Documents/VHDLSoundchip/component/work/OSC_C0/OSC_C0.vhd"
-add_file -vhdl -lib work "C:/Users/Constantin/Documents/VHDLSoundchip/hdl/spi_slave.vhd"
 add_file -vhdl -lib work "C:/Users/Constantin/Documents/VHDLSoundchip/hdl/delta_adder.vhd"
 add_file -vhdl -lib work "C:/Users/Constantin/Documents/VHDLSoundchip/hdl/sigma_adder.vhd"
 add_file -vhdl -lib work "C:/Users/Constantin/Documents/VHDLSoundchip/hdl/dac.vhd"
 add_file -vhdl -lib work "C:/Users/Constantin/Documents/VHDLSoundchip/hdl/data_receiver.vhd"
+add_file -vhdl -lib work "C:/Users/Constantin/Documents/VHDLSoundchip/hdl/spi_slave.vhd"
 add_file -vhdl -lib work "C:/Users/Constantin/Documents/VHDLSoundchip/component/work/soundchip/soundchip.vhd"
 add_file -fpga_constraint "C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/synthesis.fdc"
 

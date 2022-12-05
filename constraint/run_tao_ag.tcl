@@ -1,6 +1,4 @@
 set_device -family {SmartFusion2} -die {M2S010} -speed {STD}
-read_vhdl -mode vhdl_2008 -lib CORERESET_PF_LIB {C:\Users\Constantin\Documents\VHDLSoundchip\component\work\CORERESET_PF_C0\CORERESET_PF_C0_0\core\corereset_pf.vhd}
-read_vhdl -mode vhdl_2008 {C:\Users\Constantin\Documents\VHDLSoundchip\component\work\CORERESET_PF_C0\CORERESET_PF_C0.vhd}
 read_vhdl -mode vhdl_2008 {C:\Users\Constantin\Documents\VHDLSoundchip\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd}
 read_vhdl -mode vhdl_2008 {C:\Users\Constantin\Documents\VHDLSoundchip\component\work\FCCC_C0\FCCC_C0.vhd}
 read_vhdl -mode vhdl_2008 {C:\Users\Constantin\Documents\VHDLSoundchip\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd}

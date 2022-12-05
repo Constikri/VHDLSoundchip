@@ -5,15 +5,15 @@ and may only be used pursuant to the terms and conditions of a written license a
 with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
 Synopsys software or the associated documentation is strictly prohibited.
 Tool: Synplify Pro (R)
-Build: S-2021.09M
-Install: C:\Microsemi\Libero_SoC_v2022.1\SynplifyPro
+Build: S-2021.09M-SP1
+Install: C:\Microchip\Libero_SoC_v2022.2\SynplifyPro
 OS: Windows 6.2
 
 Hostname: DESKTOP-1NBCJI9
 
 Implementation : synthesis
 
-# Written on Sun Jul 10 21:18:04 2022
+# Written on Mon Dec  5 15:55:56 2022
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\synthesis.fdc"
@@ -30,34 +30,28 @@ No issues found in constraint syntax.
 Clock Summary
 *************
 
-          Start                                             Requested     Requested     Clock        Clock                     Clock
-Level     Clock                                             Frequency     Period        Type         Group                     Load 
-------------------------------------------------------------------------------------------------------------------------------------
-0 -       OSC_C0_0/OSC_C0_0/I_RCOSC_25_50MHZ/CLKOUT         50.0 MHz      20.000        declared     default_clkgroup          2    
-                                                                                                                                    
-0 -       System                                            100.0 MHz     10.000        system       system_clkgroup           0    
-                                                                                                                                    
-0 -       FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0_2     70   
-                                                                                                                                    
-0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0_1     47   
-                                                                                                                                    
-0 -       SPI_SLAVE|DOUT_VLD_inferred_clock                 100.0 MHz     10.000        inferred     Inferred_clkgroup_0_3     32   
-====================================================================================================================================
+          Start                                 Requested     Requested     Clock                      Clock                     Clock
+Level     Clock                                 Frequency     Period        Type                       Group                     Load 
+--------------------------------------------------------------------------------------------------------------------------------------
+0 -       OSC_0                                 50.0 MHz      20.000        declared                   default_clkgroup          0    
+1 .         FCCC_C0_0                           100.0 MHz     10.000        generated (from OSC_0)     default_clkgroup          145  
+                                                                                                                                      
+0 -       System                                100.0 MHz     10.000        system                     system_clkgroup           0    
+                                                                                                                                      
+0 -       spi_slave|SPI_DONE_inferred_clock     100.0 MHz     10.000        inferred                   Inferred_clkgroup_0_1     32   
+======================================================================================================================================
 
 
 Clock Load Summary
 ******************
 
-                                                  Clock     Source                                                        Clock Pin                                       Non-clock Pin                Non-clock Pin                                               
-Clock                                             Load      Pin                                                           Seq Example                                     Seq Example                  Comb Example                                                
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-OSC_C0_0/OSC_C0_0/I_RCOSC_25_50MHZ/CLKOUT         2         OSC_C0_0.OSC_C0_0.I_RCOSC_25_50MHZ.CLKOUT(RCOSC_25_50MHZ)     CORERESET_PF_C0_0.CORERESET_PF_C0_0.dff_0.C     -                            OSC_C0_0.OSC_C0_0.I_RCOSC_25_50MHZ_FAB.A(RCOSC_25_50MHZ_FAB)
-                                                                                                                                                                                                                                                                   
-System                                            0         -                                                             -                                               -                            -                                                           
-                                                                                                                                                                                                                                                                   
-FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     70        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL1(CCC)                         dac_1.SIGMA_ADDER_0.sigma_register[17:0].C      -                            FCCC_C0_0.FCCC_C0_0.GL1_INST.I(BUFG)                        
-                                                                                                                                                                                                                                                                   
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     47        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)                         SPI_SLAVE_0.cs_n_meta.C                         -                            FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)                        
-                                                                                                                                                                                                                                                                   
-SPI_SLAVE|DOUT_VLD_inferred_clock                 32        SPI_SLAVE_0.DOUT_VLD.OUT(and)                                 data_receiver_0.data_left[15:0].C               SPI_SLAVE_0.shreg_busy.E     SPI_SLAVE_0.data_shreg_p\.data_shreg_3[31:0].SEL(mux)       
-===================================================================================================================================================================================================================================================================
+                                      Clock     Source                                                        Clock Pin                        Non-clock Pin     Non-clock Pin                       
+Clock                                 Load      Pin                                                           Seq Example                      Seq Example       Comb Example                        
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OSC_0                                 0         OSC_C0_0.OSC_C0_0.I_RCOSC_25_50MHZ.CLKOUT(RCOSC_25_50MHZ)     -                                -                 -                                   
+FCCC_C0_0                             145       FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)                         spi_slave_0.MOSI_latched.C       -                 FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)
+                                                                                                                                                                                                     
+System                                0         -                                                             -                                -                 -                                   
+                                                                                                                                                                                                     
+spi_slave|SPI_DONE_inferred_clock     32        spi_slave_0.SPI_DONE.Q[0](dffr)                               data_receiver_0.data[31:0].C     -                 data_receiver_0.dac_reset.I[0](or)  
+=====================================================================================================================================================================================================

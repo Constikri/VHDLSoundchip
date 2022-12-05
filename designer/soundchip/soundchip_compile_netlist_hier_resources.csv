@@ -1,12 +1,11 @@
 Detailed Resource Usage
 Module Name,Fabric 4LUT,Fabric DFF,Single-Ended I/O,PLLs and CCCs,Chip Globals,RCOSC_50MHZ
-CORERESET_PF_C0_0/CORERESET_PF_C0_0/Primitives,1,3,0,0,1,0
-FCCC_C0_0/FCCC_C0_0/Primitives,0,0,0,1,2,0
-OSC_C0_0/OSC_C0_0/Primitives,0,0,0,0,1,1
-Primitives/Primitives,0,0,6,0,0,0
-SPI_SLAVE_0/Primitives,46,46,0,0,1,0
+FCCC_C0_0/FCCC_C0_0/Primitives,0,0,0,1,1,0
+OSC_C0_0/OSC_C0_0/Primitives,0,0,0,0,0,1
+Primitives/Primitives,1,0,6,0,1,0
 dac_0/DELTA_ADDER_0/Primitives,0,17,0,0,0,0
 dac_0/SIGMA_ADDER_0/Primitives,18,18,0,0,0,0
 dac_1/DELTA_ADDER_0/Primitives,0,17,0,0,0,0
 dac_1/SIGMA_ADDER_0/Primitives,18,18,0,0,0,0
-data_receiver_0/Primitives,0,32,0,0,0,0
+data_receiver_0/Primitives,1,32,0,0,1,0
+spi_slave_0/Primitives,14,75,0,0,1,0

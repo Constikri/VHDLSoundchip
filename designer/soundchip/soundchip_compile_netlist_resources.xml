@@ -2,8 +2,8 @@
 <?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
 <doc>
 <title>Resource Report</title>
-<text>Microsemi Corporation - Microsemi Libero Software Release v2022.1 (Version 2022.1.0.10)</text>
-<text>Date: Sun Jul 10 21:18:16 2022
+<text>Microchip Technology Inc. - Microchip Libero Software Release v2022.2 (Version 2022.2.0.10)</text>
+<text>Date: Mon Dec  5 15:56:05 2022
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -47,11 +47,11 @@
 </row>
 <row>
  <cell>PLL Supply Voltage</cell>
- <cell>3.3V</cell>
+ <cell>2.5V</cell>
 </row>
 <row>
  <cell>Default I/O technology</cell>
- <cell>LVCMOS 3.3V</cell>
+ <cell>LVCMOS 2.5V</cell>
 </row>
 <row>
  <cell>Restrict Probe Pins</cell>
@@ -106,15 +106,15 @@
 </header>
 <row>
  <cell>4LUT</cell>
- <cell>83</cell>
+ <cell>52</cell>
  <cell>12084</cell>
- <cell>0.69</cell>
+ <cell>0.43</cell>
 </row>
 <row>
  <cell>DFF</cell>
- <cell>151</cell>
+ <cell>177</cell>
  <cell>12084</cell>
- <cell>1.25</cell>
+ <cell>1.46</cell>
 </row>
 <row>
  <cell>I/O Register</cell>
@@ -160,9 +160,9 @@
 </row>
 <row>
  <cell>Chip Globals</cell>
- <cell>5</cell>
+ <cell>4</cell>
  <cell>8</cell>
- <cell>62.50</cell>
+ <cell>50.00</cell>
 </row>
 <row>
  <cell>CCC</cell>
@@ -204,8 +204,8 @@
 </header>
 <row>
  <cell>Fabric Logic</cell>
- <cell>83</cell>
- <cell>151</cell>
+ <cell>52</cell>
+ <cell>177</cell>
 </row>
 <row>
  <cell>RAM64x18 Interface Logic</cell>
@@ -224,8 +224,8 @@
 </row>
 <row>
  <cell>Total Used</cell>
- <cell>83</cell>
- <cell>151</cell>
+ <cell>52</cell>
+ <cell>177</cell>
 </row>
 </table>
 <section><name>Detailed Carry Chains Resource Usage</name></section>
@@ -295,8 +295,8 @@
  <cell>Bidirectional</cell>
 </header>
 <row>
- <cell>LVCMOS33</cell>
- <cell> 3.30v</cell>
+ <cell>LVCMOS25</cell>
+ <cell> 2.50v</cell>
  <cell> N/A</cell>
  <cell> 3</cell>
  <cell> 3</cell>
@@ -311,39 +311,9 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>102</cell>
+ <cell>145</cell>
  <cell>INT_NET</cell>
- <cell>Net   : dff_1_arst</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_1_rep_RNI6BBA/U0_RGB1</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Source: NETLIST</cell>
-</row>
-<row>
- <cell>70</cell>
- <cell>INT_NET</cell>
- <cell>Net   : FCCC_C0_0_GL1</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: FCCC_C0_0/FCCC_C0_0/GL1_INST/U0_RGB1</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Source: NETLIST</cell>
-</row>
-<row>
- <cell>46</cell>
- <cell>INT_NET</cell>
- <cell>Net   : FCCC_C0_0_GL0</cell>
+ <cell>Net   : clk_debug</cell>
 </row>
 <row>
  <cell></cell>
@@ -356,14 +326,14 @@
  <cell>Source: NETLIST</cell>
 </row>
 <row>
- <cell>32</cell>
+ <cell>107</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SPI_SLAVE_0_DOUT_VLD</cell>
+ <cell>Net   : AND2_0_Y_arst</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: SPI_SLAVE_0/DOUT_VLD_inferred_clock_RNITLG3/U0_RGB1</cell>
+ <cell>Driver: AND2_0_RNIKOS1/U0_RGB1</cell>
 </row>
 <row>
  <cell></cell>
@@ -371,14 +341,29 @@
  <cell>Source: NETLIST</cell>
 </row>
 <row>
- <cell>3</cell>
+ <cell>70</cell>
  <cell>INT_NET</cell>
- <cell>Net   : OSC_C0_0_RCOSC_25_50MHZ_O2F</cell>
+ <cell>Net   : data_receiver_0_dac_reset_i</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: OSC_C0_0/OSC_C0_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_RGB1</cell>
+ <cell>Driver: data_receiver_0/dac_reset_RNILDSA/U0_RGB1</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Source: NETLIST</cell>
+</row>
+<row>
+ <cell>32</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : spi_slave_0_SPI_DONE</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: spi_slave_0/SPI_DONE_inferred_clock_RNIDF25/U0_RGB1</cell>
 </row>
 <row>
  <cell></cell>
@@ -402,84 +387,94 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>33</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SPI_SLAVE_0/DOUT_VLD_Z</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SPI_SLAVE_0/DOUT_VLD</cell>
-</row>
-<row>
  <cell>32</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SPI_SLAVE_0/un3_spi_clk_redge_en</cell>
+ <cell>Net   : spi_slave_0/N_4_i</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: SPI_SLAVE_0/data_shreg_p.un3_spi_clk_redge_en_0_a2</cell>
+ <cell>Driver: spi_slave_0/SS_latched_RNIF5U21</cell>
+</row>
+<row>
+ <cell>31</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : spi_slave_0/N_2_i</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: spi_slave_0/SS_latched_RNIF5U21_0</cell>
 </row>
 <row>
  <cell>7</cell>
  <cell>INT_NET</cell>
- <cell>Net   : CORERESET_PF_C0_0_CORERESET_PF_C0_0_dff_1</cell>
+ <cell>Net   : spi_slave_0/SCLK_latched_Z</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_1</cell>
+ <cell>Driver: spi_slave_0/SCLK_latched</cell>
 </row>
 <row>
  <cell>6</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SPI_SLAVE_0/sclk_reg_Z</cell>
+ <cell>Net   : spi_slave_0/SCLK_old_Z</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: SPI_SLAVE_0/sclk_reg</cell>
+ <cell>Driver: spi_slave_0/SCLK_old</cell>
 </row>
 <row>
  <cell>5</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SPI_SLAVE_0/spi_clk_reg_Z</cell>
+ <cell>Net   : spi_slave_0/SS_latched_Z</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: SPI_SLAVE_0/spi_clk_reg</cell>
+ <cell>Driver: spi_slave_0/SS_latched</cell>
+</row>
+<row>
+ <cell>5</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : spi_slave_0/N_17_i</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: spi_slave_0/SS_old_RNIM0QF1</cell>
 </row>
 <row>
  <cell>4</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SPI_SLAVE_0/bit_cnt_Z[1]</cell>
+ <cell>Net   : spi_slave_0/index_Z[2]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: SPI_SLAVE_0/bit_cnt[1]</cell>
-</row>
-<row>
- <cell>4</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SPI_SLAVE_0/cs_n_reg_Z</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SPI_SLAVE_0/cs_n_reg</cell>
+ <cell>Driver: spi_slave_0/index[2]</cell>
 </row>
 <row>
  <cell>4</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SPI_SLAVE_0/N_21</cell>
+ <cell>Net   : spi_slave_0/index_Z[0]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: SPI_SLAVE_0/bit_cnt_0_i_o2[1]</cell>
+ <cell>Driver: spi_slave_0/index[0]</cell>
+</row>
+<row>
+ <cell>4</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : spi_slave_0/N_149</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: spi_slave_0/index_n3_i_o2_0_RNIBMMH1</cell>
 </row>
 <row>
  <cell>3</cell>
@@ -490,16 +485,6 @@
  <cell></cell>
  <cell></cell>
  <cell>Driver: dac_0/SIGMA_ADDER_0/sigma_register[17]</cell>
-</row>
-<row>
- <cell>3</cell>
- <cell>INT_NET</cell>
- <cell>Net   : dac_out_right_c</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: dac_1/SIGMA_ADDER_0/sigma_register[17]</cell>
 </row>
 </table>
 <section><name>High fanout nets (through buffer trees)</name></section>
@@ -510,84 +495,94 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>33</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SPI_SLAVE_0/DOUT_VLD_Z</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SPI_SLAVE_0/DOUT_VLD</cell>
-</row>
-<row>
  <cell>32</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SPI_SLAVE_0/un3_spi_clk_redge_en</cell>
+ <cell>Net   : spi_slave_0/N_4_i</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: SPI_SLAVE_0/data_shreg_p.un3_spi_clk_redge_en_0_a2</cell>
+ <cell>Driver: spi_slave_0/SS_latched_RNIF5U21</cell>
+</row>
+<row>
+ <cell>31</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : spi_slave_0/N_2_i</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: spi_slave_0/SS_latched_RNIF5U21_0</cell>
 </row>
 <row>
  <cell>7</cell>
  <cell>INT_NET</cell>
- <cell>Net   : CORERESET_PF_C0_0_CORERESET_PF_C0_0_dff_1</cell>
+ <cell>Net   : spi_slave_0/SCLK_latched_Z</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_1</cell>
+ <cell>Driver: spi_slave_0/SCLK_latched</cell>
 </row>
 <row>
  <cell>6</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SPI_SLAVE_0/sclk_reg_Z</cell>
+ <cell>Net   : spi_slave_0/SCLK_old_Z</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: SPI_SLAVE_0/sclk_reg</cell>
+ <cell>Driver: spi_slave_0/SCLK_old</cell>
 </row>
 <row>
  <cell>5</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SPI_SLAVE_0/spi_clk_reg_Z</cell>
+ <cell>Net   : spi_slave_0/SS_latched_Z</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: SPI_SLAVE_0/spi_clk_reg</cell>
+ <cell>Driver: spi_slave_0/SS_latched</cell>
+</row>
+<row>
+ <cell>5</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : spi_slave_0/N_17_i</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: spi_slave_0/SS_old_RNIM0QF1</cell>
 </row>
 <row>
  <cell>4</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SPI_SLAVE_0/bit_cnt_Z[1]</cell>
+ <cell>Net   : spi_slave_0/index_Z[2]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: SPI_SLAVE_0/bit_cnt[1]</cell>
-</row>
-<row>
- <cell>4</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SPI_SLAVE_0/cs_n_reg_Z</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SPI_SLAVE_0/cs_n_reg</cell>
+ <cell>Driver: spi_slave_0/index[2]</cell>
 </row>
 <row>
  <cell>4</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SPI_SLAVE_0/N_21</cell>
+ <cell>Net   : spi_slave_0/index_Z[0]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: SPI_SLAVE_0/bit_cnt_0_i_o2[1]</cell>
+ <cell>Driver: spi_slave_0/index[0]</cell>
+</row>
+<row>
+ <cell>4</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : spi_slave_0/N_149</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: spi_slave_0/index_n3_i_o2_0_RNIBMMH1</cell>
 </row>
 <row>
  <cell>3</cell>
@@ -598,16 +593,6 @@
  <cell></cell>
  <cell></cell>
  <cell>Driver: dac_0/SIGMA_ADDER_0/sigma_register[17]</cell>
-</row>
-<row>
- <cell>3</cell>
- <cell>INT_NET</cell>
- <cell>Net   : dac_out_right_c</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: dac_1/SIGMA_ADDER_0/sigma_register[17]</cell>
 </row>
 </table>
 </doc>

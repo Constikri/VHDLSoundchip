@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Sun Jul  3 15:15:32 2022
+-- Created by SmartDesign Fri Oct  7 17:46:57 2022
 -- Version: 2022.1 2022.1.0.10
 ----------------------------------------------------------------------
 
@@ -11,15 +11,15 @@
 --# Part Number: M2S010-VF256
 --# Create and Configure the core component OSC_C0
 --create_and_configure_core -core_vlnv {Actel:SgCore:OSC:2.0.101} -component_name {OSC_C0} -params {\
---"RCOSC_1MHZ_DRIVES_CCC:0"  \
---"RCOSC_1MHZ_DRIVES_FAB:0"  \
---"RCOSC_1MHZ_IS_USED:0"  \
+--"RCOSC_1MHZ_DRIVES_CCC:false"  \
+--"RCOSC_1MHZ_DRIVES_FAB:false"  \
+--"RCOSC_1MHZ_IS_USED:false"  \
 --"RCOSC_25_50MHZ_DRIVES_CCC:1"  \
---"RCOSC_25_50MHZ_DRIVES_FAB:1"  \
+--"RCOSC_25_50MHZ_DRIVES_FAB:0"  \
 --"RCOSC_25_50MHZ_IS_USED:1"  \
 --"VOLTAGE_IS_1_2:true"  \
 --"XTLOSC_DRIVES_CCC:0"  \
---"XTLOSC_DRIVES_FAB:0"  \
+--"XTLOSC_DRIVES_FAB:false"  \
 --"XTLOSC_FREQ:20.00"  \
 --"XTLOSC_IS_USED:0"  \
 --"XTLOSC_SRC:CRYSTAL"   }
@@ -40,8 +40,7 @@ entity OSC_C0 is
     -- Port list
     port(
         -- Outputs
-        RCOSC_25_50MHZ_CCC : out std_logic;
-        RCOSC_25_50MHZ_O2F : out std_logic
+        RCOSC_25_50MHZ_CCC : out std_logic
         );
 end OSC_C0;
 ----------------------------------------------------------------------
@@ -70,8 +69,6 @@ end component;
 -- Signal declarations
 ----------------------------------------------------------------------
 signal RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC       : std_logic;
-signal RCOSC_25_50MHZ_O2F_net_0                        : std_logic;
-signal RCOSC_25_50MHZ_O2F_net_1                        : std_logic;
 signal RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC_net_0 : std_logic;
 ----------------------------------------------------------------------
 -- TiedOff Signals
@@ -86,8 +83,6 @@ begin
 ----------------------------------------------------------------------
 -- Top level output port assignments
 ----------------------------------------------------------------------
- RCOSC_25_50MHZ_O2F_net_1                        <= RCOSC_25_50MHZ_O2F_net_0;
- RCOSC_25_50MHZ_O2F                              <= RCOSC_25_50MHZ_O2F_net_1;
  RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC_net_0 <= RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC;
  RCOSC_25_50MHZ_CCC                              <= RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC_net_0;
 ----------------------------------------------------------------------
@@ -100,7 +95,7 @@ OSC_C0_0 : OSC_C0_OSC_C0_0_OSC
         XTL                => GND_net, -- tied to '0' from definition
         -- Outputs
         RCOSC_25_50MHZ_CCC => RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC,
-        RCOSC_25_50MHZ_O2F => RCOSC_25_50MHZ_O2F_net_0,
+        RCOSC_25_50MHZ_O2F => OPEN,
         RCOSC_1MHZ_CCC     => OPEN,
         RCOSC_1MHZ_O2F     => OPEN,
         XTLOSC_CCC         => OPEN,

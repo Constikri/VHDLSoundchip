@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Sun Jul  3 15:15:27 2022
--- Version: 2022.1 2022.1.0.10
+-- Created by SmartDesign Wed Nov 23 14:32:50 2022
+-- Version: 2022.2 2022.2.0.10
 ----------------------------------------------------------------------
 
 ----------------------------------------------------------------------
@@ -11,7 +11,7 @@
 --# Part Number: M2S010-VF256
 --# Create and Configure the core component FCCC_C0
 --create_and_configure_core -core_vlnv {Actel:SgCore:FCCC:2.0.201} -component_name {FCCC_C0} -params {\
---"ADVANCED_TAB_CHANGED:false"  \
+--"ADVANCED_TAB_CHANGED:true"  \
 --"CLK0_IS_USED:false"  \
 --"CLK0_PAD_IS_USED:false"  \
 --"CLK1_IS_USED:false"  \
@@ -21,7 +21,7 @@
 --"CLK3_IS_USED:false"  \
 --"CLK3_PAD_IS_USED:false"  \
 --"DYN_CONF_IS_USED:false"  \
---"GL0_BP_IN_0_FREQ:100"  \
+--"GL0_BP_IN_0_FREQ:50.000"  \
 --"GL0_BP_IN_0_SRC:IO_HARDWIRED_0"  \
 --"GL0_BP_IN_1_FREQ:100"  \
 --"GL0_BP_IN_1_SRC:IO_HARDWIRED_0"  \
@@ -43,8 +43,8 @@
 --"GL1_IN_0_SRC:PLL"  \
 --"GL1_IN_1_SRC:UNUSED"  \
 --"GL1_IS_INVERTED:false"  \
---"GL1_IS_USED:true"  \
---"GL1_OUT_0_FREQ:5"  \
+--"GL1_IS_USED:false"  \
+--"GL1_OUT_0_FREQ:100"  \
 --"GL1_OUT_1_FREQ:50"  \
 --"GL1_OUT_IS_GATED:false"  \
 --"GL1_PLL_IN_0_PHASE:0"  \
@@ -77,12 +77,12 @@
 --"GL3_OUT_IS_GATED:false"  \
 --"GL3_PLL_IN_0_PHASE:0"  \
 --"GL3_PLL_IN_1_PHASE:0"  \
---"GPD0_IS_USED:true"  \
+--"GPD0_IS_USED:false"  \
 --"GPD0_NOPIPE_RSTSYNC:true"  \
---"GPD0_SYNC_STYLE:G3STYLE_AND_LOCK_RSTSYNC"  \
---"GPD1_IS_USED:true"  \
+--"GPD0_SYNC_STYLE:G3STYLE_AND_NO_LOCK_RSTSYNC"  \
+--"GPD1_IS_USED:false"  \
 --"GPD1_NOPIPE_RSTSYNC:true"  \
---"GPD1_SYNC_STYLE:G3STYLE_AND_LOCK_RSTSYNC"  \
+--"GPD1_SYNC_STYLE:G3STYLE_AND_NO_LOCK_RSTSYNC"  \
 --"GPD2_IS_USED:false"  \
 --"GPD2_NOPIPE_RSTSYNC:true"  \
 --"GPD2_SYNC_STYLE:G3STYLE_AND_NO_LOCK_RSTSYNC"  \
@@ -91,7 +91,7 @@
 --"GPD3_SYNC_STYLE:G3STYLE_AND_NO_LOCK_RSTSYNC"  \
 --"GPD_EXPOSE_RESETS:false"  \
 --"GPD_SYNC_STYLE:G3STYLE_AND_LOCK_RSTSYNC"  \
---"INIT:0000007FB8000044D74000F18C6308C271839DEC0404045000301"  \
+--"INIT:0000007FB8000044D74000318C6318C1F18C61EC0404040400301"  \
 --"IO_HARDWIRED_0_IS_DIFF:false"  \
 --"IO_HARDWIRED_1_IS_DIFF:false"  \
 --"IO_HARDWIRED_2_IS_DIFF:false"  \
@@ -149,7 +149,6 @@ entity FCCC_C0 is
         RCOSC_25_50MHZ : in  std_logic;
         -- Outputs
         GL0            : out std_logic;
-        GL1            : out std_logic;
         LOCK           : out std_logic
         );
 end FCCC_C0;
@@ -168,7 +167,6 @@ component FCCC_C0_FCCC_C0_0_FCCC
         RCOSC_25_50MHZ : in  std_logic;
         -- Outputs
         GL0            : out std_logic;
-        GL1            : out std_logic;
         LOCK           : out std_logic
         );
 end component;
@@ -176,10 +174,8 @@ end component;
 -- Signal declarations
 ----------------------------------------------------------------------
 signal GL0_net_0  : std_logic;
-signal GL1_net_0  : std_logic;
 signal LOCK_net_0 : std_logic;
 signal GL0_net_1  : std_logic;
-signal GL1_net_1  : std_logic;
 signal LOCK_net_1 : std_logic;
 ----------------------------------------------------------------------
 -- TiedOff Signals
@@ -200,8 +196,6 @@ begin
 ----------------------------------------------------------------------
  GL0_net_1  <= GL0_net_0;
  GL0        <= GL0_net_1;
- GL1_net_1  <= GL1_net_0;
- GL1        <= GL1_net_1;
  LOCK_net_1 <= LOCK_net_0;
  LOCK       <= LOCK_net_1;
 ----------------------------------------------------------------------
@@ -214,7 +208,6 @@ FCCC_C0_0 : FCCC_C0_FCCC_C0_0_FCCC
         RCOSC_25_50MHZ => RCOSC_25_50MHZ,
         -- Outputs
         GL0            => GL0_net_0,
-        GL1            => GL1_net_0,
         LOCK           => LOCK_net_0 
         );
 

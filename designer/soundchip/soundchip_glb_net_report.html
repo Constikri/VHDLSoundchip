@@ -30,8 +30,8 @@
     </head>
     <body>
         <h1 align="center">Global Net Report</h1>
-        <p>Microsemi Corporation - Microsemi Libero Software Release v2022.1 (Version 2022.1.0.10)</p>
-        <p>Date: Sun Jul 10 21:18:38 2022
+        <p>Microchip Technology Inc. - Microchip Libero Software Release v2022.2 (Version 2022.2.0.10)</p>
+        <p>Date: Mon Dec  5 15:56:22 2022
 </p>
         <h2>Global Nets Information</h2>
         <table cellpadding="4">
@@ -46,36 +46,29 @@
                 <td>1</td>
                 <td>GB[3] </td>
                 <td>(221, 54)</td>
-                <td>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_1_rep_RNI6BBA/U0_YNn_GSouth</td>
-                <td>102</td>
+                <td>FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_YNn</td>
+                <td>145</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>GB[2] </td>
                 <td>(220, 54)</td>
-                <td>FCCC_C0_0/FCCC_C0_0/GL1_INST/U0_YNn_GSouth</td>
-                <td>70</td>
+                <td>AND2_0_RNIKOS1/U0_YNn_GSouth</td>
+                <td>107</td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>GB[0] </td>
                 <td>(218, 54)</td>
-                <td>FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_YNn_GSouth</td>
-                <td>46</td>
+                <td>data_receiver_0/dac_reset_RNILDSA/U0_YNn</td>
+                <td>70</td>
             </tr>
             <tr>
                 <td>4</td>
-                <td>GB[7] </td>
-                <td>(225, 54)</td>
-                <td>SPI_SLAVE_0/DOUT_VLD_inferred_clock_RNITLG3/U0_YNn_GSouth</td>
-                <td>32</td>
-            </tr>
-            <tr>
-                <td>5</td>
                 <td>GB[1] </td>
                 <td>(219, 54)</td>
-                <td>OSC_C0_0/OSC_C0_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_YNn_GSouth</td>
-                <td>3</td>
+                <td>spi_slave_0/SPI_DONE_inferred_clock_RNIDF25/U0_YNn_GSouth</td>
+                <td>32</td>
             </tr>
         </table>
         <p/>
@@ -94,30 +87,30 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_1_rep:Q</td>
-                <td>(389, 25)</td>
-                <td>GB[3] </td>
-                <td>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_1_rep_Z</td>
+                <td>AND2_0:Y</td>
+                <td>(391, 48)</td>
+                <td>GB[2] </td>
+                <td>AND2_0_Y</td>
                 <td>ROUTED</td>
-                <td>1</td>
+                <td>2</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>SPI_SLAVE_0/DOUT_VLD:Y</td>
-                <td>(387, 30)</td>
-                <td>GB[7] </td>
-                <td>SPI_SLAVE_0/DOUT_VLD_Z</td>
+                <td>data_receiver_0/dac_reset:Y</td>
+                <td>(208, 48)</td>
+                <td>GB[0] </td>
+                <td>data_receiver_0/dac_reset_Z</td>
                 <td>ROUTED</td>
-                <td>33</td>
+                <td>1</td>
             </tr>
             <tr>
                 <td>3</td>
-                <td>OSC_C0_0/OSC_C0_0/I_RCOSC_25_50MHZ_FAB:CLKOUT</td>
-                <td>(397, 92)</td>
+                <td>spi_slave_0/SPI_DONE:Q</td>
+                <td>(215, 49)</td>
                 <td>GB[1] </td>
-                <td>OSC_C0_0/OSC_C0_0/N_RCOSC_25_50MHZ_CLKINT</td>
+                <td>spi_slave_0/SPI_DONE_Z</td>
                 <td>ROUTED</td>
-                <td>1</td>
+                <td>2</td>
             </tr>
         </table>
         <p/>
@@ -135,20 +128,10 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td>FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP:GL1</td>
-                <td>CCC-NE1 (390, 92)</td>
-                <td>GL1 =&gt; GL2</td>
-                <td>GB[2] </td>
-                <td>FCCC_C0_0/FCCC_C0_0/GL1_net</td>
-                <td>HARDWIRED</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>2</td>
                 <td>FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP:GL0</td>
                 <td>CCC-NE1 (390, 92)</td>
-                <td>None</td>
-                <td>GB[0] </td>
+                <td>GL0 =&gt; GL3</td>
+                <td>GB[3] </td>
                 <td>FCCC_C0_0/FCCC_C0_0/GL0_net</td>
                 <td>HARDWIRED</td>
                 <td>1</td>
@@ -175,7 +158,7 @@
                 <td>CCC-NE1 (390, 92)</td>
                 <td>OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC</td>
                 <td>HARDWIRED</td>
-                <td>2</td>
+                <td>1</td>
             </tr>
         </table>
         <p/>
@@ -197,61 +180,21 @@
                 <td>1</td>
                 <td>GB[3] </td>
                 <td>(221, 54)</td>
-                <td>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_1_rep_RNI6BBA/U0_YNn_GSouth</td>
-                <td>102</td>
-                <td>1</td>
-                <td>(220, 33)</td>
-                <td>23</td>
-            </tr>
-            <tr>
+                <td>FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_YNn</td>
+                <td>145</td>
                 <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td>2</td>
-                <td>(220, 39)</td>
-                <td>25</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td>3</td>
-                <td>(221, 27)</td>
-                <td>16</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td>4</td>
-                <td>(221, 30)</td>
-                <td>15</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td>5</td>
-                <td>(221, 36)</td>
-                <td>23</td>
+                <td>(218, 57)</td>
+                <td>24</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>GB[2] </td>
                 <td>(220, 54)</td>
-                <td>FCCC_C0_0/FCCC_C0_0/GL1_INST/U0_YNn_GSouth</td>
-                <td>70</td>
+                <td>AND2_0_RNIKOS1/U0_YNn_GSouth</td>
+                <td>107</td>
                 <td>1</td>
-                <td>(219, 33)</td>
-                <td>23</td>
+                <td>(218, 45)</td>
+                <td>21</td>
             </tr>
             <tr>
                 <td/>
@@ -260,8 +203,8 @@
                 <td/>
                 <td/>
                 <td>2</td>
-                <td>(219, 39)</td>
-                <td>25</td>
+                <td>(218, 48)</td>
+                <td>13</td>
             </tr>
             <tr>
                 <td/>
@@ -270,128 +213,48 @@
                 <td/>
                 <td/>
                 <td>3</td>
-                <td>(220, 27)</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td>4</td>
-                <td>(220, 30)</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td>5</td>
-                <td>(220, 36)</td>
-                <td>10</td>
+                <td>(218, 51)</td>
+                <td>73</td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>GB[0] </td>
                 <td>(218, 54)</td>
-                <td>FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_YNn_GSouth</td>
-                <td>46</td>
-                <td>1</td>
-                <td>(218, 27)</td>
-                <td>10</td>
-            </tr>
-            <tr>
+                <td>data_receiver_0/dac_reset_RNILDSA/U0_YNn</td>
+                <td>70</td>
                 <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td>2</td>
-                <td>(218, 30)</td>
-                <td>13</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td>3</td>
-                <td>(218, 33)</td>
-                <td>13</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td>4</td>
-                <td>(218, 36)</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td>5</td>
-                <td>(218, 39)</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td>6</td>
-                <td>(219, 24)</td>
-                <td>1</td>
+                <td>(219, 57)</td>
+                <td>24</td>
             </tr>
             <tr>
                 <td>4</td>
-                <td>GB[7] </td>
-                <td>(225, 54)</td>
-                <td>SPI_SLAVE_0/DOUT_VLD_inferred_clock_RNITLG3/U0_YNn_GSouth</td>
-                <td>32</td>
-                <td>1</td>
-                <td>(219, 27)</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td>2</td>
-                <td>(219, 30)</td>
-                <td>9</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td/>
-                <td>3</td>
-                <td>(219, 36)</td>
-                <td>13</td>
-            </tr>
-            <tr>
-                <td>5</td>
                 <td>GB[1] </td>
                 <td>(219, 54)</td>
-                <td>OSC_C0_0/OSC_C0_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_YNn_GSouth</td>
-                <td>3</td>
+                <td>spi_slave_0/SPI_DONE_inferred_clock_RNIDF25/U0_YNn_GSouth</td>
+                <td>32</td>
+                <td>1</td>
+                <td>(221, 45)</td>
+                <td>11</td>
+            </tr>
+            <tr>
                 <td/>
-                <td>(218, 24)</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>2</td>
+                <td>(221, 48)</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
                 <td>3</td>
+                <td>(221, 51)</td>
+                <td>14</td>
             </tr>
         </table>
         <p/>

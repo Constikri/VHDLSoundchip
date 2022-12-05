@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
 <doc>
-<text>SmartTime Version 2022.1.0.10</text>
-<text>Microsemi Corporation - Microsemi Libero Software Release v2022.1 (Version 2022.1.0.10)
-Date: Sun Jul 10 21:18:25 2022 </text>
+<text>SmartTime Version 2022.2.0.10</text>
+<text>Microsemi Corporation - Microchip Libero Software Release v2022.2 (Version 2022.2.0.10)
+Date: Mon Dec  5 15:56:10 2022 </text>
 <table>
 <header>
 </header>
@@ -50,57 +50,57 @@ Date: Sun Jul 10 21:18:25 2022 </text>
 </header>
 <row>
  <cell>Setup</cell>
- <cell>          116</cell>
+ <cell>          177</cell>
  <cell>           67</cell>
- <cell>          183</cell>
+ <cell>          244</cell>
 </row>
 <row>
  <cell>Recovery</cell>
- <cell>           73</cell>
+ <cell>          177</cell>
  <cell>            0</cell>
- <cell>           73</cell>
+ <cell>          177</cell>
 </row>
 <row>
  <cell>Output Setup</cell>
  <cell>            0</cell>
- <cell>            5</cell>
- <cell>            5</cell>
+ <cell>            3</cell>
+ <cell>            3</cell>
 </row>
 <row>
  <cell>Total Setup</cell>
- <cell>          189</cell>
- <cell>           72</cell>
- <cell>          261</cell>
+ <cell>          354</cell>
+ <cell>           70</cell>
+ <cell>          424</cell>
 </row>
 <separator/>
 <row>
  <cell>Hold</cell>
- <cell>          116</cell>
+ <cell>          177</cell>
  <cell>           67</cell>
- <cell>          183</cell>
+ <cell>          244</cell>
 </row>
 <row>
  <cell>Removal</cell>
- <cell>           73</cell>
+ <cell>          177</cell>
  <cell>            0</cell>
- <cell>           73</cell>
+ <cell>          177</cell>
 </row>
 <row>
  <cell>Output Hold</cell>
  <cell>            0</cell>
- <cell>            5</cell>
- <cell>            5</cell>
+ <cell>            3</cell>
+ <cell>            3</cell>
 </row>
 <row>
  <cell>Total Hold</cell>
- <cell>          189</cell>
- <cell>           72</cell>
- <cell>          261</cell>
+ <cell>          354</cell>
+ <cell>           70</cell>
+ <cell>          424</cell>
 </row>
 </table>
 <section>
 <name>Clock domain: </name>
-<text>FCCC_C0_0/FCCC_C0_0/GL0</text>
+<text>FCCC_C0_0</text>
 <text></text>
 <table>
 <header>
@@ -111,52 +111,52 @@ Date: Sun Jul 10 21:18:25 2022 </text>
 </header>
 <row>
  <cell>Setup</cell>
- <cell>           76</cell>
- <cell>            3</cell>
- <cell>           79</cell>
+ <cell>          177</cell>
+ <cell>           35</cell>
+ <cell>          212</cell>
 </row>
 <row>
  <cell>Recovery</cell>
+ <cell>          145</cell>
  <cell>            0</cell>
- <cell>            0</cell>
- <cell>            0</cell>
+ <cell>          145</cell>
 </row>
 <row>
  <cell>Output Setup</cell>
  <cell>            0</cell>
- <cell>            1</cell>
- <cell>            1</cell>
+ <cell>            3</cell>
+ <cell>            3</cell>
 </row>
 <row>
  <cell>Total Setup</cell>
- <cell>           76</cell>
- <cell>            4</cell>
- <cell>           80</cell>
+ <cell>          322</cell>
+ <cell>           38</cell>
+ <cell>          360</cell>
 </row>
 <separator/>
 <row>
  <cell>Hold</cell>
- <cell>           76</cell>
- <cell>            3</cell>
- <cell>           79</cell>
+ <cell>          177</cell>
+ <cell>           35</cell>
+ <cell>          212</cell>
 </row>
 <row>
  <cell>Removal</cell>
+ <cell>          145</cell>
  <cell>            0</cell>
- <cell>            0</cell>
- <cell>            0</cell>
+ <cell>          145</cell>
 </row>
 <row>
  <cell>Output Hold</cell>
  <cell>            0</cell>
- <cell>            1</cell>
- <cell>            1</cell>
+ <cell>            3</cell>
+ <cell>            3</cell>
 </row>
 <row>
  <cell>Total Hold</cell>
- <cell>           76</cell>
- <cell>            4</cell>
- <cell>           80</cell>
+ <cell>          322</cell>
+ <cell>           38</cell>
+ <cell>          360</cell>
 </row>
 </table>
 <section>
@@ -179,107 +179,12 @@ Date: Sun Jul 10 21:18:25 2022 </text>
 </list>
 <text></text>
 <text></text>
-<text> - Max output delay constraint missing on port:</text>
-<text>   </text>
-<list>
- <item>spi_miso</item>
-</list>
-<text></text>
-<text> - Min output delay constraint missing on port:</text>
-<text>   </text>
-<list>
- <item>spi_miso</item>
-</list>
-<text></text>
-<text></text>
-<text> - Setup unconstrained for the following pins:</text>
-<text>   </text>
-<list>
- <item>SPI_SLAVE_0/cs_n_meta:D</item>
- <item>SPI_SLAVE_0/mosi_meta:D</item>
- <item>SPI_SLAVE_0/sclk_meta:D</item>
-</list>
-<text></text>
-<text> - Hold unconstrained for the following pins:</text>
-<text>   </text>
-<list>
- <item>SPI_SLAVE_0/cs_n_meta:D</item>
- <item>SPI_SLAVE_0/mosi_meta:D</item>
- <item>SPI_SLAVE_0/sclk_meta:D</item>
-</list>
-<text></text>
-</section>
-</section>
-<section>
-<name>Clock domain: </name>
-<text>FCCC_C0_0/FCCC_C0_0/GL1</text>
-<text></text>
-<table>
-<header>
- <cell>Type of check</cell>
- <cell>Constrained</cell>
- <cell>UnConstrained</cell>
- <cell>Total</cell>
-</header>
-<row>
- <cell>Setup</cell>
- <cell>           38</cell>
- <cell>           32</cell>
- <cell>           70</cell>
-</row>
-<row>
- <cell>Recovery</cell>
- <cell>           70</cell>
- <cell>            0</cell>
- <cell>           70</cell>
-</row>
-<row>
- <cell>Output Setup</cell>
- <cell>            0</cell>
- <cell>            2</cell>
- <cell>            2</cell>
-</row>
-<row>
- <cell>Total Setup</cell>
- <cell>          108</cell>
- <cell>           34</cell>
- <cell>          142</cell>
-</row>
-<separator/>
-<row>
- <cell>Hold</cell>
- <cell>           38</cell>
- <cell>           32</cell>
- <cell>           70</cell>
-</row>
-<row>
- <cell>Removal</cell>
- <cell>           70</cell>
- <cell>            0</cell>
- <cell>           70</cell>
-</row>
-<row>
- <cell>Output Hold</cell>
- <cell>            0</cell>
- <cell>            2</cell>
- <cell>            2</cell>
-</row>
-<row>
- <cell>Total Hold</cell>
- <cell>          108</cell>
- <cell>           34</cell>
- <cell>          142</cell>
-</row>
-</table>
-<section>
-<name>Enhancement Suggestions</name>
-<text></text>
-<text></text>
 <text> - Max output delay constraint missing on ports:</text>
 <text>   </text>
 <list>
  <item>dac_out_left</item>
  <item>dac_out_right</item>
+ <item>spi_miso</item>
 </list>
 <text></text>
 <text> - Min output delay constraint missing on ports:</text>
@@ -287,6 +192,7 @@ Date: Sun Jul 10 21:18:25 2022 </text>
 <list>
  <item>dac_out_left</item>
  <item>dac_out_right</item>
+ <item>spi_miso</item>
 </list>
 <text></text>
 <text></text>
@@ -325,6 +231,9 @@ Date: Sun Jul 10 21:18:25 2022 </text>
  <item>dac_1/DELTA_ADDER_0/data_out_1[7]:D</item>
  <item>dac_1/DELTA_ADDER_0/data_out_1[8]:D</item>
  <item>dac_1/DELTA_ADDER_0/data_out_1[9]:D</item>
+ <item>spi_slave_0/MOSI_latched:D</item>
+ <item>spi_slave_0/SCLK_latched:D</item>
+ <item>spi_slave_0/SS_latched:D</item>
 </list>
 <text></text>
 <text> - Hold unconstrained for the following pins:</text>
@@ -362,13 +271,16 @@ Date: Sun Jul 10 21:18:25 2022 </text>
  <item>dac_1/DELTA_ADDER_0/data_out_1[7]:D</item>
  <item>dac_1/DELTA_ADDER_0/data_out_1[8]:D</item>
  <item>dac_1/DELTA_ADDER_0/data_out_1[9]:D</item>
+ <item>spi_slave_0/MOSI_latched:D</item>
+ <item>spi_slave_0/SCLK_latched:D</item>
+ <item>spi_slave_0/SS_latched:D</item>
 </list>
 <text></text>
 </section>
 </section>
 <section>
 <name>Clock domain: </name>
-<text>OSC_C0_0/OSC_C0_0/I_RCOSC_25_50MHZ/CLKOUT</text>
+<text>OSC_0</text>
 <text></text>
 <table>
 <header>
@@ -379,78 +291,58 @@ Date: Sun Jul 10 21:18:25 2022 </text>
 </header>
 <row>
  <cell>Setup</cell>
- <cell>            2</cell>
  <cell>            0</cell>
- <cell>            2</cell>
+ <cell>            0</cell>
+ <cell>            0</cell>
 </row>
 <row>
  <cell>Recovery</cell>
- <cell>            3</cell>
  <cell>            0</cell>
- <cell>            3</cell>
+ <cell>            0</cell>
+ <cell>            0</cell>
 </row>
 <row>
  <cell>Output Setup</cell>
  <cell>            0</cell>
- <cell>            2</cell>
- <cell>            2</cell>
+ <cell>            0</cell>
+ <cell>            0</cell>
 </row>
 <row>
  <cell>Total Setup</cell>
- <cell>            5</cell>
- <cell>            2</cell>
- <cell>            7</cell>
+ <cell>            0</cell>
+ <cell>            0</cell>
+ <cell>            0</cell>
 </row>
 <separator/>
 <row>
  <cell>Hold</cell>
- <cell>            2</cell>
  <cell>            0</cell>
- <cell>            2</cell>
+ <cell>            0</cell>
+ <cell>            0</cell>
 </row>
 <row>
  <cell>Removal</cell>
- <cell>            3</cell>
  <cell>            0</cell>
- <cell>            3</cell>
+ <cell>            0</cell>
+ <cell>            0</cell>
 </row>
 <row>
  <cell>Output Hold</cell>
  <cell>            0</cell>
- <cell>            2</cell>
- <cell>            2</cell>
+ <cell>            0</cell>
+ <cell>            0</cell>
 </row>
 <row>
  <cell>Total Hold</cell>
- <cell>            5</cell>
- <cell>            2</cell>
- <cell>            7</cell>
+ <cell>            0</cell>
+ <cell>            0</cell>
+ <cell>            0</cell>
 </row>
 </table>
-<section>
-<name>Enhancement Suggestions</name>
-<text></text>
-<text></text>
-<text> - Max output delay constraint missing on ports:</text>
-<text>   </text>
-<list>
- <item>dac_out_left</item>
- <item>dac_out_right</item>
-</list>
-<text></text>
-<text> - Min output delay constraint missing on ports:</text>
-<text>   </text>
-<list>
- <item>dac_out_left</item>
- <item>dac_out_right</item>
-</list>
-<text></text>
-<text></text>
-</section>
 </section>
 <section>
 <name>Clock domain: </name>
-<text>gated-clocks</text>
+<text>spi_slave_0/SPI_DONE:Q</text>
 <text></text>
 <table>
 <header>
@@ -467,9 +359,9 @@ Date: Sun Jul 10 21:18:25 2022 </text>
 </row>
 <row>
  <cell>Recovery</cell>
+ <cell>           32</cell>
  <cell>            0</cell>
- <cell>            0</cell>
- <cell>            0</cell>
+ <cell>           32</cell>
 </row>
 <row>
  <cell>Output Setup</cell>
@@ -479,9 +371,9 @@ Date: Sun Jul 10 21:18:25 2022 </text>
 </row>
 <row>
  <cell>Total Setup</cell>
- <cell>            0</cell>
  <cell>           32</cell>
  <cell>           32</cell>
+ <cell>           64</cell>
 </row>
 <separator/>
 <row>
@@ -492,9 +384,9 @@ Date: Sun Jul 10 21:18:25 2022 </text>
 </row>
 <row>
  <cell>Removal</cell>
+ <cell>           32</cell>
  <cell>            0</cell>
- <cell>            0</cell>
- <cell>            0</cell>
+ <cell>           32</cell>
 </row>
 <row>
  <cell>Output Hold</cell>
@@ -504,9 +396,9 @@ Date: Sun Jul 10 21:18:25 2022 </text>
 </row>
 <row>
  <cell>Total Hold</cell>
- <cell>            0</cell>
  <cell>           32</cell>
  <cell>           32</cell>
+ <cell>           64</cell>
 </row>
 </table>
 <section>
@@ -518,75 +410,75 @@ Date: Sun Jul 10 21:18:25 2022 </text>
 <text> - Setup unconstrained for the following pins:</text>
 <text>   </text>
 <list>
- <item>data_receiver_0/data_left[0]:D</item>
- <item>data_receiver_0/data_left[10]:D</item>
- <item>data_receiver_0/data_left[11]:D</item>
- <item>data_receiver_0/data_left[12]:D</item>
- <item>data_receiver_0/data_left[13]:D</item>
- <item>data_receiver_0/data_left[14]:D</item>
- <item>data_receiver_0/data_left[15]:D</item>
- <item>data_receiver_0/data_left[1]:D</item>
- <item>data_receiver_0/data_left[2]:D</item>
- <item>data_receiver_0/data_left[3]:D</item>
- <item>data_receiver_0/data_left[4]:D</item>
- <item>data_receiver_0/data_left[5]:D</item>
- <item>data_receiver_0/data_left[6]:D</item>
- <item>data_receiver_0/data_left[7]:D</item>
- <item>data_receiver_0/data_left[8]:D</item>
- <item>data_receiver_0/data_left[9]:D</item>
- <item>data_receiver_0/data_right[0]:D</item>
- <item>data_receiver_0/data_right[10]:D</item>
- <item>data_receiver_0/data_right[11]:D</item>
- <item>data_receiver_0/data_right[12]:D</item>
- <item>data_receiver_0/data_right[13]:D</item>
- <item>data_receiver_0/data_right[14]:D</item>
- <item>data_receiver_0/data_right[15]:D</item>
- <item>data_receiver_0/data_right[1]:D</item>
- <item>data_receiver_0/data_right[2]:D</item>
- <item>data_receiver_0/data_right[3]:D</item>
- <item>data_receiver_0/data_right[4]:D</item>
- <item>data_receiver_0/data_right[5]:D</item>
- <item>data_receiver_0/data_right[6]:D</item>
- <item>data_receiver_0/data_right[7]:D</item>
- <item>data_receiver_0/data_right[8]:D</item>
- <item>data_receiver_0/data_right[9]:D</item>
+ <item>data_receiver_0/data[0]:D</item>
+ <item>data_receiver_0/data[10]:D</item>
+ <item>data_receiver_0/data[11]:D</item>
+ <item>data_receiver_0/data[12]:D</item>
+ <item>data_receiver_0/data[13]:D</item>
+ <item>data_receiver_0/data[14]:D</item>
+ <item>data_receiver_0/data[15]:D</item>
+ <item>data_receiver_0/data[16]:D</item>
+ <item>data_receiver_0/data[17]:D</item>
+ <item>data_receiver_0/data[18]:D</item>
+ <item>data_receiver_0/data[19]:D</item>
+ <item>data_receiver_0/data[1]:D</item>
+ <item>data_receiver_0/data[20]:D</item>
+ <item>data_receiver_0/data[21]:D</item>
+ <item>data_receiver_0/data[22]:D</item>
+ <item>data_receiver_0/data[23]:D</item>
+ <item>data_receiver_0/data[24]:D</item>
+ <item>data_receiver_0/data[25]:D</item>
+ <item>data_receiver_0/data[26]:D</item>
+ <item>data_receiver_0/data[27]:D</item>
+ <item>data_receiver_0/data[28]:D</item>
+ <item>data_receiver_0/data[29]:D</item>
+ <item>data_receiver_0/data[2]:D</item>
+ <item>data_receiver_0/data[30]:D</item>
+ <item>data_receiver_0/data[31]:D</item>
+ <item>data_receiver_0/data[3]:D</item>
+ <item>data_receiver_0/data[4]:D</item>
+ <item>data_receiver_0/data[5]:D</item>
+ <item>data_receiver_0/data[6]:D</item>
+ <item>data_receiver_0/data[7]:D</item>
+ <item>data_receiver_0/data[8]:D</item>
+ <item>data_receiver_0/data[9]:D</item>
 </list>
 <text></text>
 <text> - Hold unconstrained for the following pins:</text>
 <text>   </text>
 <list>
- <item>data_receiver_0/data_left[0]:D</item>
- <item>data_receiver_0/data_left[10]:D</item>
- <item>data_receiver_0/data_left[11]:D</item>
- <item>data_receiver_0/data_left[12]:D</item>
- <item>data_receiver_0/data_left[13]:D</item>
- <item>data_receiver_0/data_left[14]:D</item>
- <item>data_receiver_0/data_left[15]:D</item>
- <item>data_receiver_0/data_left[1]:D</item>
- <item>data_receiver_0/data_left[2]:D</item>
- <item>data_receiver_0/data_left[3]:D</item>
- <item>data_receiver_0/data_left[4]:D</item>
- <item>data_receiver_0/data_left[5]:D</item>
- <item>data_receiver_0/data_left[6]:D</item>
- <item>data_receiver_0/data_left[7]:D</item>
- <item>data_receiver_0/data_left[8]:D</item>
- <item>data_receiver_0/data_left[9]:D</item>
- <item>data_receiver_0/data_right[0]:D</item>
- <item>data_receiver_0/data_right[10]:D</item>
- <item>data_receiver_0/data_right[11]:D</item>
- <item>data_receiver_0/data_right[12]:D</item>
- <item>data_receiver_0/data_right[13]:D</item>
- <item>data_receiver_0/data_right[14]:D</item>
- <item>data_receiver_0/data_right[15]:D</item>
- <item>data_receiver_0/data_right[1]:D</item>
- <item>data_receiver_0/data_right[2]:D</item>
- <item>data_receiver_0/data_right[3]:D</item>
- <item>data_receiver_0/data_right[4]:D</item>
- <item>data_receiver_0/data_right[5]:D</item>
- <item>data_receiver_0/data_right[6]:D</item>
- <item>data_receiver_0/data_right[7]:D</item>
- <item>data_receiver_0/data_right[8]:D</item>
- <item>data_receiver_0/data_right[9]:D</item>
+ <item>data_receiver_0/data[0]:D</item>
+ <item>data_receiver_0/data[10]:D</item>
+ <item>data_receiver_0/data[11]:D</item>
+ <item>data_receiver_0/data[12]:D</item>
+ <item>data_receiver_0/data[13]:D</item>
+ <item>data_receiver_0/data[14]:D</item>
+ <item>data_receiver_0/data[15]:D</item>
+ <item>data_receiver_0/data[16]:D</item>
+ <item>data_receiver_0/data[17]:D</item>
+ <item>data_receiver_0/data[18]:D</item>
+ <item>data_receiver_0/data[19]:D</item>
+ <item>data_receiver_0/data[1]:D</item>
+ <item>data_receiver_0/data[20]:D</item>
+ <item>data_receiver_0/data[21]:D</item>
+ <item>data_receiver_0/data[22]:D</item>
+ <item>data_receiver_0/data[23]:D</item>
+ <item>data_receiver_0/data[24]:D</item>
+ <item>data_receiver_0/data[25]:D</item>
+ <item>data_receiver_0/data[26]:D</item>
+ <item>data_receiver_0/data[27]:D</item>
+ <item>data_receiver_0/data[28]:D</item>
+ <item>data_receiver_0/data[29]:D</item>
+ <item>data_receiver_0/data[2]:D</item>
+ <item>data_receiver_0/data[30]:D</item>
+ <item>data_receiver_0/data[31]:D</item>
+ <item>data_receiver_0/data[3]:D</item>
+ <item>data_receiver_0/data[4]:D</item>
+ <item>data_receiver_0/data[5]:D</item>
+ <item>data_receiver_0/data[6]:D</item>
+ <item>data_receiver_0/data[7]:D</item>
+ <item>data_receiver_0/data[8]:D</item>
+ <item>data_receiver_0/data[9]:D</item>
 </list>
 <text></text>
 </section>

@@ -2,11 +2,11 @@
 
 # User I/O Constraints file 
 
-# Version: 2022.1 2022.1.0.10
+# Version: 2022.2 2022.2.0.10
 
 # Family: SmartFusion2 , Die: M2S010 , Package: 256 VF
 
-# Date generated: Sun Jul 10 17:03:01 2022 
+# Date generated: Mon Dec  5 15:49:47 2022 
 
 
 # 
@@ -28,36 +28,42 @@
 set_io dac_out_left    \
     -pinname H14       \
     -fixed yes         \
+    -iostd LVCMOS33    \
     -DIRECTION OUTPUT
 
 
 set_io dac_out_right   \
     -pinname H15       \
     -fixed yes         \
+    -iostd LVCMOS33    \
     -DIRECTION OUTPUT
 
 
 set_io spi_miso        \
-    -pinname K12       \
+    -pinname H3        \
     -fixed yes         \
+    -iostd LVCMOS33    \
     -DIRECTION OUTPUT
 
 
 set_io spi_mosi       \
-    -pinname J13      \
+    -pinname P13      \
     -fixed yes        \
+    -iostd LVCMOS33   \
     -DIRECTION INPUT
 
 
 set_io spi_sck        \
-    -pinname J14      \
+    -pinname L13      \
     -fixed yes        \
+    -iostd LVCMOS33   \
     -DIRECTION INPUT
 
 
 set_io spi_ss         \
-    -pinname J12      \
+    -pinname L14      \
     -fixed yes        \
+    -iostd LVCMOS33   \
     -DIRECTION INPUT
 
 

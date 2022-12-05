@@ -1,10 +1,10 @@
-KEY LIBERO "2022.1"
-KEY CAPTURE "2022.1.0.10"
+KEY LIBERO "2022.2"
+KEY CAPTURE "2022.2.0.10"
 KEY DEFAULT_IMPORT_LOC "C:\Actelprj\A3P_Verilog_labs\lab2"
 KEY DEFAULT_OPEN_LOC ""
 KEY ProjectID "0"
 KEY HDLTechnology "VHDL"
-KEY VERILOGMODE "SYSTEMVERILOG"
+KEY VERILOGMODE "VERILOG2001"
 KEY VHDLMODE "VHDL2008"
 KEY SYSTEMVERILOGMFCU "FALSE"
 KEY UseConstraintFlowTechnology "TRUE"
@@ -15,9 +15,9 @@ KEY VendorTechnology_Speed "STD"
 KEY VendorTechnology_DieVoltage "1.2"
 KEY VendorTechnology_PART_RANGE "COM"
 KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE "100_MS"
-KEY VendorTechnology_IO_DEFT_STD "LVCMOS33"
+KEY VendorTechnology_IO_DEFT_STD "LVCMOS25"
 KEY VendorTechnology_OPCONR ""
-KEY VendorTechnology_PLL_SUPPLY "PLL_SUPPLY_33"
+KEY VendorTechnology_PLL_SUPPLY "PLL_SUPPLY_25"
 KEY VendorTechnology_RAD_EXPOSURE ""
 KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
 KEY VendorTechnology_RESTRICTPROBEPINS "1"
@@ -51,32 +51,18 @@ VALUE="Impl2",NUM=2
 VALUE="Impl3",NUM=3
 CURREV=3
 ENDLIST
-LIST LIBRARIES
-CORERESET_PF_LIB
-ENDLIST
-LIST LIBRARY_CORERESET_PF_LIB
-ALIAS=CORERESET_PF_LIB
-COMPILE_OPTION=COMPILE
-CUSTOMPATH=false
-ENDLIST
 LIST GlobalIncludeFileList
 ENDLIST
 LIST FileManager
-VALUE "<project>\component\Actel\DirectCore\CORERESET_PF\2.1.100\CORERESET_PF.cxf,actgen_cxf"
-STATE="utd"
-TIME="1656854121"
-SIZE="485"
-PARENT="<project>\component\work\CORERESET_PF_C0\CORERESET_PF_C0.cxf"
-ENDFILE
 VALUE "<project>\component\Actel\SgCore\FCCC\2.0.201\FCCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1656854127"
+TIME="1669210370"
 SIZE="241"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1656854132"
+TIME="1665157617"
 SIZE="682"
 PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
 ENDFILE
@@ -169,42 +155,6 @@ STATE="utd"
 TIME="1656708685"
 SIZE="256"
 ENDFILE
-VALUE "<project>\component\work\CORERESET_PF_C0\CORERESET_PF_C0.cxf,actgen_cxf"
-STATE="utd"
-TIME="1656854121"
-SIZE="2730"
-ENDFILE
-VALUE "<project>\component\work\CORERESET_PF_C0\CORERESET_PF_C0.vhd,hdl"
-STATE="utd"
-TIME="1656854121"
-SIZE="3807"
-PARENT="<project>\component\work\CORERESET_PF_C0\CORERESET_PF_C0.cxf"
-IS_READONLY="TRUE"
-ENDFILE
-VALUE "<project>\component\work\CORERESET_PF_C0\CORERESET_PF_C0_0\CORERESET_PF_C0_CORERESET_PF_C0_0_CORERESET_PF.cxf,actgen_cxf"
-STATE="utd"
-TIME="1656854121"
-SIZE="920"
-PARENT="<project>\component\work\CORERESET_PF_C0\CORERESET_PF_C0.cxf"
-ENDFILE
-VALUE "<project>\component\work\CORERESET_PF_C0\CORERESET_PF_C0_0\core\corereset_pf.vhd,hdl"
-STATE="utd"
-TIME="1656854121"
-SIZE="2021"
-LIBRARY="CORERESET_PF_LIB"
-PARENT="<project>\component\work\CORERESET_PF_C0\CORERESET_PF_C0_0\CORERESET_PF_C0_CORERESET_PF_C0_0_CORERESET_PF.cxf"
-IS_READONLY="TRUE"
-ENDFILE
-VALUE "<project>\component\work\CORERESET_PF_C0\CORERESET_PF_C0_0\test\corereset_pf_tb.vhd,tb_hdl"
-STATE="utd"
-TIME="1656854121"
-SIZE="5008"
-LIBRARY="CORERESET_PF_LIB"
-PARENT="<project>\component\work\CORERESET_PF_C0\CORERESET_PF_C0_0\CORERESET_PF_C0_CORERESET_PF_C0_0_CORERESET_PF.cxf"
-MODULE_UNDER_TEST="corereset_pf_tb"
-SIMULATION_TIME=""
-IS_READONLY="TRUE"
-ENDFILE
 VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
 STATE="utd"
 TIME="1656848334"
@@ -212,195 +162,197 @@ SIZE="437"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0.cxf,actgen_cxf"
 STATE="utd"
-TIME="1656854127"
-SIZE="10650"
+TIME="1669210370"
+SIZE="10453"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0.vhd,hdl"
 STATE="utd"
-TIME="1656854127"
-SIZE="7626"
+TIME="1669210370"
+SIZE="7401"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1656854127"
+TIME="1669210370"
 SIZE="705"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd,hdl"
 STATE="utd"
-TIME="1656854127"
-SIZE="5701"
+TIME="1669210370"
+SIZE="5574"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\OSC_C0\OSC_C0.cxf,actgen_cxf"
 STATE="utd"
-TIME="1656854132"
-SIZE="3051"
+TIME="1665157618"
+SIZE="2901"
 ENDFILE
 VALUE "<project>\component\work\OSC_C0\OSC_C0.vhd,hdl"
 STATE="utd"
-TIME="1656854132"
-SIZE="4656"
+TIME="1665157617"
+SIZE="4311"
 PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1656854132"
+TIME="1665157617"
 SIZE="460"
 PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
 ENDFILE
 VALUE "<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd,hdl"
 STATE="utd"
-TIME="1656854132"
-SIZE="1567"
+TIME="1665157617"
+SIZE="897"
 PARENT="<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\soundchip\soundchip.cxf,actgen_cxf"
 STATE="utd"
-TIME="1657402461"
-SIZE="2901"
+TIME="1670251026"
+SIZE="2967"
 ENDFILE
 VALUE "<project>\component\work\soundchip\soundchip.vhd,hdl"
 STATE="utd"
-TIME="1657019642"
-SIZE="9684"
+TIME="1670251026"
+SIZE="8550"
 PARENT="<project>\component\work\soundchip\soundchip.cxf"
 IS_READONLY="TRUE"
 ENDFILE
-VALUE "<project>\component\work\soundchip_tb\soundchip_tb.cxf,actgen_cxf"
-STATE="utd"
-TIME="1657199537"
-SIZE="664"
-ENDFILE
-VALUE "<project>\constraint\fp\full_floorplan.pdc,fp_pdc"
-STATE="utd"
-TIME="1657022390"
-SIZE="15968"
-ENDFILE
 VALUE "<project>\constraint\io\full_io.pdc,io_pdc"
 STATE="utd"
-TIME="1657022142"
-SIZE="1399"
+TIME="1667894995"
+SIZE="1561"
+IS_TARGET="TRUE"
 ENDFILE
-VALUE "<project>\constraint\soundchip_derived_constraints.sdc,sdc"
+VALUE "<project>\constraint\io\user.pdc,io_pdc"
 STATE="utd"
-TIME="1657022453"
-SIZE="1067"
+TIME="1658764971"
+SIZE="741"
+ENDFILE
+VALUE "<project>\constraint\user.sdc,sdc"
+STATE="utd"
+TIME="1667894894"
+SIZE="404"
+IS_TARGET="TRUE"
 ENDFILE
 VALUE "<project>\hdl\dac.vhd,hdl"
 STATE="utd"
-TIME="1656851128"
-SIZE="1702"
+TIME="1658320617"
+SIZE="1693"
 ENDFILE
 VALUE "<project>\hdl\data_receiver.vhd,hdl"
 STATE="utd"
-TIME="1656854728"
-SIZE="1381"
+TIME="1669210424"
+SIZE="1477"
 ENDFILE
 VALUE "<project>\hdl\delta_adder.vhd,hdl"
 STATE="utd"
-TIME="1656855267"
-SIZE="1490"
+TIME="1657465680"
+SIZE="1373"
 ENDFILE
 VALUE "<project>\hdl\sigma_adder.vhd,hdl"
 STATE="utd"
-TIME="1656852513"
-SIZE="1297"
+TIME="1666800626"
+SIZE="1285"
 ENDFILE
 VALUE "<project>\hdl\spi_slave.vhd,hdl"
 STATE="utd"
-TIME="1656847886"
+TIME="1670250768"
+SIZE="3000"
+ENDFILE
+VALUE "<project>\hdl\spi_slave_deprecated.vhd,hdl"
+STATE="utd"
+TIME="1669210440"
 SIZE="9026"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1657400530"
-SIZE="2607"
-ENDFILE
-VALUE "<project>\simulation\soundchip_tb_postsynth_simulation.log,log"
-STATE="utd"
-TIME="1657402639"
-SIZE="20"
-ENDFILE
-VALUE "<project>\simulation\soundchip_tb_presynth_simulation.log,log"
-STATE="utd"
-TIME="1657401348"
-SIZE="29222310"
+TIME="1669214333"
+SIZE="963"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1657402635"
+TIME="1669214333"
 SIZE="233"
 ENDFILE
 VALUE "<project>\stimulus\dac_tb.vhd,tb_hdl"
 STATE="utd"
-TIME="1657379283"
-SIZE="2085"
+TIME="1657631924"
+SIZE="4943"
 ENDFILE
 VALUE "<project>\stimulus\data_receiver_tb.vhd,tb_hdl"
 STATE="utd"
-TIME="1657403360"
-SIZE="2876"
+TIME="1658511753"
+SIZE="3106"
 ENDFILE
 VALUE "<project>\stimulus\delta_adder_tb.vhd,tb_hdl"
 STATE="utd"
-TIME="1657379325"
-SIZE="2117"
+TIME="1657467937"
+SIZE="2748"
 ENDFILE
 VALUE "<project>\stimulus\sigma_adder_tb.vhd,tb_hdl"
 STATE="utd"
-TIME="1657379343"
-SIZE="2117"
+TIME="1657478312"
+SIZE="3581"
+ENDFILE
+VALUE "<project>\stimulus\soundchip_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1670239014"
+SIZE="5409"
+ENDFILE
+VALUE "<project>\stimulus\spi_slave_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1668710766"
+SIZE="8076"
 ENDFILE
 VALUE "<project>\synthesis\soundchip.so,so"
 STATE="utd"
-TIME="1657402481"
+TIME="1669213385"
 SIZE="236"
 ENDFILE
 VALUE "<project>\synthesis\soundchip.vm,syn_vm"
-STATE="utd"
-TIME="1657402480"
-SIZE="72558"
+STATE="ood"
+TIME="1669213385"
+SIZE="65130"
 ENDFILE
 VALUE "<project>\synthesis\soundchip_syn.prj,prj"
 STATE="utd"
-TIME="1657402482"
-SIZE="3717"
+TIME="1669213386"
+SIZE="3443"
 ENDFILE
 VALUE "<project>\synthesis\soundchip_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1657402480"
-SIZE="1760"
+TIME="1669213385"
+SIZE="1431"
 ENDFILE
 ENDLIST
 LIST UsedFile
+VALUE "<project>\hdl\spi_slave.vhd,spi_slave"
 ENDLIST
 LIST NewModulesInfo
 LIST "soundchip::work"
 FILE "<project>\component\work\soundchip\soundchip.vhd,hdl"
 LIST AssociatedStimulus
-VALUE "<project>\stimulus\data_receiver_tb.vhd,tb_hdl"
+VALUE "<project>\stimulus\soundchip_tb.vhd,tb_hdl"
 ENDLIST
 LIST SynthesisConstraints
-VALUE "<project>\constraint\soundchip_derived_constraints.sdc,sdc"
+VALUE "<project>\constraint\user.sdc,sdc"
 ENDLIST
 LIST TimingConstraints
-VALUE "<project>\constraint\soundchip_derived_constraints.sdc,sdc"
+VALUE "<project>\constraint\user.sdc,sdc"
 ENDLIST
 LIST PNRConstraints
 VALUE "<project>\constraint\io\full_io.pdc,io_pdc"
-VALUE "<project>\constraint\fp\full_floorplan.pdc,fp_pdc"
-VALUE "<project>\constraint\soundchip_derived_constraints.sdc,sdc"
+VALUE "<project>\constraint\io\user.pdc,io_pdc"
+VALUE "<project>\constraint\user.sdc,sdc"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -411,7 +363,6 @@ ENDUsed_File_List
 ENDLIST
 LIST Impl2
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -422,7 +373,6 @@ ENDUsed_File_List
 ENDLIST
 LIST Impl3
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -433,32 +383,23 @@ ENDUsed_File_List
 ENDLIST
 ENDLIST
 ENDLIST
-LIST "CORERESET_PF_C0_CORERESET_PF_C0_0_corereset_pf::corereset_pf_lib"
-FILE "<project>\component\work\CORERESET_PF_C0\CORERESET_PF_C0_0\core\corereset_pf.vhd,hdl"
-LIST Other_Association
-VALUE "<project>\component\work\CORERESET_PF_C0\CORERESET_PF_C0_0\test\corereset_pf_tb.vhd,tb_hdl"
-ENDLIST
-ENDLIST
 ENDLIST
 LIST AssociatedStimulus
 LIST soundchip
-VALUE "<project>\stimulus\data_receiver_tb.vhd,tb_hdl"
+VALUE "<project>\stimulus\soundchip_tb.vhd,tb_hdl"
 ENDLIST
 ENDLIST
 LIST Other_Association
-LIST CORERESET_PF_C0_CORERESET_PF_C0_0_corereset_pf
-VALUE "<project>\component\work\CORERESET_PF_C0\CORERESET_PF_C0_0\test\corereset_pf_tb.vhd,tb_hdl"
-ENDLIST
 ENDLIST
 LIST SimulationOptions
 UseAutomaticDoFile=true
 IncludeWaveDo=false
 Type=max
-RunTime=1000ns
+RunTime=6000ms
 Resolution=1fs
 VsimOpt=
 EntityName=soundchip_tb
-TopInstanceName=<top>_0
+TopInstanceName=soundchip_0
 DoFileName=
 DoFileName2=wave.do
 DoFileParams=
@@ -472,12 +413,12 @@ Verilog2001=false
 SystemVerilog=false
 TimeUnit=1
 TimeUnitBase=ns
-Precision=100
-PrecisionBase=ps
+Precision=1
+PrecisionBase=ns
 ENDLIST
 LIST ModelSimLibPath
 UseCustomPath=FALSE
-LibraryPath=
+LibraryPath=C:/Microsemi/Libero_SoC_v2022.1/Designer/lib/modelsimpro/precompiled\vlog\SmartFusion2
 ENDLIST
 LIST GlobalFlowOptions
 GenerateHDLAfterSynthesis=FALSE
@@ -498,7 +439,7 @@ DisplayFanoutLimit=10
 AbortFlowOnPDCErrorsOn=TRUE
 AbortFlowOnSDCErrorsOn=TRUE
 AbortFlowOn3.3V_IO_ON=FALSE
-InstantiateInSmartDesign=TRUE
+InstantiateInSmartDesign=FALSE
 FlashProInputFile=pdb
 SmartGenCompileReport=T
 ENDLIST
@@ -517,7 +458,7 @@ EndProfile
 NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
-LOCATION="C:\Microsemi\Libero_SoC_v2022.1\SynplifyPro\bin\synplify_pro.exe"
+LOCATION="C:\Microchip\Libero_SoC_v2022.2\SynplifyPro\bin\synplify_pro.exe"
 PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
 BATCH=1
 LICENSE=""
@@ -526,8 +467,8 @@ EndProfile
 NAME="ModelSim ME Pro"
 FUNCTION="Simulation"
 TOOL="ModelSim Pro Edition"
-LOCATION="C:\Microsemi\Libero_SoC_v2022.1\ModelSimPro\win32acoem\modelsim.exe"
-PARAM=" -l soundchip_tb_presynth_simulation.log "
+LOCATION="C:\Microchip\Libero_SoC_v2022.2\ModelSimPro\win32acoem\modelsim.exe"
+PARAM=" -l soundchip_tb_postsynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -535,7 +476,7 @@ EndProfile
 NAME="Identify Debugger"
 FUNCTION="IdentifyDebugger"
 TOOL="Identify Debugger"
-LOCATION="C:\Microsemi\Libero_SoC_v2022.1\Identify\bin\identify_debugger.exe"
+LOCATION="C:\Microchip\Libero_SoC_v2022.2\Identify\bin\identify_debugger.exe"
 PARAM=""
 BATCH=0
 LICENSE=""
@@ -546,7 +487,6 @@ LIST ProjectState5.1
 LIST "soundchip::work"
 LIST Impl1
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -557,7 +497,6 @@ ENDUsed_File_List
 ENDLIST
 LIST Impl2
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -568,7 +507,6 @@ ENDUsed_File_List
 ENDLIST
 LIST Impl3
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -592,16 +530,17 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;synthesis:soundchip.srr
+ReportsCurrentItem;synthesis:synplify.log
+HDL;hdl\delta_adder.vhd;0
+HDL;hdl\sigma_adder.vhd;0
+HDL;stimulus\soundchip_tb.vhd;0
 HDL;hdl\data_receiver.vhd;0
-HDL;stimulus\data_receiver_tb.vhd;0
-StartPage;StartPage;0
-ACTIVEVIEW;stimulus\data_receiver_tb.vhd
+HDL;hdl\spi_slave.vhd;0
+HDL;hdl\spi_slave_deprecated.vhd;0
+SmartDesign;soundchip;0
+ACTIVEVIEW;soundchip
 ENDLIST
 LIST ModuleSubBlockList
-LIST "CORERESET_PF_C0::work","component\work\CORERESET_PF_C0\CORERESET_PF_C0.vhd","TRUE","FALSE"
-SUBBLOCK "CORERESET_PF_C0_CORERESET_PF_C0_0_corereset_pf::corereset_pf_lib","component\work\CORERESET_PF_C0\CORERESET_PF_C0_0\core\corereset_pf.vhd","FALSE","FALSE"
-ENDLIST
 LIST "dac::work","hdl\dac.vhd","FALSE","FALSE"
 SUBBLOCK "delta_adder::work","hdl\delta_adder.vhd","FALSE","FALSE"
 SUBBLOCK "sigma_adder::work","hdl\sigma_adder.vhd","FALSE","FALSE"
@@ -623,7 +562,6 @@ LIST "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
 SUBBLOCK "OSC_C0_OSC_C0_0_OSC::work","component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd","FALSE","FALSE"
 ENDLIST
 LIST "OSC_C0_OSC_C0_0_OSC::work","component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd","FALSE","FALSE"
-SUBBLOCK "RCOSC_25_50MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
 SUBBLOCK "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
 ENDLIST
 LIST "RCOSC_1MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
@@ -635,49 +573,47 @@ ENDLIST
 LIST "sigma_adder::work","hdl\sigma_adder.vhd","FALSE","FALSE"
 ENDLIST
 LIST "soundchip::work","component\work\soundchip\soundchip.vhd","TRUE","FALSE"
-SUBBLOCK "CORERESET_PF_C0::work","component\work\CORERESET_PF_C0\CORERESET_PF_C0.vhd","TRUE","FALSE"
 SUBBLOCK "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.vhd","TRUE","FALSE"
 SUBBLOCK "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
-SUBBLOCK "SPI_SLAVE::work","hdl\spi_slave.vhd","FALSE","FALSE"
 SUBBLOCK "dac::work","hdl\dac.vhd","FALSE","FALSE"
 SUBBLOCK "data_receiver::work","hdl\data_receiver.vhd","FALSE","FALSE"
+SUBBLOCK "spi_slave::work","hdl\spi_slave.vhd","FALSE","FALSE"
 ENDLIST
-LIST "SPI_SLAVE::work","hdl\spi_slave.vhd","FALSE","FALSE"
+LIST "spi_slave::work","hdl\spi_slave.vhd","FALSE","FALSE"
 ENDLIST
 LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
 ENDLIST
 LIST "XTLOSC_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
 ENDLIST
 LIST "dac_tb::work","stimulus\dac_tb.vhd","FALSE","TRUE"
-SUBBLOCK "soundchip::work","component\work\soundchip\soundchip.vhd","TRUE","FALSE"
+SUBBLOCK "dac::work","hdl\dac.vhd","FALSE","FALSE"
 ENDLIST
 LIST "data_receiver_tb::work","stimulus\data_receiver_tb.vhd","FALSE","TRUE"
 SUBBLOCK "data_receiver::work","hdl\data_receiver.vhd","FALSE","FALSE"
 ENDLIST
 LIST "delta_adder_tb::work","stimulus\delta_adder_tb.vhd","FALSE","TRUE"
-SUBBLOCK "soundchip::work","component\work\soundchip\soundchip.vhd","TRUE","FALSE"
+SUBBLOCK "delta_adder::work","hdl\delta_adder.vhd","FALSE","FALSE"
 ENDLIST
 LIST "sigma_adder_tb::work","stimulus\sigma_adder_tb.vhd","FALSE","TRUE"
+SUBBLOCK "sigma_adder::work","hdl\sigma_adder.vhd","FALSE","FALSE"
+ENDLIST
+LIST "soundchip_tb::work","stimulus\soundchip_tb.vhd","FALSE","TRUE"
 SUBBLOCK "soundchip::work","component\work\soundchip\soundchip.vhd","TRUE","FALSE"
 ENDLIST
-LIST "soundchip_tb::work","component\work\soundchip_tb\soundchip_tb.cxf","TRUE","TRUE"
-ENDLIST
-LIST "CORERESET_PF_C0_CORERESET_PF_C0_0_corereset_pf::corereset_pf_lib","component\work\CORERESET_PF_C0\CORERESET_PF_C0_0\core\corereset_pf.vhd","FALSE","FALSE"
-ENDLIST
-LIST "corereset_pf_tb::corereset_pf_lib","component\work\CORERESET_PF_C0\CORERESET_PF_C0_0\test\corereset_pf_tb.vhd","FALSE","TRUE"
-SUBBLOCK "CORERESET_PF_C0_CORERESET_PF_C0_0_corereset_pf::corereset_pf_lib","component\work\CORERESET_PF_C0\CORERESET_PF_C0_0\core\corereset_pf.vhd","FALSE","FALSE"
+LIST "SPI_SLAVE_TB::work","stimulus\spi_slave_tb.vhd","FALSE","TRUE"
+SUBBLOCK "spi_slave::work","hdl\spi_slave.vhd","FALSE","FALSE"
 ENDLIST
 ENDLIST
 LIST ActiveTestBenchList
 ENDLIST
 LIST IOTabList
 VALUE "constraint\io\full_io.pdc"
+VALUE "constraint\io\user.pdc"
 ENDLIST
 LIST FPTabList
-VALUE "constraint\fp\full_floorplan.pdc"
 ENDLIST
 LIST TimingTabList
-VALUE "constraint\soundchip_derived_constraints.sdc"
+VALUE "constraint\user.sdc"
 ENDLIST
 LIST FDCTabList
 ENDLIST

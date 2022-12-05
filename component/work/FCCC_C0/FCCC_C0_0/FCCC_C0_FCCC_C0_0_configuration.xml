@@ -8,7 +8,7 @@
 </header>
 <row>
  <cell>Date:</cell>
- <cell>Sun Jul  3 15:15:26 2022</cell>
+ <cell>Wed Nov 23 14:32:49 2022</cell>
 </row>
 <separator/>
 <row>
@@ -52,17 +52,7 @@
  <cell>100 MHz</cell>
  <cell>100 MHz</cell>
  <cell>100 MHz</cell>
- <cell>1 (GPD1)</cell>
-</row>
-<separator/>
-<row>
- <cell>GL1</cell>
- <cell>primary clock</cell>
- <cell>PLL (0)</cell>
- <cell>100 MHz</cell>
- <cell>5 MHz</cell>
- <cell>5 MHz</cell>
- <cell>20 (GPD0)</cell>
+ <cell>--</cell>
 </row>
 <separator/>
 </table>
@@ -195,7 +185,7 @@
 <row>
  <cell>FCCC_NGMUX0_CR0</cell>
  <cell>0x06</cell>
- <cell>0x09</cell>
+ <cell>0x07</cell>
  <cell>NGMUX0 configuration register 0</cell>
 </row>
 <row>
@@ -207,7 +197,7 @@
 <row>
  <cell>FCCC_NGMUX1_CR0</cell>
  <cell>0x08</cell>
- <cell>0x08</cell>
+ <cell>0x18</cell>
  <cell>NGMUX1 configuration register 0</cell>
 </row>
 <row>
@@ -243,13 +233,13 @@
 <row>
  <cell>FCCC_GPMUX0_CR</cell>
  <cell>0x0e</cell>
- <cell>0x47</cell>
+ <cell>0x58</cell>
  <cell>GPMUX0 configuration register</cell>
 </row>
 <row>
  <cell>FCCC_GPMUX1_CR</cell>
  <cell>0x0f</cell>
- <cell>0x47</cell>
+ <cell>0x58</cell>
  <cell>GPMUX1 configuration register</cell>
 </row>
 <row>
@@ -267,7 +257,7 @@
 <row>
  <cell>FCCC_GPD0_CR</cell>
  <cell>0x12</cell>
- <cell>0x14</cell>
+ <cell>0x01</cell>
  <cell>GPD0 configuration register</cell>
 </row>
 <row>
@@ -363,13 +353,13 @@
 <row>
  <cell>FCCC_GPD0_SYNC_CR</cell>
  <cell>0x22</cell>
- <cell>0x03</cell>
+ <cell>0x02</cell>
  <cell>GPD0 operating mode configuration register</cell>
 </row>
 <row>
  <cell>FCCC_GPD1_SYNC_CR</cell>
  <cell>0x23</cell>
- <cell>0x03</cell>
+ <cell>0x02</cell>
  <cell>GPD1 operating mode configuration register</cell>
 </row>
 <row>

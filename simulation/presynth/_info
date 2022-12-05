@@ -1,7 +1,7 @@
 m255
 K4
 z2
-!s11e vcom 2021.3 2021.07, Jul 14 2021
+!s11e MIXED_VERSIONS
 13
 !s112 1.1
 !i10d 8192
@@ -13,7 +13,7 @@ Ecorereset_pf_c0
 Z1 w1656854121
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 228
+!i122 1041
 R0
 Z4 8C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0.vhd
 Z5 FC:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0.vhd
@@ -23,9 +23,9 @@ VGoZ[noa=_ckg0_4VnEGcZ1
 !s100 [D5;AZW:DIfA>E57YYXWM0
 Z6 OW;C;2021.3;73
 33
-Z7 !s110 1657480382
+Z7 !s110 1658575045
 !i10b 1
-Z8 !s108 1657480382.000000
+Z8 !s108 1658575045.000000
 Z9 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0.vhd|
 Z10 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/component/work/CORERESET_PF_C0/CORERESET_PF_C0.vhd|
 !i113 1
@@ -35,7 +35,7 @@ Artl
 R2
 R3
 DEx4 work 15 corereset_pf_c0 0 22 GoZ[noa=_ckg0_4VnEGcZ1
-!i122 228
+!i122 1041
 l71
 L46 49
 VHa]9_c``Kcm98;`2d7jF=2
@@ -51,147 +51,147 @@ R10
 R11
 R12
 Edac
-Z13 w1657478429
-Z14 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-R2
-R3
-!i122 236
+Z13 w1658320617
+Z14 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+Z15 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z16 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 1504
 R0
-Z15 8C:/Users/Constantin/Documents/VHDLSoundchip/hdl/dac.vhd
-Z16 FC:/Users/Constantin/Documents/VHDLSoundchip/hdl/dac.vhd
+Z17 8C:/Users/Constantin/Documents/VHDLSoundchip/hdl/dac.vhd
+Z18 FC:/Users/Constantin/Documents/VHDLSoundchip/hdl/dac.vhd
 l0
-Z17 L24 1
-Vfn:eXk?jTIOof?YeMA4Mi3
-!s100 FkUoX27Ya]Cn5i5afIe<D1
-R6
+Z19 L24 1
+V@9lF_CDdFZgTFPYH5^H;e3
+!s100 <dVgUKgRHb^iGQ2cBlWAA0
+Z20 OW;C;2022.2;75
 33
-Z18 !s110 1657480385
+Z21 !s110 1670251056
 !i10b 1
-Z19 !s108 1657480385.000000
-Z20 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/hdl/dac.vhd|
-Z21 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/hdl/dac.vhd|
+Z22 !s108 1670251056.000000
+Z23 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/hdl/dac.vhd|
+Z24 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/hdl/dac.vhd|
 !i113 1
 R11
 R12
 Aarchitecture_dac
 R14
-R2
-R3
-DEx4 work 3 dac 0 22 fn:eXk?jTIOof?YeMA4Mi3
-!i122 236
+R15
+R16
+DEx4 work 3 dac 0 22 @9lF_CDdFZgTFPYH5^H;e3
+!i122 1504
 l53
 L32 40
-VBRheikOjKK[5[gd[_77ha1
-!s100 IIQKiK><3^?C2>VQzb[iP1
-R6
-33
-R18
-!i10b 1
-R19
+VZG1;A9I^R<hN0kHYmKA?63
+!s100 cYmdCU`QhiEeTPa4>dGoG3
 R20
+33
 R21
+!i10b 1
+R22
+R23
+R24
 !i113 1
 R11
 R12
 Edac_tb
-Z22 w1657480053
+Z25 w1657631924
 R2
 R3
-!i122 242
+!i122 1049
 R0
-Z23 8C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/dac_tb.vhd
-Z24 FC:/Users/Constantin/Documents/VHDLSoundchip/stimulus/dac_tb.vhd
+Z26 8C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/dac_tb.vhd
+Z27 FC:/Users/Constantin/Documents/VHDLSoundchip/stimulus/dac_tb.vhd
 l0
-Z25 L23 1
+Z28 L23 1
 Vk=??]nGTKgN1Ndc?k]ODd0
 !s100 ga5ekW4:F;UWS][GMVVGB1
 R6
 33
-Z26 !s110 1657480386
+Z29 !s110 1658575046
 !i10b 1
-Z27 !s108 1657480386.000000
-Z28 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/dac_tb.vhd|
-Z29 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/dac_tb.vhd|
+Z30 !s108 1658575046.000000
+Z31 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/dac_tb.vhd|
+Z32 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/dac_tb.vhd|
 !i113 1
 R11
 R12
 Abehavioral
 R2
 R3
-Z30 DEx4 work 6 dac_tb 0 22 k=??]nGTKgN1Ndc?k]ODd0
-!i122 242
+DEx4 work 6 dac_tb 0 22 k=??]nGTKgN1Ndc?k]ODd0
+!i122 1049
 l49
-Z31 L26 114
-Z32 VkiDM>`8:n8`Hzm?Qm0zCR2
-Z33 !s100 UKBA9T]n[4YhE3Alm[aFz2
+L26 150
+Vg5L3`]WSL`PPDUM=MC6D@1
+!s100 j<QTPM9H5:Kj75c:PUOgd2
 R6
 33
-R26
-!i10b 1
-R27
-R28
 R29
+!i10b 1
+R30
+R31
+R32
 !i113 1
 R11
 R12
 Edata_receiver
-Z34 w1656854728
-R2
-R3
-!i122 237
+Z33 w1669210424
+R15
+R16
+!i122 1505
 R0
-Z35 8C:/Users/Constantin/Documents/VHDLSoundchip/hdl/data_receiver.vhd
-Z36 FC:/Users/Constantin/Documents/VHDLSoundchip/hdl/data_receiver.vhd
+Z34 8C:/Users/Constantin/Documents/VHDLSoundchip/hdl/data_receiver.vhd
+Z35 FC:/Users/Constantin/Documents/VHDLSoundchip/hdl/data_receiver.vhd
 l0
-R25
-V^dcefeNAEOY78n>fDbLLa1
-!s100 Z>mlBZ99hQ0WKfJC`O^B21
-R6
+R28
+VAYP9>jl@3V9YZCd?aQX1:1
+!s100 ]ie9>zalI2DI;c0TNX^9m0
+R20
 33
-R26
+Z36 !s110 1670251057
 !i10b 1
-R19
+R22
 Z37 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/hdl/data_receiver.vhd|
 Z38 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/hdl/data_receiver.vhd|
 !i113 1
 R11
 R12
 Aarchitecture_data_receiver
-R2
-R3
-DEx4 work 13 data_receiver 0 22 ^dcefeNAEOY78n>fDbLLa1
-!i122 237
-l35
-L33 16
-VhSUY4ZZ^`[E:I5:4D63n>0
-!s100 YI0WcK@P@JRbSJh?ReZ@D0
-R6
+R15
+R16
+DEx4 work 13 data_receiver 0 22 AYP9>jl@3V9YZCd?aQX1:1
+!i122 1505
+l40
+L36 21
+V_R_6meYcMIAI9Ih_6GnB[1
+!s100 jd9=?njF<cPRR8UdMh8QO2
+R20
 33
-R26
+R36
 !i10b 1
-R19
+R22
 R37
 R38
 !i113 1
 R11
 R12
 Edata_receiver_tb
-Z39 w1657459779
+Z39 w1658511753
 R2
 R3
-!i122 239
+!i122 1050
 R0
 Z40 8C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/data_receiver_tb.vhd
 Z41 FC:/Users/Constantin/Documents/VHDLSoundchip/stimulus/data_receiver_tb.vhd
 l0
-R25
+R28
 Vf7nXhY84S<^mPO:XAkjCc1
 !s100 Y]^VH[F]Bh7ji@3jiJBeJ2
 R6
 33
-R26
+R29
 !i10b 1
-R27
+R30
 Z42 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/data_receiver_tb.vhd|
 Z43 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/data_receiver_tb.vhd|
 !i113 1
@@ -201,16 +201,16 @@ Abehavioral
 R2
 R3
 DEx4 work 16 data_receiver_tb 0 22 f7nXhY84S<^mPO:XAkjCc1
-!i122 239
-l51
-L26 69
-VCo5A[LO=To0:3c7fX9CVI1
-!s100 []GzEGZbgF9?Ah8ELmb[K3
+!i122 1050
+l53
+L26 72
+VT;^T[e^^]aJ?0@NAgcCim1
+!s100 >^]KTA@WcG;d5V5A4_LQ`0
 R6
 33
-R26
+R29
 !i10b 1
-R27
+R30
 R42
 R43
 !i113 1
@@ -219,125 +219,125 @@ R12
 Edelta_adder
 Z44 w1657465680
 R14
-R2
-R3
-!i122 234
+R15
+R16
+!i122 1502
 R0
 Z45 8C:/Users/Constantin/Documents/VHDLSoundchip/hdl/delta_adder.vhd
 Z46 FC:/Users/Constantin/Documents/VHDLSoundchip/hdl/delta_adder.vhd
 l0
-R17
-V29B]caz6K^Ok_QbCh>]1R1
-!s100 69c<RPE]:?BgcPhK`Scc32
-R6
+R19
+VmDl@UF87>1GB<mPV6PLUJ0
+!s100 UoTg6YUe_;5Ah;>N4PeOb3
+R20
 33
-Z47 !s110 1657480383
+R21
 !i10b 1
-Z48 !s108 1657480383.000000
-Z49 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/hdl/delta_adder.vhd|
-Z50 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/hdl/delta_adder.vhd|
+R22
+Z47 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/hdl/delta_adder.vhd|
+Z48 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/hdl/delta_adder.vhd|
 !i113 1
 R11
 R12
 Aarchitecture_delta_adder
 R14
-R2
-R3
-DEx4 work 11 delta_adder 0 22 29B]caz6K^Ok_QbCh>]1R1
-!i122 234
+R15
+R16
+DEx4 work 11 delta_adder 0 22 mDl@UF87>1GB<mPV6PLUJ0
+!i122 1502
 l37
 L33 18
-V:^Tg0N_2_>870gQMz>goB1
-!s100 4VhG]kAQ9_8Te[4W2D0Nl1
-R6
+VHQmDM3THeGoJiVZk^TM3W2
+!s100 CN>F2__3SnFzOFb>PM><f0
+R20
 33
-R47
+R21
 !i10b 1
+R22
+R47
 R48
-R49
-R50
 !i113 1
 R11
 R12
 Edelta_adder_tb
-Z51 w1657467937
-R14
+Z49 w1657467937
+Z50 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R2
 R3
-!i122 240
+!i122 1051
 R0
-Z52 8C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/delta_adder_tb.vhd
-Z53 FC:/Users/Constantin/Documents/VHDLSoundchip/stimulus/delta_adder_tb.vhd
+Z51 8C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/delta_adder_tb.vhd
+Z52 FC:/Users/Constantin/Documents/VHDLSoundchip/stimulus/delta_adder_tb.vhd
 l0
-R17
+R19
 VfzELHi5]fzCkD71ZDeWnc3
 !s100 DlCD=@dhg3L6`M3BleG<g0
 R6
 33
-R26
+Z53 !s110 1658575047
 !i10b 1
-R27
+R30
 Z54 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/delta_adder_tb.vhd|
 Z55 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/delta_adder_tb.vhd|
 !i113 1
 R11
 R12
 Abehavioral
-R14
+R50
 R2
 R3
 DEx4 work 14 delta_adder_tb 0 22 fzELHi5]fzCkD71ZDeWnc3
-!i122 240
+!i122 1051
 l52
 L27 78
 VHQKDF8zSXT@><G=`E>G9A1
 !s100 =O3aF8@LlR=2@WJKM=Qj`3
 R6
 33
-R26
+R53
 !i10b 1
-R27
+R30
 R54
 R55
 !i113 1
 R11
 R12
 Efccc_c0
-Z56 w1656854127
-R2
-R3
-!i122 230
+Z56 w1669210370
+R15
+R16
+!i122 1499
 R0
 Z57 8C:/Users/Constantin/Documents/VHDLSoundchip/component/work/FCCC_C0/FCCC_C0.vhd
 Z58 FC:/Users/Constantin/Documents/VHDLSoundchip/component/work/FCCC_C0/FCCC_C0.vhd
 l0
 L145 1
-VXNT19dh4G>WEUGC1hcF:>1
-!s100 Fo`TTK;CmlS7PRn5QA1fY3
-R6
+V<_5XULF6UAS8A:9E=zjRY1
+!s100 k;85K9DI?178`:O2Gga[E0
+R20
 33
-R7
+R21
 !i10b 1
-R8
+R22
 Z59 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/component/work/FCCC_C0/FCCC_C0.vhd|
 Z60 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/component/work/FCCC_C0/FCCC_C0.vhd|
 !i113 1
 R11
 R12
 Artl
-R2
-R3
-DEx4 work 7 fccc_c0 0 22 XNT19dh4G>WEUGC1hcF:>1
-!i122 230
-l191
-L159 63
-VV=1AWK6h4jOkc<NY5@nhU3
-!s100 em^@AfM@;@^;hJ:70^PD51
-R6
+R15
+R16
+DEx4 work 7 fccc_c0 0 22 <_5XULF6UAS8A:9E=zjRY1
+!i122 1499
+l187
+L158 57
+VFhYX>i=6;VVno8JGAg3j21
+!s100 eMm7M19RKk9EbLf7RZl[m0
+R20
 33
-R7
+R21
 !i10b 1
-R8
+R22
 R59
 R60
 !i113 1
@@ -345,81 +345,81 @@ R11
 R12
 Efccc_c0_fccc_c0_0_fccc
 R56
-R2
-R3
-!i122 229
+R15
+R16
+!i122 1498
 R0
 Z61 8C:/Users/Constantin/Documents/VHDLSoundchip/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd
 Z62 FC:/Users/Constantin/Documents/VHDLSoundchip/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd
 l0
 L8 1
-V<<en;mm[Fb_NZ50F0fbY01
-!s100 <fX8]63S5^Pbcf`ho0i>_0
-R6
+VAG:K<<_VS:YUA5X@29Md52
+!s100 >4]2TT^RKQXR8zh9[LFRj0
+R20
 33
-R7
+R21
 !i10b 1
-R8
+R22
 Z63 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd|
 Z64 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd|
 !i113 1
 R11
 R12
 Adef_arch
-R2
-R3
-DEx4 work 22 fccc_c0_fccc_c0_0_fccc 0 22 <<en;mm[Fb_NZ50F0fbY01
-!i122 229
-l95
-L18 126
-Vh6mSni4<j_RJA=>Oa1Vz]2
-!s100 ?hA[UL<Li>IR?`_]R_6C40
-R6
+R15
+R16
+DEx4 work 22 fccc_c0_fccc_c0_0_fccc 0 22 AG:K<<_VS:YUA5X@29Md52
+!i122 1498
+l94
+L17 123
+V[ozJIF9TYM3QZ1cM=n5TK0
+!s100 ePTj09egTUT5>N=j^hm@W2
+R20
 33
-R7
+R21
 !i10b 1
-R8
+R22
 R63
 R64
 !i113 1
 R11
 R12
 Eosc_c0
-Z65 w1656854132
-R2
-R3
-!i122 232
+Z65 w1665157617
+R15
+R16
+!i122 1501
 R0
 Z66 8C:/Users/Constantin/Documents/VHDLSoundchip/component/work/OSC_C0/OSC_C0.vhd
 Z67 FC:/Users/Constantin/Documents/VHDLSoundchip/component/work/OSC_C0/OSC_C0.vhd
 l0
 L39 1
-VOdLLmikLnJ[aAkl]BPZQ[0
-!s100 hm=z[i<_Z<J57IPiQzJEh2
-R6
+VhBz9zbLXFDlOmd<1K=9GT2
+!s100 Kl^Y0PDa=zFGkGOPZHA]B3
+R20
 33
-R7
+R21
 !i10b 1
-R8
+R22
 Z68 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/component/work/OSC_C0/OSC_C0.vhd|
 Z69 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/component/work/OSC_C0/OSC_C0.vhd|
 !i113 1
 R11
 R12
 Artl
-R2
-R3
-DEx4 work 6 osc_c0 0 22 OdLLmikLnJ[aAkl]BPZQ[0
-!i122 232
-l81
-L50 61
-V?<g:lXaZ7gOEVOCmZ=RGY3
-!s100 _noPnofA2V?gj:VKEiz9G2
-R6
+R15
+R16
+DEx4 work 6 osc_c0 0 22 hBz9zbLXFDlOmd<1K=9GT2
+!i122 1501
+l78
+L49 57
+VNUY1<=`Zh8NR@Y[1FPOSk0
+!s100 ;4;hVOZF1=44oM=Pm4edG3
+R20
 33
-R7
+R21
 !i10b 1
-R8
+R22
 R68
 R69
 !i113 1
@@ -427,214 +427,366 @@ R11
 R12
 Eosc_c0_osc_c0_0_osc
 R65
-R2
-R3
-!i122 231
+R15
+R16
+!i122 1500
 R0
 Z70 8C:/Users/Constantin/Documents/VHDLSoundchip/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd
 Z71 FC:/Users/Constantin/Documents/VHDLSoundchip/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd
 l0
 L8 1
-V=RTjS>oH[4=XjoXn^`jZ13
-!s100 ImDYGYTfEB_O;]h:c4C>f1
-R6
+VC^5YcWNA`XKb1X1O>`LnV1
+!s100 ]be@Wgi24eMM@UG2i86UC3
+R20
 33
-R7
+R21
 !i10b 1
-R8
+R22
 Z72 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd|
 Z73 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd|
 !i113 1
 R11
 R12
 Adef_arch
-R2
-R3
-DEx4 work 19 osc_c0_osc_c0_0_osc 0 22 =RTjS>oH[4=XjoXn^`jZ13
-!i122 231
-l45
-L21 43
-V:[J2NhojYbHk0Fo94zdc62
-!s100 ZdFA4g3d20?=ED=Z:`bOf3
-R6
+R15
+R16
+DEx4 work 19 osc_c0_osc_c0_0_osc 0 22 C^5YcWNA`XKb1X1O>`LnV1
+!i122 1500
+l31
+L21 20
+Va@1F93cQcRo^YZkU>f;V=1
+!s100 0=i;C]2:iI]8b^8QiNNB53
+R20
 33
-R7
+R21
 !i10b 1
-R8
+R22
 R72
 R73
 !i113 1
 R11
 R12
-Esigma_adder
-Z74 w1657477644
-R14
+Esc_tb
+Z74 w1658320804
 R2
 R3
-!i122 235
+!i122 712
 R0
-Z75 8C:/Users/Constantin/Documents/VHDLSoundchip/hdl/sigma_adder.vhd
-Z76 FC:/Users/Constantin/Documents/VHDLSoundchip/hdl/sigma_adder.vhd
+Z75 8C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/sc_tb.vhd
+Z76 FC:/Users/Constantin/Documents/VHDLSoundchip/stimulus/sc_tb.vhd
 l0
-R17
-VDH2NnNg4n5[GFkQRjnl8R1
-!s100 >F^?IoVlg;0^jj@?Vn0mz2
+R28
+V1JTY9iP=gR7m=_J^NIgUN1
+!s100 NWd;A[b7gAL@6]b1TH8^j3
 R6
 33
-R18
+Z77 !s110 1658321334
 !i10b 1
+Z78 !s108 1658321334.000000
+Z79 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/sc_tb.vhd|
+Z80 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/sc_tb.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 5 sc_tb 0 22 1JTY9iP=gR7m=_J^NIgUN1
+!i122 712
+l55
+L26 78
+VEiQdaZh0kC[EM:UemVGZJ3
+!s100 MaJ2l7RjWAHj@382h9BLE3
+R6
+33
+R77
+!i10b 1
+R78
+R79
+R80
+!i113 1
+R11
+R12
+Esigma_adder
+Z81 w1666800626
+R14
+R15
+R16
+!i122 1503
+R0
+Z82 8C:/Users/Constantin/Documents/VHDLSoundchip/hdl/sigma_adder.vhd
+Z83 FC:/Users/Constantin/Documents/VHDLSoundchip/hdl/sigma_adder.vhd
+l0
 R19
-Z77 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/hdl/sigma_adder.vhd|
-Z78 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/hdl/sigma_adder.vhd|
+V5eckk?Z0]HCg8k_E`_TCd0
+!s100 zDX0911IC3m>OQ]M4JG0:1
+R20
+33
+R21
+!i10b 1
+R22
+Z84 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/hdl/sigma_adder.vhd|
+Z85 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/hdl/sigma_adder.vhd|
 !i113 1
 R11
 R12
 Aarchitecture_sigma_adder
 R14
-R2
-R3
-DEx4 work 11 sigma_adder 0 22 DH2NnNg4n5[GFkQRjnl8R1
-!i122 235
+R15
+R16
+DEx4 work 11 sigma_adder 0 22 5eckk?Z0]HCg8k_E`_TCd0
+!i122 1503
 l37
 L33 20
-VG4PU`P2j;HEOMUeKUhEA43
-!s100 Dcc4@B=ZXNB]8a<3G7:_;3
-R6
+VZ`zn^H?EXa74Z24ZNMJ2W0
+!s100 d[cF38GU6Q<0E0<a4U<_`1
+R20
 33
-R18
+R21
 !i10b 1
-R19
-R77
-R78
+R22
+R84
+R85
 !i113 1
 R11
 R12
 Esigma_adder_tb
-Z79 w1657478312
-R14
+Z86 w1657478312
+R50
 R2
 R3
-!i122 241
+!i122 1052
 R0
-Z80 8C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/sigma_adder_tb.vhd
-Z81 FC:/Users/Constantin/Documents/VHDLSoundchip/stimulus/sigma_adder_tb.vhd
+Z87 8C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/sigma_adder_tb.vhd
+Z88 FC:/Users/Constantin/Documents/VHDLSoundchip/stimulus/sigma_adder_tb.vhd
 l0
-R17
+R19
 V>z5OZHXh:F_bnkemg=lIo0
 !s100 z?ojQBH?Z`iBNSE4DQOCo2
 R6
 33
-R26
+R53
 !i10b 1
-R27
-Z82 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/sigma_adder_tb.vhd|
-Z83 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/sigma_adder_tb.vhd|
+Z89 !s108 1658575047.000000
+Z90 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/sigma_adder_tb.vhd|
+Z91 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/sigma_adder_tb.vhd|
 !i113 1
 R11
 R12
 Abehavioral
-R14
+R50
 R2
 R3
 DEx4 work 14 sigma_adder_tb 0 22 >z5OZHXh:F_bnkemg=lIo0
-!i122 241
+!i122 1052
 l50
 L27 100
 VbFGnYRFb=EiPLYML[0g]j0
 !s100 Ba0S__n@f>FRfRiAEE@lK1
 R6
 33
-R26
+R53
 !i10b 1
-R27
-R82
-R83
+R89
+R90
+R91
 !i113 1
 R11
 R12
 Esoundchip
-Z84 w1657465214
-R2
-R3
-!i122 238
+Z92 w1670251026
+R15
+R16
+!i122 1507
 R0
-Z85 8C:/Users/Constantin/Documents/VHDLSoundchip/component/work/soundchip/soundchip.vhd
-Z86 FC:/Users/Constantin/Documents/VHDLSoundchip/component/work/soundchip/soundchip.vhd
+Z93 8C:/Users/Constantin/Documents/VHDLSoundchip/component/work/soundchip/soundchip.vhd
+Z94 FC:/Users/Constantin/Documents/VHDLSoundchip/component/work/soundchip/soundchip.vhd
 l0
 L17 1
-V99N7d<Nb020zPz_kcc08I0
-!s100 1G@kR[kl5ga8kIHa9TP[Q3
-R6
+VEI7d]mCYI2YEa:0OkTCXX0
+!s100 gRm1[HB7JY_L@ETL98k<Z3
+R20
 33
-R26
+R36
 !i10b 1
-R27
-Z87 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/component/work/soundchip/soundchip.vhd|
-Z88 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/component/work/soundchip/soundchip.vhd|
+Z95 !s108 1670251057.000000
+Z96 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/component/work/soundchip/soundchip.vhd|
+Z97 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/component/work/soundchip/soundchip.vhd|
 !i113 1
 R11
 R12
 Artl
-R2
-R3
-DEx4 work 9 soundchip 0 22 99N7d<Nb020zPz_kcc08I0
-!i122 238
-l159
-L34 236
-V`k?eLJk@F^d<^EVGXB3Y23
-!s100 4L7F?c3<f]oYGYAM6BDbO1
-R6
+R15
+R16
+DEx4 work 9 soundchip 0 22 EI7d]mCYI2YEa:0OkTCXX0
+!i122 1507
+l149
+L35 216
+V2f^KX6Nfez5INZ_75T7zz2
+!s100 AcRPWP][coA6i0^d5e4XH1
+R20
 33
-R26
+R36
 !i10b 1
-R27
-R87
-R88
+R95
+R96
+R97
+!i113 1
+R11
+R12
+Esoundchip_tb
+Z98 w1670239014
+Z99 DPx4 ieee 9 math_real 0 22 :8NNHF3SFI6^on5?4X[S`1
+Z100 DPx4 ieee 15 std_logic_arith 0 22 B[jVX6I8iRX2o6WYW0BB>3
+Z101 DPx4 ieee 18 std_logic_unsigned 0 22 o4hn5gYc0WVo72BSL@Ta50
+R15
+R16
+!i122 1508
+R0
+Z102 8C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/soundchip_tb.vhd
+Z103 FC:/Users/Constantin/Documents/VHDLSoundchip/stimulus/soundchip_tb.vhd
+l0
+L25 1
+V3C6QUnRShR@``<0`EQQF`1
+!s100 3[^IY1Mg?>IEIjlj:KjYY2
+R20
+33
+R36
+!i10b 1
+R95
+Z104 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/soundchip_tb.vhd|
+Z105 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/soundchip_tb.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R99
+R100
+R101
+R15
+R16
+Z106 DEx4 work 12 soundchip_tb 0 22 3C6QUnRShR@``<0`EQQF`1
+!i122 1508
+l105
+Z107 L28 131
+Z108 V`6`X0VBi_AOUgI3@kJf770
+Z109 !s100 U2glcClzS[V6:@_1iX7`:2
+R20
+33
+R36
+!i10b 1
+R95
+R104
+R105
 !i113 1
 R11
 R12
 Espi_slave
-Z89 w1656847886
-Z90 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
-R14
-R2
-R3
-!i122 233
+Z110 w1670250768
+R15
+R16
+!i122 1506
 R0
-Z91 8C:/Users/Constantin/Documents/VHDLSoundchip/hdl/spi_slave.vhd
-Z92 FC:/Users/Constantin/Documents/VHDLSoundchip/hdl/spi_slave.vhd
+Z111 8C:/Users/Constantin/Documents/VHDLSoundchip/hdl/spi_slave.vhd
+Z112 FC:/Users/Constantin/Documents/VHDLSoundchip/hdl/spi_slave.vhd
 l0
-L16 1
-VK5Bk]nTE>W75HKDzhP^j03
-!s100 Xb093Oa79^4aM4=lFZnz20
-R6
+R19
+Vg0We;o@L1ARTWV<e_7_[?0
+!s100 fhBz`^mZEXE;<?1D]:D:R1
+R20
 33
-R47
+R36
 !i10b 1
-R8
-Z93 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/hdl/spi_slave.vhd|
-Z94 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/hdl/spi_slave.vhd|
+R95
+Z113 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/hdl/spi_slave.vhd|
+Z114 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/hdl/spi_slave.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R15
+R16
+DEx4 work 9 spi_slave 0 22 g0We;o@L1ARTWV<e_7_[?0
+!i122 1506
+l51
+L42 73
+VF6;jL8eV;oGRfSB^NJgkC2
+!s100 X@1i=nOf6FGXo080TbAzA3
+R20
+33
+R36
+!i10b 1
+R95
+R113
+R114
 !i113 1
 R11
 R12
 Artl
-R90
+R99
 R14
-R2
-R3
-DEx4 work 9 spi_slave 0 22 K5Bk]nTE>W75HKDzhP^j03
-!i122 233
+R15
+R16
+Z115 DEx4 work 9 spi_slave 0 22 KemUj1o<=Le<_0@=aI0BD2
+!i122 1491
 l59
 L37 188
-VIGonYl22dd5mZ?<WSQPIL3
-!s100 Y4lgL>5:4elA?=jX=4g=70
-R6
+VDc^^lL=Oa`fJm=4KXlH<m0
+!s100 OEAiNYFf?Dzk^=ILd1CQD2
+R20
 33
-R47
+!s110 1670239055
 !i10b 1
-R8
-R93
-R94
+!s108 1670239055.000000
+R113
+R114
+!i113 1
+R11
+R12
+w1669210440
+Espi_slave_tb
+Z116 w1668710766
+R99
+R14
+R15
+R16
+!i122 1475
+R0
+Z117 8C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/spi_slave_tb.vhd
+Z118 FC:/Users/Constantin/Documents/VHDLSoundchip/stimulus/spi_slave_tb.vhd
+l0
+L14 1
+VQ:Ozn@lKb>J_Jcn4Dok>i1
+!s100 SW2f=NkCdZ>_nL`=II@fk2
+R20
+33
+Z119 !s110 1669210710
+!i10b 1
+Z120 !s108 1669210710.000000
+Z121 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/spi_slave_tb.vhd|
+Z122 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/spi_slave_tb.vhd|
+!i113 1
+R11
+R12
+Asim
+R115
+R99
+R14
+R15
+R16
+DEx4 work 12 spi_slave_tb 0 22 Q:Ozn@lKb>J_Jcn4Dok>i1
+!i122 1475
+l83
+L23 205
+VNdGi;QdNjiT37W3Ce`]bh3
+!s100 ?`fCSLQR`@<JmKN;1:`na1
+R20
+33
+R119
+!i10b 1
+R120
+R121
+R122
 !i113 1
 R11
 R12

@@ -1,0 +1,177 @@
+# Reading pref.tcl
+# do run.do
+# INFO: Simulation library ../designer/soundchip/simulation/postlayout already exists
+# Model Technology ModelSim Microsemi Pro vmap 2022.2 Lib Mapping Utility 2022.04 Apr 26 2022
+# vmap postlayout ../designer/soundchip/simulation/postlayout 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi Pro vmap 2022.2 Lib Mapping Utility 2022.04 Apr 26 2022
+# vmap SmartFusion2 C:/Microchip/Libero_SoC_v2022.2/Designer/lib/modelsimpro/precompiled/vlog/SmartFusion2 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi Pro vcom 2022.2 Compiler 2022.04 Apr 26 2022
+# Start time: 15:51:05 on Dec 05,2022
+# vcom -reportprogress 300 -2008 -explicit -work postlayout C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/soundchip_ba.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sdf_IOPAD_TRI
+# -- Compiling architecture DEF_ARCH of sdf_IOPAD_TRI
+# -- Compiling entity sdf_IOPAD_IN
+# -- Compiling architecture DEF_ARCH of sdf_IOPAD_IN
+# -- Compiling entity soundchip
+# -- Compiling architecture DEF_ARCH of soundchip
+# -- Loading entity sdf_IOPAD_TRI
+# -- Loading entity sdf_IOPAD_IN
+# End time: 15:51:05 on Dec 05,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi Pro vcom 2022.2 Compiler 2022.04 Apr 26 2022
+# Start time: 15:51:05 on Dec 05,2022
+# vcom -reportprogress 300 -2008 -explicit -work postlayout C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/soundchip_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MATH_REAL
+# -- Compiling entity soundchip_tb
+# -- Compiling architecture behavioral of soundchip_tb
+# End time: 15:51:06 on Dec 05,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -L SmartFusion2 -L postlayout -t 1fs -sdfmax "/soundchip_0=C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/soundchip_ba.sdf" "+transport_path_delays" postlayout.soundchip_tb 
+# Start time: 15:51:06 on Dec 05,2022
+# //  ModelSim Microsemi Pro 2022.2 Apr 26 2022
+# //
+# //  Copyright 1991-2022 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim Microsemi Pro and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.math_real(body)
+# Loading postlayout.soundchip_tb(behavioral)
+# SDF 2022.2 Compiler 2022.04 Apr 26 2022
+# 
+# Loading postlayout.soundchip(def_arch)
+# Loading SmartFusion2.INV_BA
+# Loading SmartFusion2.IOOUTFF_BYPASS
+# Loading SmartFusion2.SLE
+# Loading SmartFusion2.SLE_Prim
+# Loading SmartFusion2.CFG4
+# Loading SmartFusion2.IOTRI_OB_EB
+# Loading SmartFusion2.ARI1_CC
+# Loading SmartFusion2.IP_INTERFACE
+# Loading SmartFusion2.RGB_NG
+# Loading SmartFusion2.CFG2
+# Loading SmartFusion2.GB_NG
+# Loading SmartFusion2.IOINFF_BYPASS
+# Loading postlayout.sdf_iopad_tri(def_arch)
+# Loading SmartFusion2.IOPAD_TRI_VDDI
+# Loading SmartFusion2.IOPAD_VDD
+# Loading SmartFusion2.CCC
+# Loading SmartFusion2.CCC_PLL
+# Loading SmartFusion2.ABISCB82
+# Loading SmartFusion2.ABI_PLL_FRONT
+# Loading SmartFusion2.refstop
+# Loading SmartFusion2.Divide_2
+# Loading SmartFusion2.ABI_PHASE
+# Loading SmartFusion2.CCC_FB_DELAY
+# Loading SmartFusion2.CCC_DELAY
+# Loading SmartFusion2.CCC_RF_DELAY
+# Loading SmartFusion2.CCC_RF_DIV
+# Loading SmartFusion2.Freq_Divider
+# Loading SmartFusion2.Even_Divider
+# Loading SmartFusion2.Odd_Divider
+# Loading SmartFusion2.CCC_FB_DIV
+# Loading SmartFusion2.CCC_RF_MUX
+# Loading SmartFusion2.CCC_FB_MUX
+# Loading SmartFusion2.CCC_GPD0
+# Loading SmartFusion2.CCC_GPD
+# Loading SmartFusion2.CCC_GPD1
+# Loading SmartFusion2.CCC_GPD2
+# Loading SmartFusion2.CCC_GPD3
+# Loading SmartFusion2.CCC_SYNCB_GEN
+# Loading SmartFusion2.RSTN_SYNC
+# Loading SmartFusion2.SYNCGEN_CNT14
+# Loading SmartFusion2.CCC_GPD_MUX0
+# Loading SmartFusion2.CCC_GPD_MUX
+# Loading SmartFusion2.CCC_GPD_MUX1
+# Loading SmartFusion2.CCC_GPD_MUX2
+# Loading SmartFusion2.CCC_GPD_MUX3
+# Loading SmartFusion2.CCC_NGMUX0
+# Loading SmartFusion2.CCC_NGMUX
+# Loading SmartFusion2.CCC_NGPREMUX
+# Loading SmartFusion2.CCC_NGMUX1
+# Loading SmartFusion2.CCC_NGMUX2
+# Loading SmartFusion2.CCC_NGMUX3
+# Loading SmartFusion2.CCC_CONFIG
+# Loading SmartFusion2.CFG3
+# Loading SmartFusion2.CC_CONFIG
+# Loading SmartFusion2.RCOSC_25_50MHZ
+# Loading postlayout.sdf_iopad_in(def_arch)
+# Loading SmartFusion2.IOPAD_IN_VDDI
+# Loading SmartFusion2.IOPAD_DELAY
+# Loading SmartFusion2.GND
+# Loading SmartFusion2.IOIN_IB
+# Loading SmartFusion2.IOENFF_BYPASS
+# Loading SmartFusion2.SYSRESET_FF
+# Loading SmartFusion2.VCC
+# Loading instances from C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/soundchip_ba.sdf
+# Loading timing data from C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/soundchip_ba.sdf
+# Loading SmartFusion2.UDP_MUX2
+# Loading SmartFusion2.UDP_DFF
+# Loading SmartFusion2.UDP_DL
+# Loading SmartFusion2.UDP_BUFF
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /soundchip_tb File: C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/soundchip_tb.vhd
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Constantin  Hostname: DESKTOP-1NBCJI9  ProcessID: 22456
+#           Attempting to use alternate WLF file "./wlftqznrvy".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftqznrvy
+# ** Error: $setup( posedge PWRITE:405 ps, posedge PCLK:419 ps, 2418 ps );
+#    Time: 419 ps  Iteration: 0  Process: /soundchip_tb/soundchip_0/\FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP\/u_ccc_config/#Setup# File: $MODEL_TECH/../../Designer/lib/modelsim/precompiled/vlog/src/smartfusion2.v Line: 9600
+# ** Error: $hold( posedge PCLK:419 ps, posedge PADDR[6]:422 ps, 627 ps );
+#    Time: 422 ps  Iteration: 0  Process: /soundchip_tb/soundchip_0/\FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP\/u_ccc_config/#Hold# File: $MODEL_TECH/../../Designer/lib/modelsim/precompiled/vlog/src/smartfusion2.v Line: 9650
+# ** Error: $hold( posedge PCLK:419 ps, posedge PADDR[7]:423 ps, 660 ps );
+#    Time: 423 ps  Iteration: 0  Process: /soundchip_tb/soundchip_0/\FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP\/u_ccc_config/#Hold# File: $MODEL_TECH/../../Designer/lib/modelsim/precompiled/vlog/src/smartfusion2.v Line: 9651
+# ** Error: $hold( posedge PCLK:419 ps, posedge PADDR[5]:423 ps, 632 ps );
+#    Time: 423 ps  Iteration: 0  Process: /soundchip_tb/soundchip_0/\FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP\/u_ccc_config/#Hold# File: $MODEL_TECH/../../Designer/lib/modelsim/precompiled/vlog/src/smartfusion2.v Line: 9649
+# ** Error: $hold( posedge PCLK:419 ps, posedge PADDR[4]:423 ps, 632 ps );
+#    Time: 423 ps  Iteration: 0  Process: /soundchip_tb/soundchip_0/\FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP\/u_ccc_config/#Hold# File: $MODEL_TECH/../../Designer/lib/modelsim/precompiled/vlog/src/smartfusion2.v Line: 9648
+# ** Error: $hold( posedge PCLK:419 ps, posedge PADDR[3]:423 ps, 621 ps );
+#    Time: 423 ps  Iteration: 0  Process: /soundchip_tb/soundchip_0/\FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP\/u_ccc_config/#Hold# File: $MODEL_TECH/../../Designer/lib/modelsim/precompiled/vlog/src/smartfusion2.v Line: 9647
+# ** Error: $hold( posedge PCLK:419 ps, posedge PWDATA[6]:424 ps, 547 ps );
+#    Time: 424 ps  Iteration: 0  Process: /soundchip_tb/soundchip_0/\FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP\/u_ccc_config/#Hold# File: $MODEL_TECH/../../Designer/lib/modelsim/precompiled/vlog/src/smartfusion2.v Line: 9644
+# ** Error: $hold( posedge PCLK:419 ps, posedge PADDR[2]:424 ps, 595 ps );
+#    Time: 424 ps  Iteration: 0  Process: /soundchip_tb/soundchip_0/\FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP\/u_ccc_config/#Hold# File: $MODEL_TECH/../../Designer/lib/modelsim/precompiled/vlog/src/smartfusion2.v Line: 9646
+# ** Error: $hold( posedge PCLK:419 ps, posedge PWDATA[1]:425 ps, 549 ps );
+#    Time: 425 ps  Iteration: 0  Process: /soundchip_tb/soundchip_0/\FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP\/u_ccc_config/#Hold# File: $MODEL_TECH/../../Designer/lib/modelsim/precompiled/vlog/src/smartfusion2.v Line: 9639
+# ** Error: $hold( posedge PCLK:419 ps, posedge PWDATA[2]:426 ps, 547 ps );
+#    Time: 426 ps  Iteration: 0  Process: /soundchip_tb/soundchip_0/\FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP\/u_ccc_config/#Hold# File: $MODEL_TECH/../../Designer/lib/modelsim/precompiled/vlog/src/smartfusion2.v Line: 9640
+# ** Error: $hold( posedge PCLK:419 ps, posedge PWDATA[5]:426 ps, 550 ps );
+#    Time: 426 ps  Iteration: 0  Process: /soundchip_tb/soundchip_0/\FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP\/u_ccc_config/#Hold# File: $MODEL_TECH/../../Designer/lib/modelsim/precompiled/vlog/src/smartfusion2.v Line: 9643
+# ** Error: $hold( posedge PCLK:419 ps, posedge PWDATA[7]:426 ps, 541 ps );
+#    Time: 426 ps  Iteration: 0  Process: /soundchip_tb/soundchip_0/\FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP\/u_ccc_config/#Hold# File: $MODEL_TECH/../../Designer/lib/modelsim/precompiled/vlog/src/smartfusion2.v Line: 9645
+# ** Error: $hold( posedge PCLK:419 ps, posedge PWDATA[4]:426 ps, 535 ps );
+#    Time: 426 ps  Iteration: 0  Process: /soundchip_tb/soundchip_0/\FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP\/u_ccc_config/#Hold# File: $MODEL_TECH/../../Designer/lib/modelsim/precompiled/vlog/src/smartfusion2.v Line: 9642
+# ** Error: $hold( posedge PCLK:419 ps, posedge PWDATA[0]:427 ps, 553 ps );
+#    Time: 427 ps  Iteration: 0  Process: /soundchip_tb/soundchip_0/\FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP\/u_ccc_config/#Hold# File: $MODEL_TECH/../../Designer/lib/modelsim/precompiled/vlog/src/smartfusion2.v Line: 9638
+# ** Error: $hold( posedge PCLK:419 ps, posedge PWDATA[3]:427 ps, 545 ps );
+#    Time: 427 ps  Iteration: 0  Process: /soundchip_tb/soundchip_0/\FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP\/u_ccc_config/#Hold# File: $MODEL_TECH/../../Designer/lib/modelsim/precompiled/vlog/src/smartfusion2.v Line: 9641
+# ** Error: $hold( posedge PCLK:419 ps, negedge PRESET_N:436 ps, 926 ps );
+#    Time: 436 ps  Iteration: 2  Process: /soundchip_tb/soundchip_0/\FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP\/u_ccc_config/#Hold# File: $MODEL_TECH/../../Designer/lib/modelsim/precompiled/vlog/src/smartfusion2.v Line: 9674
+# ** Error: $hold( posedge PCLK:419 ps, posedge PENABLE:443 ps, 660 ps );
+#    Time: 443 ps  Iteration: 0  Process: /soundchip_tb/soundchip_0/\FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP\/u_ccc_config/#Hold# File: $MODEL_TECH/../../Designer/lib/modelsim/precompiled/vlog/src/smartfusion2.v Line: 9637
+# ** Error: $hold( posedge PCLK:419 ps, posedge PSEL:445 ps, 660 ps );
+#    Time: 445 ps  Iteration: 0  Process: /soundchip_tb/soundchip_0/\FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP\/u_ccc_config/#Hold# File: $MODEL_TECH/../../Designer/lib/modelsim/precompiled/vlog/src/smartfusion2.v Line: 9635
+# End time: 15:55:13 on Dec 05,2022, Elapsed time: 0:04:07
+# Errors: 18, Warnings: 2
