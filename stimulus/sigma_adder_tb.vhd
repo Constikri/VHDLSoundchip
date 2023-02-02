@@ -1,18 +1,9 @@
 --------------------------------------------------------------------------------
--- Company: <Name>
 --
--- File: sigma_adder_tb.vhd
--- File history:
---      <Revision number>: <Date>: <Comments>
---      <Revision number>: <Date>: <Comments>
---      <Revision number>: <Date>: <Comments>
---
--- Description: 
---
--- <Description here>
+-- File: data_receiver.vhd
 --
 -- Targeted device: <Family::SmartFusion2> <Die::M2S010> <Package::256 VF>
--- Author: <Name>
+-- Author: Constantin Krischke
 --
 --------------------------------------------------------------------------------
 

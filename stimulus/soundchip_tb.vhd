@@ -1,18 +1,9 @@
 --------------------------------------------------------------------------------
--- Company: <Name>
 --
 -- File: soundchip_tb.vhd
--- File history:
---      <Revision number>: <Date>: <Comments>
---      <Revision number>: <Date>: <Comments>
---      <Revision number>: <Date>: <Comments>
---
--- Description: 
---
--- <Description here>
 --
 -- Targeted device: <Family::SmartFusion2> <Die::M2S010> <Package::256 VF>
--- Author: <Name>
+-- Author: Constantin Krischke
 --
 --------------------------------------------------------------------------------
 
@@ -35,7 +26,6 @@ architecture behavioral of soundchip_tb is
     constant INITIAL_RST : time := 100 us;
 
     signal DATACLK : std_logic := '0';
-    -- signal SYSCLK : std_logic := '0';
     signal NSYSRESET : std_logic := '0';
 
     signal mosi_sig : std_logic;
@@ -98,7 +88,6 @@ architecture behavioral of soundchip_tb is
 
 begin
     -- Clock Driver
-    -- SYSCLK <= not SYSCLK after (SYSCLK_PERIOD / 2.0 );
     DATACLK <= not DATACLK after (DATACLK_PERIOD / 2.0 );
 
 ----------------------------------------------------------------------

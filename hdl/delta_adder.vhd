@@ -1,18 +1,8 @@
 --------------------------------------------------------------------------------
--- Company: <Name>
---
--- File: delta_adder.vhd
--- File history:
---      <Revision number>: <Date>: <Comments>
---      <Revision number>: <Date>: <Comments>
---      <Revision number>: <Date>: <Comments>
---
--- Description: 
---
--- <Description here>
+-- File: dac.vhd
 --
 -- Targeted device: <Family::SmartFusion2> <Die::M2S010> <Package::256 VF>
--- Author: <Name>
+-- Author: Constantin Krischke
 --
 --------------------------------------------------------------------------------
 

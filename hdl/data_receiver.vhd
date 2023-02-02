@@ -1,18 +1,9 @@
 --------------------------------------------------------------------------------
--- Company: <Name>
 --
 -- File: data_receiver.vhd
--- File history:
---      <Revision number>: <Date>: <Comments>
---      <Revision number>: <Date>: <Comments>
---      <Revision number>: <Date>: <Comments>
---
--- Description: 
---
--- <Description here>
 --
 -- Targeted device: <Family::SmartFusion2> <Die::M2S010> <Package::256 VF>
--- Author: <Name>
+-- Author: Constantin Krischke
 --
 --------------------------------------------------------------------------------
 

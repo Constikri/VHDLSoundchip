@@ -241,38 +241,33 @@ IS_TARGET="TRUE"
 ENDFILE
 VALUE "<project>\hdl\dac.vhd,hdl"
 STATE="utd"
-TIME="1658320617"
-SIZE="1693"
+TIME="1675349437"
+SIZE="1474"
 ENDFILE
 VALUE "<project>\hdl\data_receiver.vhd,hdl"
 STATE="utd"
-TIME="1674824102"
-SIZE="1477"
+TIME="1675349326"
+SIZE="1262"
 ENDFILE
 VALUE "<project>\hdl\delta_adder.vhd,hdl"
 STATE="utd"
-TIME="1657465680"
-SIZE="1373"
+TIME="1675349521"
+SIZE="1146"
 ENDFILE
 VALUE "<project>\hdl\sigma_adder.vhd,hdl"
 STATE="utd"
-TIME="1666800626"
-SIZE="1285"
+TIME="1675349606"
+SIZE="1138"
 ENDFILE
 VALUE "<project>\hdl\spi_slave.vhd,hdl"
 STATE="utd"
-TIME="1670250768"
-SIZE="3000"
+TIME="1675349220"
+SIZE="2772"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
 TIME="1674823877"
 SIZE="963"
-ENDFILE
-VALUE "<project>\simulation\soundchip_tb_postlayout_simulation.log,log"
-STATE="utd"
-TIME="1674831101"
-SIZE="7078872"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
@@ -291,23 +286,23 @@ SIZE="4943"
 ENDFILE
 VALUE "<project>\stimulus\data_receiver_tb.vhd,tb_hdl"
 STATE="utd"
-TIME="1658511753"
-SIZE="3106"
+TIME="1675350061"
+SIZE="2888"
 ENDFILE
 VALUE "<project>\stimulus\delta_adder_tb.vhd,tb_hdl"
 STATE="utd"
-TIME="1657467937"
-SIZE="2748"
+TIME="1675350057"
+SIZE="2532"
 ENDFILE
 VALUE "<project>\stimulus\sigma_adder_tb.vhd,tb_hdl"
 STATE="utd"
-TIME="1657478312"
-SIZE="3581"
+TIME="1675350052"
+SIZE="3365"
 ENDFILE
 VALUE "<project>\stimulus\soundchip_tb.vhd,tb_hdl"
 STATE="utd"
-TIME="1674831360"
-SIZE="4974"
+TIME="1675350247"
+SIZE="4658"
 ENDFILE
 VALUE "<project>\synthesis\soundchip.so,so"
 STATE="utd"
@@ -315,7 +310,7 @@ TIME="1674824133"
 SIZE="236"
 ENDFILE
 VALUE "<project>\synthesis\soundchip.vm,syn_vm"
-STATE="utd"
+STATE="ood"
 TIME="1674824132"
 SIZE="62935"
 ENDFILE
@@ -352,7 +347,6 @@ ENDLIST
 LIST ProjectState5.1
 LIST Impl1
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -363,7 +357,6 @@ ENDUsed_File_List
 ENDLIST
 LIST Impl2
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -374,7 +367,6 @@ ENDUsed_File_List
 ENDLIST
 LIST Impl3
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -489,7 +481,6 @@ LIST ProjectState5.1
 LIST "soundchip::work"
 LIST Impl1
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -500,7 +491,6 @@ ENDUsed_File_List
 ENDLIST
 LIST Impl2
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -511,7 +501,6 @@ ENDUsed_File_List
 ENDLIST
 LIST Impl3
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -534,8 +523,14 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+HDL;component\work\soundchip\soundchip.vhd;0
+HDL;stimulus\soundchip_tb.vhd;0
+HDL;stimulus\sigma_adder_tb.vhd;0
+HDL;stimulus\delta_adder_tb.vhd;0
+HDL;stimulus\data_receiver_tb.vhd;0
+HDL;stimulus\dac_tb.vhd;0
+SmartDesign;soundchip;0
+ACTIVEVIEW;stimulus\soundchip_tb.vhd
 ENDLIST
 LIST ModuleSubBlockList
 LIST "dac::work","hdl\dac.vhd","FALSE","FALSE"
