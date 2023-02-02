@@ -1,5 +1,5 @@
 <html><body><samp><pre>
-<!@TC:1670252157>
+<!@TC:1674824129>
 
 Copyright (C) 1994-2021 Synopsys, Inc.
 This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
@@ -15,7 +15,7 @@ Hostname: DESKTOP-1NBCJI9
 
 Implementation : synthesis
 
-# Written on Mon Dec  5 15:55:57 2022
+# Written on Fri Jan 27 13:55:29 2023
 
 ##### DESIGN INFO #######################################################
 
@@ -39,9 +39,9 @@ Found 1 issues in 1 out of 3 constraints
 
 Starting                              Ending                                |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                FCCC_C0_0                             |     10.000           |     No paths         |     No paths         |     No paths                         
+System                                FCCC_C0_0                             |     3.333            |     No paths         |     No paths         |     No paths                         
 System                                spi_slave|SPI_DONE_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
-FCCC_C0_0                             FCCC_C0_0                             |     10.000           |     No paths         |     No paths         |     No paths                         
+FCCC_C0_0                             FCCC_C0_0                             |     3.333            |     No paths         |     No paths         |     No paths                         
 FCCC_C0_0                             spi_slave|SPI_DONE_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
 spi_slave|SPI_DONE_inferred_clock     FCCC_C0_0                             |     Diff grp         |     No paths         |     No paths         |     No paths                         
 =======================================================================================================================================================================================
@@ -70,7 +70,7 @@ p:spi_ss
 <a name=ApplicableConstraintsWithIssuesCCK55></a>Applicable constraints with issues</a>
 **********************************
 
-create_generated_clock -name FCCC_C0_0 -add -master_clock OSC_0 -multiply_by 2 -source [get_pins { FCCC_C0_0.FCCC_C0_0.CCC_INST.RCOSC_25_50MHZ }] [get_pins { FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0 }]
+create_generated_clock -name FCCC_C0_0 -add -master_clock OSC_0 -multiply_by 6 -source [get_pins { FCCC_C0_0.FCCC_C0_0.CCC_INST.RCOSC_25_50MHZ }] [get_pins { FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0 }]
 	@W:MT686:"c:/users/constantin/documents/vhdlsoundchip/designer/soundchip/synthesis.fdc":8:0:8:0|No path from master pin (-source) to source of clock FCCC_C0_0
 
 <a name=ConstraintsWithMatchingWildcardExpressionsCCK56></a>Constraints with matching wildcard expressions</a>

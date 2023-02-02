@@ -17,14 +17,8 @@
     <ProgrammingInterface>
         JTAGMode
     </ProgrammingInterface>
-    <Server>
-        <name>
-            localhost
-        </name>
-        <port>
-            80
-        </port>
-    </Server>
+    <Servers>
+    </Servers>
     <configuration>
         <Hardware>
             <FlashPro>

@@ -1,2 +1,2 @@
 CKID0001:@|S:FCCC_C0_0.FCCC_C0_0.CCC_INST@|E:spi_slave_0.index[4]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
-CKID0002:@|S:spi_slave_0.SPI_DONE@|E:data_receiver_0.data[18]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
+CKID0002:@|S:spi_slave_0.SPI_DONE@|E:data_receiver_0.data[31]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 

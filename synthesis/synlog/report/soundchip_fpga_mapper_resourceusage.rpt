@@ -7,8 +7,7 @@ CCC             1 use
 CLKINT          4 uses
 RCOSC_25_50MHZ  1 use
 SYSRESET        1 use
-CFG1           1 use
-CFG2           4 uses
+CFG2           5 uses
 CFG3           4 uses
 CFG4           7 uses
 

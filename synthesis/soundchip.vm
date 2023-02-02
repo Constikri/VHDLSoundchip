@@ -2,7 +2,7 @@
 // Written by Synplify Pro 
 // Product Version "S-2021.09M-SP1"
 // Program "Synplify Pro", Mapper "map202109actsp1, Build 056R"
-// Mon Dec  5 15:56:00 2022
+// Fri Jan 27 13:55:32 2023
 //
 // Source file index table:
 // Object locations will have the form <file>:<line>
@@ -50,30 +50,6 @@ wire clk_debug ;
 wire dac_reset_i ;
 wire VCC ;
 wire GND ;
-// @12:41
-  SLE \data_out_1[12]  (
-	.Q(data_delta[12]),
-	.ADn(VCC),
-	.ALn(dac_reset_i),
-	.CLK(clk_debug),
-	.D(data_receiver_0_data_left[12]),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
-// @12:41
-  SLE \data_out_1[11]  (
-	.Q(data_delta[11]),
-	.ADn(VCC),
-	.ALn(dac_reset_i),
-	.CLK(clk_debug),
-	.D(data_receiver_0_data_left[11]),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
 // @12:41
   SLE \data_out_1[10]  (
 	.Q(data_delta[10]),
@@ -254,6 +230,30 @@ wire GND ;
 	.SD(GND),
 	.SLn(VCC)
 );
+// @12:41
+  SLE \data_out_1[12]  (
+	.Q(data_delta[12]),
+	.ADn(VCC),
+	.ALn(dac_reset_i),
+	.CLK(clk_debug),
+	.D(data_receiver_0_data_left[12]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:41
+  SLE \data_out_1[11]  (
+	.Q(data_delta[11]),
+	.ADn(VCC),
+	.ALn(dac_reset_i),
+	.CLK(clk_debug),
+	.D(data_receiver_0_data_left[11]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
   GND GND_Z (
 	.Y(GND)
 );
@@ -317,30 +317,6 @@ wire temp_reg_s_17_FCO_0 ;
 wire temp_reg_s_17_Y_0 ;
 wire temp_reg_cry_16_Z ;
 wire temp_reg_cry_16_Y_0 ;
-// @13:41
-  SLE \sigma_register[10]  (
-	.Q(sigma_register_Z[10]),
-	.ADn(VCC),
-	.ALn(dac_reset_i),
-	.CLK(clk_debug),
-	.D(temp_reg[10]),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
-// @13:41
-  SLE \sigma_register[9]  (
-	.Q(sigma_register_Z[9]),
-	.ADn(VCC),
-	.ALn(dac_reset_i),
-	.CLK(clk_debug),
-	.D(temp_reg[9]),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
 // @13:41
   SLE \sigma_register[8]  (
 	.Q(sigma_register_Z[8]),
@@ -528,6 +504,30 @@ wire temp_reg_cry_16_Y_0 ;
 	.ALn(dac_reset_i),
 	.CLK(clk_debug),
 	.D(temp_reg[11]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:41
+  SLE \sigma_register[10]  (
+	.Q(sigma_register_Z[10]),
+	.ADn(VCC),
+	.ALn(dac_reset_i),
+	.CLK(clk_debug),
+	.D(temp_reg[10]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:41
+  SLE \sigma_register[9]  (
+	.Q(sigma_register_Z[9]),
+	.ADn(VCC),
+	.ALn(dac_reset_i),
+	.CLK(clk_debug),
+	.D(temp_reg[9]),
 	.EN(VCC),
 	.LAT(GND),
 	.SD(GND),
@@ -816,30 +816,6 @@ wire dac_reset_i ;
 wire VCC ;
 wire GND ;
 // @12:41
-  SLE \data_out_1[7]  (
-	.Q(data_delta[7]),
-	.ADn(VCC),
-	.ALn(dac_reset_i),
-	.CLK(clk_debug),
-	.D(data_receiver_0_data_right[7]),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
-// @12:41
-  SLE \data_out_1[6]  (
-	.Q(data_delta[6]),
-	.ADn(VCC),
-	.ALn(dac_reset_i),
-	.CLK(clk_debug),
-	.D(data_receiver_0_data_right[6]),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
-// @12:41
   SLE \data_out_1[5]  (
 	.Q(data_delta[5]),
 	.ADn(VCC),
@@ -1019,6 +995,30 @@ wire GND ;
 	.SD(GND),
 	.SLn(VCC)
 );
+// @12:41
+  SLE \data_out_1[7]  (
+	.Q(data_delta[7]),
+	.ADn(VCC),
+	.ALn(dac_reset_i),
+	.CLK(clk_debug),
+	.D(data_receiver_0_data_right[7]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:41
+  SLE \data_out_1[6]  (
+	.Q(data_delta[6]),
+	.ADn(VCC),
+	.ALn(dac_reset_i),
+	.CLK(clk_debug),
+	.D(data_receiver_0_data_right[6]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
   GND GND_Z (
 	.Y(GND)
 );
@@ -1082,30 +1082,6 @@ wire temp_reg_s_17_FCO ;
 wire temp_reg_s_17_Y ;
 wire temp_reg_cry_16_Z ;
 wire temp_reg_cry_16_Y ;
-// @13:41
-  SLE \sigma_register[5]  (
-	.Q(sigma_register_Z[5]),
-	.ADn(VCC),
-	.ALn(dac_reset_i),
-	.CLK(clk_debug),
-	.D(temp_reg[5]),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
-// @13:41
-  SLE \sigma_register[4]  (
-	.Q(sigma_register_Z[4]),
-	.ADn(VCC),
-	.ALn(dac_reset_i),
-	.CLK(clk_debug),
-	.D(temp_reg[4]),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
 // @13:41
   SLE \sigma_register[3]  (
 	.Q(sigma_register_Z[3]),
@@ -1293,6 +1269,30 @@ wire temp_reg_cry_16_Y ;
 	.ALn(dac_reset_i),
 	.CLK(clk_debug),
 	.D(temp_reg[6]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:41
+  SLE \sigma_register[5]  (
+	.Q(sigma_register_Z[5]),
+	.ADn(VCC),
+	.ALn(dac_reset_i),
+	.CLK(clk_debug),
+	.D(temp_reg[5]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:41
+  SLE \sigma_register[4]  (
+	.Q(sigma_register_Z[4]),
+	.ADn(VCC),
+	.ALn(dac_reset_i),
+	.CLK(clk_debug),
+	.D(temp_reg[4]),
 	.EN(VCC),
 	.LAT(GND),
 	.SD(GND),
@@ -1566,22 +1566,22 @@ module data_receiver (
   spi_slave_0_DataRxd,
   data_receiver_0_data_left,
   data_receiver_0_data_right,
-  AND2_0_Y,
-  spi_slave_0_SPI_DONE,
-  AND2_0_Y_arst_i,
+  Y_OUT_PRE_INV0_0,
+  SPI_DONE,
+  Y_OUT_PRE_INV0_0_arst,
   dac_reset_i
 )
 ;
 input [31:0] spi_slave_0_DataRxd ;
 output [15:0] data_receiver_0_data_left ;
 output [15:0] data_receiver_0_data_right ;
-input AND2_0_Y ;
-input spi_slave_0_SPI_DONE ;
-input AND2_0_Y_arst_i ;
+input Y_OUT_PRE_INV0_0 ;
+input SPI_DONE ;
+input Y_OUT_PRE_INV0_0_arst ;
 output dac_reset_i ;
-wire AND2_0_Y ;
-wire spi_slave_0_SPI_DONE ;
-wire AND2_0_Y_arst_i ;
+wire Y_OUT_PRE_INV0_0 ;
+wire SPI_DONE ;
+wire Y_OUT_PRE_INV0_0_arst ;
 wire dac_reset_i ;
 wire dac_reset_Z ;
 wire VCC ;
@@ -1591,60 +1591,12 @@ wire GND ;
 	.A(dac_reset_Z)
 );
 // @14:43
-  SLE \data[2]  (
-	.Q(data_receiver_0_data_right[2]),
-	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
-	.D(spi_slave_0_DataRxd[2]),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
-// @14:43
-  SLE \data[1]  (
-	.Q(data_receiver_0_data_right[1]),
-	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
-	.D(spi_slave_0_DataRxd[1]),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
-// @14:43
   SLE \data[0]  (
 	.Q(data_receiver_0_data_right[0]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[0]),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
-// @14:43
-  SLE \data[17]  (
-	.Q(data_receiver_0_data_left[1]),
-	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
-	.D(spi_slave_0_DataRxd[17]),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
-// @14:43
-  SLE \data[16]  (
-	.Q(data_receiver_0_data_left[0]),
-	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
-	.D(spi_slave_0_DataRxd[16]),
 	.EN(VCC),
 	.LAT(GND),
 	.SD(GND),
@@ -1654,8 +1606,8 @@ wire GND ;
   SLE \data[15]  (
 	.Q(data_receiver_0_data_right[15]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[15]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1666,8 +1618,8 @@ wire GND ;
   SLE \data[14]  (
 	.Q(data_receiver_0_data_right[14]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[14]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1678,8 +1630,8 @@ wire GND ;
   SLE \data[13]  (
 	.Q(data_receiver_0_data_right[13]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[13]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1690,8 +1642,8 @@ wire GND ;
   SLE \data[12]  (
 	.Q(data_receiver_0_data_right[12]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[12]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1702,8 +1654,8 @@ wire GND ;
   SLE \data[11]  (
 	.Q(data_receiver_0_data_right[11]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[11]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1714,8 +1666,8 @@ wire GND ;
   SLE \data[10]  (
 	.Q(data_receiver_0_data_right[10]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[10]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1726,8 +1678,8 @@ wire GND ;
   SLE \data[9]  (
 	.Q(data_receiver_0_data_right[9]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[9]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1738,8 +1690,8 @@ wire GND ;
   SLE \data[8]  (
 	.Q(data_receiver_0_data_right[8]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[8]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1750,8 +1702,8 @@ wire GND ;
   SLE \data[7]  (
 	.Q(data_receiver_0_data_right[7]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[7]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1762,8 +1714,8 @@ wire GND ;
   SLE \data[6]  (
 	.Q(data_receiver_0_data_right[6]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[6]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1774,8 +1726,8 @@ wire GND ;
   SLE \data[5]  (
 	.Q(data_receiver_0_data_right[5]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[5]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1786,8 +1738,8 @@ wire GND ;
   SLE \data[4]  (
 	.Q(data_receiver_0_data_right[4]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[4]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1798,8 +1750,8 @@ wire GND ;
   SLE \data[3]  (
 	.Q(data_receiver_0_data_right[3]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[3]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1807,12 +1759,24 @@ wire GND ;
 	.SLn(VCC)
 );
 // @14:43
-  SLE \data[31]  (
-	.Q(data_receiver_0_data_left[15]),
+  SLE \data[2]  (
+	.Q(data_receiver_0_data_right[2]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
-	.D(spi_slave_0_DataRxd[31]),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
+	.D(spi_slave_0_DataRxd[2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:43
+  SLE \data[1]  (
+	.Q(data_receiver_0_data_right[1]),
+	.ADn(VCC),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
+	.D(spi_slave_0_DataRxd[1]),
 	.EN(VCC),
 	.LAT(GND),
 	.SD(GND),
@@ -1822,8 +1786,8 @@ wire GND ;
   SLE \data[30]  (
 	.Q(data_receiver_0_data_left[14]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[30]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1834,8 +1798,8 @@ wire GND ;
   SLE \data[29]  (
 	.Q(data_receiver_0_data_left[13]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[29]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1846,8 +1810,8 @@ wire GND ;
   SLE \data[28]  (
 	.Q(data_receiver_0_data_left[12]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[28]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1858,8 +1822,8 @@ wire GND ;
   SLE \data[27]  (
 	.Q(data_receiver_0_data_left[11]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[27]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1870,8 +1834,8 @@ wire GND ;
   SLE \data[26]  (
 	.Q(data_receiver_0_data_left[10]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[26]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1882,8 +1846,8 @@ wire GND ;
   SLE \data[25]  (
 	.Q(data_receiver_0_data_left[9]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[25]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1894,8 +1858,8 @@ wire GND ;
   SLE \data[24]  (
 	.Q(data_receiver_0_data_left[8]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[24]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1906,8 +1870,8 @@ wire GND ;
   SLE \data[23]  (
 	.Q(data_receiver_0_data_left[7]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[23]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1918,8 +1882,8 @@ wire GND ;
   SLE \data[22]  (
 	.Q(data_receiver_0_data_left[6]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[22]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1930,8 +1894,8 @@ wire GND ;
   SLE \data[21]  (
 	.Q(data_receiver_0_data_left[5]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[21]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1942,8 +1906,8 @@ wire GND ;
   SLE \data[20]  (
 	.Q(data_receiver_0_data_left[4]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[20]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1954,8 +1918,8 @@ wire GND ;
   SLE \data[19]  (
 	.Q(data_receiver_0_data_left[3]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[19]),
 	.EN(VCC),
 	.LAT(GND),
@@ -1966,9 +1930,45 @@ wire GND ;
   SLE \data[18]  (
 	.Q(data_receiver_0_data_left[2]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(spi_slave_0_SPI_DONE),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
 	.D(spi_slave_0_DataRxd[18]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:43
+  SLE \data[17]  (
+	.Q(data_receiver_0_data_left[1]),
+	.ADn(VCC),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
+	.D(spi_slave_0_DataRxd[17]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:43
+  SLE \data[16]  (
+	.Q(data_receiver_0_data_left[0]),
+	.ADn(VCC),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
+	.D(spi_slave_0_DataRxd[16]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:43
+  SLE \data[31]  (
+	.Q(data_receiver_0_data_left[15]),
+	.ADn(VCC),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(SPI_DONE),
+	.D(spi_slave_0_DataRxd[31]),
 	.EN(VCC),
 	.LAT(GND),
 	.SD(GND),
@@ -1976,11 +1976,11 @@ wire GND ;
 );
 // @14:54
   CFG2 dac_reset (
-	.A(AND2_0_Y),
-	.B(spi_slave_0_SPI_DONE),
+	.A(SPI_DONE),
+	.B(Y_OUT_PRE_INV0_0),
 	.Y(dac_reset_Z)
 );
-defparam dac_reset.INIT=4'h1;
+defparam dac_reset.INIT=4'h4;
   GND GND_Z (
 	.Y(GND)
 );
@@ -2069,8 +2069,8 @@ wire GL3 ;
 	.RCOSC_1MHZ(GND),
 	.XTLOSC(GND)
 );
-defparam CCC_INST.INIT=210'h0000007FB8000044D74000318C6318C1F18C61EC0404040400301;
-defparam CCC_INST.VCOFREQUENCY=800.0;
+defparam CCC_INST.INIT=210'h0000007FB8000044574000318C6318C1F18C61EC0404040400B01;
+defparam CCC_INST.VCOFREQUENCY=600.0;
   GND GND_Z (
 	.Y(GND)
 );
@@ -2155,8 +2155,8 @@ module spi_slave (
   spi_sck_c,
   spi_ss_c,
   clk_debug,
-  AND2_0_Y_arst_i,
-  spi_slave_0_SPI_DONE
+  Y_OUT_PRE_INV0_0_arst,
+  SPI_DONE_1z
 )
 ;
 output [31:0] spi_slave_0_DataRxd ;
@@ -2165,18 +2165,18 @@ input spi_mosi_c ;
 input spi_sck_c ;
 input spi_ss_c ;
 input clk_debug ;
-input AND2_0_Y_arst_i ;
-output spi_slave_0_SPI_DONE ;
+input Y_OUT_PRE_INV0_0_arst ;
+output SPI_DONE_1z ;
 wire spi_miso_c ;
 wire spi_mosi_c ;
 wire spi_sck_c ;
 wire spi_ss_c ;
 wire clk_debug ;
-wire AND2_0_Y_arst_i ;
-wire spi_slave_0_SPI_DONE ;
+wire Y_OUT_PRE_INV0_0_arst ;
+wire SPI_DONE_1z ;
 wire [30:0] TxData_Z;
 wire [4:0] index_Z;
-wire SPI_DONE_Z ;
+wire SPI_DONE_0 ;
 wire SCLK_old_Z ;
 wire VCC ;
 wire SCLK_latched_Z ;
@@ -2187,26 +2187,27 @@ wire SPI_DONE_0_sqmuxa_0_0 ;
 wire SS_old_Z ;
 wire N_2_i ;
 wire N_4_i ;
-wire N_15 ;
-wire N_17_i ;
 wire N_161_i ;
+wire N_18_i ;
 wire N_10 ;
 wire N_12 ;
+wire N_15 ;
 wire N_8 ;
-wire N_21 ;
-wire N_33 ;
+wire index_n1_i_0_Z ;
+wire N_22 ;
+wire SPI_DONE_0_sqmuxa_0_a3_1 ;
 wire N_19 ;
-wire SPI_DONE_0_sqmuxa_0_a3_2_Z ;
-wire N_149 ;
+wire SPI_DONE_0_sqmuxa_0_a3_3_Z ;
+wire N_21 ;
   CLKINT SPI_DONE_inferred_clock_RNIDF25 (
-	.Y(spi_slave_0_SPI_DONE),
-	.A(SPI_DONE_Z)
+	.Y(SPI_DONE_1z),
+	.A(SPI_DONE_0)
 );
 // @15:60
   SLE SCLK_old (
 	.Q(SCLK_old_Z),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(SCLK_latched_Z),
 	.EN(VCC),
@@ -2218,7 +2219,7 @@ wire N_149 ;
   SLE SS_latched (
 	.Q(SS_latched_Z),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_ss_c),
 	.EN(VCC),
@@ -2230,7 +2231,7 @@ wire N_149 ;
   SLE SCLK_latched (
 	.Q(SCLK_latched_Z),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_sck_c),
 	.EN(VCC),
@@ -2242,7 +2243,7 @@ wire N_149 ;
   SLE MOSI_latched (
 	.Q(MOSI_latched_Z),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_mosi_c),
 	.EN(VCC),
@@ -2252,9 +2253,9 @@ wire N_149 ;
 );
 // @15:60
   SLE SPI_DONE (
-	.Q(SPI_DONE_Z),
+	.Q(SPI_DONE_0),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(SPI_DONE_0_sqmuxa_0_0),
 	.EN(VCC),
@@ -2266,7 +2267,7 @@ wire N_149 ;
   SLE SS_old (
 	.Q(SS_old_Z),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(SS_latched_Z),
 	.EN(VCC),
@@ -2275,58 +2276,10 @@ wire N_149 ;
 	.SLn(VCC)
 );
 // @15:60
-  SLE \TxData[1]  (
-	.Q(TxData_Z[1]),
-	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(clk_debug),
-	.D(TxData_Z[0]),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(VCC),
-	.SLn(N_2_i)
-);
-// @15:60
-  SLE \TxData[0]  (
-	.Q(TxData_Z[0]),
-	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(clk_debug),
-	.D(VCC),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
-// @15:60
-  SLE \TxData[16]  (
-	.Q(TxData_Z[16]),
-	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(clk_debug),
-	.D(TxData_Z[15]),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(VCC),
-	.SLn(N_2_i)
-);
-// @15:60
-  SLE \TxData[15]  (
-	.Q(TxData_Z[15]),
-	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
-	.CLK(clk_debug),
-	.D(TxData_Z[14]),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(VCC),
-	.SLn(N_2_i)
-);
-// @15:60
   SLE \TxData[14]  (
 	.Q(TxData_Z[14]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[13]),
 	.EN(VCC),
@@ -2338,7 +2291,7 @@ wire N_149 ;
   SLE \TxData[13]  (
 	.Q(TxData_Z[13]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[12]),
 	.EN(VCC),
@@ -2350,7 +2303,7 @@ wire N_149 ;
   SLE \TxData[12]  (
 	.Q(TxData_Z[12]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[11]),
 	.EN(VCC),
@@ -2362,7 +2315,7 @@ wire N_149 ;
   SLE \TxData[11]  (
 	.Q(TxData_Z[11]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[10]),
 	.EN(VCC),
@@ -2374,7 +2327,7 @@ wire N_149 ;
   SLE \TxData[10]  (
 	.Q(TxData_Z[10]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[9]),
 	.EN(VCC),
@@ -2386,7 +2339,7 @@ wire N_149 ;
   SLE \TxData[9]  (
 	.Q(TxData_Z[9]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[8]),
 	.EN(VCC),
@@ -2398,7 +2351,7 @@ wire N_149 ;
   SLE \TxData[8]  (
 	.Q(TxData_Z[8]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[7]),
 	.EN(VCC),
@@ -2410,7 +2363,7 @@ wire N_149 ;
   SLE \TxData[7]  (
 	.Q(TxData_Z[7]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[6]),
 	.EN(VCC),
@@ -2422,7 +2375,7 @@ wire N_149 ;
   SLE \TxData[6]  (
 	.Q(TxData_Z[6]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[5]),
 	.EN(VCC),
@@ -2434,7 +2387,7 @@ wire N_149 ;
   SLE \TxData[5]  (
 	.Q(TxData_Z[5]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[4]),
 	.EN(VCC),
@@ -2446,7 +2399,7 @@ wire N_149 ;
   SLE \TxData[4]  (
 	.Q(TxData_Z[4]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[3]),
 	.EN(VCC),
@@ -2458,7 +2411,7 @@ wire N_149 ;
   SLE \TxData[3]  (
 	.Q(TxData_Z[3]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[2]),
 	.EN(VCC),
@@ -2470,7 +2423,7 @@ wire N_149 ;
   SLE \TxData[2]  (
 	.Q(TxData_Z[2]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[1]),
 	.EN(VCC),
@@ -2479,34 +2432,34 @@ wire N_149 ;
 	.SLn(N_2_i)
 );
 // @15:60
-  SLE \TxData[31]  (
-	.Q(spi_miso_c),
+  SLE \TxData[1]  (
+	.Q(TxData_Z[1]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
-	.D(TxData_Z[30]),
+	.D(TxData_Z[0]),
 	.EN(VCC),
 	.LAT(GND),
 	.SD(VCC),
 	.SLn(N_2_i)
 );
 // @15:60
-  SLE \TxData[30]  (
-	.Q(TxData_Z[30]),
+  SLE \TxData[0]  (
+	.Q(TxData_Z[0]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
-	.D(TxData_Z[29]),
+	.D(VCC),
 	.EN(VCC),
 	.LAT(GND),
-	.SD(VCC),
-	.SLn(N_2_i)
+	.SD(GND),
+	.SLn(VCC)
 );
 // @15:60
   SLE \TxData[29]  (
 	.Q(TxData_Z[29]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[28]),
 	.EN(VCC),
@@ -2518,7 +2471,7 @@ wire N_149 ;
   SLE \TxData[28]  (
 	.Q(TxData_Z[28]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[27]),
 	.EN(VCC),
@@ -2530,7 +2483,7 @@ wire N_149 ;
   SLE \TxData[27]  (
 	.Q(TxData_Z[27]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[26]),
 	.EN(VCC),
@@ -2542,7 +2495,7 @@ wire N_149 ;
   SLE \TxData[26]  (
 	.Q(TxData_Z[26]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[25]),
 	.EN(VCC),
@@ -2554,7 +2507,7 @@ wire N_149 ;
   SLE \TxData[25]  (
 	.Q(TxData_Z[25]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[24]),
 	.EN(VCC),
@@ -2566,7 +2519,7 @@ wire N_149 ;
   SLE \TxData[24]  (
 	.Q(TxData_Z[24]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[23]),
 	.EN(VCC),
@@ -2578,7 +2531,7 @@ wire N_149 ;
   SLE \TxData[23]  (
 	.Q(TxData_Z[23]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[22]),
 	.EN(VCC),
@@ -2590,7 +2543,7 @@ wire N_149 ;
   SLE \TxData[22]  (
 	.Q(TxData_Z[22]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[21]),
 	.EN(VCC),
@@ -2602,7 +2555,7 @@ wire N_149 ;
   SLE \TxData[21]  (
 	.Q(TxData_Z[21]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[20]),
 	.EN(VCC),
@@ -2614,7 +2567,7 @@ wire N_149 ;
   SLE \TxData[20]  (
 	.Q(TxData_Z[20]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[19]),
 	.EN(VCC),
@@ -2626,7 +2579,7 @@ wire N_149 ;
   SLE \TxData[19]  (
 	.Q(TxData_Z[19]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[18]),
 	.EN(VCC),
@@ -2638,7 +2591,7 @@ wire N_149 ;
   SLE \TxData[18]  (
 	.Q(TxData_Z[18]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[17]),
 	.EN(VCC),
@@ -2650,7 +2603,7 @@ wire N_149 ;
   SLE \TxData[17]  (
 	.Q(TxData_Z[17]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(TxData_Z[16]),
 	.EN(VCC),
@@ -2659,34 +2612,34 @@ wire N_149 ;
 	.SLn(N_2_i)
 );
 // @15:60
-  SLE \RxdData[14]  (
-	.Q(spi_slave_0_DataRxd[14]),
+  SLE \TxData[16]  (
+	.Q(TxData_Z[16]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
-	.D(spi_slave_0_DataRxd[13]),
-	.EN(N_4_i),
+	.D(TxData_Z[15]),
+	.EN(VCC),
 	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
+	.SD(VCC),
+	.SLn(N_2_i)
 );
 // @15:60
-  SLE \RxdData[13]  (
-	.Q(spi_slave_0_DataRxd[13]),
+  SLE \TxData[15]  (
+	.Q(TxData_Z[15]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
-	.D(spi_slave_0_DataRxd[12]),
-	.EN(N_4_i),
+	.D(TxData_Z[14]),
+	.EN(VCC),
 	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
+	.SD(VCC),
+	.SLn(N_2_i)
 );
 // @15:60
   SLE \RxdData[12]  (
 	.Q(spi_slave_0_DataRxd[12]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[11]),
 	.EN(N_4_i),
@@ -2698,7 +2651,7 @@ wire N_149 ;
   SLE \RxdData[11]  (
 	.Q(spi_slave_0_DataRxd[11]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[10]),
 	.EN(N_4_i),
@@ -2710,7 +2663,7 @@ wire N_149 ;
   SLE \RxdData[10]  (
 	.Q(spi_slave_0_DataRxd[10]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[9]),
 	.EN(N_4_i),
@@ -2722,7 +2675,7 @@ wire N_149 ;
   SLE \RxdData[9]  (
 	.Q(spi_slave_0_DataRxd[9]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[8]),
 	.EN(N_4_i),
@@ -2734,7 +2687,7 @@ wire N_149 ;
   SLE \RxdData[8]  (
 	.Q(spi_slave_0_DataRxd[8]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[7]),
 	.EN(N_4_i),
@@ -2746,7 +2699,7 @@ wire N_149 ;
   SLE \RxdData[7]  (
 	.Q(spi_slave_0_DataRxd[7]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[6]),
 	.EN(N_4_i),
@@ -2758,7 +2711,7 @@ wire N_149 ;
   SLE \RxdData[6]  (
 	.Q(spi_slave_0_DataRxd[6]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[5]),
 	.EN(N_4_i),
@@ -2770,7 +2723,7 @@ wire N_149 ;
   SLE \RxdData[5]  (
 	.Q(spi_slave_0_DataRxd[5]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[4]),
 	.EN(N_4_i),
@@ -2782,7 +2735,7 @@ wire N_149 ;
   SLE \RxdData[4]  (
 	.Q(spi_slave_0_DataRxd[4]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[3]),
 	.EN(N_4_i),
@@ -2794,7 +2747,7 @@ wire N_149 ;
   SLE \RxdData[3]  (
 	.Q(spi_slave_0_DataRxd[3]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[2]),
 	.EN(N_4_i),
@@ -2806,7 +2759,7 @@ wire N_149 ;
   SLE \RxdData[2]  (
 	.Q(spi_slave_0_DataRxd[2]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[1]),
 	.EN(N_4_i),
@@ -2818,7 +2771,7 @@ wire N_149 ;
   SLE \RxdData[1]  (
 	.Q(spi_slave_0_DataRxd[1]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[0]),
 	.EN(N_4_i),
@@ -2830,7 +2783,7 @@ wire N_149 ;
   SLE \RxdData[0]  (
 	.Q(spi_slave_0_DataRxd[0]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(MOSI_latched_Z),
 	.EN(N_4_i),
@@ -2839,34 +2792,34 @@ wire N_149 ;
 	.SLn(VCC)
 );
 // @15:60
-  SLE \RxdData[29]  (
-	.Q(spi_slave_0_DataRxd[29]),
+  SLE \TxData[31]  (
+	.Q(spi_miso_c),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
-	.D(spi_slave_0_DataRxd[28]),
-	.EN(N_4_i),
+	.D(TxData_Z[30]),
+	.EN(VCC),
 	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
+	.SD(VCC),
+	.SLn(N_2_i)
 );
 // @15:60
-  SLE \RxdData[28]  (
-	.Q(spi_slave_0_DataRxd[28]),
+  SLE \TxData[30]  (
+	.Q(TxData_Z[30]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
-	.D(spi_slave_0_DataRxd[27]),
-	.EN(N_4_i),
+	.D(TxData_Z[29]),
+	.EN(VCC),
 	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
+	.SD(VCC),
+	.SLn(N_2_i)
 );
 // @15:60
   SLE \RxdData[27]  (
 	.Q(spi_slave_0_DataRxd[27]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[26]),
 	.EN(N_4_i),
@@ -2878,7 +2831,7 @@ wire N_149 ;
   SLE \RxdData[26]  (
 	.Q(spi_slave_0_DataRxd[26]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[25]),
 	.EN(N_4_i),
@@ -2890,7 +2843,7 @@ wire N_149 ;
   SLE \RxdData[25]  (
 	.Q(spi_slave_0_DataRxd[25]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[24]),
 	.EN(N_4_i),
@@ -2902,7 +2855,7 @@ wire N_149 ;
   SLE \RxdData[24]  (
 	.Q(spi_slave_0_DataRxd[24]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[23]),
 	.EN(N_4_i),
@@ -2914,7 +2867,7 @@ wire N_149 ;
   SLE \RxdData[23]  (
 	.Q(spi_slave_0_DataRxd[23]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[22]),
 	.EN(N_4_i),
@@ -2926,7 +2879,7 @@ wire N_149 ;
   SLE \RxdData[22]  (
 	.Q(spi_slave_0_DataRxd[22]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[21]),
 	.EN(N_4_i),
@@ -2938,7 +2891,7 @@ wire N_149 ;
   SLE \RxdData[21]  (
 	.Q(spi_slave_0_DataRxd[21]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[20]),
 	.EN(N_4_i),
@@ -2950,7 +2903,7 @@ wire N_149 ;
   SLE \RxdData[20]  (
 	.Q(spi_slave_0_DataRxd[20]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[19]),
 	.EN(N_4_i),
@@ -2962,7 +2915,7 @@ wire N_149 ;
   SLE \RxdData[19]  (
 	.Q(spi_slave_0_DataRxd[19]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[18]),
 	.EN(N_4_i),
@@ -2974,7 +2927,7 @@ wire N_149 ;
   SLE \RxdData[18]  (
 	.Q(spi_slave_0_DataRxd[18]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[17]),
 	.EN(N_4_i),
@@ -2986,7 +2939,7 @@ wire N_149 ;
   SLE \RxdData[17]  (
 	.Q(spi_slave_0_DataRxd[17]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[16]),
 	.EN(N_4_i),
@@ -2998,7 +2951,7 @@ wire N_149 ;
   SLE \RxdData[16]  (
 	.Q(spi_slave_0_DataRxd[16]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[15]),
 	.EN(N_4_i),
@@ -3010,9 +2963,33 @@ wire N_149 ;
   SLE \RxdData[15]  (
 	.Q(spi_slave_0_DataRxd[15]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[14]),
+	.EN(N_4_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:60
+  SLE \RxdData[14]  (
+	.Q(spi_slave_0_DataRxd[14]),
+	.ADn(VCC),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(clk_debug),
+	.D(spi_slave_0_DataRxd[13]),
+	.EN(N_4_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:60
+  SLE \RxdData[13]  (
+	.Q(spi_slave_0_DataRxd[13]),
+	.ADn(VCC),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(clk_debug),
+	.D(spi_slave_0_DataRxd[12]),
 	.EN(N_4_i),
 	.LAT(GND),
 	.SD(GND),
@@ -3022,7 +2999,7 @@ wire N_149 ;
   SLE \RxdData[31]  (
 	.Q(spi_slave_0_DataRxd[31]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[30]),
 	.EN(N_4_i),
@@ -3034,7 +3011,7 @@ wire N_149 ;
   SLE \RxdData[30]  (
 	.Q(spi_slave_0_DataRxd[30]),
 	.ADn(VCC),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(spi_slave_0_DataRxd[29]),
 	.EN(N_4_i),
@@ -3043,13 +3020,25 @@ wire N_149 ;
 	.SLn(VCC)
 );
 // @15:60
-  SLE \index[1]  (
-	.Q(index_Z[1]),
-	.ADn(GND),
-	.ALn(AND2_0_Y_arst_i),
+  SLE \RxdData[29]  (
+	.Q(spi_slave_0_DataRxd[29]),
+	.ADn(VCC),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
-	.D(N_15),
-	.EN(N_17_i),
+	.D(spi_slave_0_DataRxd[28]),
+	.EN(N_4_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:60
+  SLE \RxdData[28]  (
+	.Q(spi_slave_0_DataRxd[28]),
+	.ADn(VCC),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(clk_debug),
+	.D(spi_slave_0_DataRxd[27]),
+	.EN(N_4_i),
 	.LAT(GND),
 	.SD(GND),
 	.SLn(VCC)
@@ -3058,10 +3047,10 @@ wire N_149 ;
   SLE \index[0]  (
 	.Q(index_Z[0]),
 	.ADn(GND),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(N_161_i),
-	.EN(N_17_i),
+	.EN(N_18_i),
 	.LAT(GND),
 	.SD(GND),
 	.SLn(VCC)
@@ -3070,10 +3059,10 @@ wire N_149 ;
   SLE \index[3]  (
 	.Q(index_Z[3]),
 	.ADn(GND),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(N_10),
-	.EN(N_17_i),
+	.EN(N_18_i),
 	.LAT(GND),
 	.SD(GND),
 	.SLn(VCC)
@@ -3082,10 +3071,22 @@ wire N_149 ;
   SLE \index[2]  (
 	.Q(index_Z[2]),
 	.ADn(GND),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(N_12),
-	.EN(N_17_i),
+	.EN(N_18_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:60
+  SLE \index[1]  (
+	.Q(index_Z[1]),
+	.ADn(GND),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
+	.CLK(clk_debug),
+	.D(N_15),
+	.EN(N_18_i),
 	.LAT(GND),
 	.SD(GND),
 	.SLn(VCC)
@@ -3094,39 +3095,36 @@ wire N_149 ;
   SLE \index[4]  (
 	.Q(index_Z[4]),
 	.ADn(GND),
-	.ALn(AND2_0_Y_arst_i),
+	.ALn(Y_OUT_PRE_INV0_0_arst),
 	.CLK(clk_debug),
 	.D(N_8),
-	.EN(N_17_i),
+	.EN(N_18_i),
 	.LAT(GND),
 	.SD(GND),
 	.SLn(VCC)
 );
 // @15:60
-  CFG4 index_n4_i (
-	.A(SCLK_old_Z),
-	.B(index_Z[4]),
-	.C(N_21),
-	.D(SCLK_latched_Z),
-	.Y(N_8)
-);
-defparam index_n4_i.INIT=16'hEBFF;
-// @15:60
-  CFG4 index_n3_i_o2_0 (
-	.A(index_Z[1]),
-	.B(index_Z[3]),
-	.C(index_Z[0]),
-	.D(index_Z[2]),
-	.Y(N_21)
-);
-defparam index_n3_i_o2_0.INIT=16'hFFFE;
-// @15:60
-  CFG2 index_n1_i_a2 (
+  CFG3 index_n1_i (
 	.A(index_Z[0]),
-	.B(index_Z[1]),
-	.Y(N_33)
+	.B(index_n1_i_0_Z),
+	.C(index_Z[1]),
+	.Y(N_15)
 );
-defparam index_n1_i_a2.INIT=4'h8;
+defparam index_n1_i.INIT=8'hCD;
+// @15:60
+  CFG2 \index_RNO[0]  (
+	.A(N_22),
+	.B(index_Z[0]),
+	.Y(N_161_i)
+);
+defparam \index_RNO[0] .INIT=4'hB;
+// @15:97
+  CFG2 SPI_DONE_0_sqmuxa_0_a3_1_0 (
+	.A(SS_latched_Z),
+	.B(index_Z[2]),
+	.Y(SPI_DONE_0_sqmuxa_0_a3_1)
+);
+defparam SPI_DONE_0_sqmuxa_0_a3_1_0.INIT=4'h4;
 // @15:60
   CFG2 index_n2_i_o2 (
 	.A(index_Z[0]),
@@ -3134,24 +3132,49 @@ defparam index_n1_i_a2.INIT=4'h8;
 	.Y(N_19)
 );
 defparam index_n2_i_o2.INIT=4'hE;
-// @15:97
-  CFG4 SPI_DONE_0_sqmuxa_0_a3_2 (
-	.A(index_Z[4]),
-	.B(index_Z[3]),
-	.C(index_Z[2]),
-	.D(SS_latched_Z),
-	.Y(SPI_DONE_0_sqmuxa_0_a3_2_Z)
+// @15:91
+  CFG2 index_1_sqmuxa_i_0_o3 (
+	.A(SCLK_latched_Z),
+	.B(SCLK_old_Z),
+	.Y(N_22)
 );
-defparam SPI_DONE_0_sqmuxa_0_a3_2.INIT=16'h0080;
+defparam index_1_sqmuxa_i_0_o3.INIT=4'hD;
+// @15:60
+  CFG4 index_n1_i_0 (
+	.A(index_Z[1]),
+	.B(SCLK_old_Z),
+	.C(index_Z[0]),
+	.D(SCLK_latched_Z),
+	.Y(index_n1_i_0_Z)
+);
+defparam index_n1_i_0.INIT=16'hECFF;
+// @15:97
+  CFG4 SPI_DONE_0_sqmuxa_0_a3_3 (
+	.A(index_Z[1]),
+	.B(SCLK_old_Z),
+	.C(index_Z[0]),
+	.D(SCLK_latched_Z),
+	.Y(SPI_DONE_0_sqmuxa_0_a3_3_Z)
+);
+defparam SPI_DONE_0_sqmuxa_0_a3_3.INIT=16'h0080;
+// @15:60
+  CFG4 index_n3_i_o2_0 (
+	.A(index_Z[3]),
+	.B(index_Z[2]),
+	.C(index_Z[1]),
+	.D(index_Z[0]),
+	.Y(N_21)
+);
+defparam index_n3_i_o2_0.INIT=16'hFFFE;
 // @15:97
   CFG4 SPI_DONE_0_sqmuxa_0_a3 (
-	.A(N_33),
-	.B(SPI_DONE_0_sqmuxa_0_a3_2_Z),
-	.C(SCLK_old_Z),
-	.D(SCLK_latched_Z),
+	.A(index_Z[3]),
+	.B(index_Z[4]),
+	.C(SPI_DONE_0_sqmuxa_0_a3_3_Z),
+	.D(SPI_DONE_0_sqmuxa_0_a3_1),
 	.Y(SPI_DONE_0_sqmuxa_0_0)
 );
-defparam SPI_DONE_0_sqmuxa_0_a3.INIT=16'h0080;
+defparam SPI_DONE_0_sqmuxa_0_a3.INIT=16'h8000;
 // @15:60
   CFG3 SS_latched_RNIF5U21 (
 	.A(SS_latched_Z),
@@ -3168,55 +3191,41 @@ defparam SS_latched_RNIF5U21.INIT=8'h10;
 );
 defparam SS_latched_RNIF5U21_0.INIT=8'h04;
 // @15:60
+  CFG4 index_n2_i_1 (
+	.A(index_Z[2]),
+	.B(index_Z[1]),
+	.C(index_Z[0]),
+	.D(N_22),
+	.Y(N_12)
+);
+defparam index_n2_i_1.INIT=16'hFFA9;
+// @15:60
+  CFG4 index_n3_i_1 (
+	.A(index_Z[2]),
+	.B(index_Z[3]),
+	.C(N_22),
+	.D(N_19),
+	.Y(N_10)
+);
+defparam index_n3_i_1.INIT=16'hFCF9;
+// @15:60
   CFG4 SS_old_RNIM0QF1 (
 	.A(SS_old_Z),
 	.B(SS_latched_Z),
 	.C(SCLK_old_Z),
 	.D(SCLK_latched_Z),
-	.Y(N_17_i)
+	.Y(N_18_i)
 );
 defparam SS_old_RNIM0QF1.INIT=16'h2322;
-  CFG4 index_n3_i_o2_0_RNIBMMH1 (
-	.A(index_Z[4]),
-	.B(SCLK_old_Z),
-	.C(SCLK_latched_Z),
-	.D(N_21),
-	.Y(N_149)
-);
-defparam index_n3_i_o2_0_RNIBMMH1.INIT=16'hCFDF;
 // @15:60
-  CFG3 index_n1_i (
-	.A(N_19),
-	.B(N_149),
-	.C(N_33),
-	.Y(N_15)
+  CFG3 index_n4_i (
+	.A(N_22),
+	.B(index_Z[4]),
+	.C(N_21),
+	.Y(N_8)
 );
-defparam index_n1_i.INIT=8'hFD;
-// @15:60
-  CFG3 index_n2_i (
-	.A(N_149),
-	.B(index_Z[2]),
-	.C(N_19),
-	.Y(N_12)
-);
-defparam index_n2_i.INIT=8'hEB;
-// @15:60
-  CFG4 index_n3_i (
-	.A(index_Z[2]),
-	.B(index_Z[3]),
-	.C(N_149),
-	.D(N_19),
-	.Y(N_10)
-);
-defparam index_n3_i.INIT=16'hFCF9;
-// @15:60
-  CFG2 \index_RNO[0]  (
-	.A(N_149),
-	.B(index_Z[0]),
-	.Y(N_161_i)
-);
-defparam \index_RNO[0] .INIT=4'hB;
-//@20:222
+defparam index_n4_i.INIT=8'hEB;
+//@20:230
   GND GND_Z (
 	.Y(GND)
 );
@@ -3252,32 +3261,26 @@ wire spi_miso ;
 wire [15:0] data_receiver_0_data_left;
 wire [15:0] data_receiver_0_data_right;
 wire [31:0] spi_slave_0_DataRxd;
-wire FCCC_C0_0_LOCK ;
 wire SYSRESET_0_POWER_ON_RESET_N ;
+wire FCCC_C0_0_LOCK ;
 wire clk_debug ;
-wire spi_slave_0_SPI_DONE ;
+wire SPI_DONE ;
 wire VCC ;
 wire GND ;
-wire AND2_0_Y_arst ;
-wire AND2_0_Y ;
+wire Y_OUT_PRE_INV0_0_arst ;
+wire Y_OUT_PRE_INV0_0 ;
 wire spi_mosi_c ;
 wire spi_sck_c ;
 wire spi_ss_c ;
 wire dac_out_left_c ;
 wire dac_out_right_c ;
 wire spi_miso_c ;
-wire AND2_0_Y_arst_i ;
 wire data_receiver_0_dac_reset_i ;
 wire OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC ;
   CLKINT AND2_0_RNIKOS1 (
-	.Y(AND2_0_Y_arst),
-	.A(AND2_0_Y)
+	.Y(Y_OUT_PRE_INV0_0_arst),
+	.A(Y_OUT_PRE_INV0_0)
 );
-  CFG1 AND2_0_RNIKOS1_0 (
-	.A(AND2_0_Y_arst),
-	.Y(AND2_0_Y_arst_i)
-);
-defparam AND2_0_RNIKOS1_0.INIT=2'h1;
 // @20:22
   INBUF spi_mosi_ibuf (
 	.Y(spi_mosi_c),
@@ -3308,52 +3311,52 @@ defparam AND2_0_RNIKOS1_0.INIT=2'h1;
 	.PAD(spi_miso),
 	.D(spi_miso_c)
 );
-// @20:238
+// @20:246
   SYSRESET SYSRESET_0 (
 	.POWER_ON_RESET_N(SYSRESET_0_POWER_ON_RESET_N),
 	.DEVRST_N(DEVRST_N)
 );
-// @20:166
+// @20:174
   AND2 AND2_0 (
-	.Y(AND2_0_Y),
-	.A(FCCC_C0_0_LOCK),
-	.B(SYSRESET_0_POWER_ON_RESET_N)
+	.Y(Y_OUT_PRE_INV0_0),
+	.A(SYSRESET_0_POWER_ON_RESET_N),
+	.B(FCCC_C0_0_LOCK)
 );
-// @20:175
+// @20:183
   dac dac_0 (
 	.data_receiver_0_data_left(data_receiver_0_data_left[15:0]),
 	.dac_reset_i(data_receiver_0_dac_reset_i),
 	.clk_debug(clk_debug),
 	.dac_out_left_c(dac_out_left_c)
 );
-// @20:185
+// @20:193
   dac_0 dac_1 (
 	.data_receiver_0_data_right(data_receiver_0_data_right[15:0]),
 	.dac_reset_i(data_receiver_0_dac_reset_i),
 	.clk_debug(clk_debug),
 	.dac_out_right_c(dac_out_right_c)
 );
-// @20:195
+// @20:203
   data_receiver data_receiver_0 (
 	.spi_slave_0_DataRxd(spi_slave_0_DataRxd[31:0]),
 	.data_receiver_0_data_left(data_receiver_0_data_left[15:0]),
 	.data_receiver_0_data_right(data_receiver_0_data_right[15:0]),
-	.AND2_0_Y(AND2_0_Y),
-	.spi_slave_0_SPI_DONE(spi_slave_0_SPI_DONE),
-	.AND2_0_Y_arst_i(AND2_0_Y_arst_i),
+	.Y_OUT_PRE_INV0_0(Y_OUT_PRE_INV0_0),
+	.SPI_DONE(SPI_DONE),
+	.Y_OUT_PRE_INV0_0_arst(Y_OUT_PRE_INV0_0_arst),
 	.dac_reset_i(data_receiver_0_dac_reset_i)
 );
-// @20:207
+// @20:215
   FCCC_C0 FCCC_C0_0 (
 	.clk_debug(clk_debug),
 	.FCCC_C0_0_LOCK(FCCC_C0_0_LOCK),
 	.OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC(OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC)
 );
-// @20:216
+// @20:224
   OSC_C0 OSC_C0_0 (
 	.OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC(OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC)
 );
-// @20:222
+// @20:230
   spi_slave spi_slave_0 (
 	.spi_slave_0_DataRxd(spi_slave_0_DataRxd[31:0]),
 	.spi_miso_c(spi_miso_c),
@@ -3361,8 +3364,8 @@ defparam AND2_0_RNIKOS1_0.INIT=2'h1;
 	.spi_sck_c(spi_sck_c),
 	.spi_ss_c(spi_ss_c),
 	.clk_debug(clk_debug),
-	.AND2_0_Y_arst_i(AND2_0_Y_arst_i),
-	.spi_slave_0_SPI_DONE(spi_slave_0_SPI_DONE)
+	.Y_OUT_PRE_INV0_0_arst(Y_OUT_PRE_INV0_0_arst),
+	.SPI_DONE_1z(SPI_DONE)
 );
   GND GND_Z (
 	.Y(GND)

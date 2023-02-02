@@ -54,6 +54,7 @@ File C:\Users\Constantin\Documents\VHDLSoundchip\component\work\soundchip\soundc
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Constantin\Documents\VHDLSoundchip\hdl\dac.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Constantin\Documents\VHDLSoundchip\component\work\soundchip\soundchip.vhd'.
 VHDL syntax check successful!
+File C:\Users\Constantin\Documents\VHDLSoundchip\hdl\data_receiver.vhd changed - recompiling
 File C:\Users\Constantin\Documents\VHDLSoundchip\component\work\soundchip\soundchip.vhd changed - recompiling
 @N: CD231 :"C:\Microchip\Libero_SoC_v2022.2\SynplifyPro\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
 @N: CD630 :"C:\Users\Constantin\Documents\VHDLSoundchip\component\work\soundchip\soundchip.vhd":17:7:17:15|Synthesizing work.soundchip.rtl.
@@ -148,7 +149,7 @@ At c_vhdl Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memor
 Process took 0h:00m:04s realtime, 0h:00m:04s cputime
 
 Process completed successfully.
-# Mon Dec  5 15:55:54 2022
+# Fri Jan 27 13:55:26 2023
 
 ###########################################################]
 ###########################################################[
@@ -175,7 +176,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Dec  5 15:55:55 2022
+# Fri Jan 27 13:55:26 2023
 
 ###########################################################]
 
@@ -190,6 +191,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory
 Process took 0h:00m:05s realtime, 0h:00m:05s cputime
 
 Process completed successfully.
-# Mon Dec  5 15:55:55 2022
+# Fri Jan 27 13:55:26 2023
 
 ###########################################################]

@@ -105,8 +105,8 @@ begin
     
     CCC_INST : CCC
 
-              generic map(INIT => "00" & x"000007FB8000044D74000318C6318C1F18C61EC0404040400301",
-         VCOFREQUENCY => 800.000)
+              generic map(INIT => "00" & x"000007FB8000044574000318C6318C1F18C61EC0404040400B01",
+         VCOFREQUENCY => 600.000)
 
       port map(Y0 => OPEN, Y1 => OPEN, Y2 => OPEN, Y3 => OPEN, 
         PRDATA(7) => nc8, PRDATA(6) => nc7, PRDATA(5) => nc6, 

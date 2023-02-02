@@ -1,0 +1,45 @@
+Software Version: 2022.2.0.10
+Opened 'C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\soundchip_fp\soundchip.pro'
+PDB file 'C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\soundchip.pdb' has been loaded successfully.
+DESIGN : soundchip;  CHECKSUM : 0265;  PDB_VERSION : 1.9
+Info: Programming Interface selected is JTAG.
+File/Folder 'C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\export\soundchip.stp' will be overwritten.
+Successfully exported STAPL file: 'C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\export\soundchip.stp'; file programs Fabric.
+Fabric component bitstream digest: 3dab00827a0ceec308e19c440fe5fba483df12669d7109a67af93b2e5ed0322c
+Entire bitstream digest: 741c3d6d03b4539c12a0109a490916d2c329467c2176375b4b17be06f3fc7767
+Finished: Fri Jan 27 13:57:08 2023 (Elapsed time 00:00:05)
+
+Info: Programming Interface selected is JTAG.
+File/Folder 'C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\export\soundchip.ppd' will be overwritten.
+Successfully exported PPD file for currently secured device: 'C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\export\soundchip.ppd'; file programs Fabric.
+Fabric component bitstream digest: 3dab00827a0ceec308e19c440fe5fba483df12669d7109a67af93b2e5ed0322c
+Entire bitstream digest: 741c3d6d03b4539c12a0109a490916d2c329467c2176375b4b17be06f3fc7767
+Finished: Fri Jan 27 13:57:15 2023 (Elapsed time 00:00:07)
+
+Info: Programming Interface selected is JTAG.
+File/Folder 'C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\export\soundchip_svf\soundchip_ERASE.svf' will be overwritten.
+Exported single device SVF file 'C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\export\soundchip_svf\soundchip_ERASE.svf' successfully.
+File/Folder 'C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\export\soundchip_svf\soundchip_PROGRAM.svf' will be overwritten.
+Exported single device SVF file 'C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\export\soundchip_svf\soundchip_PROGRAM.svf' successfully.
+File/Folder 'C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\export\soundchip_svf\soundchip_VERIFY.svf' will be overwritten.
+Exported single device SVF file 'C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\export\soundchip_svf\soundchip_VERIFY.svf' successfully.
+File/Folder 'C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\export\soundchip_svf\soundchip_ENC_DATA_AUTHENTICATION.svf' will be overwritten.
+Exported single device SVF file 'C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\export\soundchip_svf\soundchip_ENC_DATA_AUTHENTICATION.svf' successfully.
+Finished: Fri Jan 27 13:57:39 2023 (Elapsed time 00:00:24)
+
+Info: Programming Interface selected is JTAG.
+File/Folder 'C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\export\soundchip.dat' will be overwritten.
+Successfully exported DirectC file: 'C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\export\soundchip.dat'; file programs Fabric.
+Fabric component bitstream digest: 3dab00827a0ceec308e19c440fe5fba483df12669d7109a67af93b2e5ed0322c
+Entire bitstream digest: 741c3d6d03b4539c12a0109a490916d2c329467c2176375b4b17be06f3fc7767
+Finished: Fri Jan 27 13:57:45 2023 (Elapsed time 00:00:06)
+
+Info: Programming Interface selected is JTAG.
+File/Folder 'C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\export\soundchip.spi' will be overwritten.
+Successfully exported SPI master file: 'C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\export\soundchip.spi'; file programs Fabric.
+Fabric component bitstream digest: 3dab00827a0ceec308e19c440fe5fba483df12669d7109a67af93b2e5ed0322c
+Entire bitstream digest: 741c3d6d03b4539c12a0109a490916d2c329467c2176375b4b17be06f3fc7767
+Finished: Fri Jan 27 13:57:50 2023 (Elapsed time 00:00:05)
+
+Project saved.
+Project closed.

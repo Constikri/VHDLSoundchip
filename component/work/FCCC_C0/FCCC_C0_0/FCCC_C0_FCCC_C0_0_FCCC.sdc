@@ -1,7 +1,7 @@
 set_component FCCC_C0_FCCC_C0_0_FCCC
 # Microsemi Corp.
-# Date: 2022-Nov-23 14:32:50
+# Date: 2022-Dec-09 14:33:44
 #
 
 create_clock -period 20 [ get_pins { CCC_INST/RCOSC_25_50MHZ } ]
-create_generated_clock -multiply_by 4 -divide_by 2 -source [ get_pins { CCC_INST/RCOSC_25_50MHZ } ] -phase 0 [ get_pins { CCC_INST/GL0 } ]
+create_generated_clock -multiply_by 12 -divide_by 2 -source [ get_pins { CCC_INST/RCOSC_25_50MHZ } ] -phase 0 [ get_pins { CCC_INST/GL0 } ]

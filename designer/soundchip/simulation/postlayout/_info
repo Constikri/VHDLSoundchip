@@ -10,22 +10,22 @@ z2
 cModel Technology
 Z0 dC:/Users/Constantin/Documents/VHDLSoundchip/simulation
 Esdf_iopad_in
-Z1 w1670251856
+Z1 w1674742955
 Z2 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
 Z3 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
-!i122 11
+!i122 29
 R0
 Z4 8C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/soundchip_ba.vhd
 Z5 FC:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/soundchip_ba.vhd
 l0
-L58 1
-VE`ne@^JDHR`e5_VfF6G@50
-!s100 Xz;[ZhP>`^6cZBDfPH]4W1
+L9 1
+V^hgk44JzU>H5Eg3KbkgWB2
+!s100 TiB9`aC?YmdJUTEE4=OVY2
 Z6 OW;C;2022.2;75
 33
-Z7 !s110 1670251865
+Z7 !s110 1674823884
 !i10b 1
-Z8 !s108 1670251865.000000
+Z8 !s108 1674823884.000000
 Z9 !s90 -reportprogress|300|-2008|-explicit|-work|postlayout|C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/soundchip_ba.vhd|
 Z10 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/soundchip_ba.vhd|
 !i113 1
@@ -34,12 +34,12 @@ Z12 tCvgOpt 0
 Adef_arch
 R2
 R3
-Z13 DEx4 work 12 sdf_iopad_in 0 22 E`ne@^JDHR`e5_VfF6G@50
-!i122 11
-l97
-L66 51
-V]4^k7?A758IjGIjc`f4k>3
-!s100 bFSJHiLoko>03z9GGWEbH1
+Z13 DEx4 work 12 sdf_iopad_in 0 22 ^hgk44JzU>H5Eg3KbkgWB2
+!i122 29
+l48
+L17 51
+VH4A0;UUf6`3oQ[_YHY5_l3
+!s100 TP03fSAz1>V?DzZD>@fn<0
 R6
 33
 R7
@@ -54,14 +54,14 @@ Esdf_iopad_tri
 R1
 R2
 R3
-!i122 11
+!i122 29
 R0
 R4
 R5
 l0
-L9 1
-Vcai_dj>ZW<ZLFK3X;=i<F1
-!s100 MSB@ELc61S4186S60H?5I2
+L74 1
+V8IKDMACUnC34RI17kn;Ef2
+!s100 kIS5PWEdfA4C0QCkXQUZS2
 R6
 33
 R7
@@ -75,12 +75,12 @@ R12
 Adef_arch
 R2
 R3
-Z14 DEx4 work 13 sdf_iopad_tri 0 22 cai_dj>ZW<ZLFK3X;=i<F1
-!i122 11
-l39
-L18 34
-V8?FhLH?Z;lKnRg3FiTWkE1
-!s100 9mmDNb4KNdcP;kB1JKi_>2
+Z14 DEx4 work 13 sdf_iopad_tri 0 22 8IKDMACUnC34RI17kn;Ef2
+!i122 29
+l104
+L83 34
+V_7IH0YJ581U4NkWP;i@dB0
+!s100 ch?Ca]@GK]PMkDfXVW1:H2
 R6
 33
 R7
@@ -95,14 +95,14 @@ Esoundchip
 R1
 R2
 R3
-!i122 11
+!i122 29
 R0
 R4
 R5
 l0
 L123 1
-VLUkh<O`]7ZP4=d?;2mK]E0
-!s100 _KeG1XBF3RF3Y7U;FbaTd2
+VNk9MWg^>A`ZjUMQMSmn383
+!s100 f?zi?QYg^dZnCgSV1=BQX1
 R6
 33
 R7
@@ -114,16 +114,16 @@ R10
 R11
 R12
 Adef_arch
-R13
 R14
+R13
 R2
 R3
-DEx4 work 9 soundchip 0 22 LUkh<O`]7ZP4=d?;2mK]E0
-!i122 11
-l747
-L137 3372
-VKQXiai]Xde<okhK?LmM9R2
-!s100 7Z5Ae1WlU3oU0JBgT_:YF3
+DEx4 work 9 soundchip 0 22 Nk9MWg^>A`ZjUMQMSmn383
+!i122 29
+l703
+L136 3006
+VR`goo]mOVm[@KNcdICV202
+!s100 8lIo]RRUKl@olDlkD[5En1
 R6
 33
 R7
@@ -135,13 +135,13 @@ R10
 R11
 R12
 Esoundchip_tb
-Z15 w1670239014
+Z15 w1674742869
 Z16 DPx4 ieee 9 math_real 0 22 :8NNHF3SFI6^on5?4X[S`1
 Z17 DPx4 ieee 15 std_logic_arith 0 22 B[jVX6I8iRX2o6WYW0BB>3
 Z18 DPx4 ieee 18 std_logic_unsigned 0 22 o4hn5gYc0WVo72BSL@Ta50
 R2
 R3
-!i122 12
+!i122 30
 R0
 Z19 8C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/soundchip_tb.vhd
 Z20 FC:/Users/Constantin/Documents/VHDLSoundchip/stimulus/soundchip_tb.vhd
@@ -151,11 +151,11 @@ VM=ZDFc[SOJ?QWEhcO2><J0
 !s100 3[^IY1Mg?>IEIjlj:KjYY2
 R6
 33
-Z21 !s110 1670251866
+R7
 !i10b 1
 R8
-Z22 !s90 -reportprogress|300|-2008|-explicit|-work|postlayout|C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/soundchip_tb.vhd|
-Z23 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/soundchip_tb.vhd|
+Z21 !s90 -reportprogress|300|-2008|-explicit|-work|postlayout|C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/soundchip_tb.vhd|
+Z22 !s107 C:/Users/Constantin/Documents/VHDLSoundchip/stimulus/soundchip_tb.vhd|
 !i113 1
 R11
 R12
@@ -165,19 +165,19 @@ R17
 R18
 R2
 R3
-Z24 DEx4 work 12 soundchip_tb 0 22 M=ZDFc[SOJ?QWEhcO2><J0
-!i122 12
-l105
-Z25 L28 131
-V7YFXi^<HZzNKGg1WE2Y352
-!s100 U2glcClzS[V6:@_1iX7`:2
+Z23 DEx4 work 12 soundchip_tb 0 22 M=ZDFc[SOJ?QWEhcO2><J0
+!i122 30
+l99
+Z24 L28 122
+Z25 VZcJmhbGE4?9I[K]lXbi763
+Z26 !s100 aDMKX>ZjIe:hM]MJ1Vh9V3
 R6
 33
-R21
+R7
 !i10b 1
 R8
+R21
 R22
-R23
 !i113 1
 R11
 R12

@@ -162,7 +162,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>spi_slave</data>
 <data>75</data>
-<data>14</data>
+<data>15</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>

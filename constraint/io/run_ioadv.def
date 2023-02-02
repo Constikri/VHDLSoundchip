@@ -20,8 +20,8 @@ data LOC 'C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/soundch
 data SEG 'C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/soundchip.seg'
 data NMAT_PDC 'C:/Users/Constantin/Documents/VHDLSoundchip/designer/soundchip/soundchip.nmatinit.pdc'
 
-data IO_PDC_0 'C:/Users/Constantin/Documents/VHDLSoundchip/constraint/io/io_const.pdc'
-data IO_PDC_1 'C:/Users/Constantin/Documents/VHDLSoundchip/constraint/io/root_io.pdc'
-data TARGET_IOPDC  'C:/Users/Constantin/Documents/VHDLSoundchip/constraint/io/user.pdc'
+data IO_PDC_0 'C:/Users/Constantin/Documents/VHDLSoundchip/constraint/io/full_io.pdc'
+data IO_PDC_1 'C:/Users/Constantin/Documents/VHDLSoundchip/constraint/io/user.pdc'
+data TARGET_IOPDC  'C:/Users/Constantin/Documents/VHDLSoundchip/constraint/io/full_io.pdc'
 data TARGET_FPPDC  'C:/Users/Constantin/Documents/VHDLSoundchip/constraint/fp/user.pdc'
 

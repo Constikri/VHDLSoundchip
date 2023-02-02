@@ -11,17 +11,17 @@
 #CUR:"C:\\Microchip\\Libero_SoC_v2022.2\\SynplifyPro\\lib\\vhd2008\\arith.vhd":1655988528
 #CUR:"C:\\Microchip\\Libero_SoC_v2022.2\\SynplifyPro\\lib\\vhd2008\\unsigned.vhd":1655988528
 #CUR:"C:\\Microchip\\Libero_SoC_v2022.2\\SynplifyPro\\lib\\vhd\\hyperents.vhd":1655988528
-#CUR:"C:\\Users\\Constantin\\Documents\\VHDLSoundchip\\component\\work\\FCCC_C0\\FCCC_C0_0\\FCCC_C0_FCCC_C0_0_FCCC.vhd":1669210370
-#CUR:"C:\\Users\\Constantin\\Documents\\VHDLSoundchip\\component\\work\\FCCC_C0\\FCCC_C0.vhd":1669210370
+#CUR:"C:\\Users\\Constantin\\Documents\\VHDLSoundchip\\component\\work\\FCCC_C0\\FCCC_C0_0\\FCCC_C0_FCCC_C0_0_FCCC.vhd":1670592824
+#CUR:"C:\\Users\\Constantin\\Documents\\VHDLSoundchip\\component\\work\\FCCC_C0\\FCCC_C0.vhd":1670592824
 #CUR:"C:\\Users\\Constantin\\Documents\\VHDLSoundchip\\component\\Actel\\SgCore\\OSC\\2.0.101\\osc_comps.vhd":1629289419
 #CUR:"C:\\Users\\Constantin\\Documents\\VHDLSoundchip\\component\\work\\OSC_C0\\OSC_C0_0\\OSC_C0_OSC_C0_0_OSC.vhd":1665157617
 #CUR:"C:\\Users\\Constantin\\Documents\\VHDLSoundchip\\component\\work\\OSC_C0\\OSC_C0.vhd":1665157617
 #CUR:"C:\\Users\\Constantin\\Documents\\VHDLSoundchip\\hdl\\delta_adder.vhd":1657465680
 #CUR:"C:\\Users\\Constantin\\Documents\\VHDLSoundchip\\hdl\\sigma_adder.vhd":1666800626
 #CUR:"C:\\Users\\Constantin\\Documents\\VHDLSoundchip\\hdl\\dac.vhd":1658320617
-#CUR:"C:\\Users\\Constantin\\Documents\\VHDLSoundchip\\hdl\\data_receiver.vhd":1669210424
+#CUR:"C:\\Users\\Constantin\\Documents\\VHDLSoundchip\\hdl\\data_receiver.vhd":1674824102
 #CUR:"C:\\Users\\Constantin\\Documents\\VHDLSoundchip\\hdl\\spi_slave.vhd":1670250768
-#CUR:"C:\\Users\\Constantin\\Documents\\VHDLSoundchip\\component\\work\\soundchip\\soundchip.vhd":1670252140
+#CUR:"C:\\Users\\Constantin\\Documents\\VHDLSoundchip\\component\\work\\soundchip\\soundchip.vhd":1674824114
 0 "C:\Users\Constantin\Documents\VHDLSoundchip\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd" vhdl
 1 "C:\Users\Constantin\Documents\VHDLSoundchip\component\work\FCCC_C0\FCCC_C0.vhd" vhdl
 2 "C:\Users\Constantin\Documents\VHDLSoundchip\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd" vhdl

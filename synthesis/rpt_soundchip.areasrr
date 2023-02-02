@@ -266,9 +266,9 @@ Total SEQUENTIAL ELEMENTS in the block soundchip.spi_slave:	75 (27.88 % Utilizat
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      14                 87.5 %               
+CFG      15                 93.8 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block soundchip.spi_slave:	14 (5.20 % Utilization)
+Total COMBINATIONAL LOGIC in the block soundchip.spi_slave:	15 (5.58 % Utilization)
 
 
 GLOBAL BUFFERS

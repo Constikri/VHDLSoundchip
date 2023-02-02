@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Wed Nov 23 14:32:50 2022
+-- Created by SmartDesign Fri Dec  9 14:33:44 2022
 -- Version: 2022.2 2022.2.0.10
 ----------------------------------------------------------------------
 
@@ -25,12 +25,12 @@
 --"GL0_BP_IN_0_SRC:IO_HARDWIRED_0"  \
 --"GL0_BP_IN_1_FREQ:100"  \
 --"GL0_BP_IN_1_SRC:IO_HARDWIRED_0"  \
---"GL0_FREQUENCY_LOCKED:false"  \
+--"GL0_FREQUENCY_LOCKED:true"  \
 --"GL0_IN_0_SRC:PLL"  \
 --"GL0_IN_1_SRC:UNUSED"  \
 --"GL0_IS_INVERTED:false"  \
 --"GL0_IS_USED:true"  \
---"GL0_OUT_0_FREQ:100"  \
+--"GL0_OUT_0_FREQ:300"  \
 --"GL0_OUT_1_FREQ:50"  \
 --"GL0_OUT_IS_GATED:false"  \
 --"GL0_PLL_IN_0_PHASE:0"  \
@@ -91,7 +91,7 @@
 --"GPD3_SYNC_STYLE:G3STYLE_AND_NO_LOCK_RSTSYNC"  \
 --"GPD_EXPOSE_RESETS:false"  \
 --"GPD_SYNC_STYLE:G3STYLE_AND_LOCK_RSTSYNC"  \
---"INIT:0000007FB8000044D74000318C6318C1F18C61EC0404040400301"  \
+--"INIT:0000007FB8000044574000318C6318C1F18C61EC0404040400B01"  \
 --"IO_HARDWIRED_0_IS_DIFF:false"  \
 --"IO_HARDWIRED_1_IS_DIFF:false"  \
 --"IO_HARDWIRED_2_IS_DIFF:false"  \
@@ -123,7 +123,7 @@
 --"PLL_VCO_TARGET:700"  \
 --"RCOSC_1MHZ_IS_USED:false"  \
 --"RCOSC_25_50MHZ_IS_USED:true"  \
---"VCOFREQUENCY:800.000"  \
+--"VCOFREQUENCY:600.000"  \
 --"XTLOSC_IS_USED:false"  \
 --"Y0_IS_USED:false"  \
 --"Y1_IS_USED:false"  \

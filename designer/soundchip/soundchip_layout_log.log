@@ -19,10 +19,10 @@ Running the I/O Bank and Globals Assigner.
 Info:  I/O Bank and Globals Assigner identified 6 fixed I/O macros, 0 unfixed I/O macros
 
 I/O Bank and Globals Assigner completed successfully.
-Total time spent in I/O Bank and Globals Assigner: 0 seconds
+Total time spent in I/O Bank and Globals Assigner: 1 seconds
 
 Placer V5.0 - 2022.2.0 
-Design: soundchip                       Started: Mon Dec  5 15:56:13 2022
+Design: soundchip                       Started: Fri Jan 27 13:55:49 2023
 
 Initializing Normal-Effort Timing-Driven Placement ...
 Clustering ...
@@ -38,22 +38,22 @@ Improvement              : 0 seconds
 Placer completed successfully.
 
 Design: soundchip                       
-Finished: Mon Dec  5 15:56:22 2022
+Finished: Fri Jan 27 13:55:58 2023
 Total CPU Time:     00:00:08            Total Elapsed Time: 00:00:09
-Total Memory Usage: 296.7 Mbytes
+Total Memory Usage: 296.8 Mbytes
                         o - o - o - o - o - o
 
 
 Router 
-Design: C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\soundchipStarted: Mon Dec  5 15:56:24 2022
+Design: C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\soundchipStarted: Fri Jan 27 13:56:01 2023
 
 
 Router completed successfully.
 
 Design: C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\soundchip
-Finished: Mon Dec  5 15:56:28 2022
-Total CPU Time:     00:00:03            Total Elapsed Time: 00:00:04
-Total Memory Usage: 445.8 Mbytes
+Finished: Fri Jan 27 13:56:04 2023
+Total CPU Time:     00:00:03            Total Elapsed Time: 00:00:03
+Total Memory Usage: 446.0 Mbytes
                         o - o - o - o - o - o
 
 Info: Iteration 1:
@@ -63,10 +63,10 @@ Resource Usage
 +---------------+------+-------+------------+
 | Type          | Used | Total | Percentage |
 +---------------+------+-------+------------+
-| 4LUT          | 52   | 12084 | 0.43       |
+| 4LUT          | 53   | 12084 | 0.44       |
 | DFF           | 177  | 12084 | 1.46       |
 | I/O Register  | 0    | 408   | 0.00       |
-| Logic Element | 181  | 12084 | 1.50       |
+| Logic Element | 180  | 12084 | 1.49       |
 +---------------+------+-------+------------+
 
 I/O Placement

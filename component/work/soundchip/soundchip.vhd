@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Mon Dec  5 15:55:40 2022
+-- Created by SmartDesign Fri Jan 27 13:55:14 2023
 -- Version: 2022.2 2022.2.0.10
 ----------------------------------------------------------------------
 
@@ -131,9 +131,9 @@ signal data_receiver_0_data_left                          : std_logic_vector(15 
 signal data_receiver_0_data_right                         : std_logic_vector(15 downto 0);
 signal FCCC_C0_0_LOCK                                     : std_logic;
 signal OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC : std_logic;
+signal SPI_DONE                                           : std_logic;
 signal spi_miso_net_0                                     : std_logic;
 signal spi_slave_0_DataRxd                                : std_logic_vector(31 downto 0);
-signal spi_slave_0_SPI_DONE                               : std_logic;
 signal SYSRESET_0_POWER_ON_RESET_N                        : std_logic;
 signal dac_out_left_net_1                                 : std_logic;
 signal dac_out_right_net_1                                : std_logic;
@@ -141,15 +141,23 @@ signal spi_miso_net_1                                     : std_logic;
 ----------------------------------------------------------------------
 -- TiedOff Signals
 ----------------------------------------------------------------------
-signal DataToTx_const_net_0                               : std_logic_vector(31 downto 0);
 signal VCC_net                                            : std_logic;
+signal DataToTx_const_net_0                               : std_logic_vector(31 downto 0);
+----------------------------------------------------------------------
+-- Inverted Signals
+----------------------------------------------------------------------
+signal Y_OUT_PRE_INV0_0                                   : std_logic;
 
 begin
 ----------------------------------------------------------------------
 -- Constant assignments
 ----------------------------------------------------------------------
- DataToTx_const_net_0 <= B"11111111111111111111111111111111";
  VCC_net              <= '1';
+ DataToTx_const_net_0 <= B"11111111111111111111111111111111";
+----------------------------------------------------------------------
+-- Inversions
+----------------------------------------------------------------------
+ AND2_0_Y <= NOT Y_OUT_PRE_INV0_0;
 ----------------------------------------------------------------------
 -- Top level output port assignments
 ----------------------------------------------------------------------
@@ -166,10 +174,10 @@ begin
 AND2_0 : AND2
     port map( 
         -- Inputs
-        A => FCCC_C0_0_LOCK,
-        B => SYSRESET_0_POWER_ON_RESET_N,
+        A => SYSRESET_0_POWER_ON_RESET_N,
+        B => FCCC_C0_0_LOCK,
         -- Outputs
-        Y => AND2_0_Y 
+        Y => Y_OUT_PRE_INV0_0 
         );
 -- dac_0
 dac_0 : dac
@@ -196,7 +204,7 @@ data_receiver_0 : data_receiver
     port map( 
         -- Inputs
         reset      => AND2_0_Y,
-        data_rdy   => spi_slave_0_SPI_DONE,
+        data_rdy   => SPI_DONE,
         data_in    => spi_slave_0_DataRxd,
         -- Outputs
         dac_reset  => data_receiver_0_dac_reset,
@@ -227,11 +235,11 @@ spi_slave_0 : spi_slave
         SPI_CLK      => spi_sck,
         SPI_SS       => spi_ss,
         SPI_MOSI     => spi_mosi,
-        DataToTx     => DataToTx_const_net_0,
         DataToTxLoad => VCC_net,
+        DataToTx     => DataToTx_const_net_0,
         -- Outputs
         SPI_MISO     => spi_miso_net_0,
-        SPI_DONE     => spi_slave_0_SPI_DONE,
+        SPI_DONE     => SPI_DONE,
         DataRxd      => spi_slave_0_DataRxd 
         );
 -- SYSRESET_0

@@ -8,4 +8,4 @@ dac_0/SIGMA_ADDER_0/Primitives,18,18,0,0,0,0
 dac_1/DELTA_ADDER_0/Primitives,0,17,0,0,0,0
 dac_1/SIGMA_ADDER_0/Primitives,18,18,0,0,0,0
 data_receiver_0/Primitives,1,32,0,0,1,0
-spi_slave_0/Primitives,14,75,0,0,1,0
+spi_slave_0/Primitives,15,75,0,0,1,0

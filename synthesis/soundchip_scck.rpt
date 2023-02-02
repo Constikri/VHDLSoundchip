@@ -13,7 +13,7 @@ Hostname: DESKTOP-1NBCJI9
 
 Implementation : synthesis
 
-# Written on Mon Dec  5 15:55:56 2022
+# Written on Fri Jan 27 13:55:28 2023
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "C:\Users\Constantin\Documents\VHDLSoundchip\designer\soundchip\synthesis.fdc"
@@ -34,7 +34,7 @@ Clock Summary
 Level     Clock                                 Frequency     Period        Type                       Group                     Load 
 --------------------------------------------------------------------------------------------------------------------------------------
 0 -       OSC_0                                 50.0 MHz      20.000        declared                   default_clkgroup          0    
-1 .         FCCC_C0_0                           100.0 MHz     10.000        generated (from OSC_0)     default_clkgroup          145  
+1 .         FCCC_C0_0                           300.0 MHz     3.333         generated (from OSC_0)     default_clkgroup          145  
                                                                                                                                       
 0 -       System                                100.0 MHz     10.000        system                     system_clkgroup           0    
                                                                                                                                       

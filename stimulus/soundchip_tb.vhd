@@ -32,6 +32,7 @@ architecture behavioral of soundchip_tb is
     constant SYSCLK_PERIOD : time := 10 ns; -- 100MHZ
     constant DATACLK_PERIOD : time := 22670 ns;
     constant WORD_SIZE : natural := 32;
+    constant INITIAL_RST : time := 100 us;
 
     signal DATACLK : std_logic := '0';
     -- signal SYSCLK : std_logic := '0';
@@ -52,10 +53,6 @@ architecture behavioral of soundchip_tb is
     constant compare_max : std_logic_vector(15 downto 0) := (others => '1');
     constant compare_min : std_logic_vector(15 downto 0) := (others => '0');
     
-    signal clk_debug_sig : std_logic;
-   -- signal debug_spi_data_vld : std_logic;
-   -- signal debug_spi_data : std_logic_vector((WORD_SIZE-1) downto 0);
-    
 ----------------------------------------------------------------------
 -- Component declarations
 ----------------------------------------------------------------------
@@ -69,9 +66,6 @@ architecture behavioral of soundchip_tb is
             spi_sck       : in  std_logic;
             spi_ss        : in  std_logic;
             -- Outputs
-            --DOUT          : out std_logic_vector((WORD_SIZE-1) downto 0);
-            --DOUT_VLD      : out std_logic;
-            clk_debug     : out std_logic;
             dac_out_left  : out std_logic;
             dac_out_right : out std_logic;
             spi_miso      : out std_logic
@@ -119,9 +113,6 @@ begin
             spi_ss        => cs_sig,
             DEVRST_N      => NSYSRESET,
             -- Outputs
-            --DOUT          => debug_spi_data,
-            --DOUT_VLD      => debug_spi_data_vld,
-            clk_debug     => clk_debug_sig,
             dac_out_left  => dac_out_left_sig,
             spi_miso      => miso_sig,
             dac_out_right => dac_out_right_sig
@@ -130,7 +121,7 @@ begin
     process(DATACLK)
         begin
             if (rising_edge(DATACLK)) then
-                data_out <= (data_out + '1') when (ascend = '1') else (data_out - '1');
+                data_out <= (data_out + "1111") when (ascend = '1') else (data_out - "1111");
             end if;
             if (data_out = compare_max) then
                 ascend <= '0';
@@ -144,9 +135,9 @@ begin
     
     tb: process
         begin
-            NSYSRESET <= '1';
-            wait for ( SYSCLK_PERIOD * 1000 );
             NSYSRESET <= '0';
+            wait for ( INITIAL_RST );
+            NSYSRESET <= '1';
             
             for i in 0 to 262140 loop
                 SPI_MASTER((SYSCLK_PERIOD*10), spi_data_in, spi_data_out, sck_sig, cs_sig, mosi_sig, miso_sig);

@@ -56,7 +56,7 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\SgCore\FCCC\2.0.201\FCCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1669210370"
+TIME="1670592824"
 SIZE="241"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
 ENDFILE
@@ -162,25 +162,25 @@ SIZE="437"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0.cxf,actgen_cxf"
 STATE="utd"
-TIME="1669210370"
-SIZE="10453"
+TIME="1670592824"
+SIZE="10452"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0.vhd,hdl"
 STATE="utd"
-TIME="1669210370"
-SIZE="7401"
+TIME="1670592824"
+SIZE="7400"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1669210370"
+TIME="1670592824"
 SIZE="705"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd,hdl"
 STATE="utd"
-TIME="1669210370"
+TIME="1670592824"
 SIZE="5574"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf"
 IS_READONLY="TRUE"
@@ -212,20 +212,20 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\soundchip\soundchip.cxf,actgen_cxf"
 STATE="utd"
-TIME="1670251026"
-SIZE="2967"
+TIME="1674824117"
+SIZE="2810"
 ENDFILE
 VALUE "<project>\component\work\soundchip\soundchip.vhd,hdl"
 STATE="utd"
-TIME="1670251026"
-SIZE="8550"
+TIME="1674824114"
+SIZE="8746"
 PARENT="<project>\component\work\soundchip\soundchip.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\constraint\io\full_io.pdc,io_pdc"
 STATE="utd"
-TIME="1667894995"
-SIZE="1561"
+TIME="1670582643"
+SIZE="1563"
 IS_TARGET="TRUE"
 ENDFILE
 VALUE "<project>\constraint\io\user.pdc,io_pdc"
@@ -235,7 +235,7 @@ SIZE="741"
 ENDFILE
 VALUE "<project>\constraint\user.sdc,sdc"
 STATE="utd"
-TIME="1667894894"
+TIME="1670592834"
 SIZE="404"
 IS_TARGET="TRUE"
 ENDFILE
@@ -246,7 +246,7 @@ SIZE="1693"
 ENDFILE
 VALUE "<project>\hdl\data_receiver.vhd,hdl"
 STATE="utd"
-TIME="1669210424"
+TIME="1674824102"
 SIZE="1477"
 ENDFILE
 VALUE "<project>\hdl\delta_adder.vhd,hdl"
@@ -264,20 +264,25 @@ STATE="utd"
 TIME="1670250768"
 SIZE="3000"
 ENDFILE
-VALUE "<project>\hdl\spi_slave_deprecated.vhd,hdl"
-STATE="utd"
-TIME="1669210440"
-SIZE="9026"
-ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1669214333"
+TIME="1674823877"
 SIZE="963"
+ENDFILE
+VALUE "<project>\simulation\soundchip_tb_postlayout_simulation.log,log"
+STATE="utd"
+TIME="1674831101"
+SIZE="7078872"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1669214333"
+TIME="1674823877"
 SIZE="233"
+ENDFILE
+VALUE "<project>\simulation\wave.do,do"
+STATE="utd"
+TIME="1674766083"
+SIZE="1189"
 ENDFILE
 VALUE "<project>\stimulus\dac_tb.vhd,tb_hdl"
 STATE="utd"
@@ -301,37 +306,31 @@ SIZE="3581"
 ENDFILE
 VALUE "<project>\stimulus\soundchip_tb.vhd,tb_hdl"
 STATE="utd"
-TIME="1670239014"
-SIZE="5409"
-ENDFILE
-VALUE "<project>\stimulus\spi_slave_tb.vhd,tb_hdl"
-STATE="utd"
-TIME="1668710766"
-SIZE="8076"
+TIME="1674831360"
+SIZE="4974"
 ENDFILE
 VALUE "<project>\synthesis\soundchip.so,so"
 STATE="utd"
-TIME="1669213385"
+TIME="1674824133"
 SIZE="236"
 ENDFILE
 VALUE "<project>\synthesis\soundchip.vm,syn_vm"
-STATE="ood"
-TIME="1669213385"
-SIZE="65130"
+STATE="utd"
+TIME="1674824132"
+SIZE="62935"
 ENDFILE
 VALUE "<project>\synthesis\soundchip_syn.prj,prj"
 STATE="utd"
-TIME="1669213386"
+TIME="1674824133"
 SIZE="3443"
 ENDFILE
 VALUE "<project>\synthesis\soundchip_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1669213385"
+TIME="1674824132"
 SIZE="1431"
 ENDFILE
 ENDLIST
 LIST UsedFile
-VALUE "<project>\hdl\spi_slave.vhd,spi_slave"
 ENDLIST
 LIST NewModulesInfo
 LIST "soundchip::work"
@@ -353,6 +352,7 @@ ENDLIST
 LIST ProjectState5.1
 LIST Impl1
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -363,6 +363,7 @@ ENDUsed_File_List
 ENDLIST
 LIST Impl2
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -373,6 +374,7 @@ ENDUsed_File_List
 ENDLIST
 LIST Impl3
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -459,8 +461,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microchip\Libero_SoC_v2022.2\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -468,7 +470,7 @@ NAME="ModelSim ME Pro"
 FUNCTION="Simulation"
 TOOL="ModelSim Pro Edition"
 LOCATION="C:\Microchip\Libero_SoC_v2022.2\ModelSimPro\win32acoem\modelsim.exe"
-PARAM=" -l soundchip_tb_postsynth_simulation.log "
+PARAM=""
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -487,6 +489,7 @@ LIST ProjectState5.1
 LIST "soundchip::work"
 LIST Impl1
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -497,6 +500,7 @@ ENDUsed_File_List
 ENDLIST
 LIST Impl2
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -507,6 +511,7 @@ ENDUsed_File_List
 ENDLIST
 LIST Impl3
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\soundchip.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -529,16 +534,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;synthesis:synplify.log
-HDL;hdl\delta_adder.vhd;0
-HDL;hdl\sigma_adder.vhd;0
-HDL;stimulus\soundchip_tb.vhd;0
-HDL;hdl\data_receiver.vhd;0
-HDL;hdl\spi_slave.vhd;0
-HDL;hdl\spi_slave_deprecated.vhd;0
-SmartDesign;soundchip;0
-ACTIVEVIEW;soundchip
+StartPage;StartPage;0
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "dac::work","hdl\dac.vhd","FALSE","FALSE"
@@ -548,8 +545,6 @@ ENDLIST
 LIST "data_receiver::work","hdl\data_receiver.vhd","FALSE","FALSE"
 ENDLIST
 LIST "delta_adder::work","hdl\delta_adder.vhd","FALSE","FALSE"
-ENDLIST
-LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
 ENDLIST
 LIST "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
 ENDLIST
@@ -599,9 +594,6 @@ SUBBLOCK "sigma_adder::work","hdl\sigma_adder.vhd","FALSE","FALSE"
 ENDLIST
 LIST "soundchip_tb::work","stimulus\soundchip_tb.vhd","FALSE","TRUE"
 SUBBLOCK "soundchip::work","component\work\soundchip\soundchip.vhd","TRUE","FALSE"
-ENDLIST
-LIST "SPI_SLAVE_TB::work","stimulus\spi_slave_tb.vhd","FALSE","TRUE"
-SUBBLOCK "spi_slave::work","hdl\spi_slave.vhd","FALSE","FALSE"
 ENDLIST
 ENDLIST
 LIST ActiveTestBenchList
